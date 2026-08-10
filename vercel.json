@@ -29,5 +29,16 @@
     { "source": "/api/dashboard/:region", "destination": "/data/dashboard-:region.json" },
     { "source": "/api/push/latest", "destination": "/data/push-latest.json" },
     { "source": "/api/push/history", "destination": "/data/push-history.json" }
+  ],
+  "functions": {
+    "api/refresh.js": {
+      "maxDuration": 30
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/refresh",
+      "schedule": "0 1 * * *"
+    }
   ]
 }
