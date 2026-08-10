@@ -752,9 +752,41 @@
     .ref-stat-grid { grid-template-columns: repeat(2, 1fr); }
     .section-title { font-size: 18px; }
   }
+
+  /* 模拟数据警示横幅 */
+  .mock-banner {
+    background: linear-gradient(90deg, #7f1d1d 0%, #b91c1c 50%, #7f1d1d 100%);
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #450a0a;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .mock-banner .icon { font-size: 18px; margin-right: 6px; vertical-align: middle; }
+  .mock-banner code {
+    background: rgba(0,0,0,0.35);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 0 4px;
+  }
 </style>
 </head>
 <body>
+
+<div class="mock-banner">
+  <span class="icon">⚠️</span>
+  <strong>演示数据声明：</strong>
+  当前所有对阵、裁判、比分、Opta/StatsBomb 风格统计数据均为算法随机生成的 <code>MOCK 占位数据</code>，
+  <strong>非 2026-08-10 真实赛程/赛果</strong>（如示例：亚冠不应出现英格兰裁判等）。
+  本阶段用于验证仪表盘 UI 骨架、交互逻辑、裁判风格算法、数据对比条渲染正确性。
+  真实数据源（API-Football / Sportmonks / 懂球帝爬虫 / 直播吧）待选择后接入，接入后自动替换为真实数据。
+</div>
 
 <div class="header">
   <div class="header-inner">
