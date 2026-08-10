@@ -1,0 +1,7 @@
+{
+  "status": "ok",
+  "deployedAt": "2026-08-10T14:34:27.964381",
+  "lastUpdate": "2026-08-10T14:34:27.964381",
+  "hasData": true,
+  "note": "Vercel 静态部署版，每天 9:00(Asia/Shanghai) 通过 Deploy Hook 自动重建"
+}

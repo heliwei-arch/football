@@ -1,0 +1,11 @@
+{
+  "name": "football-dashboard",
+  "version": "1.0.0",
+  "description": "足球赛道日报仪表盘 - 欧洲/亚洲/澳洲 T-1 Opta风格数据对比 + 裁判分析 + 今日预告",
+  "private": true,
+  "scripts": {
+    "dev": "python3 server.py",
+    "build": "python3 generate_static.py",
+    "start": "python3 server.py"
+  }
+}

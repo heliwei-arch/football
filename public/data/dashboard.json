@@ -1,0 +1,4990 @@
+{
+  "lastUpdate": "2026-08-10T14:34:27.964381",
+  "generatedAt": "2026-08-10T14:34:27.970760",
+  "leagues": {
+    "europe": [
+      {
+        "id": "epl",
+        "name": "英超联赛",
+        "country": "英格兰",
+        "flag": "🏴"
+      },
+      {
+        "id": "laliga",
+        "name": "西甲联赛",
+        "country": "西班牙",
+        "flag": "🇪🇸"
+      },
+      {
+        "id": "bundesliga",
+        "name": "德甲联赛",
+        "country": "德国",
+        "flag": "🇩🇪"
+      },
+      {
+        "id": "seriea",
+        "name": "意甲联赛",
+        "country": "意大利",
+        "flag": "🇮🇹"
+      },
+      {
+        "id": "ligue1",
+        "name": "法甲联赛",
+        "country": "法国",
+        "flag": "🇫🇷"
+      },
+      {
+        "id": "ucl",
+        "name": "欧冠联赛",
+        "country": "欧洲",
+        "flag": "🇪🇺"
+      }
+    ],
+    "asia": [
+      {
+        "id": "csl",
+        "name": "中超联赛",
+        "country": "中国",
+        "flag": "🇨🇳"
+      },
+      {
+        "id": "jleague",
+        "name": "J联赛",
+        "country": "日本",
+        "flag": "🇯🇵"
+      },
+      {
+        "id": "kleague",
+        "name": "K联赛",
+        "country": "韩国",
+        "flag": "🇰🇷"
+      },
+      {
+        "id": "acl",
+        "name": "亚冠联赛",
+        "country": "亚洲",
+        "flag": "🏆"
+      },
+      {
+        "id": "apl",
+        "name": "沙特联赛",
+        "country": "沙特阿拉伯",
+        "flag": "🇸🇦"
+      }
+    ],
+    "australia": [
+      {
+        "id": "aleague",
+        "name": "澳超联赛",
+        "country": "澳大利亚",
+        "flag": "🇦🇺"
+      },
+      {
+        "id": "nzfootball",
+        "name": "新西兰超级联赛",
+        "country": "新西兰",
+        "flag": "🇳🇿"
+      }
+    ]
+  },
+  "yesterdayMatches": [
+    {
+      "id": "y-1786343667964-0",
+      "date": "2026-08-09",
+      "time": "20:00",
+      "league": {
+        "id": "ucl",
+        "name": "欧冠联赛",
+        "country": "欧洲",
+        "flag": "🇪🇺",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "国际米兰",
+      "awayTeam": "阿森纳",
+      "venue": "国际米兰主场",
+      "stats": {
+        "score": {
+          "home": 4,
+          "away": 0
+        },
+        "possession": {
+          "home": 41,
+          "away": 59
+        },
+        "shots": {
+          "home": 12,
+          "away": 7
+        },
+        "shotsOnTarget": {
+          "home": 7,
+          "away": 6
+        },
+        "xG": {
+          "home": "1.70",
+          "away": "0.90"
+        },
+        "passes": {
+          "home": 522,
+          "away": 363
+        },
+        "passAccuracy": {
+          "home": "74%",
+          "away": "84%"
+        },
+        "tackles": {
+          "home": 20,
+          "away": 20
+        },
+        "interceptions": {
+          "home": 17,
+          "away": 5
+        },
+        "fouls": {
+          "home": 11,
+          "away": 9
+        },
+        "corners": {
+          "home": 4,
+          "away": 2
+        },
+        "yellowCards": {
+          "home": 4,
+          "away": 3
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 6,
+          "away": 5
+        },
+        "saves": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r005",
+          "name": "丹妮埃莱·奥萨托",
+          "country": "意大利",
+          "age": 48
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "沙特联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 26,
+            "varChecks": 2,
+            "cardIndex": 14
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "K联赛",
+            "yellowCards": 7,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 34,
+            "varChecks": 4,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "K联赛",
+            "yellowCards": 2,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 35,
+            "varChecks": 0,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "英超联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 19,
+            "varChecks": 1,
+            "cardIndex": 13
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "J联赛",
+            "yellowCards": 4,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 15,
+            "varChecks": 3,
+            "cardIndex": 7
+          }
+        ],
+        "statistics": {
+          "avgYellow": "5.6",
+          "avgRed": "1.20",
+          "avgFouls": "25.8",
+          "avgPenalties": "1.20",
+          "avgCardIndex": "9.2",
+          "avgVar": "2.0",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 5,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 10,
+          "type": "goal",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 进球！精彩射门得分"
+        },
+        {
+          "minute": 10,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 13,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "阿森纳",
+          "description": "阿森纳 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 17,
+          "type": "goal",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 进球！精彩射门得分"
+        },
+        {
+          "minute": 22,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 24,
+          "type": "goal",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 进球！精彩射门得分"
+        },
+        {
+          "minute": 38,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 49,
+          "type": "goal",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 进球！精彩射门得分"
+        },
+        {
+          "minute": 55,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "阿森纳",
+          "description": "阿森纳 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 59,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "国际米兰 主场取胜，实际进球 4 vs xG 1.70，把握机会能力超强",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 92分），全场共出示 7 黄0红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667964-1",
+      "date": "2026-08-09",
+      "time": "21:30",
+      "league": {
+        "id": "ucl",
+        "name": "欧冠联赛",
+        "country": "欧洲",
+        "flag": "🇪🇺",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "皇家马德里",
+      "awayTeam": "巴塞罗那",
+      "venue": "皇家马德里主场",
+      "stats": {
+        "score": {
+          "home": 1,
+          "away": 3
+        },
+        "possession": {
+          "home": 57,
+          "away": 43
+        },
+        "shots": {
+          "home": 21,
+          "away": 11
+        },
+        "shotsOnTarget": {
+          "home": 4,
+          "away": 5
+        },
+        "xG": {
+          "home": "1.50",
+          "away": "0.60"
+        },
+        "passes": {
+          "home": 639,
+          "away": 561
+        },
+        "passAccuracy": {
+          "home": "74%",
+          "away": "80%"
+        },
+        "tackles": {
+          "home": 12,
+          "away": 15
+        },
+        "interceptions": {
+          "home": 11,
+          "away": 11
+        },
+        "fouls": {
+          "home": 9,
+          "away": 12
+        },
+        "corners": {
+          "home": 9,
+          "away": 9
+        },
+        "yellowCards": {
+          "home": 2,
+          "away": 3
+        },
+        "redCards": {
+          "home": 1,
+          "away": 0
+        },
+        "offsides": {
+          "home": 2,
+          "away": 3
+        },
+        "saves": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r004",
+          "name": "克莱芒·蒂尔潘",
+          "country": "法国",
+          "age": 41
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "法甲联赛",
+            "yellowCards": 5,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 23,
+            "varChecks": 5,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "德甲联赛",
+            "yellowCards": 3,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 30,
+            "varChecks": 5,
+            "cardIndex": 3
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "德甲联赛",
+            "yellowCards": 3,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 35,
+            "varChecks": 3,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "亚冠联赛",
+            "yellowCards": 5,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 35,
+            "varChecks": 3,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "法甲联赛",
+            "yellowCards": 2,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 15,
+            "varChecks": 0,
+            "cardIndex": 8
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.6",
+          "avgRed": "1.40",
+          "avgFouls": "27.6",
+          "avgPenalties": "0.40",
+          "avgCardIndex": "7.8",
+          "avgVar": "3.2",
+          "strictnessScore": 64
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 16,
+          "type": "goal",
+          "team": "away",
+          "teamName": "巴塞罗那",
+          "description": "巴塞罗那 进球！扳平/反超比分"
+        },
+        {
+          "minute": 18,
+          "type": "goal",
+          "team": "home",
+          "teamName": "皇家马德里",
+          "description": "皇家马德里 进球！精彩射门得分"
+        },
+        {
+          "minute": 22,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "巴塞罗那",
+          "description": "巴塞罗那 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 38,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "巴塞罗那",
+          "description": "巴塞罗那 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 41,
+          "type": "goal",
+          "team": "away",
+          "teamName": "巴塞罗那",
+          "description": "巴塞罗那 进球！扳平/反超比分"
+        },
+        {
+          "minute": 48,
+          "type": "goal",
+          "team": "away",
+          "teamName": "巴塞罗那",
+          "description": "巴塞罗那 进球！扳平/反超比分"
+        },
+        {
+          "minute": 58,
+          "type": "red",
+          "team": "home",
+          "teamName": "皇家马德里",
+          "description": "皇家马德里 球员严重犯规直接红牌罚下"
+        },
+        {
+          "minute": 60,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "巴塞罗那",
+          "description": "巴塞罗那 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 69,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "巴塞罗那",
+          "description": "巴塞罗那 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 70,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "皇家马德里",
+          "description": "皇家马德里 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "巴塞罗那 客场奏凯，反击效率极高，xG 0.60 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法尺度平衡，比赛中规中矩"
+      ]
+    },
+    {
+      "id": "y-1786343667965-2",
+      "date": "2026-08-09",
+      "time": "20:45",
+      "league": {
+        "id": "aleague",
+        "name": "澳超联赛",
+        "country": "澳大利亚",
+        "flag": "🇦🇺",
+        "region": "australia"
+      },
+      "region": "australia",
+      "homeTeam": "惠灵顿凤凰",
+      "awayTeam": "墨尔本胜利",
+      "venue": "惠灵顿凤凰主场",
+      "stats": {
+        "score": {
+          "home": 2,
+          "away": 0
+        },
+        "possession": {
+          "home": 61,
+          "away": 39
+        },
+        "shots": {
+          "home": 14,
+          "away": 10
+        },
+        "shotsOnTarget": {
+          "home": 2,
+          "away": 5
+        },
+        "xG": {
+          "home": "1.20",
+          "away": "2.80"
+        },
+        "passes": {
+          "home": 505,
+          "away": 564
+        },
+        "passAccuracy": {
+          "home": "88%",
+          "away": "75%"
+        },
+        "tackles": {
+          "home": 21,
+          "away": 10
+        },
+        "interceptions": {
+          "home": 6,
+          "away": 9
+        },
+        "fouls": {
+          "home": 13,
+          "away": 14
+        },
+        "corners": {
+          "home": 8,
+          "away": 8
+        },
+        "yellowCards": {
+          "home": 1,
+          "away": 4
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 1,
+          "away": 0
+        },
+        "saves": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r008",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "中超联赛",
+            "yellowCards": 2,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 19,
+            "varChecks": 3,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "中超联赛",
+            "yellowCards": 6,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 31,
+            "varChecks": 2,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "亚冠联赛",
+            "yellowCards": 7,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 30,
+            "varChecks": 3,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "K联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 30,
+            "varChecks": 3,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "德甲联赛",
+            "yellowCards": 2,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 27,
+            "varChecks": 2,
+            "cardIndex": 8
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.4",
+          "avgRed": "0.80",
+          "avgFouls": "27.4",
+          "avgPenalties": "1.60",
+          "avgCardIndex": "6.8",
+          "avgVar": "2.6",
+          "strictnessScore": 82
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 2,
+          "type": "goal",
+          "team": "home",
+          "teamName": "惠灵顿凤凰",
+          "description": "惠灵顿凤凰 进球！精彩射门得分"
+        },
+        {
+          "minute": 2,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "墨尔本胜利",
+          "description": "墨尔本胜利 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 21,
+          "type": "goal",
+          "team": "home",
+          "teamName": "惠灵顿凤凰",
+          "description": "惠灵顿凤凰 进球！精彩射门得分"
+        },
+        {
+          "minute": 36,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "墨尔本胜利",
+          "description": "墨尔本胜利 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 37,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "惠灵顿凤凰",
+          "description": "惠灵顿凤凰 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 43,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "墨尔本胜利",
+          "description": "墨尔本胜利 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 82,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "墨尔本胜利",
+          "description": "墨尔本胜利 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "惠灵顿凤凰 主场取胜，实际进球 2 vs xG 1.20，把握机会能力超强",
+        "惠灵顿凤凰 控球率达到 61%，主导了比赛节奏，但射门转化率偏低",
+        "裁判执法偏严（严格度 82分），全场共出示 5 黄0红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667965-3",
+      "date": "2026-08-09",
+      "time": "19:30",
+      "league": {
+        "id": "epl",
+        "name": "英超联赛",
+        "country": "英格兰",
+        "flag": "🏴",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "切尔西",
+      "awayTeam": "布伦特福德",
+      "venue": "切尔西主场",
+      "stats": {
+        "score": {
+          "home": 4,
+          "away": 0
+        },
+        "possession": {
+          "home": 60,
+          "away": 40
+        },
+        "shots": {
+          "home": 12,
+          "away": 5
+        },
+        "shotsOnTarget": {
+          "home": 9,
+          "away": 6
+        },
+        "xG": {
+          "home": "0.90",
+          "away": "1.40"
+        },
+        "passes": {
+          "home": 566,
+          "away": 472
+        },
+        "passAccuracy": {
+          "home": "88%",
+          "away": "72%"
+        },
+        "tackles": {
+          "home": 22,
+          "away": 19
+        },
+        "interceptions": {
+          "home": 6,
+          "away": 14
+        },
+        "fouls": {
+          "home": 11,
+          "away": 13
+        },
+        "corners": {
+          "home": 5,
+          "away": 8
+        },
+        "yellowCards": {
+          "home": 3,
+          "away": 1
+        },
+        "redCards": {
+          "home": 0,
+          "away": 1
+        },
+        "offsides": {
+          "home": 2,
+          "away": 5
+        },
+        "saves": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r002",
+          "name": "迈克尔·奥利弗",
+          "country": "英格兰",
+          "age": 39
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "J联赛",
+            "yellowCards": 3,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 35,
+            "varChecks": 3,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "中超联赛",
+            "yellowCards": 7,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 26,
+            "varChecks": 3,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "亚冠联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 35,
+            "varChecks": 1,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "亚冠联赛",
+            "yellowCards": 6,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 21,
+            "varChecks": 1,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "西甲联赛",
+            "yellowCards": 6,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 26,
+            "varChecks": 4,
+            "cardIndex": 9
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.8",
+          "avgRed": "0.80",
+          "avgFouls": "28.6",
+          "avgPenalties": "1.60",
+          "avgCardIndex": "7.2",
+          "avgVar": "2.4",
+          "strictnessScore": 90
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 7,
+          "type": "goal",
+          "team": "home",
+          "teamName": "切尔西",
+          "description": "切尔西 进球！精彩射门得分"
+        },
+        {
+          "minute": 9,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "切尔西",
+          "description": "切尔西 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 15,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "切尔西",
+          "description": "切尔西 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 23,
+          "type": "goal",
+          "team": "home",
+          "teamName": "切尔西",
+          "description": "切尔西 进球！精彩射门得分"
+        },
+        {
+          "minute": 42,
+          "type": "red",
+          "team": "away",
+          "teamName": "布伦特福德",
+          "description": "布伦特福德 球员两黄变一红被罚下"
+        },
+        {
+          "minute": 45,
+          "type": "goal",
+          "team": "home",
+          "teamName": "切尔西",
+          "description": "切尔西 进球！精彩射门得分"
+        },
+        {
+          "minute": 61,
+          "type": "goal",
+          "team": "home",
+          "teamName": "切尔西",
+          "description": "切尔西 进球！精彩射门得分"
+        },
+        {
+          "minute": 65,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "切尔西",
+          "description": "切尔西 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 66,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "切尔西",
+          "description": "切尔西 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "切尔西 主场取胜，实际进球 4 vs xG 0.90，把握机会能力超强",
+        "切尔西 控球率达到 60%，主导了比赛节奏，但有效射门质量不错",
+        "裁判执法偏严（严格度 90分），全场共出示 4 黄1红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667965-4",
+      "date": "2026-08-09",
+      "time": "22:30",
+      "league": {
+        "id": "seriea",
+        "name": "意甲联赛",
+        "country": "意大利",
+        "flag": "🇮🇹",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "拉齐奥",
+      "awayTeam": "罗马",
+      "venue": "拉齐奥主场",
+      "stats": {
+        "score": {
+          "home": 1,
+          "away": 0
+        },
+        "possession": {
+          "home": 48,
+          "away": 52
+        },
+        "shots": {
+          "home": 12,
+          "away": 5
+        },
+        "shotsOnTarget": {
+          "home": 9,
+          "away": 5
+        },
+        "xG": {
+          "home": "1.80",
+          "away": "1.70"
+        },
+        "passes": {
+          "home": 348,
+          "away": 437
+        },
+        "passAccuracy": {
+          "home": "74%",
+          "away": "76%"
+        },
+        "tackles": {
+          "home": 17,
+          "away": 13
+        },
+        "interceptions": {
+          "home": 10,
+          "away": 8
+        },
+        "fouls": {
+          "home": 14,
+          "away": 15
+        },
+        "corners": {
+          "home": 8,
+          "away": 4
+        },
+        "yellowCards": {
+          "home": 0,
+          "away": 3
+        },
+        "redCards": {
+          "home": 0,
+          "away": 1
+        },
+        "offsides": {
+          "home": 5,
+          "away": 5
+        },
+        "saves": {
+          "home": 5,
+          "away": 1
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r009",
+          "name": "傅明",
+          "country": "中国",
+          "age": 40
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "德甲联赛",
+            "yellowCards": 4,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 24,
+            "varChecks": 4,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "英超联赛",
+            "yellowCards": 6,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 19,
+            "varChecks": 1,
+            "cardIndex": 12
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "法甲联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 30,
+            "varChecks": 5,
+            "cardIndex": 13
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "K联赛",
+            "yellowCards": 7,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 25,
+            "varChecks": 4,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "英超联赛",
+            "yellowCards": 7,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 28,
+            "varChecks": 2,
+            "cardIndex": 7
+          }
+        ],
+        "statistics": {
+          "avgYellow": "6.2",
+          "avgRed": "1.20",
+          "avgFouls": "25.2",
+          "avgPenalties": "0.80",
+          "avgCardIndex": "9.8",
+          "avgVar": "3.2",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 4,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 14,
+          "type": "goal",
+          "team": "home",
+          "teamName": "拉齐奥",
+          "description": "拉齐奥 进球！精彩射门得分"
+        },
+        {
+          "minute": 33,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 53,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 61,
+          "type": "red",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 球员两黄变一红被罚下"
+        }
+      ],
+      "analysis": [
+        "拉齐奥 主场取胜，实际进球 1 vs xG 1.80，进攻效率符合预期",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 92分），全场共出示 3 黄1红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667965-5",
+      "date": "2026-08-09",
+      "time": "19:15",
+      "league": {
+        "id": "seriea",
+        "name": "意甲联赛",
+        "country": "意大利",
+        "flag": "🇮🇹",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "国际米兰",
+      "awayTeam": "罗马",
+      "venue": "国际米兰主场",
+      "stats": {
+        "score": {
+          "home": 1,
+          "away": 3
+        },
+        "possession": {
+          "home": 48,
+          "away": 52
+        },
+        "shots": {
+          "home": 17,
+          "away": 10
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 4
+        },
+        "xG": {
+          "home": "1.60",
+          "away": "1.70"
+        },
+        "passes": {
+          "home": 317,
+          "away": 353
+        },
+        "passAccuracy": {
+          "home": "79%",
+          "away": "88%"
+        },
+        "tackles": {
+          "home": 25,
+          "away": 19
+        },
+        "interceptions": {
+          "home": 19,
+          "away": 17
+        },
+        "fouls": {
+          "home": 9,
+          "away": 8
+        },
+        "corners": {
+          "home": 4,
+          "away": 5
+        },
+        "yellowCards": {
+          "home": 2,
+          "away": 3
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 6,
+          "away": 0
+        },
+        "saves": {
+          "home": 5,
+          "away": 4
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r002",
+          "name": "迈克尔·奥利弗",
+          "country": "英格兰",
+          "age": 39
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "中超联赛",
+            "yellowCards": 3,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 29,
+            "varChecks": 4,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "法甲联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 29,
+            "varChecks": 0,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "意甲联赛",
+            "yellowCards": 6,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 30,
+            "varChecks": 0,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "法甲联赛",
+            "yellowCards": 6,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 34,
+            "varChecks": 1,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "K联赛",
+            "yellowCards": 4,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 25,
+            "varChecks": 4,
+            "cardIndex": 4
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.8",
+          "avgRed": "0.40",
+          "avgFouls": "29.4",
+          "avgPenalties": "1.60",
+          "avgCardIndex": "6.0",
+          "avgVar": "1.8",
+          "strictnessScore": 80
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 12,
+          "type": "goal",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 进球！扳平/反超比分"
+        },
+        {
+          "minute": 12,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 16,
+          "type": "goal",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 进球！精彩射门得分"
+        },
+        {
+          "minute": 20,
+          "type": "goal",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 进球！扳平/反超比分"
+        },
+        {
+          "minute": 21,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 28,
+          "type": "goal",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 进球！扳平/反超比分"
+        },
+        {
+          "minute": 43,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 74,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "国际米兰",
+          "description": "国际米兰 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 74,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "罗马",
+          "description": "罗马 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "罗马 客场奏凯，反击效率极高，xG 1.70 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 80分），全场共出示 5 黄0红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667965-6",
+      "date": "2026-08-09",
+      "time": "19:30",
+      "league": {
+        "id": "kleague",
+        "name": "K联赛",
+        "country": "韩国",
+        "flag": "🇰🇷",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "大邱FC",
+      "awayTeam": "蔚山现代",
+      "venue": "大邱FC主场",
+      "stats": {
+        "score": {
+          "home": 3,
+          "away": 1
+        },
+        "possession": {
+          "home": 38,
+          "away": 62
+        },
+        "shots": {
+          "home": 15,
+          "away": 11
+        },
+        "shotsOnTarget": {
+          "home": 2,
+          "away": 3
+        },
+        "xG": {
+          "home": "1.70",
+          "away": "1.50"
+        },
+        "passes": {
+          "home": 291,
+          "away": 480
+        },
+        "passAccuracy": {
+          "home": "89%",
+          "away": "86%"
+        },
+        "tackles": {
+          "home": 21,
+          "away": 24
+        },
+        "interceptions": {
+          "home": 18,
+          "away": 15
+        },
+        "fouls": {
+          "home": 16,
+          "away": 13
+        },
+        "corners": {
+          "home": 7,
+          "away": 2
+        },
+        "yellowCards": {
+          "home": 2,
+          "away": 4
+        },
+        "redCards": {
+          "home": 0,
+          "away": 1
+        },
+        "offsides": {
+          "home": 3,
+          "away": 1
+        },
+        "saves": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r007",
+          "name": "丹尼·马克列",
+          "country": "荷兰",
+          "age": 40
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "意甲联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 34,
+            "varChecks": 0,
+            "cardIndex": 14
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "欧冠联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 35,
+            "varChecks": 1,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "亚冠联赛",
+            "yellowCards": 5,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 15,
+            "varChecks": 2,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "法甲联赛",
+            "yellowCards": 8,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 20,
+            "varChecks": 1,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "意甲联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 15,
+            "varChecks": 3,
+            "cardIndex": 13
+          }
+        ],
+        "statistics": {
+          "avgYellow": "7.2",
+          "avgRed": "1.40",
+          "avgFouls": "23.8",
+          "avgPenalties": "0.60",
+          "avgCardIndex": "11.4",
+          "avgVar": "1.4",
+          "strictnessScore": 84
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 5,
+          "type": "goal",
+          "team": "away",
+          "teamName": "蔚山现代",
+          "description": "蔚山现代 进球！扳平/反超比分"
+        },
+        {
+          "minute": 12,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "蔚山现代",
+          "description": "蔚山现代 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 16,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "蔚山现代",
+          "description": "蔚山现代 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 17,
+          "type": "goal",
+          "team": "home",
+          "teamName": "大邱FC",
+          "description": "大邱FC 进球！精彩射门得分"
+        },
+        {
+          "minute": 26,
+          "type": "goal",
+          "team": "home",
+          "teamName": "大邱FC",
+          "description": "大邱FC 进球！精彩射门得分"
+        },
+        {
+          "minute": 42,
+          "type": "goal",
+          "team": "home",
+          "teamName": "大邱FC",
+          "description": "大邱FC 进球！精彩射门得分"
+        },
+        {
+          "minute": 64,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "蔚山现代",
+          "description": "蔚山现代 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 68,
+          "type": "red",
+          "team": "away",
+          "teamName": "蔚山现代",
+          "description": "蔚山现代 球员两黄变一红被罚下"
+        },
+        {
+          "minute": 73,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "蔚山现代",
+          "description": "蔚山现代 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 81,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "蔚山现代",
+          "description": "蔚山现代 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 86,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "蔚山现代",
+          "description": "蔚山现代 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "大邱FC 主场取胜，实际进球 3 vs xG 1.70，把握机会能力超强",
+        "蔚山现代 反客为主掌控场面，传球 480 次展现了传控功底",
+        "裁判执法偏严（严格度 84分），全场共出示 6 黄1红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667965-7",
+      "date": "2026-08-09",
+      "time": "21:15",
+      "league": {
+        "id": "ligue1",
+        "name": "法甲联赛",
+        "country": "法国",
+        "flag": "🇫🇷",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "巴黎圣日耳曼",
+      "awayTeam": "摩纳哥",
+      "venue": "巴黎圣日耳曼主场",
+      "stats": {
+        "score": {
+          "home": 3,
+          "away": 2
+        },
+        "possession": {
+          "home": 63,
+          "away": 37
+        },
+        "shots": {
+          "home": 21,
+          "away": 9
+        },
+        "shotsOnTarget": {
+          "home": 2,
+          "away": 1
+        },
+        "xG": {
+          "home": "2.90",
+          "away": "2.30"
+        },
+        "passes": {
+          "home": 390,
+          "away": 330
+        },
+        "passAccuracy": {
+          "home": "87%",
+          "away": "80%"
+        },
+        "tackles": {
+          "home": 17,
+          "away": 12
+        },
+        "interceptions": {
+          "home": 17,
+          "away": 12
+        },
+        "fouls": {
+          "home": 10,
+          "away": 18
+        },
+        "corners": {
+          "home": 2,
+          "away": 7
+        },
+        "yellowCards": {
+          "home": 1,
+          "away": 1
+        },
+        "redCards": {
+          "home": 0,
+          "away": 1
+        },
+        "offsides": {
+          "home": 5,
+          "away": 3
+        },
+        "saves": {
+          "home": 5,
+          "away": 1
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r013",
+          "name": "克里斯·比斯",
+          "country": "澳大利亚",
+          "age": 41
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "J联赛",
+            "yellowCards": 6,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 33,
+            "varChecks": 0,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "中超联赛",
+            "yellowCards": 3,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 35,
+            "varChecks": 3,
+            "cardIndex": 3
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "法甲联赛",
+            "yellowCards": 3,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 24,
+            "varChecks": 3,
+            "cardIndex": 3
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "欧冠联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 32,
+            "varChecks": 1,
+            "cardIndex": 14
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "意甲联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 28,
+            "varChecks": 0,
+            "cardIndex": 14
+          }
+        ],
+        "statistics": {
+          "avgYellow": "5.6",
+          "avgRed": "0.80",
+          "avgFouls": "30.4",
+          "avgPenalties": "0.40",
+          "avgCardIndex": "8.0",
+          "avgVar": "1.4",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 9,
+          "type": "goal",
+          "team": "away",
+          "teamName": "摩纳哥",
+          "description": "摩纳哥 进球！扳平/反超比分"
+        },
+        {
+          "minute": 16,
+          "type": "goal",
+          "team": "home",
+          "teamName": "巴黎圣日耳曼",
+          "description": "巴黎圣日耳曼 进球！精彩射门得分"
+        },
+        {
+          "minute": 22,
+          "type": "goal",
+          "team": "home",
+          "teamName": "巴黎圣日耳曼",
+          "description": "巴黎圣日耳曼 进球！精彩射门得分"
+        },
+        {
+          "minute": 25,
+          "type": "goal",
+          "team": "away",
+          "teamName": "摩纳哥",
+          "description": "摩纳哥 进球！扳平/反超比分"
+        },
+        {
+          "minute": 37,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "摩纳哥",
+          "description": "摩纳哥 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 44,
+          "type": "goal",
+          "team": "home",
+          "teamName": "巴黎圣日耳曼",
+          "description": "巴黎圣日耳曼 进球！精彩射门得分"
+        },
+        {
+          "minute": 61,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "摩纳哥",
+          "description": "摩纳哥 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 65,
+          "type": "red",
+          "team": "away",
+          "teamName": "摩纳哥",
+          "description": "摩纳哥 球员两黄变一红被罚下"
+        }
+      ],
+      "analysis": [
+        "巴黎圣日耳曼 主场取胜，实际进球 3 vs xG 2.90，把握机会能力超强",
+        "巴黎圣日耳曼 控球率达到 63%，主导了比赛节奏，但射门转化率偏低",
+        "裁判执法偏严（严格度 92分），全场共出示 2 黄1红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667966-8",
+      "date": "2026-08-09",
+      "time": "21:15",
+      "league": {
+        "id": "ligue1",
+        "name": "法甲联赛",
+        "country": "法国",
+        "flag": "🇫🇷",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "里昂",
+      "awayTeam": "马赛",
+      "venue": "里昂主场",
+      "stats": {
+        "score": {
+          "home": 3,
+          "away": 1
+        },
+        "possession": {
+          "home": 56,
+          "away": 44
+        },
+        "shots": {
+          "home": 21,
+          "away": 12
+        },
+        "shotsOnTarget": {
+          "home": 9,
+          "away": 2
+        },
+        "xG": {
+          "home": "0.60",
+          "away": "1.50"
+        },
+        "passes": {
+          "home": 590,
+          "away": 468
+        },
+        "passAccuracy": {
+          "home": "79%",
+          "away": "73%"
+        },
+        "tackles": {
+          "home": 26,
+          "away": 20
+        },
+        "interceptions": {
+          "home": 18,
+          "away": 12
+        },
+        "fouls": {
+          "home": 20,
+          "away": 19
+        },
+        "corners": {
+          "home": 9,
+          "away": 5
+        },
+        "yellowCards": {
+          "home": 1,
+          "away": 0
+        },
+        "redCards": {
+          "home": 0,
+          "away": 1
+        },
+        "offsides": {
+          "home": 4,
+          "away": 2
+        },
+        "saves": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r008",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "法甲联赛",
+            "yellowCards": 6,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 24,
+            "varChecks": 2,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "德甲联赛",
+            "yellowCards": 6,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 16,
+            "varChecks": 0,
+            "cardIndex": 12
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "亚冠联赛",
+            "yellowCards": 4,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 24,
+            "varChecks": 2,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "法甲联赛",
+            "yellowCards": 5,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 21,
+            "varChecks": 5,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "法甲联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 32,
+            "varChecks": 4,
+            "cardIndex": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.6",
+          "avgRed": "1.20",
+          "avgFouls": "23.4",
+          "avgPenalties": "1.40",
+          "avgCardIndex": "8.2",
+          "avgVar": "2.6",
+          "strictnessScore": 82
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 1,
+          "type": "goal",
+          "team": "home",
+          "teamName": "里昂",
+          "description": "里昂 进球！精彩射门得分"
+        },
+        {
+          "minute": 6,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "里昂",
+          "description": "里昂 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 16,
+          "type": "goal",
+          "team": "away",
+          "teamName": "马赛",
+          "description": "马赛 进球！扳平/反超比分"
+        },
+        {
+          "minute": 19,
+          "type": "goal",
+          "team": "home",
+          "teamName": "里昂",
+          "description": "里昂 进球！精彩射门得分"
+        },
+        {
+          "minute": 40,
+          "type": "goal",
+          "team": "home",
+          "teamName": "里昂",
+          "description": "里昂 进球！精彩射门得分"
+        },
+        {
+          "minute": 82,
+          "type": "red",
+          "team": "away",
+          "teamName": "马赛",
+          "description": "马赛 球员两黄变一红被罚下"
+        }
+      ],
+      "analysis": [
+        "里昂 主场取胜，实际进球 3 vs xG 0.60，把握机会能力超强",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 82分），全场共出示 1 黄1红，直接影响了比赛节奏",
+        "本场比赛对抗激烈，双方共计 39 次犯规，拼抢强度拉满"
+      ]
+    },
+    {
+      "id": "y-1786343667966-9",
+      "date": "2026-08-09",
+      "time": "20:15",
+      "league": {
+        "id": "jleague",
+        "name": "J联赛",
+        "country": "日本",
+        "flag": "🇯🇵",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "名古屋鲸八",
+      "awayTeam": "横滨水手",
+      "venue": "名古屋鲸八主场",
+      "stats": {
+        "score": {
+          "home": 3,
+          "away": 2
+        },
+        "possession": {
+          "home": 61,
+          "away": 39
+        },
+        "shots": {
+          "home": 9,
+          "away": 8
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 2
+        },
+        "xG": {
+          "home": "0.80",
+          "away": "1.60"
+        },
+        "passes": {
+          "home": 522,
+          "away": 517
+        },
+        "passAccuracy": {
+          "home": "80%",
+          "away": "87%"
+        },
+        "tackles": {
+          "home": 25,
+          "away": 18
+        },
+        "interceptions": {
+          "home": 8,
+          "away": 10
+        },
+        "fouls": {
+          "home": 14,
+          "away": 10
+        },
+        "corners": {
+          "home": 5,
+          "away": 3
+        },
+        "yellowCards": {
+          "home": 0,
+          "away": 0
+        },
+        "redCards": {
+          "home": 1,
+          "away": 0
+        },
+        "offsides": {
+          "home": 3,
+          "away": 4
+        },
+        "saves": {
+          "home": 6,
+          "away": 2
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r013",
+          "name": "克里斯·比斯",
+          "country": "澳大利亚",
+          "age": 41
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "沙特联赛",
+            "yellowCards": 3,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 25,
+            "varChecks": 1,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "法甲联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 17,
+            "varChecks": 2,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "德甲联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 20,
+            "varChecks": 1,
+            "cardIndex": 14
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "亚冠联赛",
+            "yellowCards": 6,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 17,
+            "varChecks": 2,
+            "cardIndex": 12
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "德甲联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 15,
+            "varChecks": 2,
+            "cardIndex": 5
+          }
+        ],
+        "statistics": {
+          "avgYellow": "5.4",
+          "avgRed": "1.00",
+          "avgFouls": "18.8",
+          "avgPenalties": "0.60",
+          "avgCardIndex": "8.4",
+          "avgVar": "1.6",
+          "strictnessScore": 78
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 13,
+          "type": "goal",
+          "team": "away",
+          "teamName": "横滨水手",
+          "description": "横滨水手 进球！扳平/反超比分"
+        },
+        {
+          "minute": 20,
+          "type": "goal",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 进球！精彩射门得分"
+        },
+        {
+          "minute": 25,
+          "type": "goal",
+          "team": "away",
+          "teamName": "横滨水手",
+          "description": "横滨水手 进球！扳平/反超比分"
+        },
+        {
+          "minute": 42,
+          "type": "goal",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 进球！精彩射门得分"
+        },
+        {
+          "minute": 45,
+          "type": "red",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 球员严重犯规直接红牌罚下"
+        },
+        {
+          "minute": 66,
+          "type": "goal",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 进球！精彩射门得分"
+        }
+      ],
+      "analysis": [
+        "名古屋鲸八 主场取胜，实际进球 3 vs xG 0.80，把握机会能力超强",
+        "名古屋鲸八 控球率达到 61%，主导了比赛节奏，但有效射门质量不错",
+        "裁判执法偏严（严格度 78分），全场共出示 0 黄1红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667966-10",
+      "date": "2026-08-09",
+      "time": "20:30",
+      "league": {
+        "id": "jleague",
+        "name": "J联赛",
+        "country": "日本",
+        "flag": "🇯🇵",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "名古屋鲸八",
+      "awayTeam": "浦和红钻",
+      "venue": "名古屋鲸八主场",
+      "stats": {
+        "score": {
+          "home": 3,
+          "away": 3
+        },
+        "possession": {
+          "home": 57,
+          "away": 43
+        },
+        "shots": {
+          "home": 17,
+          "away": 18
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 6
+        },
+        "xG": {
+          "home": "1.20",
+          "away": "0.50"
+        },
+        "passes": {
+          "home": 650,
+          "away": 478
+        },
+        "passAccuracy": {
+          "home": "88%",
+          "away": "70%"
+        },
+        "tackles": {
+          "home": 22,
+          "away": 18
+        },
+        "interceptions": {
+          "home": 6,
+          "away": 14
+        },
+        "fouls": {
+          "home": 15,
+          "away": 10
+        },
+        "corners": {
+          "home": 4,
+          "away": 9
+        },
+        "yellowCards": {
+          "home": 3,
+          "away": 0
+        },
+        "redCards": {
+          "home": 1,
+          "away": 0
+        },
+        "offsides": {
+          "home": 3,
+          "away": 3
+        },
+        "saves": {
+          "home": 6,
+          "away": 1
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r011",
+          "name": "佐藤隆治",
+          "country": "日本",
+          "age": 43
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "法甲联赛",
+            "yellowCards": 4,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 22,
+            "varChecks": 5,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "沙特联赛",
+            "yellowCards": 3,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 29,
+            "varChecks": 3,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "中超联赛",
+            "yellowCards": 3,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 21,
+            "varChecks": 0,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "亚冠联赛",
+            "yellowCards": 2,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 22,
+            "varChecks": 4,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "K联赛",
+            "yellowCards": 6,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 18,
+            "varChecks": 1,
+            "cardIndex": 9
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.6",
+          "avgRed": "1.40",
+          "avgFouls": "22.4",
+          "avgPenalties": "1.20",
+          "avgCardIndex": "7.8",
+          "avgVar": "2.6",
+          "strictnessScore": 72
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 7,
+          "type": "goal",
+          "team": "away",
+          "teamName": "浦和红钻",
+          "description": "浦和红钻 进球！扳平/反超比分"
+        },
+        {
+          "minute": 19,
+          "type": "goal",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 进球！精彩射门得分"
+        },
+        {
+          "minute": 26,
+          "type": "goal",
+          "team": "away",
+          "teamName": "浦和红钻",
+          "description": "浦和红钻 进球！扳平/反超比分"
+        },
+        {
+          "minute": 34,
+          "type": "goal",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 进球！精彩射门得分"
+        },
+        {
+          "minute": 48,
+          "type": "goal",
+          "team": "away",
+          "teamName": "浦和红钻",
+          "description": "浦和红钻 进球！扳平/反超比分"
+        },
+        {
+          "minute": 50,
+          "type": "goal",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 进球！精彩射门得分"
+        },
+        {
+          "minute": 54,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 55,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 70,
+          "type": "red",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 球员严重犯规直接红牌罚下"
+        },
+        {
+          "minute": 73,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "名古屋鲸八",
+          "description": "名古屋鲸八 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "双方握手言和，场面胶着机会寥寥",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 72分），全场共出示 3 黄1红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667966-11",
+      "date": "2026-08-09",
+      "time": "21:15",
+      "league": {
+        "id": "csl",
+        "name": "中超联赛",
+        "country": "中国",
+        "flag": "🇨🇳",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "武汉三镇",
+      "awayTeam": "河南队",
+      "venue": "武汉三镇主场",
+      "stats": {
+        "score": {
+          "home": 0,
+          "away": 0
+        },
+        "possession": {
+          "home": 54,
+          "away": 46
+        },
+        "shots": {
+          "home": 8,
+          "away": 12
+        },
+        "shotsOnTarget": {
+          "home": 3,
+          "away": 1
+        },
+        "xG": {
+          "home": "2.90",
+          "away": "1.40"
+        },
+        "passes": {
+          "home": 328,
+          "away": 286
+        },
+        "passAccuracy": {
+          "home": "79%",
+          "away": "71%"
+        },
+        "tackles": {
+          "home": 14,
+          "away": 14
+        },
+        "interceptions": {
+          "home": 15,
+          "away": 7
+        },
+        "fouls": {
+          "home": 13,
+          "away": 11
+        },
+        "corners": {
+          "home": 7,
+          "away": 3
+        },
+        "yellowCards": {
+          "home": 2,
+          "away": 2
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 4,
+          "away": 5
+        },
+        "saves": {
+          "home": 4,
+          "away": 3
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r008",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "英超联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 33,
+            "varChecks": 0,
+            "cardIndex": 13
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "法甲联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 31,
+            "varChecks": 5,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "亚冠联赛",
+            "yellowCards": 3,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 32,
+            "varChecks": 5,
+            "cardIndex": 3
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "K联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 35,
+            "varChecks": 0,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "西甲联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 34,
+            "varChecks": 4,
+            "cardIndex": 13
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.2",
+          "avgRed": "0.80",
+          "avgFouls": "33.0",
+          "avgPenalties": "0.80",
+          "avgCardIndex": "6.6",
+          "avgVar": "2.8",
+          "strictnessScore": 90
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 1,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "河南队",
+          "description": "河南队 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 77,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "河南队",
+          "description": "河南队 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 82,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "河南队",
+          "description": "河南队 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 87,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "武汉三镇",
+          "description": "武汉三镇 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "双方握手言和，创造出大量机会但临门一脚欠佳",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 90分），全场共出示 4 黄0红，直接影响了比赛节奏"
+      ]
+    },
+    {
+      "id": "y-1786343667966-12",
+      "date": "2026-08-09",
+      "time": "19:45",
+      "league": {
+        "id": "csl",
+        "name": "中超联赛",
+        "country": "中国",
+        "flag": "🇨🇳",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "浙江队",
+      "awayTeam": "山东泰山",
+      "venue": "浙江队主场",
+      "stats": {
+        "score": {
+          "home": 1,
+          "away": 2
+        },
+        "possession": {
+          "home": 68,
+          "away": 32
+        },
+        "shots": {
+          "home": 6,
+          "away": 16
+        },
+        "shotsOnTarget": {
+          "home": 6,
+          "away": 4
+        },
+        "xG": {
+          "home": "2.90",
+          "away": "2.00"
+        },
+        "passes": {
+          "home": 622,
+          "away": 306
+        },
+        "passAccuracy": {
+          "home": "74%",
+          "away": "80%"
+        },
+        "tackles": {
+          "home": 16,
+          "away": 12
+        },
+        "interceptions": {
+          "home": 20,
+          "away": 5
+        },
+        "fouls": {
+          "home": 9,
+          "away": 17
+        },
+        "corners": {
+          "home": 3,
+          "away": 6
+        },
+        "yellowCards": {
+          "home": 2,
+          "away": 4
+        },
+        "redCards": {
+          "home": 0,
+          "away": 1
+        },
+        "offsides": {
+          "home": 3,
+          "away": 3
+        },
+        "saves": {
+          "home": 5,
+          "away": 5
+        }
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r011",
+          "name": "佐藤隆治",
+          "country": "日本",
+          "age": 43
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "J联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 18,
+            "varChecks": 0,
+            "cardIndex": 14
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "欧冠联赛",
+            "yellowCards": 7,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 35,
+            "varChecks": 2,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "法甲联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 27,
+            "varChecks": 4,
+            "cardIndex": 14
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "西甲联赛",
+            "yellowCards": 4,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 16,
+            "varChecks": 3,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "德甲联赛",
+            "yellowCards": 7,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 24,
+            "varChecks": 0,
+            "cardIndex": 10
+          }
+        ],
+        "statistics": {
+          "avgYellow": "6.8",
+          "avgRed": "1.40",
+          "avgFouls": "24.0",
+          "avgPenalties": "0.80",
+          "avgCardIndex": "11.0",
+          "avgVar": "1.8",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 13,
+          "type": "goal",
+          "team": "away",
+          "teamName": "山东泰山",
+          "description": "山东泰山 进球！扳平/反超比分"
+        },
+        {
+          "minute": 16,
+          "type": "goal",
+          "team": "home",
+          "teamName": "浙江队",
+          "description": "浙江队 进球！精彩射门得分"
+        },
+        {
+          "minute": 31,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "山东泰山",
+          "description": "山东泰山 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 31,
+          "type": "red",
+          "team": "away",
+          "teamName": "山东泰山",
+          "description": "山东泰山 球员两黄变一红被罚下"
+        },
+        {
+          "minute": 36,
+          "type": "goal",
+          "team": "away",
+          "teamName": "山东泰山",
+          "description": "山东泰山 进球！扳平/反超比分"
+        },
+        {
+          "minute": 36,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "山东泰山",
+          "description": "山东泰山 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 54,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "浙江队",
+          "description": "浙江队 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 63,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "浙江队",
+          "description": "浙江队 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 67,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "浙江队",
+          "description": "浙江队 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 69,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "浙江队",
+          "description": "浙江队 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "山东泰山 客场奏凯，反击效率极高，xG 2.00 支撑了最终比分",
+        "浙江队 控球率达到 68%，主导了比赛节奏，但有效射门质量不错",
+        "裁判执法偏严（严格度 92分），全场共出示 6 黄1红，直接影响了比赛节奏"
+      ]
+    }
+  ],
+  "todayPreviews": [
+    {
+      "id": "t-1786343667966-0",
+      "date": "2026-08-10",
+      "time": "21:00",
+      "league": {
+        "id": "epl",
+        "name": "英超联赛",
+        "country": "英格兰",
+        "flag": "🏴",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "切尔西",
+      "awayTeam": "阿斯顿维拉",
+      "venue": "切尔西主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r011",
+          "name": "佐藤隆治",
+          "country": "日本",
+          "age": 43
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "西甲联赛",
+            "yellowCards": 5,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 18,
+            "varChecks": 3,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "亚冠联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 30,
+            "varChecks": 0,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "德甲联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 30,
+            "varChecks": 3,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "西甲联赛",
+            "yellowCards": 6,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 33,
+            "varChecks": 1,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "K联赛",
+            "yellowCards": 2,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 23,
+            "varChecks": 0,
+            "cardIndex": 8
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.6",
+          "avgRed": "1.00",
+          "avgFouls": "26.8",
+          "avgPenalties": "0.80",
+          "avgCardIndex": "7.6",
+          "avgVar": "1.4",
+          "strictnessScore": 82
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "进攻大战，双方防守皆有漏洞",
+        "近期状态火热，连胜势头能否延续",
+        "新援首秀，期待磨合效果",
+        "裁判佐藤隆治执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "负",
+        "平",
+        "胜",
+        "平",
+        "负"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "胜",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 3,
+        "awayWins": 3
+      }
+    },
+    {
+      "id": "t-1786343667967-1",
+      "date": "2026-08-10",
+      "time": "21:15",
+      "league": {
+        "id": "jleague",
+        "name": "J联赛",
+        "country": "日本",
+        "flag": "🇯🇵",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "浦和红钻",
+      "awayTeam": "横滨水手",
+      "venue": "浦和红钻主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r008",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "德甲联赛",
+            "yellowCards": 4,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 33,
+            "varChecks": 2,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "欧冠联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 31,
+            "varChecks": 3,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "沙特联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 16,
+            "varChecks": 1,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "意甲联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 19,
+            "varChecks": 2,
+            "cardIndex": 13
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "J联赛",
+            "yellowCards": 4,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 33,
+            "varChecks": 5,
+            "cardIndex": 4
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.4",
+          "avgRed": "0.80",
+          "avgFouls": "26.4",
+          "avgPenalties": "0.80",
+          "avgCardIndex": "6.8",
+          "avgVar": "2.6",
+          "strictnessScore": 82
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "保级关键战，双方抢分心切",
+        "主场龙对阵客场龙，谁能更胜一筹",
+        "裁判阿图尔·迪亚斯执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 4,
+      "homeRecentForm": [
+        "胜",
+        "胜",
+        "平",
+        "胜",
+        "负"
+      ],
+      "awayRecentForm": [
+        "负",
+        "胜",
+        "负",
+        "平",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 2
+      }
+    },
+    {
+      "id": "t-1786343667967-2",
+      "date": "2026-08-10",
+      "time": "20:30",
+      "league": {
+        "id": "jleague",
+        "name": "J联赛",
+        "country": "日本",
+        "flag": "🇯🇵",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "横滨水手",
+      "awayTeam": "名古屋鲸八",
+      "venue": "横滨水手主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r012",
+          "name": "金希坤",
+          "country": "韩国",
+          "age": 42
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "J联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 20,
+            "varChecks": 0,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "亚冠联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 24,
+            "varChecks": 4,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "西甲联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 32,
+            "varChecks": 5,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "K联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 18,
+            "varChecks": 1,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "法甲联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 32,
+            "varChecks": 1,
+            "cardIndex": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "6.2",
+          "avgRed": "0.00",
+          "avgFouls": "25.2",
+          "avgPenalties": "1.60",
+          "avgCardIndex": "6.2",
+          "avgVar": "2.2",
+          "strictnessScore": 69
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "features": [
+        "近期状态火热，连胜势头能否延续",
+        "欧战资格关键六分战",
+        "主帅对决，战术博弈引人关注",
+        "裁判金希坤执法平衡，比赛流畅度值得期待"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "胜",
+        "负",
+        "平",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "平",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 4,
+        "draws": 2,
+        "awayWins": 3
+      }
+    },
+    {
+      "id": "t-1786343667967-3",
+      "date": "2026-08-10",
+      "time": "22:45",
+      "league": {
+        "id": "ucl",
+        "name": "欧冠联赛",
+        "country": "欧洲",
+        "flag": "🇪🇺",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "巴塞罗那",
+      "awayTeam": "拜仁慕尼黑",
+      "venue": "巴塞罗那主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r008",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "亚冠联赛",
+            "yellowCards": 4,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 16,
+            "varChecks": 5,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "J联赛",
+            "yellowCards": 2,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 19,
+            "varChecks": 2,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "英超联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 27,
+            "varChecks": 2,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "德甲联赛",
+            "yellowCards": 6,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 17,
+            "varChecks": 0,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "法甲联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 33,
+            "varChecks": 0,
+            "cardIndex": 14
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.4",
+          "avgRed": "1.00",
+          "avgFouls": "22.4",
+          "avgPenalties": "1.40",
+          "avgCardIndex": "7.4",
+          "avgVar": "1.8",
+          "strictnessScore": 82
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "德比大战，历史恩怨看点十足",
+        "主场龙对阵客场龙，谁能更胜一筹",
+        "裁判阿图尔·迪亚斯执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 1,
+      "homeRecentForm": [
+        "平",
+        "胜",
+        "平",
+        "胜",
+        "负"
+      ],
+      "awayRecentForm": [
+        "平",
+        "负",
+        "胜",
+        "平",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 3,
+        "draws": 0,
+        "awayWins": 1
+      }
+    },
+    {
+      "id": "t-1786343667967-4",
+      "date": "2026-08-10",
+      "time": "21:00",
+      "league": {
+        "id": "ucl",
+        "name": "欧冠联赛",
+        "country": "欧洲",
+        "flag": "🇪🇺",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "国际米兰",
+      "awayTeam": "曼城",
+      "venue": "国际米兰主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r005",
+          "name": "丹妮埃莱·奥萨托",
+          "country": "意大利",
+          "age": 48
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "西甲联赛",
+            "yellowCards": 2,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 22,
+            "varChecks": 3,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "K联赛",
+            "yellowCards": 6,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 24,
+            "varChecks": 0,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "亚冠联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 31,
+            "varChecks": 1,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "意甲联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 19,
+            "varChecks": 3,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "沙特联赛",
+            "yellowCards": 8,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 35,
+            "varChecks": 1,
+            "cardIndex": 11
+          }
+        ],
+        "statistics": {
+          "avgYellow": "6.4",
+          "avgRed": "0.40",
+          "avgFouls": "26.2",
+          "avgPenalties": "0.40",
+          "avgCardIndex": "7.6",
+          "avgVar": "1.6",
+          "strictnessScore": 74
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "features": [
+        "近期状态火热，连胜势头能否延续",
+        "主帅对决，战术博弈引人关注",
+        "保级关键战，双方抢分心切",
+        "裁判丹妮埃莱·奥萨托执法平衡，比赛流畅度值得期待"
+      ],
+      "predictedDifficulty": 1,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "负",
+        "平",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "负",
+        "平",
+        "平",
+        "负",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 3,
+        "draws": 2,
+        "awayWins": 3
+      }
+    },
+    {
+      "id": "t-1786343667967-5",
+      "date": "2026-08-10",
+      "time": "20:30",
+      "league": {
+        "id": "laliga",
+        "name": "西甲联赛",
+        "country": "西班牙",
+        "flag": "🇪🇸",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "皇家马德里",
+      "awayTeam": "马竞",
+      "venue": "皇家马德里主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r002",
+          "name": "迈克尔·奥利弗",
+          "country": "英格兰",
+          "age": 39
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "K联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 29,
+            "varChecks": 3,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "英超联赛",
+            "yellowCards": 5,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 29,
+            "varChecks": 3,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "意甲联赛",
+            "yellowCards": 7,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 17,
+            "varChecks": 3,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "亚冠联赛",
+            "yellowCards": 2,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 33,
+            "varChecks": 1,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "西甲联赛",
+            "yellowCards": 2,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 19,
+            "varChecks": 2,
+            "cardIndex": 8
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.2",
+          "avgRed": "1.40",
+          "avgFouls": "25.4",
+          "avgPenalties": "0.40",
+          "avgCardIndex": "8.4",
+          "avgVar": "2.4",
+          "strictnessScore": 74
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "features": [
+        "近期状态火热，连胜势头能否延续",
+        "进攻大战，双方防守皆有漏洞",
+        "裁判迈克尔·奥利弗执法平衡，比赛流畅度值得期待"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "平",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "负",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 2,
+        "awayWins": 1
+      }
+    },
+    {
+      "id": "t-1786343667967-6",
+      "date": "2026-08-10",
+      "time": "22:30",
+      "league": {
+        "id": "laliga",
+        "name": "西甲联赛",
+        "country": "西班牙",
+        "flag": "🇪🇸",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "巴塞罗那",
+      "awayTeam": "马竞",
+      "venue": "巴塞罗那主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r012",
+          "name": "金希坤",
+          "country": "韩国",
+          "age": 42
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "亚冠联赛",
+            "yellowCards": 6,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 24,
+            "varChecks": 0,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "英超联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 17,
+            "varChecks": 5,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "意甲联赛",
+            "yellowCards": 3,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 22,
+            "varChecks": 5,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "中超联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 26,
+            "varChecks": 3,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "西甲联赛",
+            "yellowCards": 8,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 24,
+            "varChecks": 4,
+            "cardIndex": 11
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.8",
+          "avgRed": "0.40",
+          "avgFouls": "22.6",
+          "avgPenalties": "1.20",
+          "avgCardIndex": "6.0",
+          "avgVar": "3.4",
+          "strictnessScore": 72
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "features": [
+        "保级关键战，双方抢分心切",
+        "进攻大战，双方防守皆有漏洞",
+        "裁判金希坤执法平衡，比赛流畅度值得期待"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "胜",
+        "平",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "平",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 0,
+        "awayWins": 1
+      }
+    },
+    {
+      "id": "t-1786343667967-7",
+      "date": "2026-08-10",
+      "time": "22:30",
+      "league": {
+        "id": "seriea",
+        "name": "意甲联赛",
+        "country": "意大利",
+        "flag": "🇮🇹",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "那不勒斯",
+      "awayTeam": "尤文图斯",
+      "venue": "那不勒斯主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r004",
+          "name": "克莱芒·蒂尔潘",
+          "country": "法国",
+          "age": 41
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "K联赛",
+            "yellowCards": 5,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 17,
+            "varChecks": 5,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "德甲联赛",
+            "yellowCards": 4,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 31,
+            "varChecks": 1,
+            "cardIndex": 4
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "意甲联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 28,
+            "varChecks": 1,
+            "cardIndex": 13
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "德甲联赛",
+            "yellowCards": 7,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 22,
+            "varChecks": 5,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "J联赛",
+            "yellowCards": 6,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 17,
+            "varChecks": 3,
+            "cardIndex": 12
+          }
+        ],
+        "statistics": {
+          "avgYellow": "5.8",
+          "avgRed": "1.20",
+          "avgFouls": "23.0",
+          "avgPenalties": "0.20",
+          "avgCardIndex": "9.4",
+          "avgVar": "3.0",
+          "strictnessScore": 77
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "新援首秀，期待磨合效果",
+        "近期状态火热，连胜势头能否延续",
+        "裁判克莱芒·蒂尔潘执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "胜",
+        "胜",
+        "胜",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "负",
+        "平",
+        "胜",
+        "胜",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 0,
+        "awayWins": 0
+      }
+    },
+    {
+      "id": "t-1786343667967-8",
+      "date": "2026-08-10",
+      "time": "22:30",
+      "league": {
+        "id": "seriea",
+        "name": "意甲联赛",
+        "country": "意大利",
+        "flag": "🇮🇹",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "尤文图斯",
+      "awayTeam": "罗马",
+      "venue": "尤文图斯主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r013",
+          "name": "克里斯·比斯",
+          "country": "澳大利亚",
+          "age": 41
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "K联赛",
+            "yellowCards": 6,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 34,
+            "varChecks": 2,
+            "cardIndex": 6
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "意甲联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 25,
+            "varChecks": 0,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "亚冠联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 27,
+            "varChecks": 5,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "J联赛",
+            "yellowCards": 4,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 26,
+            "varChecks": 5,
+            "cardIndex": 4
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "沙特联赛",
+            "yellowCards": 2,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 18,
+            "varChecks": 3,
+            "cardIndex": 5
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.4",
+          "avgRed": "0.20",
+          "avgFouls": "26.0",
+          "avgPenalties": "0.60",
+          "avgCardIndex": "5.0",
+          "avgVar": "3.0",
+          "strictnessScore": 57
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "features": [
+        "防守对决，预测低比分收场",
+        "保级关键战，双方抢分心切",
+        "裁判克里斯·比斯执法平衡，比赛流畅度值得期待"
+      ],
+      "predictedDifficulty": 1,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "胜",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "平",
+        "胜",
+        "胜",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 3,
+        "draws": 1,
+        "awayWins": 2
+      }
+    },
+    {
+      "id": "t-1786343667967-9",
+      "date": "2026-08-10",
+      "time": "19:30",
+      "league": {
+        "id": "bundesliga",
+        "name": "德甲联赛",
+        "country": "德国",
+        "flag": "🇩🇪",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "拜仁慕尼黑",
+      "awayTeam": "柏林联盟",
+      "venue": "拜仁慕尼黑主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r001",
+          "name": "安东尼·泰勒",
+          "country": "英格兰",
+          "age": 45
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "J联赛",
+            "yellowCards": 5,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 32,
+            "varChecks": 1,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "法甲联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 24,
+            "varChecks": 0,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "德甲联赛",
+            "yellowCards": 3,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 17,
+            "varChecks": 4,
+            "cardIndex": 3
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "J联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 19,
+            "varChecks": 5,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "亚冠联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 26,
+            "varChecks": 2,
+            "cardIndex": 5
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.6",
+          "avgRed": "0.40",
+          "avgFouls": "23.6",
+          "avgPenalties": "0.60",
+          "avgCardIndex": "5.8",
+          "avgVar": "2.4",
+          "strictnessScore": 64
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "features": [
+        "防守对决，预测低比分收场",
+        "欧战资格关键六分战",
+        "进攻大战，双方防守皆有漏洞",
+        "裁判安东尼·泰勒执法平衡，比赛流畅度值得期待"
+      ],
+      "predictedDifficulty": 1,
+      "homeRecentForm": [
+        "胜",
+        "胜",
+        "平",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "负",
+        "胜",
+        "负",
+        "平",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 1,
+        "awayWins": 3
+      }
+    },
+    {
+      "id": "t-1786343667968-10",
+      "date": "2026-08-10",
+      "time": "22:30",
+      "league": {
+        "id": "bundesliga",
+        "name": "德甲联赛",
+        "country": "德国",
+        "flag": "🇩🇪",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "柏林联盟",
+      "awayTeam": "弗赖堡",
+      "venue": "柏林联盟主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r009",
+          "name": "傅明",
+          "country": "中国",
+          "age": 40
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "亚冠联赛",
+            "yellowCards": 5,
+            "redCards": 0,
+            "penalties": 2,
+            "fouls": 33,
+            "varChecks": 3,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "沙特联赛",
+            "yellowCards": 6,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 35,
+            "varChecks": 2,
+            "cardIndex": 12
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "J联赛",
+            "yellowCards": 4,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 27,
+            "varChecks": 2,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "沙特联赛",
+            "yellowCards": 4,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 32,
+            "varChecks": 1,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "亚冠联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 35,
+            "varChecks": 0,
+            "cardIndex": 8
+          }
+        ],
+        "statistics": {
+          "avgYellow": "5.4",
+          "avgRed": "1.00",
+          "avgFouls": "32.4",
+          "avgPenalties": "0.60",
+          "avgCardIndex": "8.4",
+          "avgVar": "1.6",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "新援首秀，期待磨合效果",
+        "防守对决，预测低比分收场",
+        "主帅对决，战术博弈引人关注",
+        "裁判傅明执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 4,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "负",
+        "平",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "平",
+        "胜",
+        "平",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 0,
+        "awayWins": 3
+      }
+    },
+    {
+      "id": "t-1786343667968-11",
+      "date": "2026-08-10",
+      "time": "22:15",
+      "league": {
+        "id": "ligue1",
+        "name": "法甲联赛",
+        "country": "法国",
+        "flag": "🇫🇷",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "摩纳哥",
+      "awayTeam": "里昂",
+      "venue": "摩纳哥主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r006",
+          "name": "费利克斯·茨瓦耶",
+          "country": "德国",
+          "age": 42
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "意甲联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 27,
+            "varChecks": 1,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "英超联赛",
+            "yellowCards": 4,
+            "redCards": 1,
+            "penalties": 2,
+            "fouls": 29,
+            "varChecks": 1,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "英超联赛",
+            "yellowCards": 2,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 20,
+            "varChecks": 2,
+            "cardIndex": 2
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "英超联赛",
+            "yellowCards": 4,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 28,
+            "varChecks": 3,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "西甲联赛",
+            "yellowCards": 5,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 19,
+            "varChecks": 2,
+            "cardIndex": 11
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.6",
+          "avgRed": "0.80",
+          "avgFouls": "24.6",
+          "avgPenalties": "1.20",
+          "avgCardIndex": "7.0",
+          "avgVar": "1.8",
+          "strictnessScore": 82
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "新援首秀，期待磨合效果",
+        "进攻大战，双方防守皆有漏洞",
+        "德比大战，历史恩怨看点十足",
+        "裁判费利克斯·茨瓦耶执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 4,
+      "homeRecentForm": [
+        "胜",
+        "负",
+        "平",
+        "胜",
+        "平"
+      ],
+      "awayRecentForm": [
+        "负",
+        "平",
+        "胜",
+        "胜",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 2,
+        "awayWins": 1
+      }
+    },
+    {
+      "id": "t-1786343667968-12",
+      "date": "2026-08-10",
+      "time": "18:45",
+      "league": {
+        "id": "ligue1",
+        "name": "法甲联赛",
+        "country": "法国",
+        "flag": "🇫🇷",
+        "region": "europe"
+      },
+      "region": "europe",
+      "homeTeam": "里昂",
+      "awayTeam": "雷恩",
+      "venue": "里昂主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r001",
+          "name": "安东尼·泰勒",
+          "country": "英格兰",
+          "age": 45
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "欧冠联赛",
+            "yellowCards": 7,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 34,
+            "varChecks": 3,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "J联赛",
+            "yellowCards": 3,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 34,
+            "varChecks": 4,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "意甲联赛",
+            "yellowCards": 6,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 31,
+            "varChecks": 3,
+            "cardIndex": 12
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "法甲联赛",
+            "yellowCards": 6,
+            "redCards": 2,
+            "penalties": 0,
+            "fouls": 30,
+            "varChecks": 0,
+            "cardIndex": 12
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "中超联赛",
+            "yellowCards": 7,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 15,
+            "varChecks": 0,
+            "cardIndex": 7
+          }
+        ],
+        "statistics": {
+          "avgYellow": "5.8",
+          "avgRed": "1.20",
+          "avgFouls": "28.8",
+          "avgPenalties": "0.80",
+          "avgCardIndex": "9.4",
+          "avgVar": "2.0",
+          "strictnessScore": 100
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "主帅对决，战术博弈引人关注",
+        "新援首秀，期待磨合效果",
+        "裁判安东尼·泰勒执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "胜",
+        "平",
+        "平",
+        "胜",
+        "负"
+      ],
+      "awayRecentForm": [
+        "负",
+        "胜",
+        "平",
+        "负",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 3,
+        "awayWins": 3
+      }
+    },
+    {
+      "id": "t-1786343667968-13",
+      "date": "2026-08-10",
+      "time": "21:30",
+      "league": {
+        "id": "acl",
+        "name": "亚冠联赛",
+        "country": "亚洲",
+        "flag": "🏆",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "全北现代",
+      "awayTeam": "川崎前锋",
+      "venue": "全北现代主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r007",
+          "name": "丹尼·马克列",
+          "country": "荷兰",
+          "age": 40
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "西甲联赛",
+            "yellowCards": 7,
+            "redCards": 1,
+            "penalties": 0,
+            "fouls": 18,
+            "varChecks": 1,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "德甲联赛",
+            "yellowCards": 3,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 21,
+            "varChecks": 3,
+            "cardIndex": 9
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "J联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 34,
+            "varChecks": 2,
+            "cardIndex": 13
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "意甲联赛",
+            "yellowCards": 7,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 19,
+            "varChecks": 4,
+            "cardIndex": 10
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "西甲联赛",
+            "yellowCards": 2,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 35,
+            "varChecks": 2,
+            "cardIndex": 5
+          }
+        ],
+        "statistics": {
+          "avgYellow": "5.2",
+          "avgRed": "1.40",
+          "avgFouls": "25.4",
+          "avgPenalties": "1.00",
+          "avgCardIndex": "9.4",
+          "avgVar": "2.4",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "近期状态火热，连胜势头能否延续",
+        "德比大战，历史恩怨看点十足",
+        "裁判丹尼·马克列执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 1,
+      "homeRecentForm": [
+        "平",
+        "平",
+        "胜",
+        "胜",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "平",
+        "负",
+        "胜",
+        "负",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 4,
+        "draws": 3,
+        "awayWins": 3
+      }
+    },
+    {
+      "id": "t-1786343667968-14",
+      "date": "2026-08-10",
+      "time": "18:30",
+      "league": {
+        "id": "kleague",
+        "name": "K联赛",
+        "country": "韩国",
+        "flag": "🇰🇷",
+        "region": "asia"
+      },
+      "region": "asia",
+      "homeTeam": "大邱FC",
+      "awayTeam": "首尔FC",
+      "venue": "大邱FC主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r008",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "亚冠联赛",
+            "yellowCards": 5,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 16,
+            "varChecks": 0,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "亚冠联赛",
+            "yellowCards": 8,
+            "redCards": 2,
+            "penalties": 1,
+            "fouls": 33,
+            "varChecks": 0,
+            "cardIndex": 14
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "K联赛",
+            "yellowCards": 8,
+            "redCards": 0,
+            "penalties": 1,
+            "fouls": 21,
+            "varChecks": 2,
+            "cardIndex": 8
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "沙特联赛",
+            "yellowCards": 2,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 19,
+            "varChecks": 5,
+            "cardIndex": 5
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "沙特联赛",
+            "yellowCards": 8,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 26,
+            "varChecks": 3,
+            "cardIndex": 11
+          }
+        ],
+        "statistics": {
+          "avgYellow": "6.2",
+          "avgRed": "1.00",
+          "avgFouls": "23.0",
+          "avgPenalties": "1.00",
+          "avgCardIndex": "9.2",
+          "avgVar": "2.0",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "主场龙对阵客场龙，谁能更胜一筹",
+        "防守对决，预测低比分收场",
+        "裁判阿图尔·迪亚斯执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "平",
+        "负",
+        "胜",
+        "平",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "平",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 1,
+        "awayWins": 2
+      }
+    },
+    {
+      "id": "t-1786343667968-15",
+      "date": "2026-08-10",
+      "time": "18:00",
+      "league": {
+        "id": "aleague",
+        "name": "澳超联赛",
+        "country": "澳大利亚",
+        "flag": "🇦🇺",
+        "region": "australia"
+      },
+      "region": "australia",
+      "homeTeam": "西悉尼流浪者",
+      "awayTeam": "悉尼FC",
+      "venue": "西悉尼流浪者主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "r003",
+          "name": "安东尼奥·马特乌",
+          "country": "西班牙",
+          "age": 47
+        },
+        "history": [
+          {
+            "matchNumber": 5,
+            "date": "2026-08-08",
+            "league": "意甲联赛",
+            "yellowCards": 7,
+            "redCards": 2,
+            "penalties": 2,
+            "fouls": 29,
+            "varChecks": 4,
+            "cardIndex": 13
+          },
+          {
+            "matchNumber": 4,
+            "date": "2026-08-07",
+            "league": "德甲联赛",
+            "yellowCards": 8,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 15,
+            "varChecks": 3,
+            "cardIndex": 11
+          },
+          {
+            "matchNumber": 3,
+            "date": "2026-08-06",
+            "league": "K联赛",
+            "yellowCards": 3,
+            "redCards": 0,
+            "penalties": 0,
+            "fouls": 25,
+            "varChecks": 0,
+            "cardIndex": 3
+          },
+          {
+            "matchNumber": 2,
+            "date": "2026-08-05",
+            "league": "法甲联赛",
+            "yellowCards": 4,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 21,
+            "varChecks": 2,
+            "cardIndex": 7
+          },
+          {
+            "matchNumber": 1,
+            "date": "2026-08-04",
+            "league": "西甲联赛",
+            "yellowCards": 8,
+            "redCards": 1,
+            "penalties": 1,
+            "fouls": 34,
+            "varChecks": 5,
+            "cardIndex": 11
+          }
+        ],
+        "statistics": {
+          "avgYellow": "6.0",
+          "avgRed": "1.00",
+          "avgFouls": "24.8",
+          "avgPenalties": "1.00",
+          "avgCardIndex": "9.0",
+          "avgVar": "2.8",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "features": [
+        "防守对决，预测低比分收场",
+        "强强对话，争夺联赛榜首",
+        "裁判安东尼奥·马特乌执法偏严，双方需注意动作规范"
+      ],
+      "predictedDifficulty": 4,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "平",
+        "平",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "胜",
+        "胜",
+        "平",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 0,
+        "awayWins": 3
+      }
+    }
+  ],
+  "pushDigest": {
+    "title": "⚽ 足球赛道日报 - 2026-08-10",
+    "yesterdaySummary": "🇪🇺 欧冠联赛：国际米兰 4-0 阿森纳（国际米兰获胜）；🇪🇺 欧冠联赛：皇家马德里 1-3 巴塞罗那（巴塞罗那获胜）；🇦🇺 澳超联赛：惠灵顿凤凰 2-0 墨尔本胜利（惠灵顿凤凰获胜）",
+    "todaySummary": "🏴 切尔西 vs 阿斯顿维拉（进攻大战，双方防守皆有漏洞）；🇯🇵 浦和红钻 vs 横滨水手（保级关键战，双方抢分心切）；🇯🇵 横滨水手 vs 名古屋鲸八（近期状态火热，连胜势头能否延续）",
+    "yesterdayCount": 13,
+    "todayCount": 16,
+    "fullReport": true
+  }
+}

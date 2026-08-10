@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚽ 足球赛道日报 - 每日赛事分析与预告</title>
+<style>
+  :root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-card: #1e293b;
+    --bg-card-hover: #273449;
+    --border: #334155;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent: #22c55e;
+    --accent-hover: #16a34a;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
+    --purple: #a855f7;
+    --gradient-1: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    --gradient-2: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    --gradient-3: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+  }
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  
+  /* 顶部导航 */
+  .header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+  .header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .logo-icon { font-size: 32px; }
+  .update-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .last-update {
+    font-size: 13px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+  }
+  .btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn:hover { background: var(--bg-card-hover); border-color: var(--accent); }
+  .btn-primary {
+    background: var(--gradient-1);
+    border-color: transparent;
+    color: white;
+  }
+  .btn-primary:hover { filter: brightness(1.1); }
+  
+  /* 区域 Tab */
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  .region-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    padding: 4px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    width: fit-content;
+  }
+  .region-tab {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .region-tab:hover { color: var(--text-primary); background: var(--bg-card); }
+  .region-tab.active {
+    background: var(--gradient-1);
+    color: white;
+  }
+  .region-tab .count-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .region-tab:not(.active) .count-badge {
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+  }
+  
+  /* 推送摘要卡片 */
+  .push-card {
+    background: linear-gradient(135deg, rgba(34,197,94,0.15) 0%, rgba(59,130,246,0.1) 100%);
+    border: 1px solid rgba(34,197,94,0.3);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+  }
+  .push-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .push-section { margin-bottom: 8px; font-size: 14px; }
+  .push-section-label {
+    color: var(--accent);
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  
+  /* 主内容区 */
+  .section { margin-bottom: 40px; }
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-subtitle {
+    color: var(--text-secondary);
+    font-size: 13px;
+  }
+  
+  /* 比赛卡片 - 昨日赛事 */
+  .matches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+    gap: 20px;
+  }
+  .match-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .match-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  
+  .match-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-secondary);
+  }
+  .league-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: rgba(59,130,246,0.15);
+    border: 1px solid rgba(59,130,246,0.3);
+    color: #60a5fa;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .match-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  
+  .match-score-row {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .team-name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .team.home .team-name { color: #60a5fa; }
+  .team.away .team-name { color: #f472b6; }
+  .team-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+  }
+  .score-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .score {
+    font-size: 36px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .score-sep { color: var(--text-muted); font-weight: 400; }
+  .xg-display {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .xg-label { color: var(--warning); font-weight: 500; }
+  
+  /* 统计数据条 */
+  .stats-section {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+  }
+  .stats-section-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .stat-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 40px 1fr 80px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .stat-row:last-child { margin-bottom: 0; }
+  .stat-home-val { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat-away-val { text-align: left; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat-label { text-align: center; color: var(--text-muted); font-size: 11px; }
+  .stat-bar-wrap {
+    display: flex;
+    background: var(--bg-primary);
+    border-radius: 4px;
+    height: 8px;
+    overflow: hidden;
+  }
+  .stat-bar-home {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    height: 100%;
+    transition: width 0.5s;
+  }
+  .stat-bar-away {
+    background: linear-gradient(90deg, #ec4899, #f472b6);
+    height: 100%;
+    transition: width 0.5s;
+  }
+  
+  /* 裁判分析卡片 */
+  .referee-section {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(168,85,247,0.05) 0%, transparent 100%);
+  }
+  .referee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .referee-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .referee-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--gradient-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .referee-name { font-weight: 700; font-size: 15px; }
+  .referee-country { font-size: 12px; color: var(--text-secondary); }
+  .style-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .style-strict { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+  .style-semi-strict { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+  .style-balanced { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); }
+  .style-physical { background: rgba(34,197,94,0.15); color: #4ade80; border: 1px solid rgba(34,197,94,0.3); }
+  
+  .strictness-bar {
+    margin-bottom: 14px;
+  }
+  .strictness-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+  .strictness-track {
+    height: 10px;
+    background: var(--bg-primary);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .strictness-fill {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.6s;
+  }
+  .strictness-score {
+    position: absolute;
+    right: 8px;
+    top: -2px;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .ref-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .ref-stat-box {
+    text-align: center;
+    padding: 10px 6px;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .ref-stat-val { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .ref-stat-val.yellow { color: #fbbf24; }
+  .ref-stat-val.red { color: #f87171; }
+  .ref-stat-val.foul { color: #60a5fa; }
+  .ref-stat-val.pen { color: #a855f7; }
+  .ref-stat-label { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+  
+  .ref-history-title {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .ref-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .ref-history-table th, .ref-history-table td {
+    padding: 6px 4px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .ref-history-table th {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .ref-history-table td { font-variant-numeric: tabular-nums; }
+  .yc { color: #fbbf24; font-weight: 600; }
+  .rc { color: #f87171; font-weight: 600; }
+  
+  .ref-traits {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .trait-tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text-secondary);
+  }
+  
+  .style-desc {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding: 10px 12px;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    border-left: 3px solid var(--purple);
+  }
+  
+  /* 分析结论 */
+  .analysis-section {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+  }
+  .analysis-list {
+    list-style: none;
+  }
+  .analysis-list li {
+    padding: 8px 0 8px 22px;
+    position: relative;
+    font-size: 13px;
+    color: var(--text-secondary);
+    border-bottom: 1px dashed var(--border);
+  }
+  .analysis-list li:last-child { border-bottom: none; }
+  .analysis-list li::before {
+    content: '💡';
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  
+  /* 关键事件 */
+  .events-section {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+  }
+  .events-timeline {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+  .event-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--border);
+    font-size: 13px;
+  }
+  .event-item:last-child { border-bottom: none; }
+  .event-minute {
+    min-width: 40px;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 12px;
+  }
+  .event-icon { font-size: 14px; }
+  .event-text { color: var(--text-secondary); }
+  .event-text.home { color: #60a5fa; }
+  .event-text.away { color: #f472b6; }
+  
+  /* 展开/收起按钮 */
+  .toggle-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--bg-secondary);
+    border: none;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+  }
+  .toggle-btn:hover { background: var(--bg-card-hover); color: var(--text-primary); }
+  
+  .match-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .match-details.open {
+    max-height: 3000px;
+  }
+  
+  /* ===== 今日预告 ===== */
+  .previews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+  }
+  .preview-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .preview-card:hover {
+    border-color: var(--info);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .preview-header {
+    padding: 14px 20px;
+    background: linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(168,85,247,0.1) 100%);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .difficulty-stars {
+    color: #fbbf24;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .matchup-row {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+  .preview-team-name {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .vs-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+  .kickoff-time {
+    text-align: center;
+    padding: 8px 20px;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--info);
+    font-weight: 600;
+  }
+  .venue-info {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-left: 8px;
+    font-weight: 400;
+  }
+  
+  .form-section {
+    padding: 12px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .form-team-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+  .form-row {
+    display: flex;
+    gap: 4px;
+  }
+  .form-cell {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+  }
+  .form-win { background: var(--accent); }
+  .form-draw { background: var(--warning); }
+  .form-lose { background: var(--danger); }
+  .h2h-center {
+    text-align: center;
+    padding: 4px 10px;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    font-size: 11px;
+  }
+  .h2h-label { color: var(--text-muted); }
+  .h2h-val { font-weight: 600; }
+  
+  .features-section {
+    padding: 16px 20px;
+  }
+  .features-title {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .feature-list {
+    list-style: none;
+  }
+  .feature-list li {
+    padding: 6px 0 6px 20px;
+    position: relative;
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .feature-list li::before {
+    content: '🎯';
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+  }
+  
+  .preview-referee {
+    padding: 12px 20px;
+    border-top: 1px solid var(--border);
+    background: rgba(168,85,247,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .pr-name { color: var(--purple); font-weight: 600; }
+  
+  /* 空状态 */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+  }
+  .empty-state-icon { font-size: 48px; margin-bottom: 16px; }
+  
+  /* 加载动画 */
+  .loader {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+  }
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    padding: 12px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-size: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    z-index: 9999;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .toast.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* 响应式 */
+  @media (max-width: 768px) {
+    .container { padding: 16px; }
+    .matches-grid, .previews-grid { grid-template-columns: 1fr; }
+    .match-score-row { grid-template-columns: 1fr; gap: 10px; }
+    .score { font-size: 30px; }
+    .ref-stat-grid { grid-template-columns: repeat(2, 1fr); }
+    .section-title { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">⚽</span>
+      <div>
+        <div>足球赛道日报</div>
+        <div style="font-size:12px;font-weight:400;color:var(--text-secondary);">每日赛事分析 · 裁判洞察 · 今日预告</div>
+      </div>
+    </div>
+    <div class="update-info">
+      <div class="last-update">
+        <span class="pulse-dot"></span>
+        <span id="lastUpdateText">加载中...</span>
+      </div>
+      <button class="btn" onclick="refreshData()" id="refreshBtn">
+        🔄 刷新数据
+      </button>
+      <button class="btn btn-primary" onclick="forceUpdate()" id="updateBtn">
+        ⚡ 立即更新
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- 区域 Tabs -->
+  <div class="region-tabs" id="regionTabs">
+    <div class="region-tab active" data-region="all">
+      🌍 全部赛道 <span class="count-badge" id="count-all">0</span>
+    </div>
+    <div class="region-tab" data-region="europe">
+      🏴 欧洲 <span class="count-badge" id="count-europe">0</span>
+    </div>
+    <div class="region-tab" data-region="asia">
+      🏆 亚洲 <span class="count-badge" id="count-asia">0</span>
+    </div>
+    <div class="region-tab" data-region="australia">
+      🇦🇺 澳洲 <span class="count-badge" id="count-australia">0</span>
+    </div>
+  </div>
+  
+  <!-- 推送摘要 -->
+  <div class="push-card" id="pushCard" style="display:none;">
+    <div class="push-title" id="pushTitle">⚽ 今日推送</div>
+    <div class="push-section">
+      <span class="push-section-label">📌 昨日精选：</span>
+      <span id="pushYesterday"></span>
+    </div>
+    <div class="push-section">
+      <span class="push-section-label">🔮 今日焦点：</span>
+      <span id="pushToday"></span>
+    </div>
+  </div>
+  
+  <!-- 昨日赛事（T-1） -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">
+        📊 T-1 赛事分析报告
+        <span class="section-subtitle" id="yesterdayDateLabel"></span>
+      </div>
+      <div class="section-subtitle" id="yesterdayCount">0 场比赛</div>
+    </div>
+    <div class="matches-grid" id="yesterdayMatches">
+      <div class="loader"><div class="spinner"></div></div>
+    </div>
+  </div>
+  
+  <!-- 今日预告 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">
+        🔮 今日赛道预告
+        <span class="section-subtitle" id="todayDateLabel"></span>
+      </div>
+      <div class="section-subtitle" id="todayCount">0 场比赛</div>
+    </div>
+    <div class="previews-grid" id="todayPreviews">
+      <div class="loader"><div class="spinner"></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let APP_DATA = null;
+let CURRENT_REGION = 'all';
+
+// ===== 工具函数 =====
+function showToast(msg, type = 'info') {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.style.borderColor = type === 'success' ? 'var(--accent)' : type === 'error' ? 'var(--danger)' : 'var(--info)';
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+function formatTime(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  return d.toLocaleString('zh-CN', { 
+    month: '2-digit', day: '2-digit', 
+    hour: '2-digit', minute: '2-digit' 
+  });
+}
+
+function getYesterdayStr() {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function getTodayStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+// ===== 裁判风格样式 =====
+function getStyleClass(style) {
+  if (style === '严格型') return 'style-strict';
+  if (style === '偏严格型') return 'style-semi-strict';
+  if (style === '平衡型') return 'style-balanced';
+  return 'style-physical';
+}
+function getStrictnessGradient(score) {
+  if (score >= 75) return 'linear-gradient(90deg, #22c55e, #f59e0b, #ef4444)';
+  if (score >= 55) return 'linear-gradient(90deg, #22c55e, #f59e0b)';
+  if (score >= 35) return 'linear-gradient(90deg, #22c55e, #3b82f6)';
+  return 'linear-gradient(90deg, #22c55e, #10b981)';
+}
+
+// ===== 渲染裁判分析 =====
+function renderRefereeAnalysis(ref, compact = false) {
+  const stats = ref.statistics;
+  const styleClass = getStyleClass(ref.style);
+  const gradient = getStrictnessGradient(stats.strictnessScore);
+  
+  const historyRows = ref.history.map(h => `
+    <tr>
+      <td style="color:var(--text-muted)">${h.matchNumber}场前</td>
+      <td>${h.date.slice(5)}</td>
+      <td style="font-size:10px">${h.league.slice(0,4)}</td>
+      <td class="yc">${h.yellowCards}</td>
+      <td class="rc">${h.redCards}</td>
+      <td>${h.fouls}</td>
+      <td style="color:var(--purple)">${h.penalties}</td>
+      <td style="color:var(--warning);font-weight:600">${h.cardIndex}</td>
+    </tr>
+  `).join('');
+  
+  const tags = ref.keyTraits.map(t => `<span class="trait-tag">${t}</span>`).join('');
+  
+  if (compact) {
+    return `
+      <div class="preview-referee">
+        <div>👨‍⚖️ 裁判：<span class="pr-name">${ref.referee.name}</span> · ${ref.referee.country}</div>
+        <span class="style-badge ${styleClass}">${ref.style} · ${stats.strictnessScore}分</span>
+      </div>
+    `;
+  }
+  
+  return `
+    <div class="referee-section">
+      <div class="referee-header">
+        <div class="referee-info">
+          <div class="referee-avatar">👨‍⚖️</div>
+          <div>
+            <div class="referee-name">${ref.referee.name}</div>
+            <div class="referee-country">${ref.referee.country} · ${ref.referee.age}岁</div>
+          </div>
+        </div>
+        <span class="style-badge ${styleClass}">${ref.style}</span>
+      </div>
+      
+      <div class="strictness-bar">
+        <div class="strictness-labels">
+          <span>鼓励对抗</span>
+          <span>严格执法</span>
+        </div>
+        <div class="strictness-track">
+          <div class="strictness-fill" style="width:${stats.strictnessScore}%;background:${gradient}"></div>
+          <span class="strictness-score">${stats.strictnessScore}</span>
+        </div>
+      </div>
+      
+      <div class="ref-stat-grid">
+        <div class="ref-stat-box">
+          <div class="ref-stat-val yellow">${stats.avgYellow}</div>
+          <div class="ref-stat-label">场均黄牌</div>
+        </div>
+        <div class="ref-stat-box">
+          <div class="ref-stat-val red">${stats.avgRed}</div>
+          <div class="ref-stat-label">场均红牌</div>
+        </div>
+        <div class="ref-stat-box">
+          <div class="ref-stat-val foul">${stats.avgFouls}</div>
+          <div class="ref-stat-label">场均犯规</div>
+        </div>
+        <div class="ref-stat-box">
+          <div class="ref-stat-val pen">${stats.avgPenalties}</div>
+          <div class="ref-stat-label">场均点球</div>
+        </div>
+      </div>
+      
+      <div class="ref-history-title">📋 前5场执法记录</div>
+      <table class="ref-history-table">
+        <thead>
+          <tr>
+            <th>场次</th><th>日期</th><th>联赛</th>
+            <th>🟨</th><th>🟥</th><th>犯规</th><th>⚽</th><th>出牌指数</th>
+          </tr>
+        </thead>
+        <tbody>${historyRows}</tbody>
+      </table>
+      
+      <div class="ref-traits">${tags}</div>
+      
+      <div class="style-desc">${ref.styleDesc}</div>
+    </div>
+  `;
+}
+
+// ===== 渲染统计对比条 =====
+function renderStatBar(label, homeVal, awayVal, suffix = '') {
+  const home = typeof homeVal === 'string' ? parseFloat(homeVal) : homeVal;
+  const away = typeof awayVal === 'string' ? parseFloat(awayVal) : awayVal;
+  const total = home + away || 1;
+  const homePct = Math.max(8, Math.round((home / total) * 100));
+  const awayPct = 100 - homePct;
+  return `
+    <div class="stat-row">
+      <div class="stat-home-val">${homeVal}${suffix}</div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-home" style="width:${homePct}%"></div>
+        <div class="stat-bar-away" style="width:${awayPct}%"></div>
+      </div>
+      <div class="stat-label">${label}</div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-away" style="width:${awayPct}%"></div>
+        <div class="stat-bar-home" style="width:${homePct}%"></div>
+      </div>
+      <div class="stat-away-val">${awayVal}${suffix}</div>
+    </div>
+  `;
+}
+
+// ===== 渲染昨日赛事卡片 =====
+function renderYesterdayMatch(m) {
+  const s = m.stats;
+  const eventIcons = { goal: '⚽', yellow: '🟨', red: '🟥' };
+  
+  const eventsHtml = m.keyEvents.map(e => `
+    <div class="event-item">
+      <div class="event-minute">${e.minute}'</div>
+      <div class="event-icon">${eventIcons[e.type] || '📌'}</div>
+      <div class="event-text ${e.team}">${e.description}</div>
+    </div>
+  `).join('');
+  
+  const analysisHtml = m.analysis.map(a => `<li>${a}</li>`).join('');
+  
+  return `
+    <div class="match-card" data-region="${m.region}">
+      <div class="match-header">
+        <span class="league-tag">${m.league.flag} ${m.league.name}</span>
+        <span class="match-meta">${m.date} ${m.time} · ${m.venue}</span>
+      </div>
+      
+      <div class="match-score-row">
+        <div class="team home">
+          <div class="team-label">主 场</div>
+          <div class="team-name">${m.homeTeam}</div>
+        </div>
+        <div class="score-display">
+          <div class="score">
+            <span style="color:#60a5fa">${s.score.home}</span>
+            <span class="score-sep">:</span>
+            <span style="color:#f472b6">${s.score.away}</span>
+          </div>
+          <div class="xg-display">
+            <span class="xg-label">xG</span> ${s.xG.home} - ${s.xG.away}
+          </div>
+        </div>
+        <div class="team away">
+          <div class="team-label">客 场</div>
+          <div class="team-name">${m.awayTeam}</div>
+        </div>
+      </div>
+      
+      <button class="toggle-btn" onclick="toggleDetails(this)">展开详细数据 ▼</button>
+      
+      <div class="match-details">
+        <div class="stats-section">
+          <div class="stats-section-title">📊 Opta/StatsBomb 风格对比数据</div>
+          ${renderStatBar('控球率', s.possession.home, s.possession.away, '%')}
+          ${renderStatBar('射门', s.shots.home, s.shots.away)}
+          ${renderStatBar('射正', s.shotsOnTarget.home, s.shotsOnTarget.away)}
+          ${renderStatBar('传球', s.passes.home, s.passes.away)}
+          ${renderStatBar('传球准确率', s.passAccuracy.home.replace('%',''), s.passAccuracy.away.replace('%',''), '%')}
+          ${renderStatBar('抢断', s.tackles.home, s.tackles.away)}
+          ${renderStatBar('拦截', s.interceptions.home, s.interceptions.away)}
+          ${renderStatBar('犯规', s.fouls.home, s.fouls.away)}
+          ${renderStatBar('角球', s.corners.home, s.corners.away)}
+          ${renderStatBar('越位', s.offsides.home, s.offsides.away)}
+          ${renderStatBar('扑救', s.saves.home, s.saves.away)}
+          ${renderStatBar('黄牌', s.yellowCards.home, s.yellowCards.away)}
+          ${renderStatBar('红牌', s.redCards.home, s.redCards.away)}
+        </div>
+        
+        ${renderRefereeAnalysis(m.refereeAnalysis, false)}
+        
+        <div class="analysis-section">
+          <div class="stats-section-title">💡 比赛分析结论</div>
+          <ul class="analysis-list">${analysisHtml}</ul>
+        </div>
+        
+        <div class="events-section">
+          <div class="stats-section-title">⏱️ 关键事件时间线</div>
+          <div class="events-timeline">
+            ${eventsHtml || '<div style="color:var(--text-muted);font-size:13px;padding:12px 0;">暂无记录</div>'}
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ===== 渲染今日预告 =====
+function renderPreviewMatch(p) {
+  const features = p.features.map(f => `<li>${f}</li>`).join('');
+  
+  const formCell = v => {
+    const cls = v === '胜' ? 'form-win' : v === '平' ? 'form-draw' : 'form-lose';
+    return `<div class="form-cell ${cls}">${v}</div>`;
+  };
+  
+  const h = p.h2hLast5;
+  
+  return `
+    <div class="preview-card" data-region="${p.region}">
+      <div class="preview-header">
+        <span class="league-tag">${p.league.flag} ${p.league.name}</span>
+        <div class="difficulty-stars" title="激烈程度">${'★'.repeat(p.predictedDifficulty)}${'☆'.repeat(5-p.predictedDifficulty)}</div>
+      </div>
+      
+      <div class="matchup-row">
+        <div>
+          <div class="team-label" style="font-size:11px;color:var(--text-muted);letter-spacing:1px;">主队</div>
+          <div class="preview-team-name" style="color:#60a5fa">${p.homeTeam}</div>
+        </div>
+        <div class="vs-text">VS</div>
+        <div>
+          <div class="team-label" style="font-size:11px;color:var(--text-muted);letter-spacing:1px;">客队</div>
+          <div class="preview-team-name" style="color:#f472b6">${p.awayTeam}</div>
+        </div>
+      </div>
+      
+      <div class="kickoff-time">
+        ⏰ ${p.time} 开球
+        <span class="venue-info">📍 ${p.venue}</span>
+      </div>
+      
+      <div class="form-section">
+        <div>
+          <div class="form-team-label">近5场</div>
+          <div class="form-row">${p.homeRecentForm.map(formCell).join('')}</div>
+        </div>
+        <div class="h2h-center">
+          <div class="h2h-label">交锋</div>
+          <div class="h2h-val"><span style="color:#60a5fa">${h.homeWins}</span> / ${h.draws} / <span style="color:#f472b6">${h.awayWins}</span></div>
+        </div>
+        <div style="text-align:right">
+          <div class="form-team-label">近5场</div>
+          <div class="form-row" style="justify-content:flex-end">${p.awayRecentForm.map(formCell).join('')}</div>
+        </div>
+      </div>
+      
+      <div class="features-section">
+        <div class="features-title">🎯 本场看点 & 特点</div>
+        <ul class="feature-list">${features}</ul>
+      </div>
+      
+      ${renderRefereeAnalysis(p.refereeAnalysis, true)}
+    </div>
+  `;
+}
+
+// ===== 切换详情展开 =====
+function toggleDetails(btn) {
+  const details = btn.nextElementSibling;
+  const isOpen = details.classList.contains('open');
+  if (isOpen) {
+    details.classList.remove('open');
+    btn.textContent = '展开详细数据 ▼';
+  } else {
+    details.classList.add('open');
+    btn.textContent = '收起详细数据 ▲';
+  }
+}
+
+// ===== 区域筛选 =====
+function filterByRegion(region) {
+  CURRENT_REGION = region;
+  document.querySelectorAll('.region-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.region === region);
+  });
+  render();
+}
+
+// ===== 主渲染 =====
+function render() {
+  if (!APP_DATA) return;
+  
+  // 更新时间
+  document.getElementById('lastUpdateText').textContent = `更新于 ${formatTime(APP_DATA.lastUpdate)}`;
+  document.getElementById('yesterdayDateLabel').textContent = `（${getYesterdayStr()}）`;
+  document.getElementById('todayDateLabel').textContent = `（${getTodayStr()}）`;
+  
+  // 区域筛选
+  const yMatches = CURRENT_REGION === 'all' ? APP_DATA.yesterdayMatches : APP_DATA.yesterdayMatches.filter(m => m.region === CURRENT_REGION);
+  const tPreviews = CURRENT_REGION === 'all' ? APP_DATA.todayPreviews : APP_DATA.todayPreviews.filter(m => m.region === CURRENT_REGION);
+  
+  // 数量 badges
+  const counts = {
+    all: APP_DATA.yesterdayMatches.length + APP_DATA.todayPreviews.length,
+    europe: APP_DATA.yesterdayMatches.filter(m => m.region === 'europe').length + APP_DATA.todayPreviews.filter(m => m.region === 'europe').length,
+    asia: APP_DATA.yesterdayMatches.filter(m => m.region === 'asia').length + APP_DATA.todayPreviews.filter(m => m.region === 'asia').length,
+    australia: APP_DATA.yesterdayMatches.filter(m => m.region === 'australia').length + APP_DATA.todayPreviews.filter(m => m.region === 'australia').length
+  };
+  document.getElementById('count-all').textContent = counts.all;
+  document.getElementById('count-europe').textContent = counts.europe;
+  document.getElementById('count-asia').textContent = counts.asia;
+  document.getElementById('count-australia').textContent = counts.australia;
+  
+  document.getElementById('yesterdayCount').textContent = `${yMatches.length} 场比赛`;
+  document.getElementById('todayCount').textContent = `${tPreviews.length} 场比赛`;
+  
+  // 推送摘要
+  if (APP_DATA.pushDigest) {
+    document.getElementById('pushCard').style.display = 'block';
+    document.getElementById('pushTitle').textContent = APP_DATA.pushDigest.title;
+    document.getElementById('pushYesterday').textContent = APP_DATA.pushDigest.yesterdaySummary;
+    document.getElementById('pushToday').textContent = APP_DATA.pushDigest.todaySummary;
+  }
+  
+  // 昨日赛事
+  const yContainer = document.getElementById('yesterdayMatches');
+  if (yMatches.length === 0) {
+    yContainer.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📭</div>当前区域暂无昨日赛事数据</div>`;
+  } else {
+    yContainer.innerHTML = yMatches.map(renderYesterdayMatch).join('');
+  }
+  
+  // 今日预告
+  const tContainer = document.getElementById('todayPreviews');
+  if (tPreviews.length === 0) {
+    tContainer.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📅</div>当前区域暂无今日预告</div>`;
+  } else {
+    tContainer.innerHTML = tPreviews.map(renderPreviewMatch).join('');
+  }
+}
+
+// ===== 数据加载 =====
+async function loadData() {
+  try {
+    const resp = await fetch('/api/dashboard');
+    APP_DATA = await resp.json();
+    render();
+  } catch (e) {
+    console.error(e);
+    showToast('数据加载失败：' + e.message, 'error');
+  }
+}
+
+async function refreshData() {
+  const btn = document.getElementById('refreshBtn');
+  btn.textContent = '⏳ 加载中...';
+  btn.disabled = true;
+  await loadData();
+  btn.textContent = '🔄 刷新数据';
+  btn.disabled = false;
+  showToast('数据已刷新', 'success');
+}
+
+async function forceUpdate() {
+  const btn = document.getElementById('updateBtn');
+  btn.textContent = '⏳ 更新中...';
+  btn.disabled = true;
+  try {
+    // Vercel 静态部署版：无动态后端，通过 Cron 每天 9:00(Asia/Shanghai) 自动重建
+    // 先尝试调用 /api/update（如果是本地Python后端可用），失败则降级为静态提示
+    let success = false;
+    let result = null;
+    try {
+      const resp = await fetch('/api/update', { method: 'POST' });
+      if (resp.ok) {
+        result = await resp.json();
+        if (result && result.success) success = true;
+      }
+    } catch (e) { /* 静态部署会失败，忽略 */ }
+
+    if (success && result) {
+      await loadData();
+      showToast(`✅ 数据已更新！昨日${result.counts.yesterday}场，今日${result.counts.today}场`, 'success');
+    } else {
+      // 静态版：显示提示 + 重新拉取静态JSON
+      await loadData();
+      showToast('ℹ️ Vercel 公网版每天上午 9:00(北京时间) 自动刷新，如需最新数据请稍后访问', 'info');
+    }
+  } catch (e) {
+    showToast('更新出错：' + e.message, 'error');
+  }
+  btn.textContent = '⚡ 立即更新';
+  btn.disabled = false;
+}
+
+// ===== 事件绑定 =====
+document.querySelectorAll('.region-tab').forEach(tab => {
+  tab.addEventListener('click', () => filterByRegion(tab.dataset.region));
+});
+
+// ===== 初始化 =====
+loadData();
+</script>
+</body>
+</html>

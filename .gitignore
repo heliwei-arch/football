@@ -1,0 +1,26 @@
+# 临时文件
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.pid
+
+# 缓存
+cache.json
+cloudflared_test.log
+cloudflared.log
+cloudflared.pid
+serveo.log
+serveo.pid
+
+# 本地工具
+bin/
+
+# Vercel
+.vercel
+node_modules/
+
+# Mac
+.DS_Store
+启动分享链接.app/
+启动分享链接.command
