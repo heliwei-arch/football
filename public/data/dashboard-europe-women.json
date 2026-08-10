@@ -1,0 +1,183 @@
+{
+  "lastUpdate": "2026-08-10T21:33:58.350862",
+  "generatedAt": "2026-08-10T21:34:00.480438",
+  "dataSource": "dongqiudi-real",
+  "leagues": {
+    "europe": [
+      {
+        "id": "epl",
+        "name": "英超联赛",
+        "country": "英格兰",
+        "flag": "🏴"
+      },
+      {
+        "id": "laliga",
+        "name": "西甲联赛",
+        "country": "西班牙",
+        "flag": "🇪🇸"
+      },
+      {
+        "id": "bundesliga",
+        "name": "德甲联赛",
+        "country": "德国",
+        "flag": "🇩🇪"
+      },
+      {
+        "id": "seriea",
+        "name": "意甲联赛",
+        "country": "意大利",
+        "flag": "🇮🇹"
+      },
+      {
+        "id": "ligue1",
+        "name": "法甲联赛",
+        "country": "法国",
+        "flag": "🇫🇷"
+      },
+      {
+        "id": "ucl",
+        "name": "欧冠联赛",
+        "country": "欧洲",
+        "flag": "🇪🇺"
+      }
+    ]
+  },
+  "yesterdayMatches": [],
+  "todayPreviews": [
+    {
+      "id": "54546672",
+      "date": "2026-08-10",
+      "time": "13:00",
+      "league": {
+        "id": "dqd-europe-白俄女超",
+        "name": "白俄女超",
+        "country": "白俄女超",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#778800",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "women",
+      "homeTeam": "斯莫根女足",
+      "awayTeam": "伯希纳女足",
+      "venue": "斯莫根女足主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-斯拉夫科·文齐奇",
+          "name": "斯拉夫科·文齐奇",
+          "country": "斯洛文尼亚",
+          "age": 39
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "负",
+        "平",
+        "胜",
+        "平",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "负",
+        "负",
+        "平",
+        "平",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    }
+  ],
+  "pushDigest": {
+    "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
+    "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
+    "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（双方实力接近，值得关注）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（主裁尺度偏严，注意出牌风险）",
+    "yesterdayCount": 2,
+    "todayCount": 3,
+    "fullReport": true,
+    "_dataSource": "dongqiudi-real",
+    "_gender": "women"
+  }
+}

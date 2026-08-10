@@ -1,0 +1,768 @@
+{
+  "lastUpdate": "2026-08-10T21:33:58.350862",
+  "generatedAt": "2026-08-10T21:34:00.486289",
+  "dataSource": "dongqiudi-real",
+  "leagues": {
+    "asia": [
+      {
+        "id": "csl",
+        "name": "中超联赛",
+        "country": "中国",
+        "flag": "🇨🇳"
+      },
+      {
+        "id": "jleague",
+        "name": "J联赛",
+        "country": "日本",
+        "flag": "🇯🇵"
+      },
+      {
+        "id": "kleague",
+        "name": "K联赛",
+        "country": "韩国",
+        "flag": "🇰🇷"
+      },
+      {
+        "id": "acl",
+        "name": "亚冠联赛",
+        "country": "亚洲",
+        "flag": "🏆"
+      },
+      {
+        "id": "apl",
+        "name": "沙特联赛",
+        "country": "沙特阿拉伯",
+        "flag": "🇸🇦"
+      }
+    ]
+  },
+  "yesterdayMatches": [
+    {
+      "id": "54554221",
+      "date": "2026-08-10",
+      "time": "09:30",
+      "league": {
+        "id": "dqd-asia-缅甸女联",
+        "name": "缅甸女联",
+        "country": "缅甸女联",
+        "flag": "🇲🇲",
+        "color": "#AE805B",
+        "region": "asia"
+      },
+      "region": "asia",
+      "gender": "women",
+      "homeTeam": "幼狮FC女足",
+      "awayTeam": "伊斯佩女足",
+      "venue": "幼狮FC女足主场",
+      "stats": {
+        "score": {
+          "home": 0,
+          "away": 10
+        },
+        "possession": {
+          "home": 44.5,
+          "away": 55.5
+        },
+        "shots": {
+          "home": 13,
+          "away": 18
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 7
+        },
+        "xG": {
+          "home": "1.31",
+          "away": "1.97"
+        },
+        "passes": {
+          "home": 522,
+          "away": 577
+        },
+        "passAccuracy": {
+          "home": "72%",
+          "away": "82%"
+        },
+        "tackles": {
+          "home": 18,
+          "away": 24
+        },
+        "interceptions": {
+          "home": 11,
+          "away": 15
+        },
+        "fouls": {
+          "home": 15,
+          "away": 14
+        },
+        "corners": {
+          "home": 3,
+          "away": 9
+        },
+        "yellowCards": {
+          "home": 0,
+          "away": 1
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 2,
+          "away": 4
+        },
+        "saves": {
+          "home": 0,
+          "away": 7
+        },
+        "_anchors": {
+          "score_home": 0,
+          "score_away": 10,
+          "yc_home": 0,
+          "yc_away": 1,
+          "rc_home": 0,
+          "rc_away": 0,
+          "corner_home_from_dqd": "3",
+          "corner_away_from_dqd": "9"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-中村太",
+          "name": "中村太",
+          "country": "日本",
+          "age": 41
+        },
+        "history": [
+          {
+            "date": "2026-08-07",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 11,
+            "redCards": 1,
+            "fouls": 25,
+            "penalties": 1,
+            "cardIndex": 135,
+            "varChecks": 5
+          },
+          {
+            "date": "2026-07-31",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 8,
+            "redCards": 2,
+            "fouls": 23,
+            "penalties": 1,
+            "cardIndex": 130,
+            "varChecks": 5
+          },
+          {
+            "date": "2026-07-24",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 8,
+            "redCards": 2,
+            "fouls": 21,
+            "penalties": 1,
+            "cardIndex": 130,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-17",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 9,
+            "redCards": 2,
+            "fouls": 28,
+            "penalties": 1,
+            "cardIndex": 140,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-10",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 11,
+            "redCards": 1,
+            "fouls": 21,
+            "penalties": 1,
+            "cardIndex": 135,
+            "varChecks": 5
+          }
+        ],
+        "statistics": {
+          "avgYellow": "9.4",
+          "avgRed": "1.60",
+          "avgFouls": "23.6",
+          "avgPenalties": "1.00",
+          "avgCardIndex": "134.0",
+          "avgVar": "4.6",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 1,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 20,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 43,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 52,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 75,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 87,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 90,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 90,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 90,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 90,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 90,
+          "type": "goal",
+          "team": "away",
+          "teamName": "伊斯佩女足",
+          "description": "伊斯佩女足 进球！扳平/反超比分"
+        }
+      ],
+      "analysis": [
+        "伊斯佩女足 客场奏凯，反击效率极高，xG 1.97 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 92分），全场共出示 1 黄0红，直接影响了比赛节奏"
+      ],
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54553343",
+      "date": "2026-08-10",
+      "time": "09:00",
+      "league": {
+        "id": "dqd-asia-缅甸女联",
+        "name": "缅甸女联",
+        "country": "缅甸女联",
+        "flag": "🇲🇲",
+        "color": "#AE805B",
+        "region": "asia"
+      },
+      "region": "asia",
+      "gender": "women",
+      "homeTeam": "亚大那保女足",
+      "awayTeam": "阿尔曼女足",
+      "venue": "亚大那保女足主场",
+      "stats": {
+        "score": {
+          "home": 0,
+          "away": 3
+        },
+        "possession": {
+          "home": 46.8,
+          "away": 53.2
+        },
+        "shots": {
+          "home": 12,
+          "away": 16
+        },
+        "shotsOnTarget": {
+          "home": 4,
+          "away": 6
+        },
+        "xG": {
+          "home": "0.88",
+          "away": "1.70"
+        },
+        "passes": {
+          "home": 534,
+          "away": 566
+        },
+        "passAccuracy": {
+          "home": "76%",
+          "away": "80%"
+        },
+        "tackles": {
+          "home": 17,
+          "away": 21
+        },
+        "interceptions": {
+          "home": 9,
+          "away": 13
+        },
+        "fouls": {
+          "home": 13,
+          "away": 14
+        },
+        "corners": {
+          "home": 7,
+          "away": 4
+        },
+        "yellowCards": {
+          "home": 0,
+          "away": 1
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 0,
+          "away": 2
+        },
+        "saves": {
+          "home": 5,
+          "away": 3
+        },
+        "_anchors": {
+          "score_home": 0,
+          "score_away": 3,
+          "yc_home": 0,
+          "yc_away": 1,
+          "rc_home": 0,
+          "rc_away": 0,
+          "corner_home_from_dqd": "7",
+          "corner_away_from_dqd": "4"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-高亨进",
+          "name": "高亨进",
+          "country": "韩国",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "2026-08-07",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 6,
+            "redCards": 1,
+            "fouls": 31,
+            "penalties": 1,
+            "cardIndex": 85,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-31",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 2,
+            "redCards": 0,
+            "fouls": 36,
+            "penalties": 0,
+            "cardIndex": 20,
+            "varChecks": 0
+          },
+          {
+            "date": "2026-07-24",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 4,
+            "redCards": 1,
+            "fouls": 29,
+            "penalties": 0,
+            "cardIndex": 65,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-17",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 28,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "2026-07-10",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 5,
+            "redCards": 0,
+            "fouls": 34,
+            "penalties": 0,
+            "cardIndex": 50,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.0",
+          "avgRed": "0.40",
+          "avgFouls": "31.6",
+          "avgPenalties": "0.20",
+          "avgCardIndex": "50.0",
+          "avgVar": "1.2",
+          "strictnessScore": 65
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 8,
+          "type": "goal",
+          "team": "away",
+          "teamName": "阿尔曼女足",
+          "description": "阿尔曼女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 13,
+          "type": "goal",
+          "team": "away",
+          "teamName": "阿尔曼女足",
+          "description": "阿尔曼女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 30,
+          "type": "goal",
+          "team": "away",
+          "teamName": "阿尔曼女足",
+          "description": "阿尔曼女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 32,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "阿尔曼女足",
+          "description": "阿尔曼女足 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "阿尔曼女足 客场奏凯，反击效率极高，xG 1.70 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法尺度平衡，比赛中规中矩"
+      ],
+      "_dataSource": "dongqiudi-real"
+    }
+  ],
+  "todayPreviews": [
+    {
+      "id": "54553343",
+      "date": "2026-08-10",
+      "time": "09:00",
+      "league": {
+        "id": "dqd-asia-缅甸女联",
+        "name": "缅甸女联",
+        "country": "缅甸女联",
+        "flag": "🇲🇲",
+        "color": "#AE805B",
+        "region": "asia"
+      },
+      "region": "asia",
+      "gender": "women",
+      "homeTeam": "亚大那保女足",
+      "awayTeam": "阿尔曼女足",
+      "venue": "亚大那保女足主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-高亨进",
+          "name": "高亨进",
+          "country": "韩国",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "负",
+        "平",
+        "胜",
+        "负",
+        "负"
+      ],
+      "awayRecentForm": [
+        "负",
+        "平",
+        "平",
+        "平",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 1,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54554221",
+      "date": "2026-08-10",
+      "time": "09:30",
+      "league": {
+        "id": "dqd-asia-缅甸女联",
+        "name": "缅甸女联",
+        "country": "缅甸女联",
+        "flag": "🇲🇲",
+        "color": "#AE805B",
+        "region": "asia"
+      },
+      "region": "asia",
+      "gender": "women",
+      "homeTeam": "幼狮FC女足",
+      "awayTeam": "伊斯佩女足",
+      "venue": "幼狮FC女足主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-中村太",
+          "name": "中村太",
+          "country": "日本",
+          "age": 41
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "2.0",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 2,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "平",
+        "胜",
+        "负"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "负",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    }
+  ],
+  "pushDigest": {
+    "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
+    "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
+    "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（双方实力接近，值得关注）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（主裁尺度偏严，注意出牌风险）",
+    "yesterdayCount": 2,
+    "todayCount": 3,
+    "fullReport": true,
+    "_dataSource": "dongqiudi-real",
+    "_gender": "women"
+  }
+}

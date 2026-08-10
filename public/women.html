@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚽ 男足 足球赛道日报 - 每日赛事分析与预告</title>
+<title>♀️ 女足 足球赛道日报 - 每日赛事分析与预告</title>
 <style>
   :root {
     --bg-primary: #0f172a;
@@ -825,23 +825,23 @@
 </noscript>
 <!-- 兜底占位：若JS加载中/报错，至少页面不是纯白，能显示出"加载中" -->
 <div id="fallbackLoader" style="padding:60px 24px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;">
-  <div style="font-size:48px;margin-bottom:16px;">⚽</div>
+  <div style="font-size:48px;margin-bottom:16px;">♀️</div>
   <div id="fallbackText" style="font-size:16px;color:#94a3b8;line-height:1.8;">
-    正在加载赛事数据仪表盘（男足版）…<br/>
+    正在加载赛事数据仪表盘（女足版）…<br/>
     <span style="font-size:13px;color:#64748b;">若长时间停留在此页面，请按 F5 刷新，或检查浏览器控制台（F12）是否有错误提示。</span>
   </div>
 </div>
 <div class="datasource-banner">
   <span class="icon">✅</span>
-  <strong>真实数据（男足版）：</strong>
+  <strong>真实数据（女足版）：</strong>
   当前所有对阵、联赛、比分、裁判分配均来自
   <code>懂球帝</code>
   公开免Key接口
   <code>magicball/v1/list/match_list</code>
   ，裁判严格按区域分配（杜绝跨区执法幻觉）；Opta统计以真实比分为锚点推算。
   <span class="gender-tabs" role="tablist" aria-label="性别切换">
-    <a href="index.html" class="active" aria-current="page" title="男足日报（默认首页）">⚽ 男足</a>
-    <a href="women.html" title="查看女足独立页面">♀️ 女足</a>
+    <a href="index.html" title="查看男足日报（默认首页）">⚽ 男足</a>
+    <a href="women.html" class="active" aria-current="page" title="女足独立页面">♀️ 女足</a>
   </span>
   <span class="refresh-time" id="datasourceRefreshTime"></span>
 </div>
@@ -849,10 +849,10 @@
 <div class="header">
   <div class="header-inner">
     <div class="logo">
-      <span class="logo-icon">⚽</span>
+      <span class="logo-icon">♀️</span>
       <div>
-        <div>男足 足球赛道日报</div>
-        <div style="font-size:12px;font-weight:400;color:var(--text-secondary);">每日赛事分析 · 裁判洞察 · 今日预告（男足版）</div>
+        <div>女足 足球赛道日报</div>
+        <div style="font-size:12px;font-weight:400;color:var(--text-secondary);">每日赛事分析 · 裁判洞察 · 今日预告（女足版）</div>
       </div>
     </div>
     <div class="update-info">
@@ -968,7 +968,7 @@
 })();
 
 // ===== 页面性别配置（index.html 男足版，women.html 女足版）=====
-const PAGE_GENDER = 'men';  // 'men' | 'women'，women.html 里会替换成 'women'
+const PAGE_GENDER = 'women';  // 'men' | 'women'，women.html 里会替换成 'women'
 const GENDER_DASHBOARD_JSON = { men: 'dashboard.json', women: 'dashboard-women.json' };
 const GENDER_REGION_SUFFIX   = { men: '',             women: '-women' };
 

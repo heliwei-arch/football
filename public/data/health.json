@@ -1,7 +1,18 @@
 {
   "status": "ok",
-  "deployedAt": "2026-08-10T14:34:27.964381",
-  "lastUpdate": "2026-08-10T14:34:27.964381",
+  "deployedAt": "2026-08-10T21:33:58.350862",
+  "lastUpdate": "2026-08-10T21:33:58.350862",
   "hasData": true,
-  "note": "Vercel 静态部署版，每天 9:00(Asia/Shanghai) 通过 Deploy Hook 自动重建"
+  "dataSource": "dongqiudi-real",
+  "counts": {
+    "men": {
+      "yesterday": 12,
+      "today": 31
+    },
+    "women": {
+      "yesterday": 2,
+      "today": 3
+    }
+  },
+  "note": "懂球帝真实数据优先，Mock兜底；默认首页 = 男足，女足版在 /women.html 或 data/dashboard-women.json；每天 9:00(Asia/Shanghai) 通过 Deploy Hook 自动重建"
 }

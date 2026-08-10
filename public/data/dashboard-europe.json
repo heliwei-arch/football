@@ -1,0 +1,2659 @@
+{
+  "lastUpdate": "2026-08-10T21:33:58.350862",
+  "generatedAt": "2026-08-10T21:34:00.475999",
+  "dataSource": "dongqiudi-real",
+  "leagues": {
+    "europe": [
+      {
+        "id": "epl",
+        "name": "英超联赛",
+        "country": "英格兰",
+        "flag": "🏴"
+      },
+      {
+        "id": "laliga",
+        "name": "西甲联赛",
+        "country": "西班牙",
+        "flag": "🇪🇸"
+      },
+      {
+        "id": "bundesliga",
+        "name": "德甲联赛",
+        "country": "德国",
+        "flag": "🇩🇪"
+      },
+      {
+        "id": "seriea",
+        "name": "意甲联赛",
+        "country": "意大利",
+        "flag": "🇮🇹"
+      },
+      {
+        "id": "ligue1",
+        "name": "法甲联赛",
+        "country": "法国",
+        "flag": "🇫🇷"
+      },
+      {
+        "id": "ucl",
+        "name": "欧冠联赛",
+        "country": "欧洲",
+        "flag": "🇪🇺"
+      }
+    ]
+  },
+  "yesterdayMatches": [
+    {
+      "id": "54545216",
+      "date": "2026-08-10",
+      "time": "10:25",
+      "league": {
+        "id": "dqd-europe-乌克青",
+        "name": "乌克青",
+        "country": "乌克青",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#CA5139",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "索尔亚U21",
+      "awayTeam": "克里沃罗格克里夫巴斯U21",
+      "venue": "索尔亚U21主场",
+      "stats": {
+        "score": {
+          "home": 0,
+          "away": 1
+        },
+        "possession": {
+          "home": 48.9,
+          "away": 51.1
+        },
+        "shots": {
+          "home": 13,
+          "away": 14
+        },
+        "shotsOnTarget": {
+          "home": 4,
+          "away": 5
+        },
+        "xG": {
+          "home": "0.91",
+          "away": "1.10"
+        },
+        "passes": {
+          "home": 544,
+          "away": 555
+        },
+        "passAccuracy": {
+          "home": "75%",
+          "away": "79%"
+        },
+        "tackles": {
+          "home": 18,
+          "away": 20
+        },
+        "interceptions": {
+          "home": 10,
+          "away": 11
+        },
+        "fouls": {
+          "home": 14,
+          "away": 15
+        },
+        "corners": {
+          "home": 0,
+          "away": 0
+        },
+        "yellowCards": {
+          "home": 4,
+          "away": 4
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 1,
+          "away": 1
+        },
+        "saves": {
+          "home": 4,
+          "away": 4
+        },
+        "_anchors": {
+          "score_home": 0,
+          "score_away": 1,
+          "yc_home": 4,
+          "yc_away": 4,
+          "rc_home": 0,
+          "rc_away": 0,
+          "corner_home_from_dqd": "0",
+          "corner_away_from_dqd": "0"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-克莱芒·蒂尔潘",
+          "name": "克莱芒·蒂尔潘",
+          "country": "法国",
+          "age": 41
+        },
+        "history": [
+          {
+            "date": "2026-08-07",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 6,
+            "redCards": 0,
+            "fouls": 23,
+            "penalties": 0,
+            "cardIndex": 60,
+            "varChecks": 3
+          },
+          {
+            "date": "2026-07-31",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 31,
+            "penalties": 0,
+            "cardIndex": 95,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-24",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 7,
+            "redCards": 0,
+            "fouls": 27,
+            "penalties": 0,
+            "cardIndex": 70,
+            "varChecks": 3
+          },
+          {
+            "date": "2026-07-17",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 7,
+            "redCards": 0,
+            "fouls": 26,
+            "penalties": 0,
+            "cardIndex": 70,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-10",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 9,
+            "redCards": 1,
+            "fouls": 24,
+            "penalties": 0,
+            "cardIndex": 115,
+            "varChecks": 4
+          }
+        ],
+        "statistics": {
+          "avgYellow": "7.2",
+          "avgRed": "0.40",
+          "avgFouls": "26.2",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "82.0",
+          "avgVar": "3.2",
+          "strictnessScore": 67
+        },
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
+        "keyTraits": [
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 3,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "索尔亚U21",
+          "description": "索尔亚U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 12,
+          "type": "goal",
+          "team": "away",
+          "teamName": "克里沃罗格克里夫巴斯U21",
+          "description": "克里沃罗格克里夫巴斯U21 进球！扳平/反超比分"
+        },
+        {
+          "minute": 14,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "克里沃罗格克里夫巴斯U21",
+          "description": "克里沃罗格克里夫巴斯U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 36,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "索尔亚U21",
+          "description": "索尔亚U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 45,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "索尔亚U21",
+          "description": "索尔亚U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 57,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "克里沃罗格克里夫巴斯U21",
+          "description": "克里沃罗格克里夫巴斯U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 68,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "克里沃罗格克里夫巴斯U21",
+          "description": "克里沃罗格克里夫巴斯U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 72,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "克里沃罗格克里夫巴斯U21",
+          "description": "克里沃罗格克里夫巴斯U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 86,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "克里沃罗格克里夫巴斯U21",
+          "description": "克里沃罗格克里夫巴斯U21 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "克里沃罗格克里夫巴斯U21 客场奏凯，反击效率极高，xG 1.10 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法尺度平衡，比赛中规中矩"
+      ],
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54545214",
+      "date": "2026-08-10",
+      "time": "09:00",
+      "league": {
+        "id": "dqd-europe-乌克青",
+        "name": "乌克青",
+        "country": "乌克青",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#CA5139",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "维勒斯U21",
+      "awayTeam": "基辅迪纳摩U21",
+      "venue": "维勒斯U21主场",
+      "stats": {
+        "score": {
+          "home": 0,
+          "away": 2
+        },
+        "possession": {
+          "home": 48.0,
+          "away": 52.0
+        },
+        "shots": {
+          "home": 13,
+          "away": 16
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 5
+        },
+        "xG": {
+          "home": "1.75",
+          "away": "1.14"
+        },
+        "passes": {
+          "home": 540,
+          "away": 560
+        },
+        "passAccuracy": {
+          "home": "75%",
+          "away": "79%"
+        },
+        "tackles": {
+          "home": 18,
+          "away": 22
+        },
+        "interceptions": {
+          "home": 11,
+          "away": 13
+        },
+        "fouls": {
+          "home": 14,
+          "away": 17
+        },
+        "corners": {
+          "home": 0,
+          "away": 0
+        },
+        "yellowCards": {
+          "home": 4,
+          "away": 1
+        },
+        "redCards": {
+          "home": 0,
+          "away": 1
+        },
+        "offsides": {
+          "home": 1,
+          "away": 3
+        },
+        "saves": {
+          "home": 5,
+          "away": 4
+        },
+        "_anchors": {
+          "score_home": 0,
+          "score_away": 2,
+          "yc_home": 4,
+          "yc_away": 1,
+          "rc_home": 0,
+          "rc_away": 1,
+          "corner_home_from_dqd": "0",
+          "corner_away_from_dqd": "0"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-伊斯特万·科瓦奇",
+          "name": "伊斯特万·科瓦奇",
+          "country": "罗马尼亚",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "2026-08-07",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 2,
+            "redCards": 0,
+            "fouls": 19,
+            "penalties": 0,
+            "cardIndex": 20,
+            "varChecks": 0
+          },
+          {
+            "date": "2026-07-31",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 2,
+            "redCards": 0,
+            "fouls": 17,
+            "penalties": 0,
+            "cardIndex": 20,
+            "varChecks": 1
+          },
+          {
+            "date": "2026-07-24",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 6,
+            "redCards": 0,
+            "fouls": 26,
+            "penalties": 0,
+            "cardIndex": 60,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-17",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 5,
+            "redCards": 1,
+            "fouls": 27,
+            "penalties": 0,
+            "cardIndex": 75,
+            "varChecks": 3
+          },
+          {
+            "date": "2026-07-10",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 5,
+            "redCards": 0,
+            "fouls": 17,
+            "penalties": 0,
+            "cardIndex": 50,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "4.0",
+          "avgRed": "0.20",
+          "avgFouls": "21.2",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "45.0",
+          "avgVar": "1.4",
+          "strictnessScore": 44
+        },
+        "style": "平衡型",
+        "styleDesc": "该裁判执法尺度平衡，既保证比赛流畅性又不会纵容犯规。鼓励合理对抗，出牌较为克制。",
+        "keyTraits": [
+          "鼓励对抗",
+          "出牌谨慎",
+          "比赛流畅度高",
+          "点球判罚较少"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 12,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "基辅迪纳摩U21",
+          "description": "基辅迪纳摩U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 14,
+          "type": "goal",
+          "team": "away",
+          "teamName": "基辅迪纳摩U21",
+          "description": "基辅迪纳摩U21 进球！扳平/反超比分"
+        },
+        {
+          "minute": 17,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "维勒斯U21",
+          "description": "维勒斯U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 21,
+          "type": "goal",
+          "team": "away",
+          "teamName": "基辅迪纳摩U21",
+          "description": "基辅迪纳摩U21 进球！扳平/反超比分"
+        },
+        {
+          "minute": 21,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "维勒斯U21",
+          "description": "维勒斯U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 58,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "维勒斯U21",
+          "description": "维勒斯U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 74,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "基辅迪纳摩U21",
+          "description": "基辅迪纳摩U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 82,
+          "type": "red",
+          "team": "away",
+          "teamName": "基辅迪纳摩U21",
+          "description": "基辅迪纳摩U21 球员两黄变一红被罚下"
+        }
+      ],
+      "analysis": [
+        "基辅迪纳摩U21 客场奏凯，反击效率极高，xG 1.14 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法尺度平衡，比赛中规中矩"
+      ],
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54545215",
+      "date": "2026-08-10",
+      "time": "09:00",
+      "league": {
+        "id": "dqd-europe-乌克青",
+        "name": "乌克青",
+        "country": "乌克青",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#CA5139",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "埃皮森特尔U21",
+      "awayTeam": "顿涅茨克矿工U21",
+      "venue": "埃皮森特尔U21主场",
+      "stats": {
+        "score": {
+          "home": 1,
+          "away": 2
+        },
+        "possession": {
+          "home": 47.1,
+          "away": 52.9
+        },
+        "shots": {
+          "home": 14,
+          "away": 14
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 5
+        },
+        "xG": {
+          "home": "1.14",
+          "away": "1.09"
+        },
+        "passes": {
+          "home": 535,
+          "away": 564
+        },
+        "passAccuracy": {
+          "home": "74%",
+          "away": "79%"
+        },
+        "tackles": {
+          "home": 19,
+          "away": 19
+        },
+        "interceptions": {
+          "home": 11,
+          "away": 11
+        },
+        "fouls": {
+          "home": 15,
+          "away": 15
+        },
+        "corners": {
+          "home": 0,
+          "away": 0
+        },
+        "yellowCards": {
+          "home": 1,
+          "away": 4
+        },
+        "redCards": {
+          "home": 1,
+          "away": 0
+        },
+        "offsides": {
+          "home": 2,
+          "away": 1
+        },
+        "saves": {
+          "home": 2,
+          "away": 4
+        },
+        "_anchors": {
+          "score_home": 1,
+          "score_away": 2,
+          "yc_home": 1,
+          "yc_away": 4,
+          "rc_home": 1,
+          "rc_away": 0,
+          "corner_home_from_dqd": "0",
+          "corner_away_from_dqd": "0"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-阿图尔·迪亚斯",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "date": "2026-08-07",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 10,
+            "redCards": 2,
+            "fouls": 29,
+            "penalties": 1,
+            "cardIndex": 150,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-31",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 7,
+            "redCards": 2,
+            "fouls": 29,
+            "penalties": 1,
+            "cardIndex": 120,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-24",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 31,
+            "penalties": 1,
+            "cardIndex": 95,
+            "varChecks": 3
+          },
+          {
+            "date": "2026-07-17",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 8,
+            "redCards": 2,
+            "fouls": 29,
+            "penalties": 2,
+            "cardIndex": 130,
+            "varChecks": 5
+          },
+          {
+            "date": "2026-07-10",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 6,
+            "redCards": 1,
+            "fouls": 23,
+            "penalties": 1,
+            "cardIndex": 85,
+            "varChecks": 3
+          }
+        ],
+        "statistics": {
+          "avgYellow": "7.6",
+          "avgRed": "1.60",
+          "avgFouls": "28.2",
+          "avgPenalties": "1.20",
+          "avgCardIndex": "116.0",
+          "avgVar": "3.8",
+          "strictnessScore": 100
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 12,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "顿涅茨克矿工U21",
+          "description": "顿涅茨克矿工U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 18,
+          "type": "goal",
+          "team": "away",
+          "teamName": "顿涅茨克矿工U21",
+          "description": "顿涅茨克矿工U21 进球！扳平/反超比分"
+        },
+        {
+          "minute": 19,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "顿涅茨克矿工U21",
+          "description": "顿涅茨克矿工U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 21,
+          "type": "goal",
+          "team": "home",
+          "teamName": "埃皮森特尔U21",
+          "description": "埃皮森特尔U21 进球！精彩射门得分"
+        },
+        {
+          "minute": 31,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "顿涅茨克矿工U21",
+          "description": "顿涅茨克矿工U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 41,
+          "type": "goal",
+          "team": "away",
+          "teamName": "顿涅茨克矿工U21",
+          "description": "顿涅茨克矿工U21 进球！扳平/反超比分"
+        },
+        {
+          "minute": 58,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "顿涅茨克矿工U21",
+          "description": "顿涅茨克矿工U21 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 78,
+          "type": "red",
+          "team": "home",
+          "teamName": "埃皮森特尔U21",
+          "description": "埃皮森特尔U21 球员严重犯规直接红牌罚下"
+        },
+        {
+          "minute": 83,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "顿涅茨克矿工U21",
+          "description": "顿涅茨克矿工U21 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "顿涅茨克矿工U21 客场奏凯，反击效率极高，xG 1.09 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 100分），全场共出示 5 黄1红，直接影响了比赛节奏"
+      ],
+      "_dataSource": "dongqiudi-real"
+    }
+  ],
+  "todayPreviews": [
+    {
+      "id": "54545215",
+      "date": "2026-08-10",
+      "time": "09:00",
+      "league": {
+        "id": "dqd-europe-乌克青",
+        "name": "乌克青",
+        "country": "乌克青",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#CA5139",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "埃皮森特尔U21",
+      "awayTeam": "顿涅茨克矿工U21",
+      "venue": "埃皮森特尔U21主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-阿图尔·迪亚斯",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "顿涅茨克矿工U21联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "平",
+        "胜",
+        "负",
+        "胜",
+        "负"
+      ],
+      "awayRecentForm": [
+        "平",
+        "负",
+        "负",
+        "胜",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 0,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54545214",
+      "date": "2026-08-10",
+      "time": "09:00",
+      "league": {
+        "id": "dqd-europe-乌克青",
+        "name": "乌克青",
+        "country": "乌克青",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#CA5139",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "维勒斯U21",
+      "awayTeam": "基辅迪纳摩U21",
+      "venue": "维勒斯U21主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-伊斯特万·科瓦奇",
+          "name": "伊斯特万·科瓦奇",
+          "country": "罗马尼亚",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.0",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "基辅迪纳摩U21联赛排名靠前",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "胜",
+        "平",
+        "平",
+        "负",
+        "负"
+      ],
+      "awayRecentForm": [
+        "平",
+        "平",
+        "负",
+        "负",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54545216",
+      "date": "2026-08-10",
+      "time": "10:25",
+      "league": {
+        "id": "dqd-europe-乌克青",
+        "name": "乌克青",
+        "country": "乌克青",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#CA5139",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "索尔亚U21",
+      "awayTeam": "克里沃罗格克里夫巴斯U21",
+      "venue": "索尔亚U21主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-克莱芒·蒂尔潘",
+          "name": "克莱芒·蒂尔潘",
+          "country": "法国",
+          "age": 41
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.6",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 2,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "胜",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "平",
+        "胜",
+        "胜",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 0,
+        "awayWins": 2
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54497677",
+      "date": "2026-08-10",
+      "time": "12:30",
+      "league": {
+        "id": "dqd-europe-乌克超",
+        "name": "乌克超",
+        "country": "乌克超",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#835B23",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "日托米尔波利西亚",
+      "awayTeam": "梅塔利斯特1925",
+      "venue": "日托米尔波利西亚主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-伊斯特万·科瓦奇",
+          "name": "伊斯特万·科瓦奇",
+          "country": "罗马尼亚",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "日托米尔波利西亚联赛排名靠前",
+        "梅塔利斯特1925联赛排名靠前"
+      ],
+      "predictedDifficulty": 2,
+      "homeRecentForm": [
+        "胜",
+        "胜",
+        "负",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "平",
+        "平",
+        "负",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 0,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54535374",
+      "date": "2026-08-10",
+      "time": "13:00",
+      "league": {
+        "id": "dqd-europe-亚美甲",
+        "name": "亚美甲",
+        "country": "亚美甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#5F9200",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "安德拉尼克",
+      "awayTeam": "舒拉克二队",
+      "venue": "安德拉尼克主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-迈克尔·奥利弗",
+          "name": "迈克尔·奥利弗",
+          "country": "英格兰",
+          "age": 39
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.6",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "胜",
+        "平",
+        "胜",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "负",
+        "胜",
+        "平",
+        "胜",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54535375",
+      "date": "2026-08-10",
+      "time": "13:00",
+      "league": {
+        "id": "dqd-europe-亚美甲",
+        "name": "亚美甲",
+        "country": "亚美甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#5F9200",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "米卡",
+      "awayTeam": "埃里温凤凰二队",
+      "venue": "米卡主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-费利克斯·布里赫",
+          "name": "费利克斯·布里赫",
+          "country": "德国",
+          "age": 48
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.4",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "米卡联赛排名靠前",
+        "埃里温凤凰二队联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "平",
+        "平",
+        "胜",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "负",
+        "负",
+        "负",
+        "负",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 2,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54428312",
+      "date": "2026-08-10",
+      "time": "14:00",
+      "league": {
+        "id": "dqd-europe-白俄甲",
+        "name": "白俄甲",
+        "country": "白俄甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#980012",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "高美尔B队",
+      "awayTeam": "索利戈尔斯克矿工",
+      "venue": "高美尔B队主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-桑德罗·舍雷尔",
+          "name": "桑德罗·舍雷尔",
+          "country": "瑞士",
+          "age": 41
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.2",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "平",
+        "平",
+        "胜",
+        "平",
+        "平"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "平",
+        "负",
+        "负",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 1,
+        "awayWins": 2
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54428314",
+      "date": "2026-08-10",
+      "time": "14:30",
+      "league": {
+        "id": "dqd-europe-白俄甲",
+        "name": "白俄甲",
+        "country": "白俄甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#980012",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "明斯克B队",
+      "awayTeam": "奥斯特罗维茨",
+      "venue": "明斯克B队主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-迈克尔·奥利弗",
+          "name": "迈克尔·奥利弗",
+          "country": "英格兰",
+          "age": 39
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 4,
+      "homeRecentForm": [
+        "平",
+        "平",
+        "胜",
+        "负",
+        "负"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "胜",
+        "平",
+        "负",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54524408",
+      "date": "2026-08-10",
+      "time": "15:00",
+      "league": {
+        "id": "dqd-europe-斯伐甲",
+        "name": "斯伐甲",
+        "country": "斯伐甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#BCBCC2",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "波瓦兹斯卡",
+      "awayTeam": "莫拉斯",
+      "venue": "波瓦兹斯卡主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-达尼埃莱·奥萨托",
+          "name": "达尼埃莱·奥萨托",
+          "country": "意大利",
+          "age": 48
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.2",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "莫拉斯联赛排名靠前"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "胜",
+        "平",
+        "胜",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "平",
+        "负",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 3,
+        "draws": 0,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54428316",
+      "date": "2026-08-10",
+      "time": "15:00",
+      "league": {
+        "id": "dqd-europe-白俄甲",
+        "name": "白俄甲",
+        "country": "白俄甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#980012",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "奥尔沙",
+      "awayTeam": "莫罗德切诺",
+      "venue": "奥尔沙主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-费利克斯·布里赫",
+          "name": "费利克斯·布里赫",
+          "country": "德国",
+          "age": 48
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 4,
+      "homeRecentForm": [
+        "负",
+        "平",
+        "平",
+        "胜",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "负",
+        "负",
+        "负",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 1,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54428164",
+      "date": "2026-08-10",
+      "time": "15:00",
+      "league": {
+        "id": "dqd-europe-白俄甲",
+        "name": "白俄甲",
+        "country": "白俄甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#980012",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "斯洛尼姆",
+      "awayTeam": "坎普罗姆",
+      "venue": "斯洛尼姆主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-阿图尔·迪亚斯",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.2",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "斯洛尼姆联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "胜",
+        "负",
+        "负",
+        "平",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "负",
+        "胜",
+        "胜",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 1,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54428319",
+      "date": "2026-08-10",
+      "time": "15:00",
+      "league": {
+        "id": "dqd-europe-白俄甲",
+        "name": "白俄甲",
+        "country": "白俄甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#980012",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "沃尔纳平斯克",
+      "awayTeam": "明斯克大学X实验室",
+      "venue": "沃尔纳平斯克主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-丹尼·马克列",
+          "name": "丹尼·马克列",
+          "country": "荷兰",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.4",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "沃尔纳平斯克联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 2,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "负",
+        "负",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "负",
+        "负",
+        "负",
+        "负",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54428318",
+      "date": "2026-08-10",
+      "time": "15:00",
+      "league": {
+        "id": "dqd-europe-白俄甲",
+        "name": "白俄甲",
+        "country": "白俄甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#980012",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "斯莫尔根",
+      "awayTeam": "鲍里索夫二队",
+      "venue": "斯莫尔根主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-安东尼·泰勒",
+          "name": "安东尼·泰勒",
+          "country": "英格兰",
+          "age": 45
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.6",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 3,
+      "homeRecentForm": [
+        "平",
+        "负",
+        "平",
+        "胜",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "胜",
+        "胜",
+        "负",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 1,
+        "awayWins": 2
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54497673",
+      "date": "2026-08-10",
+      "time": "15:00",
+      "league": {
+        "id": "dqd-europe-乌克超",
+        "name": "乌克超",
+        "country": "乌克超",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#835B23",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "喀尔巴阡",
+      "awayTeam": "LNZ切尔卡瑟",
+      "venue": "喀尔巴阡主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-丹尼·马克列",
+          "name": "丹尼·马克列",
+          "country": "荷兰",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.6",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "喀尔巴阡联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "胜",
+        "平",
+        "负"
+      ],
+      "awayRecentForm": [
+        "平",
+        "平",
+        "胜",
+        "平",
+        "负"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real"
+    },
+    {
+      "id": "54535376",
+      "date": "2026-08-10",
+      "time": "15:00",
+      "league": {
+        "id": "dqd-europe-亚美甲",
+        "name": "亚美甲",
+        "country": "亚美甲",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#5F9200",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": "乌拉尔图B队",
+      "awayTeam": "诺亚二队",
+      "venue": "乌拉尔图B队主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-费利克斯·布里赫",
+          "name": "费利克斯·布里赫",
+          "country": "德国",
+          "age": 48
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.6",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 4,
+      "homeRecentForm": [
+        "平",
+        "负",
+        "平",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "胜",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 0,
+        "awayWins": 2
+      },
+      "_dataSource": "dongqiudi-real"
+    }
+  ],
+  "pushDigest": {
+    "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 男足）",
+    "yesterdaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 乌克青：索尔亚U21 0-1 克里沃罗格克里夫巴斯U21（克里沃罗格克里夫巴斯U21获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 乌克青：维勒斯U21 0-2 基辅迪纳摩U21（基辅迪纳摩U21获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 乌克青：埃皮森特尔U21 1-2 顿涅茨克矿工U21（顿涅茨克矿工U21获胜）",
+    "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 埃皮森特尔U21 vs 顿涅茨克矿工U21（顿涅茨克矿工U21联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 维勒斯U21 vs 基辅迪纳摩U21（基辅迪纳摩U21联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 索尔亚U21 vs 克里沃罗格克里夫巴斯U21（主裁尺度偏严，注意出牌风险）",
+    "yesterdayCount": 12,
+    "todayCount": 31,
+    "fullReport": true,
+    "_dataSource": "dongqiudi-real",
+    "_gender": "men"
+  }
+}

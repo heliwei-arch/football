@@ -1,26 +1,39 @@
-# 临时文件
+# 敏感/临时文件不进Git
 __pycache__/
 *.pyc
 *.pyo
-*.log
-*.pid
-
-# 缓存
-cache.json
-cloudflared_test.log
-cloudflared.log
-cloudflared.pid
-serveo.log
-serveo.pid
-
-# 本地工具
-bin/
-
-# Vercel
-.vercel
+.cache/
+.env
+.venv/
+venv/
 node_modules/
 
-# Mac
+# 懂球帝调试dump（巨大，每次不一样）
+dqd_debug.json
+dqd_raw_*.json
+
+# 推送历史缓存（每天重建时Actions会自动生成新的，不commit避免冲突；但留作本地server.py的记忆更合适，所以改成可选：如果需要保留30天历史在Actions里，就用cache action或commit到专门的history分支）
+# cache.json → 这里保留不忽略，否则每次Actions构建推送历史都是从0开始（用户要30天历史）
+# 如果Actions构建push history不跨run保留，我们可以用GitHub Pages的history.json作为回源（每次构建先下载旧的push-history.json再insert最新一条），实现真正30天滚动
+# 简单起见，先忽略cache.json，workflow里在构建前下载当前Pages已发布的push-history*.json作为历史源（跨run持久化）
+
+# IDE
+.vscode/
+.idea/
 .DS_Store
-启动分享链接.app/
-启动分享链接.command
+
+# Vercel
+.vercel/
+
+# 本地临时调试/旧内网穿透产物（不要上传GitHub）
+cache.json
+bin/
+cloudflared.log
+cloudflared.pid
+cloudflared_test.log
+serveo.log
+serveo.pid
+# 乱码命名的本地快捷方式（原：启动分享链接.app/.command）
+*.app/
+*.command
+.DS_Store

@@ -1,0 +1,33 @@
+{
+  "lastUpdate": "2026-08-10T21:33:58.350862",
+  "generatedAt": "2026-08-10T21:34:00.489591",
+  "dataSource": "dongqiudi-real",
+  "leagues": {
+    "australia": [
+      {
+        "id": "aleague",
+        "name": "澳超联赛",
+        "country": "澳大利亚",
+        "flag": "🇦🇺"
+      },
+      {
+        "id": "nzfootball",
+        "name": "新西兰超级联赛",
+        "country": "新西兰",
+        "flag": "🇳🇿"
+      }
+    ]
+  },
+  "yesterdayMatches": [],
+  "todayPreviews": [],
+  "pushDigest": {
+    "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
+    "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
+    "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（双方实力接近，值得关注）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（主裁尺度偏严，注意出牌风险）",
+    "yesterdayCount": 2,
+    "todayCount": 3,
+    "fullReport": true,
+    "_dataSource": "dongqiudi-real",
+    "_gender": "women"
+  }
+}

@@ -4,13 +4,20 @@
   "outputDirectory": "public",
   "installCommand": "echo '--- No npm/python dependencies required (stdlib only) ---'",
   "framework": null,
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/api/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "s-maxage=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "Cache-Control", "value": "s-maxage=0, stale-while-revalidate=86400" }
       ]
     },
@@ -24,11 +31,16 @@
   ],
   "redirects": [],
   "rewrites": [
-    { "source": "/api/health", "destination": "/data/health.json" },
-    { "source": "/api/dashboard", "destination": "/data/dashboard.json" },
+    { "source": "/",                      "destination": "/index.html" },
+    { "source": "/men",                   "destination": "/index.html" },
+    { "source": "/men.html",              "destination": "/index.html" },
+    { "source": "/women",                 "destination": "/women.html" },
+    { "source": "/api/health",            "destination": "/data/health.json" },
+    { "source": "/api/dashboard",         "destination": "/data/dashboard.json" },
+    { "source": "/api/dashboard-women",   "destination": "/data/dashboard-women.json" },
     { "source": "/api/dashboard/:region", "destination": "/data/dashboard-:region.json" },
-    { "source": "/api/push/latest", "destination": "/data/push-latest.json" },
-    { "source": "/api/push/history", "destination": "/data/push-history.json" }
+    { "source": "/api/push/latest",       "destination": "/data/push-latest.json" },
+    { "source": "/api/push/history",      "destination": "/data/push-history.json" }
   ],
   "functions": {
     "api/refresh.js": {

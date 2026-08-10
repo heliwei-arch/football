@@ -1,0 +1,75 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-08-10T21:33:58.350862",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
+        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（双方实力接近，值得关注）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（主裁尺度偏严，注意出牌风险）",
+        "yesterdayCount": 2,
+        "todayCount": 3,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    },
+    {
+      "timestamp": "2026-08-10T20:56:45.169508",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
+        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（双方实力接近，值得关注）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（常规联赛对决）",
+        "yesterdayCount": 2,
+        "todayCount": 3,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    },
+    {
+      "timestamp": "2026-08-10T20:36:31.719199",
+      "manual": true,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
+        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（常规联赛对决）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（常规联赛对决）",
+        "yesterdayCount": 2,
+        "todayCount": 3,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    },
+    {
+      "timestamp": "2026-08-10T20:34:26.331595",
+      "manual": true,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
+        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（常规联赛对决）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（常规联赛对决）",
+        "yesterdayCount": 2,
+        "todayCount": 3,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    },
+    {
+      "timestamp": "2026-08-10T20:19:57.809682",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
+        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（主裁尺度偏严，注意出牌风险）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（主裁尺度偏严，注意出牌风险）",
+        "yesterdayCount": 2,
+        "todayCount": 3,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    }
+  ],
+  "gender": "women"
+}
