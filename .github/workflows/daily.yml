@@ -73,27 +73,13 @@ jobs:
           curl -sSL --max-time 15 "$WOMEN_URL" -o /tmp/old_history/push-history-women.json 2>/dev/null \
             && echo "✅ 女足历史下载成功 ($(wc -c </tmp/old_history/push-history-women.json) B)" \
             || echo "ℹ️ 女足历史暂不可用（大概率是首次部署 → 跳过，从空历史开始，不影响构建）"
-          # 如果至少下载成功一个，组装成 cache.json 作为 generate_static.py 的本地兜底
+          # 如果至少下载成功一个，打印大小提示（cache.json兜底仅本地server调试用，非必需）
+          # 注意：generate_static.py 会直接通过 OLD_PUSH_HISTORY_URL 环境变量自己去 Pages URL 拉历史并合并
+          # 因此这里不需要再组装 cache.json，避免 YAML 缩进/内嵌 heredoc 语法陷阱
           if [ -s /tmp/old_history/push-history.json ] || [ -s /tmp/old_history/push-history-women.json ]; then
-            python3 - <<'PY' || true
-import json, os
-hist_men, hist_women = [], []
-for p, var in [("/tmp/old_history/push-history.json", "hist_men"),
-               ("/tmp/old_history/push-history-women.json", "hist_women")]:
-    if os.path.exists(p):
-        try:
-            d = json.load(open(p, "r", encoding="utf-8"))
-            arr = d.get("history", []) if isinstance(d, dict) else (d if isinstance(d, list) else [])
-            if var == "hist_men": hist_men = arr
-            else: hist_women = arr
-        except Exception as e:
-            print(f"  解析{p}失败跳过：{e}")
-json.dump({"pushHistory": hist_men, "pushHistoryWomen": hist_women},
-          open("cache.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-print(f"✅ cache.json 已生成 男足{len(hist_men)}条 / 女足{len(hist_women)}条")
-PY
+            echo "✅ 旧历史下载成功，generate_static.py 将通过环境变量 URL 自动完成合并（无需本步骤处理）"
           else
-            echo "ℹ️ 首次部署无旧历史：跳过 cache.json 生成（今天这条将是30天历史的第1条）"
+            echo "ℹ️ 首次部署无旧历史：generate_static.py 将从空列表开始，今天这条将是 30 天滚动历史的第 1 条（不会有任何问题）"
           fi
           # ============ 这个 step 必须保证 exit 0，否则整个 workflow 挂 ============
           exit 0
