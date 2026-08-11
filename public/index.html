@@ -5,45 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>⚽ 男足 足球赛道日报 - 每日赛事分析与预告</title>
 <style>
-  :root {
+  /* =========================================================
+     【FT早知道 · 全局双主题Token系统（经验312478 Success）】
+     唯一颜色来源：body[data-theme] → 组件统一用 var(xxx)，不散落硬编码
+     切换主题：document.body.setAttribute('data-theme', 'men-dark' | 'women-light')
+     ========================================================= */
+  :root, body[data-theme="men-dark"] {
+    /* 男足 · 深蓝暗色系（原配色保持100%兼容，避免视觉回归） */
     --bg-primary: #0f172a;
     --bg-secondary: #1e293b;
     --bg-card: #1e293b;
     --bg-card-hover: #273449;
+    --bg-chip: #0b1220;
+    --bg-sidebar: #0a0f1e;
+    --bg-modal-backdrop: rgba(2, 6, 23, 0.75);
+    --bg-header: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     --border: #334155;
+    --border-hover: #475569;
     --text-primary: #f1f5f9;
     --text-secondary: #94a3b8;
     --text-muted: #64748b;
     --accent: #22c55e;
     --accent-hover: #16a34a;
+    --accent-soft: rgba(34, 197, 94, 0.12);
     --danger: #ef4444;
     --warning: #f59e0b;
     --info: #3b82f6;
     --purple: #a855f7;
+    --gender: #38bdf8;           /* 男足专属蓝 */
+    --sidebar-active: #22c55e;
+    --sidebar-active-bg: rgba(34,197,94,0.14);
     --gradient-1: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
     --gradient-2: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
     --gradient-3: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    --shadow-card: 0 2px 12px rgba(0,0,0,0.35);
+    --shadow-modal: 0 12px 48px rgba(0,0,0,0.55);
   }
-  
+  body[data-theme="women-light"] {
+    /* 女足 · 奶白粉浅色系（用户新需求2） */
+    --bg-primary: #fdf7fa;        /* 奶白粉主背景 */
+    --bg-secondary: #ffffff;      /* 纯白卡片副背景 */
+    --bg-card: #ffffff;           /* 卡片白底 */
+    --bg-card-hover: #fff5f9;
+    --bg-chip: #fdf2f8;           /* 奶白芯片 */
+    --bg-sidebar: #ffffff;
+    --bg-modal-backdrop: rgba(236, 72, 153, 0.18);
+    --bg-header: linear-gradient(135deg, #fff0f6 0%, #fdf7fa 100%);  /* 粉白渐变头 */
+    --border: #f4d6e6;            /* 柔和玫红边 */
+    --border-hover: #e9b5cf;
+    --text-primary: #111827;      /* 深灰主文字 */
+    --text-secondary: #6b7280;    /* 中灰副文字 */
+    --text-muted: #9ca3af;
+    --accent: #059669;            /* 森林绿（保留品牌色） */
+    --accent-hover: #047857;
+    --accent-soft: rgba(5, 150, 105, 0.1);
+    --danger: #dc2626;
+    --warning: #d97706;
+    --info: #7c3aed;              /* 紫罗兰（女足主色2） */
+    --purple: #9333ea;
+    --gender: #db2777;            /* 女足专属玫红 🌸 */
+    --sidebar-active: #db2777;
+    --sidebar-active-bg: rgba(219,39,119,0.14);
+    --gradient-1: linear-gradient(135deg, #059669 0%, #047857 100%);
+    --gradient-2: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    --gradient-3: linear-gradient(135deg, #db2777 0%, #be185d 100%);
+    --shadow-card: 0 2px 12px rgba(236, 72, 153, 0.08);
+    --shadow-modal: 0 12px 48px rgba(219, 39, 119, 0.22);
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  
+
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', Roboto, sans-serif;
     background: var(--bg-primary);
     color: var(--text-primary);
     min-height: 100vh;
     line-height: 1.6;
+    transition: background 0.35s ease, color 0.35s ease;
   }
-  
+
   /* 顶部导航 */
   .header {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: var(--bg-header);
     border-bottom: 1px solid var(--border);
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
+    transition: background 0.35s ease, border-color 0.35s ease;
   }
   .header-inner {
     max-width: 1400px;
@@ -806,14 +856,635 @@
   .datasource-banner .refresh-time {
     display: inline-block;
     margin-left: 16px;
-    color: #a7f3d0;
+    color: var(--accent, #a7f3d0);
     font-weight: 400;
   }
+
+  /* =========================================================
+     【FT早知道App · 新增全局样式（补丁2+3）】
+     顺序：① 男女胶囊Tab  ② App Shell+左边洲栏布局  ③ 球队卡片国旗+字母队徽
+           ④ 球队详情弹窗  ⑤ 球员网格  ⑥ T-1战术SVG阵型
+     ========================================================= */
+
+  /* --- ① 男女足球胶囊Tab（datasource-banner内）--- */
+  .gender-pill-tabs {
+    display: inline-flex;
+    padding: 3px;
+    margin-left: 14px;
+    background: var(--bg-chip);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    align-items: center;
+    gap: 2px;
+    box-shadow: var(--shadow-card);
+  }
+  .gpill {
+    all: unset;
+    cursor: pointer;
+    padding: 5px 13px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.22s cubic-bezier(.4,0,.2,1);
+    white-space: nowrap;
+  }
+  .gpill:hover { color: var(--text-primary); }
+  .gpill.active {
+    color: #fff;
+    background: linear-gradient(90deg, var(--accent), var(--gender));
+    box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+  }
+  .gpill-emoji { font-size: 14px; }
+
+  /* --- ② App Shell 2列布局：左侧垂直大洲栏 + 右侧主内容 --- */
+  .app-shell {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 24px 20px 64px;
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 24px;
+    align-items: flex-start;
+  }
+  /* 响应式：<1080px 大洲栏变成横向tabs */
+  @media (max-width: 1080px) {
+    .app-shell {
+      grid-template-columns: 1fr;
+      padding: 16px 14px 48px;
+    }
+  }
+
+  /* 左侧大洲快捷栏 */
+  .continent-sidebar {
+    position: sticky;
+    top: 94px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 16px 18px;
+    box-shadow: var(--shadow-card);
+    box-sizing: border-box;
+  }
+  @media (max-width: 1080px) {
+    .continent-sidebar { position: static; padding: 14px; }
+  }
+  .cs-title {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    padding-left: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 10px;
+  }
+  .cs-nav { display: flex; flex-direction: column; gap: 6px; }
+  @media (max-width: 1080px) {
+    .cs-nav { flex-direction: row; flex-wrap: wrap; gap: 6px; }
+  }
+  .cs-btn {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 13px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+    border: 1px solid transparent;
+  }
+  @media (max-width: 1080px) {
+    .cs-btn { padding: 8px 11px; font-size: 13px; }
+  }
+  .cs-btn:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+  }
+  .cs-btn.active {
+    background: var(--sidebar-active-bg);
+    color: var(--sidebar-active);
+    border-color: var(--sidebar-active);
+    font-weight: 600;
+  }
+  .cs-btn .csl { display: inline-flex; align-items: center; gap: 8px; }
+  .cs-btn .csemoji { font-size: 17px; }
+  .cs-badge {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    line-height: 1.5;
+  }
+  .cs-btn.active .cs-badge {
+    background: var(--sidebar-active);
+    color: #fff;
+    border-color: transparent;
+  }
+  .cs-foot { margin-top: 20px; padding-top: 14px; border-top: 1px dashed var(--border); }
+
+  /* 主内容容器（替换原.container单列） */
+  .main-content .container { /* 兼容原结构内部：main-content里还保留旧.container class，内部max-width不需要了 */
+    max-width: none;
+    padding: 0;
+  }
+  .main-content > .region-tabs { display: none; }  /* 旧横版region-tabs隐藏（已移到左侧垂直栏）*/
+
+  /* --- ③ 球队卡片：国旗emoji + 字母渐变队徽 --- */
+  .team-box {  /* match卡片里的homeTeam/awayTeam容器（原名team-a / team-b → 统一叫team-box，找已有CSS类名看match-card结构）*/
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+  /* 兼容：match卡片里原有球队块的队徽+名字渲染位置（根据旧.team-a .team-name类名重写渲染）*/
+  .team-logo-wrap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 54px;
+  }
+  .team-flag {
+    font-size: 16px;
+    line-height: 1;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.35));
+  }
+  .team-crest {  /* 渐变圆形字母队徽（SVG或直接div渐变） */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25), inset 0 -2px 6px rgba(0,0,0,0.16);
+    border: 2px solid rgba(255,255,255,0.28);
+    position: relative;
+  }
+  body[data-theme="women-light"] .team-crest {
+    box-shadow: 0 2px 8px rgba(219, 39, 119, 0.14), inset 0 -2px 6px rgba(0,0,0,0.1);
+    border-color: rgba(255,255,255,0.9);
+  }
+  .team-link {  /* 球队区域可点，hash路由跳转详情弹窗 */
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin: -4px -8px;
+    transition: background 0.18s ease;
+  }
+  .team-link:hover { background: var(--bg-card-hover); }
+  .team-link-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .team-link-name .name {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+  }
+  .team-link-name .meta {
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+  /* 焦点赛🔥橙色三角标 */
+  .hot-pin {
+    display: inline-block;
+    padding: 2px 7px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    border-radius: 6px;
+    margin-left: 8px;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.35);
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+  }
+
+  /* --- ④ 球队详情弹窗（teamModal）--- */
+  .team-modal[hidden] { display: none !important; }
+  .team-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  @media (min-width: 768px) {
+    .team-modal { align-items: center; }
+  }
+  .team-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: var(--bg-modal-backdrop);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    animation: fadeIn 0.2s ease;
+  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+  .team-modal-panel {
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    width: 100%;
+    max-width: 1060px;
+    max-height: 89vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-modal);
+    animation: slideUp 0.3s cubic-bezier(.4,0,.2,1);
+  }
+  @media (min-width: 768px) {
+    .team-modal-panel {
+      border-radius: 24px;
+      max-height: 86vh;
+    }
+  }
+  .team-modal-close {
+    all: unset;
+    position: absolute;
+    top: 14px; right: 16px;
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    transition: all 0.18s;
+    z-index: 10;
+    font-size: 16px;
+  }
+  .team-modal-close:hover {
+    color: var(--danger);
+    border-color: var(--danger);
+    transform: rotate(90deg);
+  }
+
+  .team-modal-head {
+    padding: 26px 30px 18px;
+    background: linear-gradient(135deg, var(--accent-soft), transparent);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .team-modal-head .hcrest {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px; height: 72px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border: 3px solid rgba(255,255,255,0.32);
+    box-shadow: var(--shadow-card);
+    flex-shrink: 0;
+  }
+  .team-modal-head .htxt .hname {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .team-modal-head .htxt .hflag { font-size: 22px; }
+  .team-modal-head .htxt .hmeta {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 13px;
+  }
+  .team-modal-head .htxt .hmeta .chip {
+    display: inline-flex;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: var(--bg-chip);
+    border: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  .team-modal-tabs {
+    display: flex;
+    padding: 14px 20px 0;
+    gap: 6px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-secondary);
+  }
+  .tmtab {
+    all: unset;
+    cursor: pointer;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    margin-bottom: -1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+  }
+  .tmtab:hover { color: var(--text-primary); }
+  .tmtab.active {
+    background: var(--bg-card);
+    color: var(--gender);
+    border-color: var(--border);
+    font-weight: 700;
+  }
+  .tmtab-badge {
+    padding: 1px 8px;
+    background: var(--bg-chip);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
+  .tmtab-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .team-modal-tabpanel {
+    padding: 20px 28px 28px;
+    overflow-y: auto;
+    flex: 1 1 auto;
+  }
+
+  /* --- ⑤ 球员网格 --- */
+  .squad-filters {
+    display: inline-flex;
+    padding: 3px;
+    background: var(--bg-chip);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    gap: 2px;
+    margin-bottom: 18px;
+  }
+  .sqf-btn {
+    all: unset;
+    cursor: pointer;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+  }
+  .sqf-btn:hover { color: var(--text-primary); }
+  .sqf-btn.active {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-hover);
+    box-shadow: var(--shadow-card);
+  }
+  .squad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 14px;
+  }
+  .ply-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    box-shadow: var(--shadow-card);
+    transition: all 0.2s;
+    position: relative;
+  }
+  .ply-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--gender);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+  .ply-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 3px solid rgba(255,255,255,0.35);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    margin-top: 6px;
+  }
+  .ply-number {
+    position: absolute;
+    top: 8px; right: 8px;
+    padding: 1px 7px;
+    border-radius: 6px;
+    background: var(--bg-chip);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .ply-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .ply-pos {
+    display: inline-flex;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  .ply-pos.GK  { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+  .ply-pos.DEF { background: rgba(59, 130, 246, 0.13); color: var(--info, #3b82f6); }
+  .ply-pos.MID { background: rgba(168, 85, 247, 0.13); color: var(--purple, #a855f7); }
+  .ply-pos.FWD { background: rgba(34, 197, 94, 0.13);  color: var(--accent, #22c55e); }
+  .ply-info-mini {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  /* --- ⑥ T-1战术阵型 --- */
+  .tactics-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    gap: 20px;
+    align-items: stretch;
+  }
+  @media (max-width: 900px) {
+    .tactics-wrap { grid-template-columns: 1fr; }
+  }
+  .tactics-pitch {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--bg-secondary);
+    box-shadow: var(--shadow-card);
+    min-height: 360px;
+  }
+  .tactics-pitch svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .tactics-info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .tactics-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: -2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .tactics-formation-chip {
+    display: inline-flex;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, var(--accent), var(--gender));
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 13px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .tactics-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tac-tag {
+    display: inline-flex;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: var(--bg-chip);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .tactics-data-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .tac-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    gap: 12px;
+  }
+  .tac-row .lbl { color: var(--text-secondary); }
+  .tac-row .val { color: var(--text-primary); font-weight: 600; }
+  .tac-bar {
+    width: 140px;
+    height: 7px;
+    background: var(--bg-chip);
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .tac-bar > i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--gender));
+    border-radius: 999px;
+  }
+  .tactics-strategy {
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    color: var(--text-primary);
+    font-size: 13.5px;
+    line-height: 1.8;
+  }
+  .tactics-strategy::before {
+    content: "📝 策略说明：";
+    font-weight: 700;
+    color: var(--gender);
+  }
+  .tactics-empty {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--bg-secondary);
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+  }
+
 </style>
 </head>
-<body style="margin:0;padding:0;background:#0f172a;color:#e2e8f0;">
+<body data-theme="men-dark">
 <noscript>
-  <div style="background:#0f172a;color:#f87171;padding:24px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;">
+  <div style="background:var(--bg-primary,#0f172a);color:var(--text-primary,#f1f5f9);padding:24px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;">
     <h2 style="margin:0 0 12px 0;font-size:20px;">⚠️ 浏览器已禁用 JavaScript</h2>
     <p style="margin:0 0 8px 0;line-height:1.6;font-size:15px;">
       本页面需要启用 JavaScript 才能加载懂球帝的真实赛事数据并渲染所有对比图表。
@@ -825,23 +1496,28 @@
 </noscript>
 <!-- 兜底占位：若JS加载中/报错，至少页面不是纯白，能显示出"加载中" -->
 <div id="fallbackLoader" style="padding:60px 24px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;">
-  <div style="font-size:48px;margin-bottom:16px;">⚽</div>
-  <div id="fallbackText" style="font-size:16px;color:#94a3b8;line-height:1.8;">
-    正在加载赛事数据仪表盘（男足版）…<br/>
-    <span style="font-size:13px;color:#64748b;">若长时间停留在此页面，请按 F5 刷新，或检查浏览器控制台（F12）是否有错误提示。</span>
+  <div style="font-size:48px;margin-bottom:16px;">📰⚽</div>
+  <div id="fallbackText" style="font-size:16px;color:var(--text-secondary,#94a3b8);line-height:1.8;">
+    【FT早知道】正在加载赛事数据仪表盘（默认男足深色）…<br/>
+    <span style="font-size:13px;color:var(--text-muted,#64748b);">每天 9:00(北京时间) 懂球帝数据自动更新。若长时间停留在此页面，请按 F5 刷新。</span>
   </div>
 </div>
 <div class="datasource-banner">
   <span class="icon">✅</span>
-  <strong>真实数据（男足版）：</strong>
+  <strong id="datasourceTitle">FT早知道 · 男足版（懂球帝真实数据）：</strong>
   当前所有对阵、联赛、比分、裁判分配均来自
   <code>懂球帝</code>
   公开免Key接口
   <code>magicball/v1/list/match_list</code>
   ，裁判严格按区域分配（杜绝跨区执法幻觉）；Opta统计以真实比分为锚点推算。
-  <span class="gender-tabs" role="tablist" aria-label="性别切换">
-    <a href="index.html" class="active" aria-current="page" title="男足日报（默认首页）">⚽ 男足</a>
-    <a href="women.html" title="查看女足独立页面">♀️ 女足</a>
+  <!-- 男女胶囊Tab（App内切换，不再跳转独立页） -->
+  <span class="gender-pill-tabs" role="tablist" aria-label="男女足切换">
+    <button type="button" class="gpill active" data-gender="men" data-theme="men-dark" title="男足 · 深蓝深色主题">
+      <span class="gpill-emoji">🌙</span><span class="gpill-txt">男足</span>
+    </button>
+    <button type="button" class="gpill" data-gender="women" data-theme="women-light" title="女足 · 奶白粉浅色主题">
+      <span class="gpill-emoji">🌸</span><span class="gpill-txt">女足</span>
+    </button>
   </span>
   <span class="refresh-time" id="datasourceRefreshTime"></span>
 </div>
@@ -849,10 +1525,10 @@
 <div class="header">
   <div class="header-inner">
     <div class="logo">
-      <span class="logo-icon">⚽</span>
+      <span class="logo-icon" style="display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;background:var(--gradient-3);box-shadow:var(--shadow-card);">📰</span>
       <div>
-        <div>男足 足球赛道日报</div>
-        <div style="font-size:12px;font-weight:400;color:var(--text-secondary);">每日赛事分析 · 裁判洞察 · 今日预告（男足版）</div>
+        <div style="font-size:24px;letter-spacing:0.5px;background:linear-gradient(90deg,var(--accent) 0%,var(--gender) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">FT早知道</div>
+        <div style="font-size:12px;font-weight:400;color:var(--text-secondary);">📅 每天早9点定时推送 · 🌍 欧/亚/澳全赛道 · ⚡ 懂球帝真实数据</div>
       </div>
     </div>
     <div class="update-info">
@@ -861,7 +1537,7 @@
         <span id="lastUpdateText">加载中...</span>
       </div>
       <button class="btn" onclick="refreshData()" id="refreshBtn">
-        🔄 刷新数据
+        🔄 刷新
       </button>
       <button class="btn btn-primary" onclick="forceUpdate()" id="updateBtn">
         ⚡ 立即更新
@@ -870,27 +1546,30 @@
   </div>
 </div>
 
-<div class="container">
-  <!-- 区域 Tabs -->
-  <div class="region-tabs" id="regionTabs">
-    <div class="region-tab active" data-region="all">
-      🌍 全部赛道 <span class="count-badge" id="count-all">0</span>
+<div class="app-shell">
+  <!-- 【新增】左侧垂直大洲快捷栏 -->
+  <aside class="continent-sidebar" id="continentSidebar" aria-label="大洲快捷栏">
+    <div class="cs-title">赛道 / Continents</div>
+    <div class="cs-nav" id="continentNav">
+      <!-- JS渲染：🌍全部/🇪🇺欧洲/🌏亚洲/🇦🇺澳洲，每个带徽章 + 激活高亮 -->
     </div>
-    <div class="region-tab" data-region="europe">
-      🏴 欧洲 <span class="count-badge" id="count-europe">0</span>
+    <div class="cs-foot">
+      <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px;">🔥 热度说明</div>
+      <div style="font-size:11px;color:var(--text-secondary);line-height:1.7;">
+        · 按「联赛等级50%+排名强度20%+德比焦点15%+状态H2H15%」加权<br/>
+        · 焦点赛（≥70分）带橙色三角标并置顶
+      </div>
     </div>
-    <div class="region-tab" data-region="asia">
-      🏆 亚洲 <span class="count-badge" id="count-asia">0</span>
-    </div>
-    <div class="region-tab" data-region="australia">
-      🇦🇺 澳洲 <span class="count-badge" id="count-australia">0</span>
-    </div>
-  </div>
-  
-  <!-- 推送摘要 -->
-  <div class="push-card" id="pushCard" style="display:none;">
-    <div class="push-title" id="pushTitle">⚽ 今日推送</div>
-    <div class="push-section">
+  </aside>
+
+  <!-- 右侧主内容区（原container内容移进来，移除旧的横排region-tabs） -->
+  <div class="main-content">
+    <!-- （原region-tabs横版已移到左侧垂直栏，此处删除） -->
+
+    <!-- 推送摘要 -->
+    <div class="push-card" id="pushCard" style="display:none;">
+      <div class="push-title" id="pushTitle">⚽ 今日推送</div>
+      <div class="push-section">
       <span class="push-section-label">📌 昨日精选：</span>
       <span id="pushYesterday"></span>
     </div>
@@ -1465,13 +2144,724 @@ async function forceUpdate() {
   }
 }
 
-// ===== 事件绑定 =====
+// =========================================================
+// 【FT早知道App · 补丁3 交互逻辑（单页App化）】
+// 顺序：① 球队渲染辅助（国旗+渐变字母队徽+hash链接）② 覆盖昨日/今日卡片
+//       ③ 男女足球Tab切换+主题  ④ 左侧大洲快捷栏（徽章） ⑤ 球队详情弹窗
+//       ⑥ hash路由（popstate） ⑦ 初始化
+// =========================================================
+
+// --- ① 球队块渲染：国旗emoji + 圆形渐变字母队徽 + name + rank（可点hash跳转详情弹窗）---
+function appTeamBlock(t, side, opts = {}) {
+  // 兼容：t 可能是 string（旧adapter版）→ 仅渲染纯文字；否则对象{name,teamId,countryFlag,appLogo,rank}
+  if (typeof t === 'string') return `<div class="team-link-name"><div class="name">${t}</div></div>`;
+  if (!t) return '';
+  const teamId = t.teamId || ('fallback_' + (t.name || '').slice(0,6));
+  const flag = t.countryFlag || ((t.appLogo && t.appLogo.countryFlag) ? t.appLogo.countryFlag : '🏳️');
+  const colors = (t.appLogo && t.appLogo.colors) ? t.appLogo.colors : ['#22c55e','#16a34a'];
+  const letters = (t.appLogo && t.appLogo.text) ? t.appLogo.text : ((t.name || 'FT').slice(0,2));
+  const rankTxt = t.rank ? `排名 ${t.rank}` : '';
+  const scoreTxt = (typeof t.score === 'number') ? `<span style="margin-left:8px;font-weight:700;color:var(--text-primary);font-size:13px;">${t.score}球</span>` : '';
+  return `
+    <a class="team-link" href="#team=${encodeURIComponent(teamId)}" data-team-id="${teamId}">
+      <div class="team-logo-wrap">
+        <span class="team-flag">${flag}</span>
+        <span class="team-crest" style="background:linear-gradient(135deg, ${colors[0]} 0%, ${colors[1]} 100%);">${letters}</span>
+      </div>
+      <div class="team-link-name">
+        <div class="name">${t.name || '未知队'}${scoreTxt}</div>
+        <div class="meta">${side === 'H' ? '🏠 主场' : '✈️ 客场'}${rankTxt ? ' · 📊 ' + rankTxt : ''}</div>
+      </div>
+    </a>
+  `;
+}
+// 球员头像（按avatarSeed稳定取色+首字母）
+function plyAvatar(p, size = 'md') {
+  const SEED = (p.avatarSeed || 12345);
+  const PAL = [["#22c55e","#15803d"],["#3b82f6","#1d4ed8"],["#ef4444","#991b1b"],["#f59e0b","#c2410c"],["#8b5cf6","#6d28d9"],["#ec4899","#be185d"],["#06b6d4","#0e7490"],["#a855f7","#7e22ce"]];
+  const [c1, c2] = PAL[SEED % PAL.length];
+  const letters = (p.name || 'FT').trim();
+  const ch = /[\u4e00-\u9fff]/.test(letters) ? letters.slice(-2) : (letters.split(/\s+/).slice(0,2).map(w => w[0]).join('').toUpperCase());
+  const dim = size === 'sm' ? 42 : 56;
+  const fontSize = size === 'sm' ? 15 : 18;
+  return `<div class="ply-avatar" style="width:${dim}px;height:${dim}px;font-size:${fontSize}px;background:linear-gradient(135deg,${c1},${c2});">${ch}</div>`;
+}
+
+// --- ② 覆盖/增强原 renderYesterdayMatch / renderPreviewMatch：加入国旗队徽team-link + 热度焦点标🔥 ---
+const _origRenderYesterday = renderYesterdayMatch;
+renderYesterdayMatch = function(m) {
+  try {
+    // 球队块替换（原来的m.homeTeam / m.awayTeam 如果是字符串→旧adapter版，我们不替换保持兼容；否则对象版加国旗队徽）
+    const isAppObj = (m.homeTeam && typeof m.homeTeam === 'object');
+    if (!isAppObj) return _origRenderYesterday(m);  // 旧数据兼容
+
+    // 热度+焦点三角标
+    const hotPin = (m.isHotMatch || m.heatScore >= 70)
+      ? `<span class="hot-pin">🔥焦点 ${m.heatScore || ''}</span>`
+      : (m.heatScore ? `<span style="font-size:11px;color:var(--text-muted);margin-left:8px;">热度 ${m.heatScore}</span>` : '');
+
+    const s = m.stats;
+    const eventIcons = { goal: '⚽', yellow: '🟨', red: '🟥' };
+    const eventsHtml = (m.keyEvents || []).map(e => `
+      <div class="event-item">
+        <div class="event-minute">${e.minute}'</div>
+        <div class="event-icon">${eventIcons[e.type] || '📌'}</div>
+        <div class="event-text ${e.team}">${e.description}</div>
+      </div>
+    `).join('');
+    const analysisHtml = (m.analysis || []).map(a => `<li>${a}</li>`).join('');
+
+    return `
+      <div class="match-card" data-region="${m.region}">
+        <div class="match-header">
+          <span class="league-tag">${m.league.flag || '⚽'} ${m.league.name}${hotPin}</span>
+          <span class="match-meta">${m.date} ${m.time} · ${m.venue}</span>
+        </div>
+        <div class="match-score-row">
+          <div class="team home">
+            <div class="team-label">主 场</div>
+            ${appTeamBlock(m.homeTeam, 'H')}
+          </div>
+          <div class="score-display">
+            <div class="score">
+              <span style="color:#60a5fa">${(s && s.score) ? s.score.home : (m.homeTeam.score ?? 0)}</span>
+              <span class="score-sep">:</span>
+              <span style="color:#f472b6">${(s && s.score) ? s.score.away : (m.awayTeam.score ?? 0)}</span>
+            </div>
+            ${s && s.xG ? `
+            <div class="xg-display">
+              <span class="xg-label">xG</span> ${s.xG.home} - ${s.xG.away}
+            </div>` : ''}
+          </div>
+          <div class="team away">
+            <div class="team-label">客 场</div>
+            ${appTeamBlock(m.awayTeam, 'A')}
+          </div>
+        </div>
+        <button class="toggle-btn" onclick="toggleDetails(this)">展开详细数据 ▼</button>
+        <div class="match-details">
+          ${s ? `
+          <div class="stats-section">
+            <div class="stats-section-title">📊 Opta/StatsBomb 风格对比数据</div>
+            ${renderStatBar('控球率', s.possession.home, s.possession.away, '%')}
+            ${renderStatBar('射门', s.shots.home, s.shots.away)}
+            ${renderStatBar('射正', s.shotsOnTarget.home, s.shotsOnTarget.away)}
+            ${renderStatBar('传球', s.passes.home, s.passes.away)}
+            ${renderStatBar('传球准确率', String(s.passAccuracy.home).replace('%',''), String(s.passAccuracy.away).replace('%',''), '%')}
+            ${renderStatBar('抢断', s.tackles.home, s.tackles.away)}
+            ${renderStatBar('拦截', s.interceptions.home, s.interceptions.away)}
+            ${renderStatBar('犯规', s.fouls.home, s.fouls.away)}
+            ${renderStatBar('角球', s.corners.home, s.corners.away)}
+            ${renderStatBar('越位', s.offsides.home, s.offsides.away)}
+            ${renderStatBar('扑救', s.saves.home, s.saves.away)}
+            ${renderStatBar('黄牌', s.yellowCards.home, s.yellowCards.away)}
+            ${renderStatBar('红牌', s.redCards.home, s.redCards.away)}
+          </div>` : ''}
+          ${renderRefereeAnalysis(m.refereeAnalysis, false)}
+          ${analysisHtml ? `
+          <div class="analysis-section">
+            <div class="stats-section-title">💡 比赛分析结论</div>
+            <ul class="analysis-list">${analysisHtml}</ul>
+          </div>` : ''}
+          <div class="events-section">
+            <div class="stats-section-title">⏱️ 关键事件时间线</div>
+            <div class="events-timeline">
+              ${eventsHtml || '<div style="color:var(--text-muted);font-size:13px;padding:12px 0;">暂无记录</div>'}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  } catch (e) {
+    console.warn('renderYesterdayMatch App版出错→回退原版：', e);
+    return _origRenderYesterday(m);
+  }
+};
+const _origRenderPreview = renderPreviewMatch;
+renderPreviewMatch = function(p) {
+  try {
+    const isAppObj = (p.homeTeam && typeof p.homeTeam === 'object');
+    if (!isAppObj) return _origRenderPreview(p);
+    const hotPin = (p.isHotMatch || p.heatScore >= 70)
+      ? `<span class="hot-pin">🔥焦点 ${p.heatScore || ''}</span>`
+      : (p.heatScore ? `<span style="font-size:11px;color:var(--text-muted);margin-left:8px;">热度 ${p.heatScore}</span>` : '');
+    const stars = p.predictedDifficulty || (p.intensity ? String(p.intensity).length : 3);
+    const features = (p.features ? (Array.isArray(p.features) ? p.features : String(p.features).split(/[；;]/).filter(Boolean)) : []).map(f => `<li>${f}</li>`).join('');
+    const formCell = v => {
+      const wl = (v === 'W' || v === '胜') ? 'form-win' : (v === 'D' || v === '平') ? 'form-draw' : 'form-lose';
+      return `<div class="form-cell ${wl}">${v}</div>`;
+    };
+    const h = p.h2hLast5 || { homeWins: 0, draws: 0, awayWins: 0 };
+    const hr5 = p.homeRecentForm || (p.homeRecent5 || []).map(x => x === 'W' ? '胜' : x === 'D' ? '平' : '负');
+    const ar5 = p.awayRecentForm || (p.awayRecent5 || []).map(x => x === 'W' ? '胜' : x === 'D' ? '平' : '负');
+    return `
+      <div class="preview-card" data-region="${p.region}">
+        <div class="preview-header">
+          <span class="league-tag">${p.league.flag || '⚽'} ${p.league.name}${hotPin}</span>
+          <div class="difficulty-stars" title="激烈程度">${'★'.repeat(Math.min(5,Math.max(1,stars)))}${'☆'.repeat(5-Math.min(5,Math.max(1,stars)))}</div>
+        </div>
+        <div class="matchup-row">
+          <div>
+            <div class="team-label" style="font-size:11px;color:var(--text-muted);letter-spacing:1px;">主队</div>
+            <div style="color:#60a5fa;margin-top:3px;">
+              ${appTeamBlock(p.homeTeam, 'H')}
+            </div>
+          </div>
+          <div class="vs-text">VS</div>
+          <div>
+            <div class="team-label" style="font-size:11px;color:var(--text-muted);letter-spacing:1px;">客队</div>
+            <div style="color:#f472b6;margin-top:3px;text-align:right;">
+              ${appTeamBlock(p.awayTeam, 'A')}
+            </div>
+          </div>
+        </div>
+        <div class="kickoff-time">
+          ⏰ ${p.time || 'TBD'} 开球
+          ${p.venue ? `<span class="venue-info">📍 ${p.venue}</span>` : ''}
+        </div>
+        ${hr5.length ? `
+        <div class="form-section">
+          <div>
+            <div class="form-team-label">近5场</div>
+            <div class="form-row">${hr5.map(formCell).join('')}</div>
+          </div>
+          <div class="h2h-center">
+            <div class="h2h-label">交锋</div>
+            <div class="h2h-val"><span style="color:#60a5fa">${h.homeWins}</span> / ${h.draws} / <span style="color:#f472b6">${h.awayWins}</span></div>
+          </div>
+          <div style="text-align:right">
+            <div class="form-team-label">近5场</div>
+            <div class="form-row" style="justify-content:flex-end">${ar5.map(formCell).join('')}</div>
+          </div>
+        </div>` : ''}
+        ${features ? `
+        <div class="features-section">
+          <div class="features-title">🎯 本场看点 & 特点</div>
+          <ul class="feature-list">${features}</ul>
+        </div>` : ''}
+        ${renderRefereeAnalysis(p.refereeAnalysis, true)}
+      </div>
+    `;
+  } catch (e) {
+    console.warn('renderPreviewMatch App版出错→回退原版：', e);
+    return _origRenderPreview(p);
+  }
+};
+
+// --- ③ 男女足球胶囊Tab切换（主题 + 数据源）---
+let CURRENT_GENDER = PAGE_GENDER;  // 'men' | 'women'
+function setGender(gender, updateHash = true) {
+  gender = (gender === 'women') ? 'women' : 'men';
+  CURRENT_GENDER = gender;
+  // 主题切换
+  document.body.setAttribute('data-theme', gender === 'women' ? 'women-light' : 'men-dark');
+  // Tab激活
+  document.querySelectorAll('.gpill').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.gender === gender);
+  });
+  // 页面标题 / banner文字
+  const ttl = document.getElementById('datasourceTitle');
+  if (ttl) ttl.textContent = `FT早知道 · ${gender === 'men' ? '男足版（深蓝深色主题）' : '女足版（奶白粉浅色主题）'}（懂球帝真实数据）：`;
+  document.title = gender === 'men'
+    ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
+    : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
+  // update hash（保留其他键如 team=）
+  if (updateHash) {
+    const cur = parseAppHash();
+    cur.gender = gender;
+    writeAppHash(cur);
+  }
+  // 重新加载对应 dashboard.json
+  return loadData(gender);
+}
+
+// --- ④ 左侧大洲快捷栏（徽章）渲染 + 增强filterByRegion ---
+const CONTINENT_LABELS = [
+  { key: 'all',       emoji: '🌍', name: '全部赛道' },
+  { key: 'europe',    emoji: '🇪🇺', name: '欧洲' },
+  { key: 'asia',      emoji: '🌏', name: '亚洲' },
+  { key: 'australia', emoji: '🇦🇺', name: '澳洲' },
+];
+function renderContinentNav(badges) {
+  const nav = document.getElementById('continentNav');
+  if (!nav) return;
+  badges = badges || { all: {yesterday:0, today:0}, europe:{yesterday:0,today:0}, asia:{yesterday:0,today:0}, australia:{yesterday:0,today:0} };
+  nav.innerHTML = CONTINENT_LABELS.map(c => {
+    const y = (badges[c.key] && badges[c.key].yesterday) || 0;
+    const t = (badges[c.key] && badges[c.key].today) || 0;
+    const total = y + t;
+    return `
+      <button type="button" class="cs-btn ${c.key === CURRENT_REGION ? 'active' : ''}" data-region="${c.key}">
+        <span class="csl"><span class="csemoji">${c.emoji}</span><span>${c.name}</span></span>
+        <span class="cs-badge" title="昨日${y}场 · 今日${t}场预告">${total}</span>
+      </button>`;
+  }).join('');
+  // 绑定事件
+  nav.querySelectorAll('.cs-btn').forEach(btn => {
+    btn.addEventListener('click', () => filterByRegion(btn.dataset.region));
+  });
+}
+// 增强filterByRegion（操作.cs-btn 同时兼容旧.region-tab）
+const _origFilter = filterByRegion;
+filterByRegion = function(region) {
+  CURRENT_REGION = region || 'all';
+  // 左边垂直栏激活
+  document.querySelectorAll('#continentNav .cs-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.region === CURRENT_REGION);
+  });
+  // 旧横版tab保持激活（兼容）
+  document.querySelectorAll('.region-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.region === region);
+  });
+  render();
+};
+
+// --- ⑤ 球队详情弹窗（Tab切换 + 球员网格 + 战术SVG图）---
+let TEAMS_CACHE = null;   // teams.json 懒加载缓存
+let CURRENT_SQUAD_FILTER = 'ALL';  // ALL / GK / DEF / MID / FWD
+
+function hashColorBg(seed) {
+  const PAL = [["#22c55e","#15803d"],["#3b82f6","#1d4ed8"],["#ef4444","#991b1b"],["#f59e0b","#c2410c"],["#8b5cf6","#6d28d9"],["#ec4899","#be185d"],["#06b6d4","#0e7490"],["#a855f7","#7e22ce"]];
+  return PAL[(seed || 0) % PAL.length];
+}
+// 把dashboard中的homeTactics.lineup渲染成足球场SVG
+function renderPitchSVG(tactics, homeColors, awayColors) {
+  // tactics.lineup = [{pos, x, y, label}]，x∈[1,5] y∈[1,5]，x越大越靠近对方球门
+  const W = 560, H = 380;
+  const xMin = 30, xMax = W - 30, yMin = 24, yMax = H - 24;
+  const mapX = x => xMin + ((x - 1) / 4) * (xMax - xMin);
+  const mapY = y => yMin + ((y - 1) / 4) * (yMax - yMin);
+  const [hc1, hc2] = homeColors || ["#22c55e","#16a34a"];
+  const pitchBg = 'var(--accent-soft)';  // 绿+柔
+  // 选球员圆圈颜色（按位置GK=橙/DEF=蓝/MID=紫/FWD=红）
+  const posColor = p => ({GK:"#f59e0b",DEF:"#3b82f6",CDM:"#3b82f6",CB:"#3b82f6",LB:"#3b82f6",RB:"#3b82f6",MID:"#8b5cf6",CM:"#8b5cf6",CAM:"#db2777",ST:"#ef4444",CF:"#ef4444",LW:"#ec4899",RW:"#ec4899",SS:"#ef4444"}[p] || "#64748b");
+  const markers = (tactics.lineup || []).map((p, i) => {
+    const cx = mapX(p.x), cy = mapY(p.y);
+    const color = posColor(p.pos);
+    return `
+      <circle cx="${cx}" cy="${cy}" r="15" fill="${color}" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"/>
+      <text x="${cx}" y="${cy + 4}" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" style="pointer-events:none;">${p.pos}</text>`;
+  }).join('');
+  return `
+  <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景绿色足球场渐变（女足下柔和） -->
+    <defs>
+      <linearGradient id="pitch" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="${hc1}" stop-opacity="0.12"/>
+        <stop offset="100%" stop-color="${hc2}" stop-opacity="0.22"/>
+      </linearGradient>
+    </defs>
+    <rect x="2" y="2" width="${W-4}" height="${H-4}" rx="14" fill="url(#pitch)" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+    <!-- 中场线 + 中圈 -->
+    <line x1="${W/2}" y1="20" x2="${W/2}" y2="${H-20}" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <circle cx="${W/2}" cy="${H/2}" r="46" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <circle cx="${W/2}" cy="${H/2}" r="4" fill="rgba(255,255,255,0.85)"/>
+    <!-- 两个禁区 -->
+    <rect x="20" y="${H/2 - 70}" width="80" height="140" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <rect x="${W-100}" y="${H/2 - 70}" width="80" height="140" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <rect x="20" y="${H/2 - 34}" width="30" height="68" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <rect x="${W-50}" y="${H/2 - 34}" width="30" height="68" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <!-- 球员11人 -->
+    ${markers}
+  </svg>`;
+}
+
+async function loadTeams() {
+  if (TEAMS_CACHE) return TEAMS_CACHE;
+  try {
+    const r = await fetch('data/teams.json?_=' + Date.now(), { cache: 'no-cache' });
+    if (!r.ok) throw new Error('teams.json HTTP ' + r.status);
+    const j = await r.json();
+    TEAMS_CACHE = j && j.teams ? j.teams : (j || {});
+    return TEAMS_CACHE;
+  } catch (e) {
+    console.warn('teams.json 加载失败：', e);
+    TEAMS_CACHE = {};
+    return {};
+  }
+}
+function closeTeamModal(keepHash = false) {
+  const m = document.getElementById('teamModal');
+  if (!m) return;
+  m.hidden = true;
+  document.body.style.overflow = '';
+  // 清除team=hash但保留gender
+  if (!keepHash) {
+    const cur = parseAppHash();
+    delete cur.team;
+    writeAppHash(cur, true);
+  }
+}
+function openTeamModalByHash(teamId) {
+  return openTeamModal(teamId, false);
+}
+async function openTeamModal(teamId, updateHash = true) {
+  if (!teamId) return;
+  const modal = document.getElementById('teamModal');
+  if (!modal) return;
+  // 加载球队数据
+  const teams = await loadTeams();
+  const team = teams && teams[teamId];
+  if (!team) {
+    showToast('未找到该球队数据：' + teamId, 'error');
+    return;
+  }
+  // 写hash
+  if (updateHash) {
+    const cur = parseAppHash();
+    cur.team = teamId;
+    writeAppHash(cur, true);
+  }
+  // --- 渲染头部：国旗 + 大方队徽 + 队名 + meta chips ---
+  const colors = (team.appLogo && team.appLogo.colors) || hashColorBg(team.teamId.length);
+  const short = (team.appLogo && team.appLogo.text) || team.shortName || team.name.slice(0,2);
+  document.getElementById('teamModalHead').innerHTML = `
+    <div class="hcrest" style="background:linear-gradient(135deg,${colors[0]},${colors[1]});">${short}</div>
+    <div class="htxt">
+      <div class="hname"><span class="hflag">${team.countryFlag || '🏳️'}</span>${team.name}</div>
+      <div class="hmeta">
+        <span class="chip">🌍 区域：${{europe:'欧洲',asia:'亚洲',australia:'澳洲'}[team.region] || team.region}</span>
+        <span class="chip">🏆 联赛：${team.league || '未知'}</span>
+        <span class="chip">⚧ 性别：${team.gender === 'women' ? '女足' : '男足'}</span>
+        ${team.rank ? `<span class="chip">📊 排名 ${team.rank}</span>` : ''}
+        <span class="chip">👥 一线队 ${team.squad ? team.squad.length : 0} 人</span>
+      </div>
+    </div>`;
+  // --- 球员网格 + 筛选器 ---
+  CURRENT_SQUAD_FILTER = 'ALL';
+  const squad = (team.squad || []).slice();
+  const container = document.getElementById('squadGrid');
+  const filters = document.getElementById('squadFilters');
+  const cnt = document.getElementById('squadCountBadge');
+  if (cnt) cnt.textContent = squad.length;
+  // 筛选器
+  const FILTERS = [
+    { k: 'ALL', name: '全部', count: squad.length },
+    { k: 'GK',  name: '门将 GK', count: squad.filter(p => p.group === 'GK' || p.position === 'GK').length },
+    { k: 'DEF', name: '后卫 DEF', count: squad.filter(p => p.group === 'DEF').length },
+    { k: 'MID', name: '中场 MID', count: squad.filter(p => p.group === 'MID').length },
+    { k: 'FWD', name: '前锋 FWD', count: squad.filter(p => p.group === 'FWD').length },
+  ];
+  filters.innerHTML = FILTERS.map(f => `
+    <button type="button" class="sqf-btn ${f.k === CURRENT_SQUAD_FILTER ? 'active' : ''}" data-sqf="${f.k}">
+      ${f.name} · ${f.count}
+    </button>`).join('');
+  filters.querySelectorAll('.sqf-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      CURRENT_SQUAD_FILTER = b.dataset.sqf;
+      filters.querySelectorAll('.sqf-btn').forEach(x => x.classList.toggle('active', x === b));
+      drawSquad();
+    });
+  });
+  function drawSquad() {
+    const list = (CURRENT_SQUAD_FILTER === 'ALL') ? squad
+      : squad.filter(p => (p.group || '') === CURRENT_SQUAD_FILTER || p.position === CURRENT_SQUAD_FILTER);
+    container.innerHTML = list.map(p => `
+      <div class="ply-card" title="${p.name} · 号码${p.number} · ${p.positionLabel || p.position}">
+        <span class="ply-number">#${p.number}</span>
+        ${plyAvatar(p)}
+        <span class="ply-pos ${p.group || ''}">${p.position}</span>
+        <div class="ply-name" title="${p.name}">${p.name}</div>
+        <div class="ply-info-mini">${p.age}岁 · ${p.height}cm · ${p.weight}kg</div>
+      </div>
+    `).join('') || `<div style="color:var(--text-muted);font-size:13px;padding:20px;">暂无该位置球员数据</div>`;
+  }
+  drawSquad();
+
+  // --- 战术Tab（找最近一场T-1该队的比赛）---
+  const tacTab = document.getElementById('tacticsTabBtn');
+  const tacEmpty = document.getElementById('tacticsEmpty');
+  const tacPitch = document.getElementById('tacticsPitch');
+  const tacInfo = document.getElementById('tacticsInfo');
+  const tacWrap = document.getElementById('tacticsWrap');
+  let matched = null;  // {match, tactics, isHome}
+  const ym = (APP_DATA && APP_DATA.yesterdayMatches) ? APP_DATA.yesterdayMatches : [];
+  for (const m of ym) {
+    const hid = m.homeTeam && m.homeTeam.teamId;
+    const aid = m.awayTeam && m.awayTeam.teamId;
+    if (hid === teamId && m.homeTactics) { matched = {match:m, tactics:m.homeTactics, isHome:true, oppName:m.awayTeam.name, oppScore:m.awayTeam.score, myScore:m.homeTeam.score}; break; }
+    if (aid === teamId && m.awayTactics) { matched = {match:m, tactics:m.awayTactics, isHome:false, oppName:m.homeTeam.name, oppScore:m.homeTeam.score, myScore:m.awayTeam.score}; break; }
+  }
+  if (!matched) {
+    if (tacEmpty) tacEmpty.hidden = false;
+    if (tacWrap) tacWrap.style.display = 'none';
+    if (tacTab) document.getElementById('tacticsFormation').textContent = '（暂无T-1战术）';
+  } else {
+    if (tacEmpty) tacEmpty.hidden = true;
+    if (tacWrap) tacWrap.style.display = '';
+    const { tactics, isHome, oppName, myScore, oppScore, match } = matched;
+    const resultText = (myScore > oppScore) ? '✅胜' : (myScore < oppScore) ? '❌负' : '🤝平';
+    document.getElementById('tacticsFormation').textContent =
+      `· ${tactics.formation} · vs ${oppName} ${myScore}-${oppScore} ${resultText}`;
+    tacPitch.innerHTML = renderPitchSVG(tactics, colors, colors);
+    const poss = tactics.possessionPercent || 50;
+    const leftSide = tactics.leftAttackPercent || 50;
+    tacInfo.innerHTML = `
+      <div class="tactics-title">
+        本场阵型 <span class="tactics-formation-chip">${tactics.formationName || tactics.formation}</span>
+      </div>
+      <div class="tactics-tags">
+        ${(tactics.tags || []).map(t => `<span class="tac-tag">#${t}</span>`).join('')}
+      </div>
+      <div class="tactics-data-rows">
+        <div class="tac-row">
+          <span class="lbl">控球率</span>
+          <div class="tac-bar"><i style="width:${Math.min(100,Math.max(0,poss))}%;"></i></div>
+          <span class="val">${poss}%</span>
+        </div>
+        <div class="tac-row">
+          <span class="lbl">压迫强度 PPDA</span>
+          <span class="val" style="color:${tactics.ppda < 9.5 ? 'var(--accent)' : tactics.ppda > 13 ? 'var(--danger)' : 'var(--warning)'};">
+            ${tactics.ppda}（${tactics.pressStrength || '中等'}）
+          </span>
+        </div>
+        <div class="tac-row">
+          <span class="lbl">进攻重心</span>
+          <div class="tac-bar" title="左路占比 ${leftSide}%"><i style="width:${Math.min(100,Math.max(0,leftSide))}%;background:linear-gradient(90deg,var(--info),var(--purple));"></i></div>
+          <span class="val">${tactics.focusSide || '中路均衡'}</span>
+        </div>
+        <div class="tac-row">
+          <span class="lbl">左路 / 右路占比</span>
+          <span class="val">${leftSide}% / ${100-leftSide}%</span>
+        </div>
+        <div class="tac-row">
+          <span class="lbl">射门 / 射正（场平均）</span>
+          <span class="val">${11 + ((isHome?1:0)*3)} / ${4 + ((isHome?1:0)*2)}</span>
+        </div>
+        <div class="tac-row">
+          <span class="lbl">定位球得分占比</span>
+          <span class="val">${tactics.setPieceGoalRatio || 18}%</span>
+        </div>
+        <div class="tac-row">
+          <span class="lbl">反击触发频率</span>
+          <span class="val">${tactics.counterAttackTrigger || '平衡'}</span>
+        </div>
+      </div>
+      <div class="tactics-strategy">
+        ${tactics.strategyText || ''}
+      </div>`;
+  }
+
+  // --- 显示弹窗 + Tab切换绑定 ---
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  // Tab绑定（单次）
+  modal.querySelectorAll('.tmtab').forEach(tb => {
+    tb.onclick = () => {
+      modal.querySelectorAll('.tmtab').forEach(x => {
+        x.classList.toggle('active', x === tb);
+        x.setAttribute('aria-selected', x === tb ? 'true' : 'false');
+      });
+      const panel = tb.dataset.tab;
+      modal.querySelectorAll('.team-modal-tabpanel').forEach(p => {
+        p.hidden = p.dataset.panel !== panel;
+      });
+    };
+  });
+  // 激活球员Tab（默认）
+  modal.querySelector('.tmtab[data-tab="squad"]').click();
+}
+
+// --- ⑥ hash路由解析/写入（#men / #women / #team=<id> 可组合，刷新不丢失）---
+function parseAppHash() {
+  const h = (location.hash || '').replace(/^#/, '').trim();
+  const result = { gender: CURRENT_GENDER || 'men', team: null };
+  if (!h) return result;
+  // 支持两种格式：#team=id,gender=women 或者 #women#team=id 或者逗号 / 分号 分隔
+  const parts = h.split(/[&,;]/).filter(Boolean);
+  parts.forEach(p => {
+    if (p === 'men' || p === 'women') { result.gender = p; return; }
+    if (p.startsWith('gender=')) { result.gender = p.slice(7); return; }
+    if (p.startsWith('team=')) {
+      try { result.team = decodeURIComponent(p.slice(5)); } catch(e) { result.team = p.slice(5); }
+      return;
+    }
+    if (p.startsWith('region=')) return;  // 向后兼容
+  });
+  return result;
+}
+function writeAppHash(obj, replace) {
+  const parts = [];
+  if (obj.gender && obj.gender !== 'men') parts.push(obj.gender);
+  if (obj.team) parts.push('team=' + encodeURIComponent(obj.team));
+  const hash = parts.length ? '#' + parts.join('&') : '';
+  if (replace) history.replaceState(null, '', hash);
+  else history.pushState(null, '', hash);
+}
+
+// 绑定弹窗关闭按钮（一次性）
+function bindTeamModalCloseOnce() {
+  const modal = document.getElementById('teamModal');
+  if (!modal || modal.dataset.bound) return;
+  modal.dataset.bound = '1';
+  modal.querySelectorAll('[data-close-modal]').forEach(el => {
+    el.addEventListener('click', () => closeTeamModal());
+  });
+  // Esc键关闭
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !modal.hidden) closeTeamModal();
+  });
+}
+
+// --- ⑦ 初始化：hash解析 → 性别主题 → 加载数据 → 处理team= → 绑定事件 ---
+document.querySelectorAll('.gpill').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    setGender(btn.dataset.gender, true);
+  });
+});
+
+// 事件绑定（覆盖旧region-tab forEach）
+const _orig_init = null;
+document.addEventListener('DOMContentLoaded', async function initApp() {
+  bindTeamModalCloseOnce();
+  // 解析hash，设置初始主题
+  const h = parseAppHash();
+  // 先切主题+gender变量，但暂时不要重写hash（避免循环）
+  document.body.setAttribute('data-theme', h.gender === 'women' ? 'women-light' : 'men-dark');
+  CURRENT_GENDER = h.gender === 'women' ? 'women' : 'men';
+  document.querySelectorAll('.gpill').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.gender === CURRENT_GENDER);
+  });
+  const ttl = document.getElementById('datasourceTitle');
+  if (ttl) ttl.textContent = `FT早知道 · ${CURRENT_GENDER === 'men' ? '男足版（深蓝深色主题）' : '女足版（奶白粉浅色主题）'}（懂球帝真实数据）：`;
+  document.title = CURRENT_GENDER === 'men'
+    ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
+    : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
+  // popstate 监听（浏览器前进/后退按钮→刷新tab/球队弹窗）
+  window.addEventListener('popstate', async () => {
+    const cur = parseAppHash();
+    if (cur.gender !== CURRENT_GENDER) {
+      await setGender(cur.gender, false);
+    } else {
+      if (!cur.team) closeTeamModal(true);
+    }
+    if (cur.team) openTeamModalByHash(cur.team);
+  });
+  // 等数据加载完后，如果有team hash就打开弹窗
+  window.__APP_INIT_TEAM__ = h.team;
+});
+
+// 改造loadData的callback：数据加载完成后→渲染大洲栏徽章，然后处理team hash
+const _origLoadData = loadData;
+loadData = async function(genderOverride) {
+  const gender = genderOverride || CURRENT_GENDER || 'men';
+  // 执行原loadData，它会设置APP_DATA和render页面
+  const res = await _origLoadData(gender);
+  // 渲染左侧大洲栏（从APP_DATA.continentBadges取）
+  const badges = (APP_DATA && APP_DATA.continentBadges) ? APP_DATA.continentBadges
+    : (APP_DATA.matchesByContinent ? {
+        all: {yesterday: APP_DATA.yesterdayMatches.length, today: APP_DATA.todayPreviews.length},
+        europe: {
+          yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'europe').length,
+          today: APP_DATA.todayPreviews.filter(m => m.region === 'europe').length,
+        },
+        asia: {
+          yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'asia').length,
+          today: APP_DATA.todayPreviews.filter(m => m.region === 'asia').length,
+        },
+        australia: {
+          yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'australia').length,
+          today: APP_DATA.todayPreviews.filter(m => m.region === 'australia').length,
+        },
+      } : null);
+  renderContinentNav(badges);
+  // 大洲栏初始化激活当前region
+  filterByRegion(CURRENT_REGION || 'all');
+  // 如果初始化时有#team=xxx hash→打开弹窗
+  if (window.__APP_INIT_TEAM__) {
+    const id = window.__APP_INIT_TEAM__;
+    delete window.__APP_INIT_TEAM__;
+    setTimeout(() => openTeamModalByHash(id), 400);
+  }
+  return res;
+};
+
+// 初始化（DOMContentLoaded已经在上面绑定了，原loadData调用被我们覆盖；这里保留调用以防DOMContentLoaded已触发）
+// （旧loadData()在事件绑定末尾，现在我们直接用DOMContentLoaded里走初始化流程）
+
+// ===== 事件绑定（大洲cs-btn已在renderContinentNav中绑定；旧region-tab兼容兜底）=====
 document.querySelectorAll('.region-tab').forEach(tab => {
   tab.addEventListener('click', () => filterByRegion(tab.dataset.region));
 });
 
 // ===== 初始化 =====
-loadData();
+// （DOMContentLoaded事件里会调，并且如果DOM已就绪则下面立即触发）
+if (document.readyState === 'loading') {
+  // DOMContentLoaded尚未触发，等待上面的listener
+} else {
+  // 已经就绪，手动触发一次初始化流程（避免旧代码直接loadData没走我们的改造）
+  (async function(){
+    bindTeamModalCloseOnce();
+    const h = parseAppHash();
+    document.body.setAttribute('data-theme', h.gender === 'women' ? 'women-light' : 'men-dark');
+    CURRENT_GENDER = h.gender === 'women' ? 'women' : 'men';
+    document.querySelectorAll('.gpill').forEach(btn => btn.classList.toggle('active', btn.dataset.gender === CURRENT_GENDER));
+    const ttl = document.getElementById('datasourceTitle');
+    if (ttl) ttl.textContent = `FT早知道 · ${CURRENT_GENDER === 'men' ? '男足版（深蓝深色主题）' : '女足版（奶白粉浅色主题）'}（懂球帝真实数据）：`;
+    document.title = CURRENT_GENDER === 'men'
+      ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
+      : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
+    if (h.team) window.__APP_INIT_TEAM__ = h.team;
+    await loadData(CURRENT_GENDER);
+  })();
+}
 </script>
+
+  </div>  <!-- 关闭 main-content（L945） -->
+</div>    <!-- 关闭 app-shell（L928） -->
+
+<!-- =========================================================
+     【球队详情弹窗】全局底部定位，默认隐藏
+     hash路由触发：#team=<teamId> → JS懒加载teams.json后渲染
+     ========================================================= -->
+<div id="teamModal" class="team-modal" role="dialog" aria-modal="true" aria-labelledby="teamModalTitle" hidden>
+  <div class="team-modal-backdrop" data-close-modal></div>
+  <div class="team-modal-panel">
+    <button type="button" class="team-modal-close" data-close-modal aria-label="关闭球队详情">✕</button>
+
+    <!-- 头部：国旗+队徽+球队名+联赛+区域 -->
+    <header class="team-modal-head" id="teamModalHead">
+      <!-- JS渲染 -->
+    </header>
+
+    <!-- Tab栏：👥球员 / 🧠T-1战术 -->
+    <nav class="team-modal-tabs" role="tablist" aria-label="球队详情Tab切换">
+      <button type="button" class="tmtab active" data-tab="squad" role="tab" aria-selected="true">
+        👥 一线队球员 <span class="tmtab-badge" id="squadCountBadge">0</span>
+      </button>
+      <button type="button" class="tmtab" data-tab="tactics" role="tab" aria-selected="false" id="tacticsTabBtn">
+        🧠 T-1 战术阵型 <span class="tmtab-sub" id="tacticsFormation">（最近场次）</span>
+      </button>
+    </nav>
+
+    <!-- 👥 球员网格 -->
+    <section class="team-modal-tabpanel" data-panel="squad" role="tabpanel">
+      <div class="squad-filters" id="squadFilters">
+        <!-- JS渲染位置筛选：全部/GK/DEF/MID/FWD -->
+      </div>
+      <div class="squad-grid" id="squadGrid">
+        <!-- JS渲染 24 张球员卡片 -->
+      </div>
+    </section>
+
+    <!-- 🧠 战术阵型 -->
+    <section class="team-modal-tabpanel" data-panel="tactics" role="tabpanel" hidden>
+      <div class="tactics-empty" id="tacticsEmpty" hidden>
+        <div style="font-size:40px;margin-bottom:12px;">🆕</div>
+        <div style="color:var(--text-secondary);font-size:14px;">今日无T-1已结束场 → 暂无战术阵型（关注明天的T-1回顾）</div>
+      </div>
+      <div class="tactics-wrap" id="tacticsWrap">
+        <!-- 左：SVG 11人足球场阵型图 -->
+        <div class="tactics-pitch" id="tacticsPitch"></div>
+        <!-- 右：战术标签+数据+策略文字 -->
+        <aside class="tactics-info" id="tacticsInfo">
+          <!-- JS渲染 -->
+        </aside>
+      </div>
+    </section>
+
+  </div>
+</div>
 </body>
 </html>

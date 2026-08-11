@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-10T21:33:58.350862",
-  "generatedAt": "2026-08-10T21:34:00.489591",
+  "lastUpdate": "2026-08-11T10:44:19.542387",
+  "generatedAt": "2026-08-11T10:44:20.732393",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "australia": [
@@ -19,15 +19,350 @@
     ]
   },
   "yesterdayMatches": [],
-  "todayPreviews": [],
+  "todayPreviews": [
+    {
+      "id": "54449830",
+      "date": "2026-08-11",
+      "time": "09:30",
+      "league": {
+        "id": "dqd-australia-澳维女超",
+        "name": "澳维女超",
+        "country": "澳维女超",
+        "flag": "🇦🇺",
+        "color": "#57A87B",
+        "region": "australia"
+      },
+      "region": "australia",
+      "gender": "women",
+      "homeTeam": {
+        "name": "凯勒公园女足",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "rank": null,
+        "teamId": "t20519",
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#14b8a6",
+            "#0f766e"
+          ],
+          "countryFlag": "🇦🇺"
+        },
+        "countryFlag": "🇦🇺"
+      },
+      "awayTeam": {
+        "name": "海德堡联女足",
+        "logo": "https://sd.qunliao.info/fastdfs4/M00/C8/75/ChNLklxzj22AHR0tAABIMCy10dE677.png",
+        "rank": "11",
+        "teamId": "t14695",
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#d946ef",
+            "#a21caf"
+          ],
+          "countryFlag": "🇦🇺"
+        },
+        "countryFlag": "🇦🇺"
+      },
+      "venue": "凯勒公园女足主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-克里斯·比斯",
+          "name": "克里斯·比斯",
+          "country": "澳大利亚",
+          "age": 41
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.4",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 4,
+      "intensity": "★★★★",
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "负",
+        "平",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "负",
+        "胜",
+        "平",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 0,
+        "awayWins": 2
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 39,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 4,
+        "focal": 15,
+        "h2hRecent": 4
+      },
+      "isHotMatch": false
+    }
+  ],
   "pushDigest": {
-    "title": "⚽ 足球赛道日报 - 2026-08-10（懂球帝真实数据 · 女足）",
-    "yesterdaySummary": "🇲🇲 缅甸女联：幼狮FC女足 0-10 伊斯佩女足（伊斯佩女足获胜）；🇲🇲 缅甸女联：亚大那保女足 0-3 阿尔曼女足（阿尔曼女足获胜）",
-    "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 斯莫根女足 vs 伯希纳女足（主裁尺度偏严，注意出牌风险）；🇲🇲 亚大那保女足 vs 阿尔曼女足（双方实力接近，值得关注）；🇲🇲 幼狮FC女足 vs 伊斯佩女足（主裁尺度偏严，注意出牌风险）",
-    "yesterdayCount": 2,
-    "todayCount": 3,
+    "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 女足）",
+    "yesterdaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 冰女甲：塞尔福斯女足 2-0 候卡尔女足（塞尔福斯女足获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 北爱女超：克雷格阿文女足 1-5 格林艾兰女足（格林艾兰女足获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 北爱女超：林菲尔德女足 1-3 克利夫顿维尔女足（克利夫顿维尔女足获胜）",
+    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）",
+    "yesterdayCount": 3,
+    "todayCount": 2,
     "fullReport": true,
     "_dataSource": "dongqiudi-real",
     "_gender": "women"
+  },
+  "appName": "FT早知道",
+  "appGender": "men",
+  "continentBadges": {},
+  "matchesByContinent": {
+    "all": {
+      "yesterday": [],
+      "today": [
+        {
+          "id": "54449830",
+          "date": "2026-08-11",
+          "time": "09:30",
+          "league": {
+            "id": "dqd-australia-澳维女超",
+            "name": "澳维女超",
+            "country": "澳维女超",
+            "flag": "🇦🇺",
+            "color": "#57A87B",
+            "region": "australia"
+          },
+          "region": "australia",
+          "gender": "women",
+          "homeTeam": {
+            "name": "凯勒公园女足",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "rank": null,
+            "teamId": "t20519",
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#14b8a6",
+                "#0f766e"
+              ],
+              "countryFlag": "🇦🇺"
+            },
+            "countryFlag": "🇦🇺"
+          },
+          "awayTeam": {
+            "name": "海德堡联女足",
+            "logo": "https://sd.qunliao.info/fastdfs4/M00/C8/75/ChNLklxzj22AHR0tAABIMCy10dE677.png",
+            "rank": "11",
+            "teamId": "t14695",
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#d946ef",
+                "#a21caf"
+              ],
+              "countryFlag": "🇦🇺"
+            },
+            "countryFlag": "🇦🇺"
+          },
+          "venue": "凯勒公园女足主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-克里斯·比斯",
+              "name": "克里斯·比斯",
+              "country": "澳大利亚",
+              "age": 41
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.4",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "主裁尺度偏严，注意出牌风险",
+            "双方实力接近，值得关注"
+          ],
+          "predictedDifficulty": 4,
+          "intensity": "★★★★",
+          "homeRecentForm": [
+            "负",
+            "胜",
+            "负",
+            "平",
+            "平"
+          ],
+          "awayRecentForm": [
+            "平",
+            "负",
+            "胜",
+            "平",
+            "胜"
+          ],
+          "h2hLast5": {
+            "homeWins": 1,
+            "draws": 0,
+            "awayWins": 2
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 39,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 4,
+            "focal": 15,
+            "h2hRecent": 4
+          },
+          "isHotMatch": false
+        }
+      ]
+    }
   }
 }

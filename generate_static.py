@@ -8,6 +8,7 @@ import os
 import sys
 import random
 from datetime import datetime, timedelta
+from collections import OrderedDict
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PUBLIC_DIR = os.path.join(BASE_DIR, "public")
@@ -182,8 +183,21 @@ def _adapt_referee_analysis(dqd_referee):
 def adapt_yesterday(dqd_list, region):
     out = []
     for m in dqd_list:
-        home_name = m["homeTeam"]["name"]
-        away_name = m["awayTeam"]["name"]
+        # 兼容：homeTeam/awayTeam 可能是 crawl_dongqiudi 输出的完整dict，也可能是旧字符串
+        ht_raw = m.get("homeTeam")
+        at_raw = m.get("awayTeam")
+        if isinstance(ht_raw, dict):
+            home_name = ht_raw.get("name", "?")
+            home_obj = ht_raw
+        else:
+            home_name = str(ht_raw or "?")
+            home_obj = {"name": home_name}
+        if isinstance(at_raw, dict):
+            away_name = at_raw.get("name", "?")
+            away_obj = at_raw
+        else:
+            away_name = str(at_raw or "?")
+            away_obj = {"name": away_name}
         league = _build_league_obj(region, m.get("league", ""), m.get("leagueColor", "#666"),
                                     m.get("league") and m.get("league") or "")
         try:
@@ -192,7 +206,8 @@ def adapt_yesterday(dqd_list, region):
             match_date = m.get("kickoff", "1970-01-01").split(" ")[0]
         except Exception:
             match_time = "19:30"; match_date = formatDate(getYesterday())
-        stats = _adapt_stats(m.get("stats", {}), m["homeTeam"].get("score", 0), m["awayTeam"].get("score", 0))
+        stats = _adapt_stats(m.get("stats", {}), home_obj.get("score", 0) if isinstance(home_obj, dict) else 0,
+                                              away_obj.get("score", 0) if isinstance(away_obj, dict) else 0)
         referee_analysis = _adapt_referee_analysis(m.get("referee", {}))
         key_events = generateKeyEvents(home_name, away_name, stats)
         analysis = generateMatchAnalysis(home_name, away_name, stats, referee_analysis)
@@ -214,13 +229,17 @@ def adapt_yesterday(dqd_list, region):
             "league": league,
             "region": region,
             "gender": gender,
-            "homeTeam": home_name,
-            "awayTeam": away_name,
+            "homeTeam": home_obj,
+            "awayTeam": away_obj,
             "venue": f"{home_name}主场",
             "stats": stats,
             "refereeAnalysis": referee_analysis,
             "keyEvents": key_events,
             "analysis": analysis,
+            "homeTactics": m.get("homeTactics"),
+            "awayTactics": m.get("awayTactics"),
+            "intensity": m.get("intensity", "★★★"),
+            "features": m.get("features", ""),
             "_dataSource": m.get("dataSource", "dongqiudi-real"),
         })
     return out
@@ -229,8 +248,20 @@ def adapt_yesterday(dqd_list, region):
 def adapt_today(dqd_list, region):
     out = []
     for m in dqd_list:
-        home_name = m["homeTeam"]["name"]
-        away_name = m["awayTeam"]["name"]
+        ht_raw = m.get("homeTeam")
+        at_raw = m.get("awayTeam")
+        if isinstance(ht_raw, dict):
+            home_name = ht_raw.get("name", "?")
+            home_obj = ht_raw
+        else:
+            home_name = str(ht_raw or "?")
+            home_obj = {"name": home_name}
+        if isinstance(at_raw, dict):
+            away_name = at_raw.get("name", "?")
+            away_obj = at_raw
+        else:
+            away_name = str(at_raw or "?")
+            away_obj = {"name": away_name}
         league = _build_league_obj(region, m.get("league", ""), m.get("leagueColor", "#666"),
                                     m.get("league") or "")
         try:
@@ -247,6 +278,7 @@ def adapt_today(dqd_list, region):
             features = ["常规联赛对决"]
         # 激烈程度 ★字符串 → predictedDifficulty 数字
         stars = (m.get("intensity") or "★").count("★")
+        intensity_str = m.get("intensity") or "★"
         # 近期彩格：W/D/L 字符串 → 胜/平/负
         def form_cn(arr):
             return ["胜" if x == "W" else ("平" if x == "D" else "负") for x in (arr or [])]
@@ -274,12 +306,13 @@ def adapt_today(dqd_list, region):
             "league": league,
             "region": region,
             "gender": gender,
-            "homeTeam": home_name,
-            "awayTeam": away_name,
+            "homeTeam": home_obj,
+            "awayTeam": away_obj,
             "venue": f"{home_name}主场",
             "refereeAnalysis": referee_analysis,
             "features": features,
             "predictedDifficulty": max(1, min(5, int(stars))),
+            "intensity": intensity_str,
             "homeRecentForm": home_form,
             "awayRecentForm": away_form,
             "h2hLast5": {"homeWins": hw, "draws": dr, "awayWins": aw},
@@ -302,6 +335,249 @@ def split_by_gender(yesterday_matches, today_previews):
     women_y = filter_by_gender(yesterday_matches, "women")
     women_t = filter_by_gender(today_previews, "women")
     return {"men": (men_y, men_t), "women": (women_y, women_t)}
+
+
+# =========================================================
+# 【FT早知道App扩展】热度算法 / 大洲徽章 / 球队库(球员名册)
+# =========================================================
+
+# 确定性字符串hash（和crawl_dongqiudi._stable_hash完全一致，避免import麻烦）
+def _sh(s: str) -> int:
+    h = 2166136261
+    for ch in str(s):
+        h ^= ord(ch); h = (h * 16777619) & 0xFFFFFFFF
+    return h & 0x7FFFFFFF
+
+# 联赛等级分0-50分（五联赛顶格，其他依次递减）
+LEAGUE_LEVEL_HINTS = OrderedDict([
+    # 关键词 → 基础分
+    (("英超", "Premier", "Serie A", "Serie A Femminile", "La Liga", "Liga F", "Bundesliga", "Frauen-Bundesliga", "Ligue 1", "D1 Féminine", "Division 1"), 48),
+    (("亚冠", "AFC Champions", "欧冠", "Champions League", "UEFA Champions", "世俱杯", "Club World", "欧洲超级杯", "Super Cup", "国王杯", "Copa del Rey", "足总杯", "FA Cup", "德国杯", "DFB-Pokal", "法国杯", "Coupe de France", "意大利杯", "Coppa Italia", "联赛杯", "EFL Cup"), 46),
+    (("英冠", "Championship", "西乙", "Segunda", "德乙", "2. Bundesliga", "意乙", "Serie B", "法乙", "Ligue 2", "葡超", "Primeira", "荷甲", "Eredivisie", "比甲", "Jupiler Pro", "奥超", "Bundesliga Austria", "瑞士超", "Super League Switzerland", "丹超", "Superliga", "瑞超", "Allsvenskan", "挪超", "Eliteserien"), 38),
+    (("中超", "CSL", "中女超", "J1", "J联赛", "Nadeshiko", "K1", "K League", "WK League", "沙特联", "Saudi Pro", "卡塔尔联", "Stars League", "UAE Pro", "A联赛", "A-League", "W-League", "亚冠2", "AFC Cup"), 32),
+    (("J2", "J3", "K2", "K3", "中甲", "中乙", "中冠", "泰超", "Thai League 1", "越南联", "V.League", "马超", "Malaysia Super", "新超", "Singapore Premier", "印超", "ISL"), 24),
+])
+
+def _league_level_score(league_name):
+    name = str(league_name or "")
+    for keywords, base in LEAGUE_LEVEL_HINTS.items():
+        for kw in keywords:
+            if kw.lower() in name.lower():
+                return base
+    return 16  # 未知联赛基础分（保底不空）
+
+def _intensity_star_weight(intensity_str):
+    s = str(intensity_str or "★").count("★")
+    return max(1, min(5, s)) * 3  # 1★=3 → 5★=15
+
+def _team_obj(t):
+    """兼容：球队可能是对象dict，也可能是旧格式字符串（球队名），统一返回dict"""
+    if isinstance(t, dict):
+        return t
+    if isinstance(t, str):
+        return {"name": t}
+    return {}
+
+def compute_heat_score(match, is_yesterday=True):
+    """6维加权热度分 0-100（确定性，同一场每次分值相同）"""
+    # (1) 联赛基础分 0-50
+    s1 = _league_level_score(match.get("league") or "")
+    # (2) 球队排名强度 0-20（两队排名越靠前越高）
+    rank_score = 0
+    for side in ("homeTeam", "awayTeam"):
+        t = _team_obj(match.get(side))
+        r = t.get("rank")
+        try:
+            r_int = int(r) if r not in (None, "", 0, "0") else 0
+        except Exception:
+            r_int = 0
+        if 1 <= r_int <= 4:
+            rank_score += 10
+        elif 5 <= r_int <= 8:
+            rank_score += 7
+        elif 9 <= r_int <= 12:
+            rank_score += 4
+        elif r_int >= 13:
+            rank_score += 2
+    s2 = min(20, rank_score)
+    # (3) 德比/焦点（基于名关键词 + 激烈程度≥4星）0-15
+    derby_kws = ["德比", "Derby", "Classic", "国家德比", "曼彻斯特联", "曼城", "皇马", "巴萨", "El Clásico", "北伦敦", "利物浦", "曼联", "多特", "拜仁", "米兰", "国米", "尤文", "大巴黎", "上海", "北京", "广州", "东京", "首尔"]
+    focal = 0
+    ht = _team_obj(match.get("homeTeam"))
+    at = _team_obj(match.get("awayTeam"))
+    name_all = f"{match.get('league','')} {ht.get('name','')} {at.get('name','')} {match.get('features','')}"
+    if any(k.lower() in name_all.lower() for k in derby_kws):
+        focal += 8
+    stars5 = _intensity_star_weight(match.get("intensity", "★")) if not is_yesterday else 9
+    focal += max(0, stars5 - 3) * 2  # 4星+4分 5星+8分
+    s3 = min(15, focal)
+    # (4) 近期状态H2H 0-15（基于两队名hash的确定性5彩格分析）
+    seed = f"{ht.get('name','')}|{at.get('name','')}|{match.get('id','')}"
+    hh = _sh(seed)
+    h2h_wdl = (hh % 5, (hh >> 3) % 5, (hh >> 6) % 5)
+    s4 = 2 + int(sum(min(4, x) for x in h2h_wdl) / 3)  # 2-10
+    if is_yesterday:
+        # 昨日+比分悬殊度（如3-0/4-1这种大胜热度也高）
+        hs = ht.get("score", 0) or 0
+        as_ = at.get("score", 0) or 0
+        try:
+            total_g = int(hs) + int(as_)
+        except Exception:
+            total_g = 0
+        s4 += min(5, total_g)  # 比分总进球+热度
+    s4 = min(15, s4)
+    total = s1 + s2 + s3 + s4
+    # 焦点赛标记：总分≥70 → 🔥焦点（前端橙色三角标置顶）
+    return {"heatScore": max(2, min(100, total)),
+            "breakdown": {"league": s1, "rank": s2, "focal": s3, "h2hRecent": s4},
+            "isHot": total >= 70}
+
+def apply_heat_and_sort(yesterday_matches, today_previews):
+    """给每场加热度分→按(焦点置顶→heatScore高→开赛时间近)降序排序→返回(sorted_y, sorted_t, continent_badges, matchesByContinent)"""
+    def _add(lst, is_y):
+        out = []
+        for m in lst:
+            info = compute_heat_score(m, is_yesterday=is_y)
+            m2 = dict(m)
+            m2["heatScore"] = info["heatScore"]
+            m2["heatBreakdown"] = info["breakdown"]
+            m2["isHotMatch"] = info["isHot"]
+            out.append(m2)
+        return out
+    y_heated = _add(yesterday_matches, True)
+    t_heated = _add(today_previews, False)
+    def _sort_key(x):
+        # 1. 焦点置顶（isHotMatch=True→0，否则1）
+        top = 0 if x.get("isHotMatch") else 1
+        # 2. 热度分降序（负号变升序排列的key）
+        heat_neg = -(x.get("heatScore") or 0)
+        # 3. 开赛时间近→远（kicking晚→先）
+        kf = x.get("kickoff") or ""
+        return (top, heat_neg, kf)
+    y_sorted = sorted(y_heated, key=_sort_key)
+    t_sorted = sorted(t_heated, key=_sort_key)
+    # continent_badges + matchesByContinent
+    badges = {"all": {"yesterday": len(y_sorted), "today": len(t_sorted)},
+              "europe": {"yesterday": 0, "today": 0},
+              "asia": {"yesterday": 0, "today": 0},
+              "australia": {"yesterday": 0, "today": 0}}
+    by_cont = {"all": {"yesterday": y_sorted, "today": t_sorted},
+               "europe": {"yesterday": [], "today": []},
+               "asia": {"yesterday": [], "today": []},
+               "australia": {"yesterday": [], "today": []}}
+    for label, arr in (("yesterday", y_sorted), ("today", t_sorted)):
+        for m in arr:
+            reg = m.get("region") or "europe"
+            if reg in badges:
+                badges[reg][label] += 1
+                by_cont[reg][label].append(m)
+    return y_sorted, t_sorted, badges, by_cont
+
+def build_teams_db(*match_groups, used_dqd=False, gender="men"):
+    """
+    从N个match列表中抽取所有unique球队（按teamId），生成球队库（含球员名册24人）。
+    返回 {teamId: {teamId,name,appLogo,countryFlag,gender,region,league,squad:[{name,number,position,avatarSeed,height,weight,age}]}}
+    """
+    teams = OrderedDict()  # teamId → team_data
+    try:
+        from crawl_dongqiudi import generate_squad as _gen_sq
+    except Exception:
+        _gen_sq = None
+    # 收集球队：从每个match的homeTeam/awayTeam取
+    for groups in match_groups:
+        for m in (groups or []):
+            for side in ("homeTeam", "awayTeam"):
+                t = _team_obj(m.get(side))
+                tid = t.get("teamId")
+                if not tid:
+                    # Mock球队没teamId → 用name+region生成
+                    _s = "%s|%s|%s" % (t.get("name", ""), m.get("region", ""), side)
+                    tid = f"tmock{_sh(_s):08x}"
+                if tid in teams:
+                    # 如果已经有了但字段不全，再合并一次（squad等只生成一次）
+                    continue
+                name = t.get("name") or f"球队 {tid[-4:]}"
+                appLogo = t.get("appLogo") or _fallback_logo(name, tid)
+                squad = []
+                if _gen_sq is not None:
+                    try:
+                        flag = (appLogo or {}).get("countryFlag") or (t.get("countryFlag") or "")
+                        squad = _gen_sq(tid, name, flag=flag, gender=gender, count=24)
+                    except Exception as e:
+                        print(f"  ⚠️ 生成球队 {name}({tid}) 名册失败：{e}")
+                if not squad:
+                    squad = _fallback_squad(tid, name, gender)
+                teams[tid] = OrderedDict([
+                    ("teamId", tid),
+                    ("name", name),
+                    ("shortName", (appLogo or {}).get("text") or name[:2]),
+                    ("appLogo", appLogo),
+                    ("countryFlag", (appLogo or {}).get("countryFlag") or t.get("countryFlag") or "🏳️"),
+                    ("gender", gender),
+                    ("region", m.get("region") or "europe"),
+                    ("league", m.get("league") or "未知联赛"),
+                    ("rank", t.get("rank")),
+                    ("squad", squad),
+                    ("_source", "dongqiudi-real" if used_dqd else "mock"),
+                ])
+    return teams
+
+def _fallback_logo(name, tid):
+    """Mock兜底队徽（无crawl_dongqiudi可用时）"""
+    colors_arr = [["#22c55e","#15803d"],["#3b82f6","#1d4ed8"],["#f59e0b","#c2410c"],["#ec4899","#be185d"],["#8b5cf6","#6d28d9"],["#06b6d4","#0e7490"],["#ef4444","#991b1b"],["#10b981","#047857"]]
+    c = colors_arr[_sh(tid) % len(colors_arr)]
+    if all("\u4e00" <= ch <= "\u9fff" for ch in str(name)[:2]) and len(str(name)) >= 2:
+        text = str(name)[-2:]
+    else:
+        ww = [w for w in str(name).replace("-"," ").split() if w]
+        text = "".join(w[0] for w in ww[:3]).upper()
+        if len(text) < 2: text = (str(name)[:2]).upper()
+    text = text[:3] if len(text) >= 2 else (text + "F")
+    return {"text": text, "colors": c, "countryFlag": "🏳️"}
+
+def _fallback_squad(tid, name, gender="men"):
+    """crawl_dongqiudi不可用时的24人Mock名单（确保球队详情弹窗不空）"""
+    from data import pick as _p, rand as _r
+    rng = random.Random(f"fallback-squad-{tid}")
+    positions = (
+        [("GK",)] * 3 +
+        [("CB","LB","RB","LWB","RWB")] * 8 +
+        [("CDM","CM","CAM","LM","RM")] * 8 +
+        [("ST","CF","LW","RW","SS")] * 5
+    )
+    first_cn = ["伟","强","磊","军","洋","超","杰","勇","明","涛","佳","浩","宇","轩","睿","博","慧","悦","妍","雨","欣","思","婷","菲"]
+    sur_cn = ["张","王","李","刘","陈","杨","赵","黄","周","吴","徐","孙","马","朱","胡","郭","何","高","林","郑"]
+    first_en = ["James","John","Robert","Michael","William","David","Oliver","Harry","George","Lucas","Emma","Olivia","Sophia","Ava","Isabella","Mia","Charlotte","Amelia"]
+    sur_en = ["Smith","Johnson","Brown","Williams","Jones","Miller","Davis","Garcia","Rodriguez","Wilson","Martinez","Anderson","Taylor","Thomas","Moore","Jackson"]
+    is_cn = any("\u4e00" <= ch <= "\u9fff" for ch in str(name))
+    nums = list(range(2, 100))
+    rng.shuffle(nums)
+    num_iter = iter([1] + nums)
+    out = []
+    for idx, grp in enumerate(positions):
+        grp_list = list(grp)
+        pos = rng.choice(grp_list)
+        if is_cn:
+            full = rng.choice(sur_cn) + rng.choice(first_cn)
+        else:
+            full = f"{rng.choice(first_en)} {rng.choice(sur_en)}"
+        try:
+            number = next(num_iter)
+        except StopIteration:
+            number = 99
+        out.append({
+            "id": f"{tid}-p{idx:02d}",
+            "name": full,
+            "number": number,
+            "position": pos,
+            "positionLabel": pos,
+            "group": ("GK" if pos == "GK" else ("DEF" if pos in ("CB","LB","RB","LCB","RCB","LWB","RWB") else ("MID" if pos in ("CDM","CM","CAM","LM","RM") else "FWD"))),
+            "avatarSeed": _sh(f"{tid}|{full}|{number}"),
+            "height": rng.randint(178, 198),
+            "weight": rng.randint(70, 94),
+            "age": rng.randint(19, 34),
+        })
+    return out
 
 
 def build_from_dongqiudi():
@@ -339,8 +615,13 @@ def main():
 
     # 2. 按性别拆分（Single Source of Truth → crawl_dongqiudi.filter_by_gender）
     splits = split_by_gender(yesterday_matches, today_previews)
-    men_y, men_t = splits["men"]
-    women_y, women_t = splits["women"]
+    men_y_raw, men_t_raw = splits["men"]
+    women_y_raw, women_t_raw = splits["women"]
+
+    # 2.1 热度分 + 大洲内按热度从高→低排序（🔥焦点置顶）+ 大洲快捷栏徽章计数
+    men_y, men_t, men_badges, men_by_cont = apply_heat_and_sort(men_y_raw, men_t_raw)
+    women_y, women_t, women_badges, women_by_cont = apply_heat_and_sort(women_y_raw, women_t_raw)
+    print(f"  🧡 热度排序完成：男足 焦点赛{sum(1 for m in men_y if m.get('isHotMatch'))}场 / 女足 焦点赛{sum(1 for m in women_y if m.get('isHotMatch'))}场")
 
     # 3. 推送摘要：男足版本（首页默认）+ 女足版本（women.html）
     men_push_digest = generatePushDigest(men_y, men_t)
@@ -442,10 +723,10 @@ def main():
 
     data_source_label = "dongqiudi-real" if used_dqd else "mock-generated"
 
-    def save_dashboard(relpath, ym, tp, push_digest, leagues=None):
+    def save_dashboard(relpath, ym, tp, push_digest, leagues=None, badges=None, by_cont=None, gender="men"):
         if leagues is None:
             leagues = LEAGUES
-        save_json(relpath, {
+        payload = {
             "lastUpdate": timestamp,
             "generatedAt": datetime.now().isoformat(),
             "dataSource": data_source_label,
@@ -453,11 +734,37 @@ def main():
             "yesterdayMatches": ym,
             "todayPreviews": tp,
             "pushDigest": push_digest,
-        })
+            # === FT早知道新增字段（App化必需） ===
+            "appName": "FT早知道",
+            "appGender": gender,              # "men" | "women" → 前端据此选深浅主题
+            "continentBadges": badges or {},
+            "matchesByContinent": by_cont or {"all":{"yesterday":ym,"today":tp}},
+        }
+        save_json(relpath, payload)
 
-    # 5. 主页面：dashboard.json（默认男足）+ dashboard-women.json（女足）
-    save_dashboard("dashboard.json", men_y, men_t, men_push_digest)
-    save_dashboard("dashboard-women.json", women_y, women_t, women_push_digest)
+    # 5. 主页面：dashboard.json（默认男足·深色主题）+ dashboard-women.json（女足·浅色主题）
+    save_dashboard("dashboard.json", men_y, men_t, men_push_digest,
+                   badges=men_badges, by_cont=men_by_cont, gender="men")
+    save_dashboard("dashboard-women.json", women_y, women_t, women_push_digest,
+                   badges=women_badges, by_cont=women_by_cont, gender="women")
+
+    # 5.1 球队库（含24人球员名册），teams.json → 球队详情弹窗懒加载 fetch('/data/teams.json')
+    # 合并男女足所有球队 → 同一个teamId只保留一条（优先男足侧先插入）
+    teams_men = build_teams_db(men_y, men_t, used_dqd=used_dqd, gender="men")
+    teams_women = build_teams_db(women_y, women_t, used_dqd=used_dqd, gender="women")
+    teams_db = OrderedDict()
+    for tid, t in teams_men.items(): teams_db[tid] = t
+    for tid, t in teams_women.items():
+        if tid not in teams_db:  # 同一ID的女足队不覆盖男足（通常女足队名带"女足"/Women不会撞ID）
+            teams_db[tid] = t
+    save_json("teams.json", {
+        "lastUpdate": timestamp,
+        "generatedAt": datetime.now().isoformat(),
+        "totalTeams": len(teams_db),
+        "teams": teams_db,
+        "_notes": "懒加载：球队详情弹窗hash路由#team=<teamId>时fetch('/data/teams.json')拿squad；T-1战术阵型从对应dashboard.json的yesterdayMatches[i].homeTactics/awayTactics取",
+    })
+    print(f"  ⚽ 球队库构建完成：{len(teams_db)} 支球队（含24人名册）")
 
     # 6. health.json
     save_json("health.json", {

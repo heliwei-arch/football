@@ -408,19 +408,23 @@ def generateTodayPreviews():
 
 
 def generatePushDigest(yesterdayMatches, todayPreviews):
-    """生成推送摘要"""
+    """生成推送摘要（兼容 homeTeam/awayTeam 为 dict 或 str）"""
+    def _tname(t):
+        if isinstance(t, dict):
+            return t.get("name") or "?"
+        return str(t or "?")
     def winner_of(m):
         sh, sa = m["stats"]["score"]["home"], m["stats"]["score"]["away"]
-        if sh > sa: return m["homeTeam"] + "获胜"
-        if sh < sa: return m["awayTeam"] + "获胜"
+        if sh > sa: return _tname(m["homeTeam"]) + "获胜"
+        if sh < sa: return _tname(m["awayTeam"]) + "获胜"
         return "战平"
 
     yesterdaySummary = "；".join(
-        f"{m['league']['flag']} {m['league']['name']}：{m['homeTeam']} {m['stats']['score']['home']}-{m['stats']['score']['away']} {m['awayTeam']}（{winner_of(m)}）"
+        f"{m['league']['flag']} {m['league']['name']}：{_tname(m['homeTeam'])} {m['stats']['score']['home']}-{m['stats']['score']['away']} {_tname(m['awayTeam'])}（{winner_of(m)}）"
         for m in yesterdayMatches[:3]
     )
     todaySummary = "；".join(
-        f"{m['league']['flag']} {m['homeTeam']} vs {m['awayTeam']}（{m['features'][0]}）"
+        f"{m['league']['flag']} {_tname(m['homeTeam'])} vs {_tname(m['awayTeam'])}（{m['features'][0] if isinstance(m.get('features'), list) and m['features'] else '看点待补充'}）"
         for m in todayPreviews[:3]
     )
     return {

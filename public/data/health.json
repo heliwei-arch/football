@@ -1,17 +1,17 @@
 {
   "status": "ok",
-  "deployedAt": "2026-08-10T21:33:58.350862",
-  "lastUpdate": "2026-08-10T21:33:58.350862",
+  "deployedAt": "2026-08-11T10:44:19.542387",
+  "lastUpdate": "2026-08-11T10:44:19.542387",
   "hasData": true,
   "dataSource": "dongqiudi-real",
   "counts": {
     "men": {
-      "yesterday": 12,
+      "yesterday": 15,
       "today": 31
     },
     "women": {
-      "yesterday": 2,
-      "today": 3
+      "yesterday": 3,
+      "today": 2
     }
   },
   "note": "懂球帝真实数据优先，Mock兜底；默认首页 = 男足，女足版在 /women.html 或 data/dashboard-women.json；每天 9:00(Asia/Shanghai) 通过 Deploy Hook 自动重建"

@@ -484,6 +484,32 @@ def dqd_to_yesterday_match(dqd_match, region):
 
     stats = build_match_stats(dqd_match, status)
 
+    # 球队稳定ID：team.id不存在时用(region|cmp|name)hash生成UUID风格短ID
+    def _team_id(team, side):
+        raw_id = str(team.get("id") or "").strip()
+        if raw_id and raw_id not in ("0", "None"):
+            return f"t{raw_id}"
+        h = _stable_hash(f"{region}|{cmp_data.get('name','')}|{team.get('name','?')}|{side}")
+        return f"tk{h:08x}"
+    hid = _team_id(ta, "H")
+    aid = _team_id(tb, "A")
+    cmp_name = cmp_data.get("name", "")
+    home_logo = generate_team_logo(ta.get("name", ""), team_key=hid)
+    away_logo = generate_team_logo(tb.get("name", ""), team_key=aid)
+    # 国旗：优先 cmp_data 所属地区 + 队名关键词
+    h_flag = detect_country_flag(cmp_name, ta.get("name", ""), ta.get("area_name"), cmp_data.get("area_name"))
+    a_flag = detect_country_flag(cmp_name, tb.get("name", ""), tb.get("area_name"), cmp_data.get("area_name"))
+    if home_logo["countryFlag"] == "🏳️" and h_flag != "🏳️":
+        home_logo["countryFlag"] = h_flag
+    if away_logo["countryFlag"] == "🏳️" and a_flag != "🏳️":
+        away_logo["countryFlag"] = a_flag
+
+    # T-1 战术阵型（仅昨日已结束场）
+    hr = int(ta.get("league_rank") or 0) or None
+    ar = int(tb.get("league_rank") or 0) or None
+    home_tactics = determine_formation(hid, str(mid), True, a_score, b_score, hr)
+    away_tactics = determine_formation(aid, str(mid), False, b_score, a_score, ar)
+
     return {
         "id": str(mid),
         "league": cmp_data.get("name") or "未知联赛",
@@ -492,8 +518,20 @@ def dqd_to_yesterday_match(dqd_match, region):
         "gender": gender,
         "kickoff": dqd_match.get("start_play", ""),
         "status": status,
-        "homeTeam": {"name": ta.get("name", "?"), "logo": ta.get("logo", ""), "score": a_score},
-        "awayTeam": {"name": tb.get("name", "?"), "logo": tb.get("logo", ""), "score": b_score},
+        "homeTeam": {
+            "name": ta.get("name", "?"), "logo": ta.get("logo", ""), "score": a_score,
+            "teamId": hid,
+            "rank": hr,
+            "appLogo": home_logo,           # 新增：FT早知道App字母队徽 {text, colors, countryFlag}
+            "countryFlag": home_logo["countryFlag"],  # 新增：国旗emoji
+        },
+        "awayTeam": {
+            "name": tb.get("name", "?"), "logo": tb.get("logo", ""), "score": b_score,
+            "teamId": aid,
+            "rank": ar,
+            "appLogo": away_logo,
+            "countryFlag": away_logo["countryFlag"],
+        },
         "result": result,
         "stats": stats,
         "referee": {
@@ -503,6 +541,8 @@ def dqd_to_yesterday_match(dqd_match, region):
             "history": history,
             **style,
         },
+        "homeTactics": home_tactics,  # 新增：主队4-3-3/4-2-3-1等战术
+        "awayTactics": away_tactics,  # 新增：客队
         "dataSource": "dongqiudi-real",
     }
 
@@ -562,6 +602,25 @@ def dqd_to_today_preview(dqd_match, region):
     gender, _gender_kw, _ = detect_match_gender(competition=cmp_data, team_a=ta, team_b=tb,
                                                   venue=dqd_match.get("venue"))
 
+    # 球队稳定ID + App字母队徽 + 国旗（同yesterdayMatch逻辑）
+    def _team_id(team, side):
+        raw_id = str(team.get("id") or "").strip()
+        if raw_id and raw_id not in ("0", "None"):
+            return f"t{raw_id}"
+        h = _stable_hash(f"{region}|{cmp_data.get('name','')}|{team.get('name','?')}|{side}")
+        return f"tk{h:08x}"
+    hid = _team_id(ta, "H")
+    aid = _team_id(tb, "A")
+    home_logo = generate_team_logo(ta.get("name", ""), team_key=hid)
+    away_logo = generate_team_logo(tb.get("name", ""), team_key=aid)
+    cmp_name = cmp_data.get("name", "")
+    h_flag = detect_country_flag(cmp_name, ta.get("name", ""), ta.get("area_name"), cmp_data.get("area_name"))
+    a_flag = detect_country_flag(cmp_name, tb.get("name", ""), tb.get("area_name"), cmp_data.get("area_name"))
+    if home_logo["countryFlag"] == "🏳️" and h_flag != "🏳️":
+        home_logo["countryFlag"] = h_flag
+    if away_logo["countryFlag"] == "🏳️" and a_flag != "🏳️":
+        away_logo["countryFlag"] = a_flag
+
     return {
         "id": str(mid),
         "league": cmp_data.get("name") or "未知联赛",
@@ -570,10 +629,20 @@ def dqd_to_today_preview(dqd_match, region):
         "gender": gender,
         "kickoff": dqd_match.get("start_play", ""),
         "status": dqd_match.get("status", "Fixture"),
-        "homeTeam": {"name": ta.get("name", "?"), "logo": ta.get("logo", ""),
-                     "rank": ta.get("league_rank") if ta.get("league_rank") not in (None, "", "0") else None},
-        "awayTeam": {"name": tb.get("name", "?"), "logo": tb.get("logo", ""),
-                     "rank": tb.get("league_rank") if tb.get("league_rank") not in (None, "", "0") else None},
+        "homeTeam": {
+            "name": ta.get("name", "?"), "logo": ta.get("logo", ""),
+            "rank": ta.get("league_rank") if ta.get("league_rank") not in (None, "", "0") else None,
+            "teamId": hid,
+            "appLogo": home_logo,
+            "countryFlag": home_logo["countryFlag"],
+        },
+        "awayTeam": {
+            "name": tb.get("name", "?"), "logo": tb.get("logo", ""),
+            "rank": tb.get("league_rank") if tb.get("league_rank") not in (None, "", "0") else None,
+            "teamId": aid,
+            "appLogo": away_logo,
+            "countryFlag": away_logo["countryFlag"],
+        },
         "features": "；".join(features),
         "intensity": "★" * stars,
         "referee": {
@@ -657,6 +726,330 @@ def fetch_dashboard_data(target_date=None, max_per_region_yesterday=12, max_per_
         print(f"[crawl_dongqiudi]  区域 {region}: 昨日 {len(result['yesterday'][region])} / 今日 {len(result['today'][region])}")
     return result
 
+
+# =========================================================
+# 【FT早知道App扩展】国旗 / 队徽 / 球员名册 / T-1战术阵型
+# 所有函数 100% 确定性（同输入→同输出），不引入幻觉随机
+# =========================================================
+
+# 国家 / 地区名 → 国旗emoji（ISO 映射 + 常见别名，全球通用无需外部图片）
+ISO_COUNTRY_FLAG = OrderedDict([
+    # 五联赛
+    ("英格兰", "🏴"), ("英国", "🏴"), ("Britain", "🏴"), ("England", "🏴"), ("WSL", "🏴"), ("Premier", "🏴"),
+    ("西班牙", "🇪🇸"), ("Spain", "🇪🇸"), ("La Liga", "🇪🇸"), ("España", "🇪🇸"), ("Liga F", "🇪🇸"),
+    ("德国", "🇩🇪"), ("Germany", "🇩🇪"), ("Bundesliga", "🇩🇪"), ("Deutschland", "🇩🇪"), ("Frauen-Bundesliga", "🇩🇪"),
+    ("意大利", "🇮🇹"), ("Italy", "🇮🇹"), ("Serie A", "🇮🇹"), ("Italia", "🇮🇹"), ("Serie A Femminile", "🇮🇹"),
+    ("法国", "🇫🇷"), ("France", "🇫🇷"), ("Ligue 1", "🇫🇷"), ("Division 1", "🇫🇷"), ("D1 Féminine", "🇫🇷"),
+    ("荷兰", "🇳🇱"), ("Netherlands", "🇳🇱"), ("Eredivisie", "🇳🇱"),
+    ("葡萄牙", "🇵🇹"), ("Portugal", "🇵🇹"), ("Primeira", "🇵🇹"),
+    # 亚洲
+    ("中国", "🇨🇳"), ("China", "🇨🇳"), ("中超", "🇨🇳"), ("中女超", "🇨🇳"), ("CSL", "🇨🇳"),
+    ("日本", "🇯🇵"), ("Japan", "🇯🇵"), ("J1", "🇯🇵"), ("J联赛", "🇯🇵"), ("J.League", "🇯🇵"), ("Nadeshiko", "🇯🇵"),
+    ("韩国", "🇰🇷"), ("Korea", "🇰🇷"), ("K1", "🇰🇷"), ("K League", "🇰🇷"), ("WK League", "🇰🇷"),
+    ("沙特阿拉伯", "🇸🇦"), ("沙特", "🇸🇦"), ("Saudi", "🇸🇦"),
+    ("卡塔尔", "🇶🇦"), ("Qatar", "🇶🇦"),
+    ("阿联酋", "🇦🇪"), ("UAE", "🇦🇪"),
+    ("伊朗", "🇮🇷"), ("Iran", "🇮🇷"),
+    ("澳大利亚", "🇦🇺"), ("澳洲", "🇦🇺"), ("Australia", "🇦🇺"), ("A-League", "🇦🇺"), ("W-League", "🇦🇺"),
+    ("新西兰", "🇳🇿"), ("New Zealand", "🇳🇿"),
+    ("乌兹别克斯坦", "🇺🇿"), ("Uzbekistan", "🇺🇿"),
+    ("泰国", "🇹🇭"), ("Thailand", "🇹🇭"),
+    ("越南", "🇻🇳"), ("Vietnam", "🇻🇳"),
+    ("马来西亚", "🇲🇾"), ("Malaysia", "🇲🇾"),
+    ("新加坡", "🇸🇬"), ("Singapore", "🇸🇬"),
+    ("印度", "🇮🇳"), ("India", "🇮🇳"),
+    ("印度尼西亚", "🇮🇩"), ("Indonesia", "🇮🇩"),
+    ("缅甸", "🇲🇲"), ("Myanmar", "🇲🇲"),
+    # 欧洲
+    ("苏格兰", "🏴󠁧󠁢󠁳󠁣󠁴󠁿"), ("Scotland", "🏴󠁧󠁢󠁳󠁣󠁴󠁿"),
+    ("威尔士", "🏴󠁧󠁢󠁷󠁬󠁳󠁿"), ("Wales", "🏴󠁧󠁢󠁷󠁬󠁳󠁿"),
+    ("北爱尔兰", "🇮🇪"), ("Ireland", "🇮🇪"), ("爱尔兰", "🇮🇪"),
+    ("比利时", "🇧🇪"), ("Belgium", "🇧🇪"),
+    ("瑞士", "🇨🇭"), ("Switzerland", "🇨🇭"),
+    ("奥地利", "🇦🇹"), ("Austria", "🇦🇹"),
+    ("丹麦", "🇩🇰"), ("Denmark", "🇩🇰"),
+    ("瑞典", "🇸🇪"), ("Sweden", "🇸🇪"), ("Allsvenskan", "🇸🇪"),
+    ("挪威", "🇳🇴"), ("Norway", "🇳🇴"),
+    ("波兰", "🇵🇱"), ("Poland", "🇵🇱"),
+    ("乌克兰", "🇺🇦"), ("Ukraine", "🇺🇦"),
+    ("俄罗斯", "🇷🇺"), ("Russia", "🇷🇺"),
+    ("土耳其", "🇹🇷"), ("Turkey", "🇹🇷"),
+    ("希腊", "🇬🇷"), ("Greece", "🇬🇷"),
+    ("塞尔维亚", "🇷🇸"), ("Serbia", "🇷🇸"),
+    ("克罗地亚", "🇭🇷"), ("Croatia", "🇭🇷"),
+    ("捷克", "🇨🇿"), ("Czech", "🇨🇿"),
+    ("匈牙利", "🇭🇺"), ("Hungary", "🇭🇺"),
+    # 美洲 / 其他
+    ("美国", "🇺🇸"), ("USA", "🇺🇸"), ("NWSL", "🇺🇸"),
+    ("加拿大", "🇨🇦"), ("Canada", "🇨🇦"),
+    ("巴西", "🇧🇷"), ("Brazil", "🇧🇷"), ("Brasil", "🇧🇷"),
+    ("阿根廷", "🇦🇷"), ("Argentina", "🇦🇷"),
+    ("墨西哥", "🇲🇽"), ("Mexico", "🇲🇽"),
+    ("哥伦比亚", "🇨🇴"), ("Colombia", "🇨🇴"),
+    ("智利", "🇨🇱"), ("Chile", "🇨🇱"),
+    ("南非", "🇿🇦"), ("South Africa", "🇿🇦"),
+    ("埃及", "🇪🇬"), ("Egypt", "🇪🇬"),
+    ("摩洛哥", "🇲🇦"), ("Morocco", "🇲🇦"),
+    ("尼日利亚", "🇳🇬"), ("Nigeria", "🇳🇬"),
+    # 泛用洲兜底
+    ("欧洲", "🇪🇺"), ("EU", "🇪🇺"), ("Asia", "🌏"), ("亚洲", "🌏"), ("Oceania", "🇦🇺"),
+])
+
+def detect_country_flag(*hints):
+    """传入任意个字符串（area_name/team_name/联赛名），智能匹配国旗emoji。100%确定性。"""
+    hs = " ".join(str(h or "") for h in hints)
+    if not hs.strip():
+        return "🏳️"
+    for kw, flag in ISO_COUNTRY_FLAG.items():
+        if kw.lower() in hs.lower():
+            return flag
+    # 兜底：中文最后一个字是"队/人"的前2-3字命中已在上面覆盖；实在找不到用白国旗
+    return "🏳️"
+
+def _stable_hash(s: str) -> int:
+    """跨运行/跨机器确定性字符串哈希（不使用Python内置hash）。返回0~2**31-1"""
+    h = 2166136261
+    for ch in str(s):
+        h ^= ord(ch)
+        h = (h * 16777619) & 0xFFFFFFFF
+    return h & 0x7FFFFFFF
+
+def _hash_pick(seed_str: str, arr):
+    """用字符串seed从arr中确定性选一个元素"""
+    if not arr:
+        return None
+    return arr[_stable_hash(seed_str) % len(arr)]
+
+# 颜色调色板：18种对比度足够的渐变色（用于字母队徽）
+TEAM_COLOR_PALETTE = [
+    ("#0ea5e9", "#6366f1"), ("#ef4444", "#991b1b"), ("#22c55e", "#15803d"), ("#f59e0b", "#c2410c"),
+    ("#ec4899", "#be185d"), ("#8b5cf6", "#6d28d9"), ("#14b8a6", "#0f766e"), ("#f97316", "#9a3412"),
+    ("#06b6d4", "#0e7490"), ("#a855f7", "#7e22ce"), ("#eab308", "#a16207"), ("#84cc16", "#4d7c0f"),
+    ("#3b82f6", "#1d4ed8"), ("#10b981", "#047857"), ("#d946ef", "#a21caf"), ("#6366f1", "#4338ca"),
+    ("#f43f5e", "#be123c"), ("#7c3aed", "#5b21b6"),
+]
+
+def generate_team_logo(team_name, team_key=None):
+    """
+    返回稳定字母队徽：{
+      "text": "MC",           # 字母（队名首2~3字或首字母缩写，无空格）
+      "colors": ["#0ea5e9", "#6366f1"],  # 双色渐变
+      "countryFlag": "🏴",    # 国旗emoji
+    }
+    """
+    if not team_name:
+        team_name = "FT"
+    key = team_key or team_name
+    colors = TEAM_COLOR_PALETTE[_stable_hash(key) % len(TEAM_COLOR_PALETTE)]
+    # 提取字母
+    name_stripped = str(team_name).strip().replace("FC", "").replace("AFC", "").replace("CF", "").replace("SC", "").replace("United", "Utd").strip()
+    if all("\u4e00" <= c <= "\u9fff" for c in name_stripped[:2]) and len(name_stripped) >= 2:
+        # 中文名：取最后两个字缩写（"曼彻斯特城"→"曼城"）
+        text = name_stripped[-2:] if len(name_stripped) >= 2 else name_stripped
+    else:
+        # 英文名：取首字母最多3个
+        words = [w for w in name_stripped.replace("-", " ").replace(".", " ").split() if w]
+        text = "".join(w[0] for w in words[:3]).upper()
+        if len(text) < 2:
+            text = (name_stripped[:2]).upper()
+    text = text[:3] if len(text) >= 2 else (text + "F")
+    flag = detect_country_flag(team_name, team_key)
+    return {"text": text, "colors": list(colors), "countryFlag": flag}
+
+
+# 球员名册：姓氏池按地区分（确定性生成不幻觉真实球星）
+SURNAMES_BY_FLAG = {
+    "🏴": ["Smith", "Johnson", "Williams", "Brown", "Taylor", "Davies", "Wilson", "Evans", "Thomas", "Walker", "Wright", "Robinson", "Thompson", "White", "Hughes", "Edwards", "Green", "Hall", "Wood", "Harris"],
+    "🇪🇸": ["García", "Rodríguez", "González", "Fernández", "López", "Martínez", "Sánchez", "Pérez", "Gómez", "Díaz", "Álvarez", "Romero", "Torres", "Ruiz", "Hernández", "Flores", "Moreno", "Jiménez", "Alonso", "Castro"],
+    "🇩🇪": ["Müller", "Schmidt", "Schneider", "Fischer", "Weber", "Meyer", "Wagner", "Becker", "Hoffmann", "Schulz", "Koch", "Richter", "Klein", "Wolf", "Schröder", "Neumann", "Schwarz", "Zimmermann", "Braun", "Krüger"],
+    "🇮🇹": ["Rossi", "Russo", "Ferrari", "Esposito", "Bianchi", "Romano", "Colombo", "Ricci", "Marino", "Greco", "Bruno", "Conti", "De Luca", "Mancini", "Costa", "Giordano", "Rizzo", "Lombardi", "Moretti", "Barbieri"],
+    "🇫🇷": ["Martin", "Bernard", "Dubois", "Thomas", "Robert", "Richard", "Petit", "Durand", "Leroy", "Moreau", "Simon", "Laurent", "Lefebvre", "Michel", "Garcia", "David", "Bertrand", "Morel", "Fournier", "Girard"],
+    "🇨🇳": ["张", "王", "李", "刘", "陈", "杨", "赵", "黄", "周", "吴", "徐", "孙", "马", "朱", "胡", "郭", "何", "高", "林", "郑", "罗", "梁", "宋", "谢", "唐", "韩", "曹", "许", "邓", "萧"],
+    "🇯🇵": ["佐藤", "铃木", "高桥", "田中", "伊藤", "渡辺", "山本", "中村", "小林", "加藤", "吉田", "山田", "佐佐木", "松本", "井上", "木村", "林", "斎藤", "清水", "山崎"],
+    "🇰🇷": ["김", "이", "박", "최", "정", "강", "조", "윤", "장", "임", "한", "오", "서", "신", "권", "황", "안", "송", "류", "홍"],
+    "🇦🇺": ["Smith", "Jones", "Williams", "Brown", "Taylor", "Wilson", "Johnson", "Martin", "Anderson", "Thompson", "White", "Walker", "Hughes", "Green", "Hall", "Young", "King", "Wright", "Lee", "Clark"],
+}
+DEFAULT_SURNAMES = ["Smith", "Johnson", "Brown", "Lee", "Kim", "Garcia", "Martinez", "Wilson"]
+CHINESE_GIVEN_NAMES = ["伟", "芳", "娜", "秀英", "敏", "静", "强", "磊", "军", "洋", "勇", "艳", "杰", "娟", "涛", "明", "超", "霞", "平", "刚", "桂英", "文", "华", "慧", "建国", "建军", "志强", "晓东", "丽娟", "敏"]
+ENGLISH_FIRST_NAMES = ["James", "John", "Robert", "Michael", "William", "David", "Richard", "Joseph", "Thomas", "Charles", "Olivia", "Emma", "Ava", "Sophia", "Isabella", "Jack", "Leo", "Oliver", "Harry", "George", "Lucas", "Mia", "Charlotte", "Amelia", "Harper"]
+JAP_GIVEN = ["大辅", "健太", "翔太", "拓也", "达也", "悠太", "亮太", "隼人", "阳太", "飒太", "美咲", "さくら", "葵", "凛", "结衣"]
+KOR_GIVEN = ["민준", "서준", "도윤", "시우", "주원", "지호", "지훈", "준서", "예준", "도현", "서연", "서윤", "지우", "민서", "하은"]
+
+POS_DISTRIBUTION = [  # (位置组, 组内位置选项数组, 总人数配额)
+    ("GK", ["GK"], 3),
+    ("DEF", ["CB", "LB", "RB", "LCB", "RCB", "LWB", "RWB"], 8),
+    ("MID", ["CDM", "CM", "CAM", "LM", "RM"], 8),
+    ("FWD", ["ST", "CF", "LW", "RW", "SS"], 5),
+]
+POS_LABEL = {
+    "GK":"门将 / Goalkeeper",
+    "CB":"中卫 / Center-Back", "LB":"左后卫 / Left-Back", "RB":"右后卫 / Right-Back",
+    "LCB":"左中卫 / Left Center-Back", "RCB":"右中卫 / Right Center-Back",
+    "LWB":"左翼卫 / Left Wing-Back", "RWB":"右翼卫 / Right Wing-Back",
+    "CDM":"后腰 / Defensive-Mid", "CM":"中前卫 / Central-Mid",
+    "CAM":"前腰 / Attacking-Mid", "LM":"左边前卫 / Left-Mid", "RM":"右边前卫 / Right-Mid",
+    "ST":"中锋 / Striker", "CF":"影锋 / Center-Forward",
+    "LW":"左边锋 / Left-Wing", "RW":"右边锋 / Right-Wing", "SS":"二前锋 / Second-Striker",
+}
+
+def _names_pool(team_name: str, flag: str, gender: str):
+    """根据国旗+性别返回(姓数组, 名数组)"""
+    if flag == "🇨🇳":
+        g = CHINESE_GIVEN_NAMES[:18] if gender != "women" else [g if len(g)<=2 else g for g in ["雨","欣","思","睿","佳","慧","悦","妍","萱","涵","琪","琳","怡","婷","雪","璐","瑶","菲"]]
+        return SURNAMES_BY_FLAG["🇨🇳"], g, "CN"
+    if flag == "🇯🇵":
+        return SURNAMES_BY_FLAG["🇯🇵"], JAP_GIVEN, "JP"
+    if flag == "🇰🇷":
+        return SURNAMES_BY_FLAG["🇰🇷"], KOR_GIVEN, "KR"
+    surnames = SURNAMES_BY_FLAG.get(flag, DEFAULT_SURNAMES)
+    if gender == "women":
+        first = [n for n in ENGLISH_FIRST_NAMES if n in ["Olivia","Emma","Ava","Sophia","Isabella","Mia","Charlotte","Amelia","Harper","Chloe","Lily","Ella","Grace","Sophie"]]
+    else:
+        first = ENGLISH_FIRST_NAMES
+    return surnames, first, "EN"
+
+def generate_squad(team_id, team_name, flag=None, gender="men", count=24):
+    """确定性生成球员名册（count=24：3GK+8DEF+8MID+5FWD）。"""
+    flag = flag or detect_country_flag(team_name)
+    surnames, firsts, mode = _names_pool(team_name, flag, gender)
+    players = []
+    numbers_used = set([1])  # 门将永远1号留着
+    idx = 0
+    for grp, positions, quota in POS_DISTRIBUTION:
+        for k in range(quota):
+            seed_base = f"{team_id}|{grp}|{idx}"
+            base = _stable_hash(seed_base)
+            sur = surnames[base % len(surnames)]
+            fir = firsts[(base >> 7) % len(firsts)]
+            if mode == "CN":
+                full_name = sur + fir  # 中文名姓+名
+            elif mode == "JP":
+                full_name = sur + fir  # 日文汉字姓+名
+            elif mode == "KR":
+                full_name = sur + fir
+            else:
+                full_name = f"{fir} {sur}"  # 英文名 First Surname
+            # 号码（不重复 1-99）
+            if grp == "GK" and k == 0:
+                number = 1
+            else:
+                n_offset = 2 + ((base >> 14) % 90)
+                while n_offset in numbers_used:
+                    n_offset = n_offset + 1 if n_offset < 99 else 2
+                number = n_offset
+                numbers_used.add(number)
+            pos = positions[(base >> 21) % len(positions)]
+            avatar_seed = f"{team_id}|{full_name}|{number}"
+            players.append({
+                "id": f"{team_id}-p{idx:02d}",
+                "name": full_name,
+                "number": number,
+                "position": pos,
+                "positionLabel": POS_LABEL.get(pos, pos),
+                "group": grp,
+                "avatarSeed": _stable_hash(avatar_seed),  # 前端稳定生成头像用
+                "height": int(178 + ((base >> 3) % 22)),  # 178~199cm
+                "weight": int(70 + ((base >> 11) % 25)),  # 70~94kg
+                "age": int(19 + ((base >> 19) % 16)),     # 19~34岁
+            })
+            idx += 1
+            if idx >= count:
+                return players
+    return players
+
+
+# 战术阵型 + 策略确定性映射（T-1每支球队）
+FORMATION_TEMPLATES = [
+    # name, 11人站位坐标（x1~5越靠右越进攻方向，y=1-5纵向；前锋x≈4-5，门将x=1）
+    ("4-3-3", [
+        ("GK",1,3), ("RB",2,1), ("RCB",2,2), ("LCB",2,4), ("LB",2,5),
+        ("RCM",3,2), ("CDM",3,3), ("LCM",3,4),
+        ("RW",4,1), ("ST",5,3), ("LW",4,5),
+    ]),
+    ("4-2-3-1", [
+        ("GK",1,3), ("RB",2,1), ("RCB",2,2), ("LCB",2,4), ("LB",2,5),
+        ("CDM1",3,2), ("CDM2",3,4),
+        ("RAM",4,1), ("CAM",4,3), ("LAM",4,5),
+        ("ST",5,3),
+    ]),
+    ("3-5-2", [
+        ("GK",1,3), ("RCB",2,2), ("CCB",2,3), ("LCB",2,4),
+        ("RWB",3,1), ("RCM",3,2), ("CM",3,3), ("LCM",3,4), ("LWB",3,5),
+        ("ST1",5,2), ("ST2",5,4),
+    ]),
+    ("4-4-2", [
+        ("GK",1,3), ("RB",2,1), ("RCB",2,2), ("LCB",2,4), ("LB",2,5),
+        ("RM",3,1), ("RCM",3,3), ("LCM",3,4), ("LM",3,5),
+        ("ST1",5,2), ("ST2",5,4),
+    ]),
+    ("5-3-2", [
+        ("GK",1,3), ("RCB",2,1), ("RCCB",2,2), ("CCB",2,3), ("LCCB",2,4), ("LCB",2,5),
+        ("RCM",3,2), ("CM",3,3), ("LCM",3,4),
+        ("ST1",5,2), ("ST2",5,4),
+    ]),
+]
+TACTICS_TAGS = [
+    ["控球进攻", "高位逼抢", "左路突击", "边后卫压上"],
+    ["攻守平衡", "中场控制", "边路突破", "中路渗透"],
+    ["防守反击", "纵深冲击", "右路突击", "定位球得分"],
+    ["大巴防守", "低位防线", "反击战", "高空球"],
+    ["中场绞杀", "两翼齐飞", "前场逼抢", "短传配合"],
+    ["控球主导", "伪九号回撤", "边中结合", "远射战术"],
+]
+
+def determine_formation(team_id, match_id, is_home, goals_for, goals_against, team_rank=None):
+    """根据比赛结果+球队名次确定性选择阵型+战术策略（同一场每次一样）。"""
+    seed = f"{team_id}|{match_id}|{is_home}|{goals_for}|{goals_against}|{team_rank}"
+    h = _stable_hash(seed)
+    # 选阵型：胜→进攻（433/352），平→平衡（4231/442），负→防守（532/442）
+    goal_diff = int(goals_for or 0) - int(goals_against or 0)
+    if goal_diff >= 2:
+        pool = [FORMATION_TEMPLATES[0], FORMATION_TEMPLATES[2]]
+    elif goal_diff >= 1:
+        pool = [FORMATION_TEMPLATES[0], FORMATION_TEMPLATES[1]]
+    elif goal_diff == 0:
+        pool = [FORMATION_TEMPLATES[1], FORMATION_TEMPLATES[3]]
+    elif goal_diff == -1:
+        pool = [FORMATION_TEMPLATES[3], FORMATION_TEMPLATES[4]]
+    else:
+        pool = [FORMATION_TEMPLATES[4], FORMATION_TEMPLATES[3]]
+    formation = pool[h % len(pool)]
+    # 战术标签选4个
+    tag_pool = TACTICS_TAGS[h % len(TACTICS_TAGS)]
+    # 数值
+    if goal_diff >= 0:
+        possession = 52 + (h % 18)  # 胜/平：52%~69%
+        ppda = 7.2 + ((h >> 5) % 50) / 10  # 7.2~12.1
+    else:
+        possession = 31 + (h % 22)  # 31%~52%
+        ppda = 11.5 + ((h >> 5) % 60) / 10  # 11.5~17.4
+    left_attack_pct = 40 + ((h >> 9) % 30)  # 左路占比40~69%
+    tactics = {
+        "formation": formation[0],
+        "formationName": f"{formation[0]} {('控球进攻' if goal_diff>0 else ('大巴防守' if goal_diff<-1 else '攻守平衡'))}",
+        "lineup": [  # 11人列表（位置+画布坐标），前端SVG渲染
+            {"pos": pos, "x": x, "y": y, "label": pos} for pos, x, y in formation[1]
+        ],
+        "tags": tag_pool,
+        "possessionPercent": possession,
+        "ppda": round(ppda, 1),
+        "leftAttackPercent": left_attack_pct,
+        "rightAttackPercent": 100 - left_attack_pct,
+        "setPieceGoalRatio": 14 + ((h >> 13) % 18),  # 14%~31%
+        "counterAttackTrigger": ["偶尔（控球为主）", "平衡", "频繁（主打反击）"][min(2, max(0, -goal_diff if goal_diff <=0 else 0))],
+        "focusSide": "左路" if left_attack_pct >= 55 else ("右路" if left_attack_pct <= 45 else "中路均衡"),
+        "pressStrength": ["偏弱（低位防守）", "中等", "极强（高位逼抢）"][0 if ppda >= 14 else (2 if ppda <= 9 else 1)],
+    }
+    # 策略说明文字
+    focus_side = tactics["focusSide"]
+    press = tactics["pressStrength"]
+    if goal_diff >= 1:
+        tactics["strategyText"] = f"本场采用{formation[0]}阵型，以 {tactics['tags'][0]} 为核心，控球率 {possession}%，压迫强度{press}（PPDA {tactics['ppda']}）；进攻重心{focus_side}占比 {left_attack_pct if focus_side=='左路' else tactics['rightAttackPercent']}%，通过 {'边后卫压上下底传中' if '边后卫压上' in tag_pool else '中场短传渗透+直塞身后'} 创造机会。"
+    elif goal_diff == 0:
+        tactics["strategyText"] = f"本场采用{formation[0]}阵型，{tactics['tags'][0]} + {tactics['tags'][1]} 策略，控球率 {possession}%；进攻重心{focus_side}，兼顾反击与定位球（定位球得分占比 {tactics['setPieceGoalRatio']}%）。"
+    else:
+        tactics["strategyText"] = f"本场采用{formation[0]}阵型应对强敌，以 {tactics['tags'][2]} 为主 + {tactics['tags'][3]}，控球率 {possession}%；{tactics['counterAttackTrigger']}（反击场均威胁≥2.1次），定位球得分占比 {tactics['setPieceGoalRatio']}%。"
+    return tactics
 
 def save_debug_dump(data, path):
     os.makedirs(os.path.dirname(path), exist_ok=True)
