@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-11T13:24:33.145577",
-  "generatedAt": "2026-08-11T13:24:34.941982",
+  "lastUpdate": "2026-08-11T18:48:42.150343",
+  "generatedAt": "2026-08-11T18:48:44.535848",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "asia": [
@@ -41,7 +41,7 @@
     {
       "id": "54415118",
       "date": "2026-08-11",
-      "time": "10:00",
+      "time": "09:55",
       "league": {
         "id": "dqd-asia-韩女联",
         "name": "韩女联",
@@ -85,10 +85,10 @@
       "venue": "华川国民体育振兴公团女足主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-穆罕默德·胡维什",
-          "name": "穆罕默德·胡维什",
-          "country": "沙特阿拉伯",
-          "age": 38
+          "id": "dqd-金希坤",
+          "name": "金希坤",
+          "country": "韩国",
+          "age": 42
         },
         "history": [
           {
@@ -100,7 +100,18 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
           },
           {
             "date": "",
@@ -122,7 +133,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -133,18 +144,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           }
         ],
         "statistics": {
@@ -153,7 +153,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "2.0",
+          "avgVar": "1.2",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -166,10 +166,10 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "常规联赛对决"
       ],
-      "predictedDifficulty": 3,
-      "intensity": "★★★",
+      "predictedDifficulty": 2,
+      "intensity": "★★",
       "homeRecentForm": [
         "负",
         "胜",
@@ -190,11 +190,11 @@
         "awayWins": 2
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 31,
+      "heatScore": 25,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 12,
+        "focal": 6,
         "h2hRecent": 3
       },
       "isHotMatch": false
@@ -203,7 +203,7 @@
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 女足）",
     "yesterdaySummary": "",
-    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）",
+    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（常规联赛对决）",
     "yesterdayCount": 0,
     "todayCount": 2,
     "fullReport": true,
@@ -220,7 +220,7 @@
         {
           "id": "54415118",
           "date": "2026-08-11",
-          "time": "10:00",
+          "time": "09:55",
           "league": {
             "id": "dqd-asia-韩女联",
             "name": "韩女联",
@@ -264,10 +264,10 @@
           "venue": "华川国民体育振兴公团女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-穆罕默德·胡维什",
-              "name": "穆罕默德·胡维什",
-              "country": "沙特阿拉伯",
-              "age": 38
+              "id": "dqd-金希坤",
+              "name": "金希坤",
+              "country": "韩国",
+              "age": 42
             },
             "history": [
               {
@@ -279,7 +279,18 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -301,7 +312,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -312,18 +323,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               }
             ],
             "statistics": {
@@ -332,7 +332,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "2.0",
+              "avgVar": "1.2",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -345,10 +345,10 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "常规联赛对决"
           ],
-          "predictedDifficulty": 3,
-          "intensity": "★★★",
+          "predictedDifficulty": 2,
+          "intensity": "★★",
           "homeRecentForm": [
             "负",
             "胜",
@@ -369,11 +369,11 @@
             "awayWins": 2
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 31,
+          "heatScore": 25,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 12,
+            "focal": 6,
             "h2hRecent": 3
           },
           "isHotMatch": false

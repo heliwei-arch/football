@@ -909,6 +909,67 @@
     grid-template-columns: 230px minmax(0, 1fr);
     gap: 24px;
     align-items: flex-start;
+    /* 🔴 空屏兜底：强可见性，任何情况下不得隐藏（防JS未执行导致白屏）*/
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: grid !important;
+  }
+  /* 🔴 空屏兜底：fallbackLoader（加载中占位层）5秒后自动隐藏——就算JS全部死掉/throw，也不让它挡住下面的app-shell */
+  #fallbackLoader {
+    transition: opacity 0.4s ease, visibility 0.4s ease, max-height 0.6s ease, padding 0.4s ease, margin 0.4s ease;
+    animation: fbAutoHide 5s step-end forwards;
+  }
+  @keyframes fbAutoHide {
+    to {
+      opacity: 0;
+      visibility: hidden;
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      pointer-events: none;
+    }
+  }
+  /* 🔴 空屏兜底：调试面板（8秒后若仍无卡片自动注入，显示APP_DATA真实状态+行动指引） */
+  .debug-deadlock-panel {
+    margin: 24px auto;
+    max-width: 1100px;
+    background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%);
+    color: #fef2f2;
+    border-radius: 16px;
+    padding: 24px 28px;
+    border: 2px solid #f59e0b;
+    box-shadow: 0 20px 50px rgba(127,29,29,0.4);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.8;
+    z-index: 99999;
+    position: relative;
+  }
+  .debug-deadlock-panel h3 { margin: 0 0 12px; font-size: 20px; color: #fde68a; }
+  .debug-deadlock-panel code {
+    background: rgba(0,0,0,0.45); padding: 2px 8px; border-radius: 6px; font-size: 13px;
+    font-family: 'SF Mono', Menlo, Consolas, monospace;
+  }
+  .debug-deadlock-panel .dbg-row { display: flex; gap: 12px; margin: 8px 0; flex-wrap: wrap; }
+  .debug-deadlock-panel .dbg-tag {
+    background: rgba(255,255,255,0.12); padding: 4px 10px; border-radius: 999px;
+    font-size: 12px; font-weight: 600;
+  }
+  .debug-deadlock-panel .dbg-tag.ok { background: #065f46; }
+  .debug-deadlock-panel .dbg-tag.ng { background: #991b1b; color: #fecaca; }
+  .debug-deadlock-panel .dbg-actions { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .debug-deadlock-panel button {
+    all: unset; cursor: pointer; padding: 10px 18px; border-radius: 10px;
+    background: #f59e0b; color: #1f2937; font-weight: 700; font-size: 14px;
+    transition: transform 0.15s;
+  }
+  .debug-deadlock-panel button:hover { transform: translateY(-1px); background: #fbbf24; }
+  .debug-deadlock-panel button.primary { background: #22c55e; color: #fff; }
+  .debug-deadlock-panel button.primary:hover { background: #16a34a; }
+  .debug-deadlock-panel pre {
+    background: #0f172a; color: #e2e8f0; padding: 12px 16px; border-radius: 10px;
+    overflow-x: auto; font-size: 12px; line-height: 1.6; max-height: 260px;
   }
   /* 响应式：<1080px 大洲栏变成横向tabs */
   @media (max-width: 1080px) {
@@ -1741,7 +1802,7 @@
           '<h3 style="color:#fca5a5;margin:0 0 12px 0;font-size:18px;">❌ 页面加载失败</h3>' +
           '<div style="color:#fecaca;line-height:1.8;font-size:14px;text-align:left;background:#1f2937;padding:12px 16px;' +
           'border-radius:8px;overflow:auto;max-height:200px;white-space:pre-wrap;">' +
-          String(msg).replace(/[<>]/g,'') +
+          String(msg).replace(/[\x3c\x3e]/g,'') +
           '</div>' +
           '<div style="color:#fca5a5;line-height:1.8;font-size:14px;margin-top:16px;text-align:left;">' +
           '建议操作：<br/>' +
@@ -2089,63 +2150,119 @@ function filterByRegion(region) {
 
 // ===== 主渲染 =====
 function render() {
-  var fb=document.getElementById('fallbackLoader'); if(fb) fb.style.display='none';
-  if (!APP_DATA) return;
+  // 🔴 【空屏根因修复】每段独立 try/catch：任何一段死，绝对不影响其他段（特别是匹配卡片写入必须永远执行）
+  try {
+    var fb=document.getElementById('fallbackLoader');
+    if(fb) { fb.style.display='none'; fb.style.visibility='hidden'; }
+  } catch(e){ console.warn('[render] fallback hide err:',e); }
+
+  if (!APP_DATA) {
+    console.warn('[render] APP_DATA is empty, returning early (will trigger 8s debug panel)');
+    return;
+  }
   
-  // 更新时间
-  document.getElementById('lastUpdateText').textContent = `更新于 ${formatTime(APP_DATA.lastUpdate)}`;
-  document.getElementById('yesterdayDateLabel').textContent = `（${getYesterdayStr()}）`;
-  document.getElementById('todayDateLabel').textContent = `（${getTodayStr()}）`;
+  // ① 基本文案：lastUpdate/日期标签/数据源
+  try {
+    var lut = document.getElementById('lastUpdateText');
+    if (lut) lut.textContent = `更新于 ${formatTime(APP_DATA.lastUpdate)}`;
+  } catch(e){ console.warn('[render] lastUpdate err:',e); }
+  try {
+    var ydl = document.getElementById('yesterdayDateLabel');
+    if (ydl) ydl.textContent = `（${getYesterdayStr()}）`;
+  } catch(e){ console.warn('[render] yDateLabel err:',e); }
+  try {
+    var tdl = document.getElementById('todayDateLabel');
+    if (tdl) tdl.textContent = `（${getTodayStr()}）`;
+  } catch(e){ console.warn('[render] tDateLabel err:',e); }
   
   // 数据源横幅显示刷新时间 + 数据来源类型
-  const dataSource = APP_DATA.dataSource || 'mock-generated';
-  const refreshEl = document.getElementById('datasourceRefreshTime');
-  if (refreshEl) {
-    const srcLabel = dataSource === 'dongqiudi-real' ? '懂球帝真实数据' : 'Mock兜底';
-    refreshEl.textContent = `｜数据源：${srcLabel}｜生成于 ${formatTime(APP_DATA.generatedAt || APP_DATA.lastUpdate)}`;
+  try {
+    const dataSource = APP_DATA.dataSource || 'mock-generated';
+    const refreshEl = document.getElementById('datasourceRefreshTime');
+    if (refreshEl) {
+      const srcLabel = dataSource === 'dongqiudi-real' ? '懂球帝真实数据' : 'Mock兜底';
+      refreshEl.textContent = `｜数据源：${srcLabel}｜生成于 ${formatTime(APP_DATA.generatedAt || APP_DATA.lastUpdate)}`;
+    }
+  } catch(e){ console.warn('[render] datasource banner err:',e); }
+  
+  // ② 区域筛选（filter后yMatches/tPreviews必须保留，不能throw否则下面卡片不写）
+  let yMatches = []; let tPreviews = [];
+  try {
+    yMatches = CURRENT_REGION === 'all' ? (APP_DATA.yesterdayMatches || []) : (APP_DATA.yesterdayMatches || []).filter(m => m.region === CURRENT_REGION);
+    tPreviews = CURRENT_REGION === 'all' ? (APP_DATA.todayPreviews || []) : (APP_DATA.todayPreviews || []).filter(m => m.region === CURRENT_REGION);
+  } catch(e) { console.warn('[render] region filter err:',e); yMatches=APP_DATA.yesterdayMatches||[]; tPreviews=APP_DATA.todayPreviews||[]; }
+  
+  // ③ 顶部count徽章（已被左侧大洲栏替代，但保留try/catch防老代码死引用）
+  //    🔴 空屏根因1：count-all/count-europe/count-asia/count-australia 这4个DOM在重构左侧大洲栏时已删除，
+  //       原代码 getElementById(...).textContent 对 null 赋值 → TypeError！→ render() 直接跳出 → 卡片永远不写！
+  try {
+    // 这些id可能不存在（左侧垂直大洲栏已接管badge展示），绝对不赋值，仅安全遍历
+    ['count-all','count-europe','count-asia','count-australia'].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (id === 'count-all') el.textContent = (APP_DATA.yesterdayMatches||[]).length + (APP_DATA.todayPreviews||[]).length;
+    });
+  } catch(e){ console.warn('[render] top counts skipped (ok, replaced by sidebar):',e); }
+  
+  // ④ 0/N场比赛 标题（永远保证显示，就算0场也要有"0场比赛"文案）
+  try {
+    const yc = document.getElementById('yesterdayCount');
+    if (yc) yc.textContent = `${yMatches.length} 场比赛`;
+    const tc = document.getElementById('todayCount');
+    if (tc) tc.textContent = `${tPreviews.length} 场比赛`;
+  } catch(e){ console.warn('[render] count labels err:',e); }
+  
+  // ⑤ 推送摘要
+  try {
+    if (APP_DATA.pushDigest) {
+      const pc = document.getElementById('pushCard');
+      if (pc) pc.style.display = 'block';
+      const pt = document.getElementById('pushTitle');
+      if (pt) pt.textContent = APP_DATA.pushDigest.title || '';
+      const py = document.getElementById('pushYesterday');
+      if (py) py.textContent = APP_DATA.pushDigest.yesterdaySummary || '';
+      const ptd = document.getElementById('pushToday');
+      if (ptd) ptd.textContent = APP_DATA.pushDigest.todaySummary || '';
+    }
+  } catch(e){ console.warn('[render] push card err:',e); }
+  
+  // 🔴🔴🔴 ⑥ 昨日赛事 + 今日预告（这两行是用户真正看的核心！必须try/catch隔离，任何其他段死都不能影响这两块写入HTML）🔴🔴🔴
+  try {
+    const yContainer = document.getElementById('yesterdayMatches');
+    if (yContainer) {
+      if (yMatches.length === 0) {
+        yContainer.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📭</div>当前区域暂无昨日赛事数据（今天刚部署完，明天起可回溯昨日赛况）</div>`;
+      } else {
+        yContainer.innerHTML = yMatches.map(function(m, i){
+          try { return renderYesterdayMatch(m, i); } catch(me){ console.warn('[render] yMatch err@'+i, me); return ''; }
+        }).join('');
+      }
+    }
+  } catch(e){ console.error('[render] 昨日赛事致命错误（这段必须永远成功）：', e); 
+    try {
+      const yc = document.getElementById('yesterdayMatches');
+      if (yc) yc.innerHTML = `<div class="empty-state"><div class="empty-state-icon">🐞</div>渲染异常：${e.message||e}<br/><small>点击⚡立即更新或刷新重试</small></div>`;
+    } catch(_){}
   }
   
-  // 区域筛选
-  const yMatches = CURRENT_REGION === 'all' ? APP_DATA.yesterdayMatches : APP_DATA.yesterdayMatches.filter(m => m.region === CURRENT_REGION);
-  const tPreviews = CURRENT_REGION === 'all' ? APP_DATA.todayPreviews : APP_DATA.todayPreviews.filter(m => m.region === CURRENT_REGION);
-  
-  // 数量 badges
-  const counts = {
-    all: APP_DATA.yesterdayMatches.length + APP_DATA.todayPreviews.length,
-    europe: APP_DATA.yesterdayMatches.filter(m => m.region === 'europe').length + APP_DATA.todayPreviews.filter(m => m.region === 'europe').length,
-    asia: APP_DATA.yesterdayMatches.filter(m => m.region === 'asia').length + APP_DATA.todayPreviews.filter(m => m.region === 'asia').length,
-    australia: APP_DATA.yesterdayMatches.filter(m => m.region === 'australia').length + APP_DATA.todayPreviews.filter(m => m.region === 'australia').length
-  };
-  document.getElementById('count-all').textContent = counts.all;
-  document.getElementById('count-europe').textContent = counts.europe;
-  document.getElementById('count-asia').textContent = counts.asia;
-  document.getElementById('count-australia').textContent = counts.australia;
-  
-  document.getElementById('yesterdayCount').textContent = `${yMatches.length} 场比赛`;
-  document.getElementById('todayCount').textContent = `${tPreviews.length} 场比赛`;
-  
-  // 推送摘要
-  if (APP_DATA.pushDigest) {
-    document.getElementById('pushCard').style.display = 'block';
-    document.getElementById('pushTitle').textContent = APP_DATA.pushDigest.title;
-    document.getElementById('pushYesterday').textContent = APP_DATA.pushDigest.yesterdaySummary;
-    document.getElementById('pushToday').textContent = APP_DATA.pushDigest.todaySummary;
-  }
-  
-  // 昨日赛事
-  const yContainer = document.getElementById('yesterdayMatches');
-  if (yMatches.length === 0) {
-    yContainer.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📭</div>当前区域暂无昨日赛事数据</div>`;
-  } else {
-    yContainer.innerHTML = yMatches.map(renderYesterdayMatch).join('');
-  }
-  
-  // 今日预告
-  const tContainer = document.getElementById('todayPreviews');
-  if (tPreviews.length === 0) {
-    tContainer.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📅</div>当前区域暂无今日预告</div>`;
-  } else {
-    tContainer.innerHTML = tPreviews.map(renderPreviewMatch).join('');
+  try {
+    const tContainer = document.getElementById('todayPreviews');
+    if (tContainer) {
+      if (tPreviews.length === 0) {
+        tContainer.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📅</div>当前区域暂无今日预告</div>`;
+      } else {
+        tContainer.innerHTML = tPreviews.map(function(m, i){
+          try { return renderPreviewMatch(m, i); } catch(me){ console.warn('[render] tPrev err@'+i, me); return ''; }
+        }).join('');
+      }
+      // 🔴 8秒兜底验证：卡片写成功后标记已渲染（debug panel会检查此全局变量）
+      window.__RENDERED_CARDS_COUNT__ = (window.__RENDERED_CARDS_COUNT__||0) + tPreviews.length + yMatches.length;
+    }
+  } catch(e){ console.error('[render] 今日预告致命错误（这段必须永远成功）：', e); 
+    try {
+      const tc = document.getElementById('todayPreviews');
+      if (tc) tc.innerHTML = `<div class="empty-state"><div class="empty-state-icon">🐞</div>渲染异常：${e.message||e}<br/><small>点击⚡立即更新或刷新重试</small></div>`;
+    } catch(_){}
   }
 }
 
@@ -2900,6 +3017,9 @@ document.addEventListener('DOMContentLoaded', async function initApp() {
   if (h.date) CURRENT_ARCHIVE_DATE = h.date;  // hash里有date→暂存，loadData里会应用
   // 等数据加载完后，如果有team hash就打开弹窗
   window.__APP_INIT_TEAM__ = h.team;
+
+  // 🔴 8秒死锁兜底自动面板注入：任何原因render失败→页面下方不会空，弹大红诊断面板+一键修复按钮
+  setTimeout(function(){ try { _mountDeadlockDebugPanel(); } catch(e){ console.warn('debug panel timer err:',e); } }, 8000);
 });
 
 // ================ 【28天回溯】日期选择器核心逻辑 ================
@@ -3030,6 +3150,109 @@ async function initDatePicker() {
     if (v) setArchiveDate(v, true);
   });
   updateHistoryBanner(CURRENT_ARCHIVE_DATE);
+}
+
+/** 🔴🔴 8秒终极死锁兜底调试面板：不管任何原因（render throw/API死/HTTP黑洞/CDN旧缓存）
+ *  只要8秒后①卡片没写出来（或②APP_DATA为空）→ 在body底部注入一张大红诊断面板
+ *  面板里会显示：当前APP_DATA真实状态、lastUpdate/todayPreviews数量、数据源、已加载资源URL
+ *  以及【立即刷新/⚡立即更新/本地命令指引】3个一键操作按钮
+ *  —— 绝对不允许用户再看到"空屏"！最差情况也有红面板告诉Ta问题在哪+下一步操作
+ */
+function _mountDeadlockDebugPanel() {
+  try {
+    // 0. 如果已经渲染出卡片（__RENDERED_CARDS_COUNT__ > 0）或面板已挂载 → 跳过
+    if ((window.__RENDERED_CARDS_COUNT__||0) > 0) { return; }
+    if (document.getElementById('__DEADLOCK_DEBUG_PANEL__')) { return; }
+
+    // 1. 计算当前真实状态
+    var gotAppData = !!(APP_DATA);
+    var todayCount = gotAppData && Array.isArray(APP_DATA.todayPreviews) ? APP_DATA.todayPreviews.length : -1;
+    var yesterdayCount = gotAppData && Array.isArray(APP_DATA.yesterdayMatches) ? APP_DATA.yesterdayMatches.length : -1;
+    var dataSrc = gotAppData ? (APP_DATA.dataSource || '未知（dataSource缺失）') : '未加载';
+    var loadedFrom = gotAppData ? (APP_DATA._loadedFrom || '—') : '—';
+    var lastUpdate = gotAppData ? (APP_DATA.lastUpdate || APP_DATA.generatedAt || '—') : '—';
+    var hotCount = gotAppData && APP_DATA.hotMatches && Array.isArray(APP_DATA.hotMatches) ? APP_DATA.hotMatches.length : -1;
+    var cardsInDom = 0;
+    try {
+      const tm = document.getElementById('todayPreviews');
+      const ym = document.getElementById('yesterdayMatches');
+      if (tm) cardsInDom += (tm.querySelectorAll('.match-card,.empty-state').length);
+      if (ym) cardsInDom += (ym.querySelectorAll('.match-card,.empty-state').length);
+    } catch(_) {}
+
+    // 2. 如果DOM里已经有卡片了（就是渲染成功了）→ 不需要面板，返回
+    if (cardsInDom > 0 && gotAppData && todayCount > 0) {
+      window.__RENDERED_CARDS_COUNT__ = (window.__RENDERED_CARDS_COUNT__||0) + todayCount + yesterdayCount;
+      return;
+    }
+
+    // 3. 注入面板
+    const panel = document.createElement('div');
+    panel.id = '__DEADLOCK_DEBUG_PANEL__';
+    panel.className = 'debug-deadlock-panel';
+    panel.setAttribute('role', 'alert');
+    panel.innerHTML = `
+      <h3>🚨 页面渲染异常 · 自动诊断面板（8秒兜底）</h3>
+      <div>您看到这个面板是因为<strong>8秒内主内容仍未成功渲染出卡片</strong>（正常情况下0.5秒内就会出卡片）。</div>
+      <div class="dbg-row">
+        <span class="dbg-tag ${gotAppData?'ok':'ng'}">APP_DATA: ${gotAppData?'✅已加载':'❌空'}</span>
+        <span class="dbg-tag ${todayCount>0?'ok':'ng'}">今日预告: ${todayCount<0?'❓未知':todayCount+' 场'}</span>
+        <span class="dbg-tag ${yesterdayCount>=0?'ok':'ng'}">昨日赛况: ${yesterdayCount<0?'❓未知':yesterdayCount+' 场'}</span>
+        <span class="dbg-tag ${hotCount>=0?'ok':'ng'}">🔥焦点: ${hotCount<0?'❓未知':hotCount+' 场'}</span>
+        <span class="dbg-tag">数据源: ${dataSrc}</span>
+        <span class="dbg-tag">已写DOM卡片: ${cardsInDom}</span>
+      </div>
+      <div class="dbg-row" style="margin-top:6px;">
+        <span class="dbg-tag">加载路径: <code>${loadedFrom}</code></span>
+        <span class="dbg-tag">lastUpdate: <code>${String(lastUpdate).slice(0,19)}</code></span>
+        <span class="dbg-tag">Gender/Region: <code>${CURRENT_GENDER||'?'}/${CURRENT_REGION||'all'}</code></span>
+      </div>
+      <div class="dbg-actions">
+        <button class="primary" onclick="location.reload(true);">🔄 强制刷新（Ctrl+Shift+R级）</button>
+        <button onclick="if(typeof forceUpdate==='function')forceUpdate();else location.reload();">⚡ 立即更新（调用 /api/update 重抓懂球帝）</button>
+        <button onclick="(async()=>{try{APP_DATA=null;await loadData(CURRENT_GENDER,CURRENT_ARCHIVE_DATE);}catch(e){alert('手动loadData失败：'+e.message);}})();">🛠️ 手动重新 loadData()</button>
+        <button onclick="var p=document.getElementById('__DEADLOCK_DEBUG_PANEL__');if(p)p.remove();">✕ 暂时隐藏此面板</button>
+      </div>
+      <div style="margin-top:18px;">
+        <details style="opacity:0.92;">
+          <summary style="cursor:pointer;font-weight:600;">🔧 开发者：当前 APP_DATA 前1200字（排查数据完整性）</summary>
+          <pre style="margin-top:12px;">${function(){
+            try {
+              var s = gotAppData ? JSON.stringify(APP_DATA, function(k,v){
+                if (k==='players'||k==='squad'||k==='tactics'||k==='raw') return '[TRUNCATED]';
+                return v;
+              }, 2) : 'APP_DATA = null（数据未加载）';
+              if (s.length > 2400) s = s.slice(0, 2400) + '\n... [已截断，完整 JSON = ' + s.length + ' chars]';
+              return s.replace(/\x3c/g,'&lt;').replace(/\x3e/g,'&gt;');
+            } catch(e) { return 'JSON stringify失败: '+String(e); }
+          }()}</pre>
+        </details>
+        <details style="opacity:0.92;margin-top:10px;">
+          <summary style="cursor:pointer;font-weight:600;">🧰 如果以上按钮都不行：本地修复命令（3选1）</summary>
+          <pre style="margin-top:12px;"># ① 重新构建静态数据（推荐，无需开端口）
+cd 项目根目录
+python3 generate_static.py
+git add public/data && git commit -m "fix: rebuild static" && git push
+
+# ② 启动本地 server.py（3001端口带/api/dashboard API）
+lsof -iTCP:3001 -sTCP:LISTEN -t | xargs kill -9
+PORT=3001 python3 server.py
+# 然后访问 http://127.0.0.1:3001
+
+# ③ 强制清浏览器缓存 + 重开无痕窗口
+Chrome: Cmd+Shift+Delete → 勾选"缓存的图片和文件" → 时间范围"所有时间" → 清除数据</pre>
+        </details>
+      </div>`;
+
+    const main = document.querySelector('.main-content') || document.querySelector('.app-shell') || document.body;
+    if (main && main.parentNode) { main.parentNode.insertBefore(panel, main.nextSibling); }
+    else { document.body.appendChild(panel); }
+
+    try {
+      showToast('🚨 检测到渲染异常：已在页面下方自动弹出诊断面板（可点红面板里的按钮修复）', 'warn', 12000);
+    } catch(_) {}
+    console.warn('[DEADLOCK-DEBUG] 8秒兜底面板已挂载（gotAppData=', gotAppData, 'today=', todayCount, 'cardsDom=', cardsInDom, ')');
+  } catch(e) { console.error('[DEADLOCK-DEBUG] 面板注入失败：', e); }
 }
 
 // 改造loadData的callback：支持archive日期参数 → 取对应URL → 加载完渲染大洲栏+球队弹窗
@@ -3190,6 +3413,8 @@ if (document.readyState === 'loading') {
       if (h.date && h.date !== todayStr) CURRENT_ARCHIVE_DATE = h.date;
       try { updateHistoryBanner(CURRENT_ARCHIVE_DATE); } catch(e) {}
       if (h.team) window.__APP_INIT_TEAM__ = h.team;
+      // 🔴 8秒死锁兜底自动面板注入：任何原因render失败→页面下方不会空，弹大红诊断面板+一键修复按钮
+      setTimeout(function(){ try { _mountDeadlockDebugPanel(); } catch(e){ console.warn('debug panel timer(2) err:',e); } }, 8000);
       await loadData(CURRENT_GENDER, CURRENT_ARCHIVE_DATE);
     } catch (e) {
       console.error('初始化致命错误：', e);

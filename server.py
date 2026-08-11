@@ -259,6 +259,18 @@ class DashboardHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", mime)
         self.send_header("Content-Length", str(len(data)))
+        # 🔴 防CDN强缓存：对 index.html / .html 永远加 no-cache+must-revalidate，避免用户拿到3天前的死版本
+        basename = os.path.basename(fp)
+        if ext == ".html" or basename == "index.html":
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate, max-age=0")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
+        elif ext in (".js", ".css"):
+            # 静态资源加短缓存（1分钟），避免首次空白屏后第二刷新仍拿旧资源
+            self.send_header("Cache-Control", "public, max-age=60, must-revalidate")
+        else:
+            # 图片/JSON等其他资源：5分钟缓存
+            self.send_header("Cache-Control", "public, max-age=300")
         self.end_headers()
         self.wfile.write(data)
 
