@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-11T18:48:42.150343",
-  "generatedAt": "2026-08-11T18:48:44.535848",
+  "lastUpdate": "2026-08-11T21:59:54.195828",
+  "generatedAt": "2026-08-11T21:59:56.418324",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "asia": [
@@ -36,12 +36,458 @@
       }
     ]
   },
-  "yesterdayMatches": [],
+  "yesterdayMatches": [
+    {
+      "id": "54415118",
+      "date": "2026-08-11",
+      "time": "10:00",
+      "league": {
+        "id": "dqd-asia-韩女联",
+        "name": "韩女联",
+        "country": "韩女联",
+        "flag": "🏆",
+        "color": "#FF9966",
+        "region": "asia"
+      },
+      "region": "asia",
+      "gender": "women",
+      "homeTeam": {
+        "name": "华川国民体育振兴公团女足",
+        "logo": "https://sd.qunliao.info/fastdfs4/M00/C9/95/ChMf8FzGpseAJWa-AABJmG8mnnk138.png",
+        "score": 1,
+        "teamId": "t62639",
+        "rank": null,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#7c3aed",
+            "#5b21b6"
+          ],
+          "countryFlag": "🇰🇷"
+        },
+        "countryFlag": "🇰🇷"
+      },
+      "awayTeam": {
+        "name": "仁川现代制铁红天使女足",
+        "logo": "https://sd.qunliao.info/fastdfs4/M00/CA/D0/ChNLkl0d6RWAXLSuAABRJ_shjW8593.png",
+        "score": 0,
+        "teamId": "t60380",
+        "rank": null,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#eab308",
+            "#a16207"
+          ],
+          "countryFlag": "🇰🇷"
+        },
+        "countryFlag": "🇰🇷"
+      },
+      "venue": "华川国民体育振兴公团女足主场",
+      "stats": {
+        "score": {
+          "home": 1,
+          "away": 0
+        },
+        "possession": {
+          "home": 50.3,
+          "away": 49.7
+        },
+        "shots": {
+          "home": 16,
+          "away": 14
+        },
+        "shotsOnTarget": {
+          "home": 7,
+          "away": 4
+        },
+        "xG": {
+          "home": "1.94",
+          "away": "1.22"
+        },
+        "passes": {
+          "home": 551,
+          "away": 548
+        },
+        "passAccuracy": {
+          "home": "81%",
+          "away": "76%"
+        },
+        "tackles": {
+          "home": 21,
+          "away": 20
+        },
+        "interceptions": {
+          "home": 13,
+          "away": 12
+        },
+        "fouls": {
+          "home": 17,
+          "away": 15
+        },
+        "corners": {
+          "home": 0,
+          "away": 0
+        },
+        "yellowCards": {
+          "home": 3,
+          "away": 1
+        },
+        "redCards": {
+          "home": 1,
+          "away": 1
+        },
+        "offsides": {
+          "home": 3,
+          "away": 2
+        },
+        "saves": {
+          "home": 3,
+          "away": 5
+        },
+        "_anchors": {
+          "score_home": 1,
+          "score_away": 0,
+          "yc_home": 3,
+          "yc_away": 1,
+          "rc_home": 1,
+          "rc_away": 1,
+          "corner_home_from_dqd": "0",
+          "corner_away_from_dqd": "0"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-阿卜杜拉·阿马尔",
+          "name": "阿卜杜拉·阿马尔",
+          "country": "阿联酋",
+          "age": 39
+        },
+        "history": [
+          {
+            "date": "2026-08-08",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 8,
+            "redCards": 2,
+            "fouls": 30,
+            "penalties": 1,
+            "cardIndex": 130,
+            "varChecks": 5
+          },
+          {
+            "date": "2026-08-01",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 10,
+            "redCards": 2,
+            "fouls": 28,
+            "penalties": 2,
+            "cardIndex": 150,
+            "varChecks": 5
+          },
+          {
+            "date": "2026-07-25",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 9,
+            "redCards": 2,
+            "fouls": 18,
+            "penalties": 1,
+            "cardIndex": 140,
+            "varChecks": 5
+          },
+          {
+            "date": "2026-07-18",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 8,
+            "redCards": 2,
+            "fouls": 19,
+            "penalties": 1,
+            "cardIndex": 130,
+            "varChecks": 5
+          },
+          {
+            "date": "2026-07-11",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 26,
+            "penalties": 2,
+            "cardIndex": 95,
+            "varChecks": 3
+          }
+        ],
+        "statistics": {
+          "avgYellow": "8.4",
+          "avgRed": "1.80",
+          "avgFouls": "24.2",
+          "avgPenalties": "1.40",
+          "avgCardIndex": "129.0",
+          "avgVar": "4.6",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 12,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "仁川现代制铁红天使女足",
+          "description": "仁川现代制铁红天使女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 20,
+          "type": "goal",
+          "team": "home",
+          "teamName": "华川国民体育振兴公团女足",
+          "description": "华川国民体育振兴公团女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 38,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "华川国民体育振兴公团女足",
+          "description": "华川国民体育振兴公团女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 40,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "仁川现代制铁红天使女足",
+          "description": "仁川现代制铁红天使女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 46,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "仁川现代制铁红天使女足",
+          "description": "仁川现代制铁红天使女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 55,
+          "type": "red",
+          "team": "home",
+          "teamName": "华川国民体育振兴公团女足",
+          "description": "华川国民体育振兴公团女足 球员严重犯规直接红牌罚下"
+        },
+        {
+          "minute": 65,
+          "type": "red",
+          "team": "away",
+          "teamName": "仁川现代制铁红天使女足",
+          "description": "仁川现代制铁红天使女足 球员两黄变一红被罚下"
+        }
+      ],
+      "analysis": [
+        "华川国民体育振兴公团女足 主场取胜，实际进球 1 vs xG 1.94，进攻效率符合预期",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 92分），全场共出示 4 黄2红，直接影响了比赛节奏",
+        "本场比赛对抗激烈，双方共计 32 次犯规，拼抢强度拉满"
+      ],
+      "homeTactics": {
+        "formation": "4-2-3-1",
+        "formationName": "4-2-3-1 控球进攻",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "CDM1",
+            "x": 3,
+            "y": 2,
+            "label": "CDM1"
+          },
+          {
+            "pos": "CDM2",
+            "x": 3,
+            "y": 4,
+            "label": "CDM2"
+          },
+          {
+            "pos": "RAM",
+            "x": 4,
+            "y": 1,
+            "label": "RAM"
+          },
+          {
+            "pos": "CAM",
+            "x": 4,
+            "y": 3,
+            "label": "CAM"
+          },
+          {
+            "pos": "LAM",
+            "x": 4,
+            "y": 5,
+            "label": "LAM"
+          },
+          {
+            "pos": "ST",
+            "x": 5,
+            "y": 3,
+            "label": "ST"
+          }
+        ],
+        "tags": [
+          "大巴防守",
+          "低位防线",
+          "反击战",
+          "高空球"
+        ],
+        "possessionPercent": 55,
+        "ppda": 10.1,
+        "leftAttackPercent": 54,
+        "rightAttackPercent": 46,
+        "setPieceGoalRatio": 16,
+        "counterAttackTrigger": "偶尔（控球为主）",
+        "focusSide": "中路均衡",
+        "pressStrength": "中等",
+        "strategyText": "本场采用4-2-3-1阵型，以 大巴防守 为核心，控球率 55%，压迫强度中等（PPDA 10.1）；进攻重心中路均衡占比 46%，通过 中场短传渗透+直塞身后 创造机会。"
+      },
+      "awayTactics": {
+        "formation": "5-3-2",
+        "formationName": "5-3-2 攻守平衡",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 1,
+            "label": "RCB"
+          },
+          {
+            "pos": "RCCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCCB"
+          },
+          {
+            "pos": "CCB",
+            "x": 2,
+            "y": 3,
+            "label": "CCB"
+          },
+          {
+            "pos": "LCCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 5,
+            "label": "LCB"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 2,
+            "label": "RCM"
+          },
+          {
+            "pos": "CM",
+            "x": 3,
+            "y": 3,
+            "label": "CM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "ST1",
+            "x": 5,
+            "y": 2,
+            "label": "ST1"
+          },
+          {
+            "pos": "ST2",
+            "x": 5,
+            "y": 4,
+            "label": "ST2"
+          }
+        ],
+        "tags": [
+          "攻守平衡",
+          "中场控制",
+          "边路突破",
+          "中路渗透"
+        ],
+        "possessionPercent": 44,
+        "ppda": 16.1,
+        "leftAttackPercent": 65,
+        "rightAttackPercent": 35,
+        "setPieceGoalRatio": 29,
+        "counterAttackTrigger": "平衡",
+        "focusSide": "左路",
+        "pressStrength": "偏弱（低位防守）",
+        "strategyText": "本场采用5-3-2阵型应对强敌，以 边路突破 为主 + 中路渗透，控球率 44%；平衡（反击场均威胁≥2.1次），定位球得分占比 29%。"
+      },
+      "intensity": "★★★",
+      "features": "",
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 32,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 0,
+        "focal": 12,
+        "h2hRecent": 4
+      },
+      "isHotMatch": false
+    }
+  ],
   "todayPreviews": [
     {
       "id": "54415118",
       "date": "2026-08-11",
-      "time": "09:55",
+      "time": "10:00",
       "league": {
         "id": "dqd-asia-韩女联",
         "name": "韩女联",
@@ -85,10 +531,10 @@
       "venue": "华川国民体育振兴公团女足主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-金希坤",
-          "name": "金希坤",
-          "country": "韩国",
-          "age": 42
+          "id": "dqd-阿卜杜拉·阿马尔",
+          "name": "阿卜杜拉·阿马尔",
+          "country": "阿联酋",
+          "age": 39
         },
         "history": [
           {
@@ -100,29 +546,29 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
             "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
           },
           {
             "date": "",
@@ -166,10 +612,10 @@
         ]
       },
       "features": [
-        "常规联赛对决"
+        "主裁尺度偏严，注意出牌风险"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 3,
+      "intensity": "★★★",
       "homeRecentForm": [
         "负",
         "胜",
@@ -190,11 +636,11 @@
         "awayWins": 2
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 25,
+      "heatScore": 31,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 6,
+        "focal": 12,
         "h2hRecent": 3
       },
       "isHotMatch": false
@@ -202,9 +648,9 @@
   ],
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 女足）",
-    "yesterdaySummary": "",
-    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（常规联赛对决）",
-    "yesterdayCount": 0,
+    "yesterdaySummary": "🇦🇺 澳维女超：凯勒公园女足 0-2 海德堡联女足（海德堡联女足获胜）；🏆 韩女联：华川国民体育振兴公团女足 1-0 仁川现代制铁红天使女足（华川国民体育振兴公团女足获胜）",
+    "todaySummary": "🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）；🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）",
+    "yesterdayCount": 2,
     "todayCount": 2,
     "fullReport": true,
     "_dataSource": "dongqiudi-real",
@@ -215,12 +661,458 @@
   "continentBadges": {},
   "matchesByContinent": {
     "all": {
-      "yesterday": [],
+      "yesterday": [
+        {
+          "id": "54415118",
+          "date": "2026-08-11",
+          "time": "10:00",
+          "league": {
+            "id": "dqd-asia-韩女联",
+            "name": "韩女联",
+            "country": "韩女联",
+            "flag": "🏆",
+            "color": "#FF9966",
+            "region": "asia"
+          },
+          "region": "asia",
+          "gender": "women",
+          "homeTeam": {
+            "name": "华川国民体育振兴公团女足",
+            "logo": "https://sd.qunliao.info/fastdfs4/M00/C9/95/ChMf8FzGpseAJWa-AABJmG8mnnk138.png",
+            "score": 1,
+            "teamId": "t62639",
+            "rank": null,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#7c3aed",
+                "#5b21b6"
+              ],
+              "countryFlag": "🇰🇷"
+            },
+            "countryFlag": "🇰🇷"
+          },
+          "awayTeam": {
+            "name": "仁川现代制铁红天使女足",
+            "logo": "https://sd.qunliao.info/fastdfs4/M00/CA/D0/ChNLkl0d6RWAXLSuAABRJ_shjW8593.png",
+            "score": 0,
+            "teamId": "t60380",
+            "rank": null,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#eab308",
+                "#a16207"
+              ],
+              "countryFlag": "🇰🇷"
+            },
+            "countryFlag": "🇰🇷"
+          },
+          "venue": "华川国民体育振兴公团女足主场",
+          "stats": {
+            "score": {
+              "home": 1,
+              "away": 0
+            },
+            "possession": {
+              "home": 50.3,
+              "away": 49.7
+            },
+            "shots": {
+              "home": 16,
+              "away": 14
+            },
+            "shotsOnTarget": {
+              "home": 7,
+              "away": 4
+            },
+            "xG": {
+              "home": "1.94",
+              "away": "1.22"
+            },
+            "passes": {
+              "home": 551,
+              "away": 548
+            },
+            "passAccuracy": {
+              "home": "81%",
+              "away": "76%"
+            },
+            "tackles": {
+              "home": 21,
+              "away": 20
+            },
+            "interceptions": {
+              "home": 13,
+              "away": 12
+            },
+            "fouls": {
+              "home": 17,
+              "away": 15
+            },
+            "corners": {
+              "home": 0,
+              "away": 0
+            },
+            "yellowCards": {
+              "home": 3,
+              "away": 1
+            },
+            "redCards": {
+              "home": 1,
+              "away": 1
+            },
+            "offsides": {
+              "home": 3,
+              "away": 2
+            },
+            "saves": {
+              "home": 3,
+              "away": 5
+            },
+            "_anchors": {
+              "score_home": 1,
+              "score_away": 0,
+              "yc_home": 3,
+              "yc_away": 1,
+              "rc_home": 1,
+              "rc_away": 1,
+              "corner_home_from_dqd": "0",
+              "corner_away_from_dqd": "0"
+            },
+            "_fromDongqiudi": true
+          },
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-阿卜杜拉·阿马尔",
+              "name": "阿卜杜拉·阿马尔",
+              "country": "阿联酋",
+              "age": 39
+            },
+            "history": [
+              {
+                "date": "2026-08-08",
+                "league": "第5轮执法",
+                "match": "比赛1",
+                "yellowCards": 8,
+                "redCards": 2,
+                "fouls": 30,
+                "penalties": 1,
+                "cardIndex": 130,
+                "varChecks": 5
+              },
+              {
+                "date": "2026-08-01",
+                "league": "第4轮执法",
+                "match": "比赛2",
+                "yellowCards": 10,
+                "redCards": 2,
+                "fouls": 28,
+                "penalties": 2,
+                "cardIndex": 150,
+                "varChecks": 5
+              },
+              {
+                "date": "2026-07-25",
+                "league": "第3轮执法",
+                "match": "比赛3",
+                "yellowCards": 9,
+                "redCards": 2,
+                "fouls": 18,
+                "penalties": 1,
+                "cardIndex": 140,
+                "varChecks": 5
+              },
+              {
+                "date": "2026-07-18",
+                "league": "第2轮执法",
+                "match": "比赛4",
+                "yellowCards": 8,
+                "redCards": 2,
+                "fouls": 19,
+                "penalties": 1,
+                "cardIndex": 130,
+                "varChecks": 5
+              },
+              {
+                "date": "2026-07-11",
+                "league": "第1轮执法",
+                "match": "比赛5",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 26,
+                "penalties": 2,
+                "cardIndex": 95,
+                "varChecks": 3
+              }
+            ],
+            "statistics": {
+              "avgYellow": "8.4",
+              "avgRed": "1.80",
+              "avgFouls": "24.2",
+              "avgPenalties": "1.40",
+              "avgCardIndex": "129.0",
+              "avgVar": "4.6",
+              "strictnessScore": 92
+            },
+            "style": "严格型",
+            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "keyTraits": [
+              "出牌频率高",
+              "对恶意犯规零容忍",
+              "点球判罚果断",
+              "VAR介入频繁"
+            ]
+          },
+          "keyEvents": [
+            {
+              "minute": 12,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "仁川现代制铁红天使女足",
+              "description": "仁川现代制铁红天使女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 20,
+              "type": "goal",
+              "team": "home",
+              "teamName": "华川国民体育振兴公团女足",
+              "description": "华川国民体育振兴公团女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 38,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "华川国民体育振兴公团女足",
+              "description": "华川国民体育振兴公团女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 40,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "仁川现代制铁红天使女足",
+              "description": "仁川现代制铁红天使女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 46,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "仁川现代制铁红天使女足",
+              "description": "仁川现代制铁红天使女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 55,
+              "type": "red",
+              "team": "home",
+              "teamName": "华川国民体育振兴公团女足",
+              "description": "华川国民体育振兴公团女足 球员严重犯规直接红牌罚下"
+            },
+            {
+              "minute": 65,
+              "type": "red",
+              "team": "away",
+              "teamName": "仁川现代制铁红天使女足",
+              "description": "仁川现代制铁红天使女足 球员两黄变一红被罚下"
+            }
+          ],
+          "analysis": [
+            "华川国民体育振兴公团女足 主场取胜，实际进球 1 vs xG 1.94，进攻效率符合预期",
+            "双方控球率相对均衡，场面开放对攻激烈",
+            "裁判执法偏严（严格度 92分），全场共出示 4 黄2红，直接影响了比赛节奏",
+            "本场比赛对抗激烈，双方共计 32 次犯规，拼抢强度拉满"
+          ],
+          "homeTactics": {
+            "formation": "4-2-3-1",
+            "formationName": "4-2-3-1 控球进攻",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "CDM1",
+                "x": 3,
+                "y": 2,
+                "label": "CDM1"
+              },
+              {
+                "pos": "CDM2",
+                "x": 3,
+                "y": 4,
+                "label": "CDM2"
+              },
+              {
+                "pos": "RAM",
+                "x": 4,
+                "y": 1,
+                "label": "RAM"
+              },
+              {
+                "pos": "CAM",
+                "x": 4,
+                "y": 3,
+                "label": "CAM"
+              },
+              {
+                "pos": "LAM",
+                "x": 4,
+                "y": 5,
+                "label": "LAM"
+              },
+              {
+                "pos": "ST",
+                "x": 5,
+                "y": 3,
+                "label": "ST"
+              }
+            ],
+            "tags": [
+              "大巴防守",
+              "低位防线",
+              "反击战",
+              "高空球"
+            ],
+            "possessionPercent": 55,
+            "ppda": 10.1,
+            "leftAttackPercent": 54,
+            "rightAttackPercent": 46,
+            "setPieceGoalRatio": 16,
+            "counterAttackTrigger": "偶尔（控球为主）",
+            "focusSide": "中路均衡",
+            "pressStrength": "中等",
+            "strategyText": "本场采用4-2-3-1阵型，以 大巴防守 为核心，控球率 55%，压迫强度中等（PPDA 10.1）；进攻重心中路均衡占比 46%，通过 中场短传渗透+直塞身后 创造机会。"
+          },
+          "awayTactics": {
+            "formation": "5-3-2",
+            "formationName": "5-3-2 攻守平衡",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 1,
+                "label": "RCB"
+              },
+              {
+                "pos": "RCCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCCB"
+              },
+              {
+                "pos": "CCB",
+                "x": 2,
+                "y": 3,
+                "label": "CCB"
+              },
+              {
+                "pos": "LCCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 5,
+                "label": "LCB"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 2,
+                "label": "RCM"
+              },
+              {
+                "pos": "CM",
+                "x": 3,
+                "y": 3,
+                "label": "CM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "ST1",
+                "x": 5,
+                "y": 2,
+                "label": "ST1"
+              },
+              {
+                "pos": "ST2",
+                "x": 5,
+                "y": 4,
+                "label": "ST2"
+              }
+            ],
+            "tags": [
+              "攻守平衡",
+              "中场控制",
+              "边路突破",
+              "中路渗透"
+            ],
+            "possessionPercent": 44,
+            "ppda": 16.1,
+            "leftAttackPercent": 65,
+            "rightAttackPercent": 35,
+            "setPieceGoalRatio": 29,
+            "counterAttackTrigger": "平衡",
+            "focusSide": "左路",
+            "pressStrength": "偏弱（低位防守）",
+            "strategyText": "本场采用5-3-2阵型应对强敌，以 边路突破 为主 + 中路渗透，控球率 44%；平衡（反击场均威胁≥2.1次），定位球得分占比 29%。"
+          },
+          "intensity": "★★★",
+          "features": "",
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 32,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 0,
+            "focal": 12,
+            "h2hRecent": 4
+          },
+          "isHotMatch": false
+        }
+      ],
       "today": [
         {
           "id": "54415118",
           "date": "2026-08-11",
-          "time": "09:55",
+          "time": "10:00",
           "league": {
             "id": "dqd-asia-韩女联",
             "name": "韩女联",
@@ -264,10 +1156,10 @@
           "venue": "华川国民体育振兴公团女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-金希坤",
-              "name": "金希坤",
-              "country": "韩国",
-              "age": 42
+              "id": "dqd-阿卜杜拉·阿马尔",
+              "name": "阿卜杜拉·阿马尔",
+              "country": "阿联酋",
+              "age": 39
             },
             "history": [
               {
@@ -279,29 +1171,29 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
                 "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -345,10 +1237,10 @@
             ]
           },
           "features": [
-            "常规联赛对决"
+            "主裁尺度偏严，注意出牌风险"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 3,
+          "intensity": "★★★",
           "homeRecentForm": [
             "负",
             "胜",
@@ -369,11 +1261,11 @@
             "awayWins": 2
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 25,
+          "heatScore": 31,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 6,
+            "focal": 12,
             "h2hRecent": 3
           },
           "isHotMatch": false

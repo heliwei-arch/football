@@ -21,10 +21,42 @@ cache.json
 # 28天回溯archive_index本地缓存（构建时用Pages在线恢复或本地cache兜底，不进git）
 cache_archive_index.json
 
+# 移动端App构建产物（Capacitor + 原生IDE）
+# - 这些目录会在 npm run cap:init / cap:add:android / cap:add:ios 后生成，不需要进git（要打包时本地或CI初始化即可）
+android/
+ios/
+dist/
+build/
+# Android Gradle
+.gradle/
+*.apk
+*.aab
+*.idsig
+*.keystore
+*.jks
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+# iOS Xcode
+*.ipa
+*.xcarchive
+*.xcuserstate
+*.xccheckout
+xcuserdata/
+DerivedData/
+Package.resolved
+*.moved-aside
+# PWABuilder下载的临时包
+pwabuilder/
+*.zip
+*.appx
+*.msix
+
 # IDE
 .vscode/
 .idea/
-.DS_Store
+.DS_Store/
 
 # Vercel
 .vercel/

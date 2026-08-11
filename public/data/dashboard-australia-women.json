@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-11T18:48:42.150343",
-  "generatedAt": "2026-08-11T18:48:44.539302",
+  "lastUpdate": "2026-08-11T21:59:54.195828",
+  "generatedAt": "2026-08-11T21:59:56.423799",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "australia": [
@@ -18,7 +18,459 @@
       }
     ]
   },
-  "yesterdayMatches": [],
+  "yesterdayMatches": [
+    {
+      "id": "54449830",
+      "date": "2026-08-11",
+      "time": "09:30",
+      "league": {
+        "id": "dqd-australia-澳维女超",
+        "name": "澳维女超",
+        "country": "澳维女超",
+        "flag": "🇦🇺",
+        "color": "#57A87B",
+        "region": "australia"
+      },
+      "region": "australia",
+      "gender": "women",
+      "homeTeam": {
+        "name": "凯勒公园女足",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "score": 0,
+        "teamId": "t20519",
+        "rank": null,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#14b8a6",
+            "#0f766e"
+          ],
+          "countryFlag": "🇦🇺"
+        },
+        "countryFlag": "🇦🇺"
+      },
+      "awayTeam": {
+        "name": "海德堡联女足",
+        "logo": "https://sd.qunliao.info/fastdfs4/M00/C8/75/ChNLklxzj22AHR0tAABIMCy10dE677.png",
+        "score": 2,
+        "teamId": "t14695",
+        "rank": 10,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#d946ef",
+            "#a21caf"
+          ],
+          "countryFlag": "🇦🇺"
+        },
+        "countryFlag": "🇦🇺"
+      },
+      "venue": "凯勒公园女足主场",
+      "stats": {
+        "score": {
+          "home": 0,
+          "away": 2
+        },
+        "possession": {
+          "home": 48.8,
+          "away": 51.2
+        },
+        "shots": {
+          "home": 12,
+          "away": 16
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 7
+        },
+        "xG": {
+          "home": "1.40",
+          "away": "2.15"
+        },
+        "passes": {
+          "home": 544,
+          "away": 556
+        },
+        "passAccuracy": {
+          "home": "78%",
+          "away": "82%"
+        },
+        "tackles": {
+          "home": 17,
+          "away": 21
+        },
+        "interceptions": {
+          "home": 9,
+          "away": 13
+        },
+        "fouls": {
+          "home": 13,
+          "away": 17
+        },
+        "corners": {
+          "home": 5,
+          "away": 6
+        },
+        "yellowCards": {
+          "home": 2,
+          "away": 4
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 0,
+          "away": 2
+        },
+        "saves": {
+          "home": 4,
+          "away": 4
+        },
+        "_anchors": {
+          "score_home": 0,
+          "score_away": 2,
+          "yc_home": 2,
+          "yc_away": 4,
+          "rc_home": 0,
+          "rc_away": 0,
+          "corner_home_from_dqd": "5",
+          "corner_away_from_dqd": "6"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-斯蒂芬·卢西",
+          "name": "斯蒂芬·卢西",
+          "country": "新西兰",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "2026-08-08",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 5,
+            "redCards": 0,
+            "fouls": 35,
+            "penalties": 1,
+            "cardIndex": 50,
+            "varChecks": 1
+          },
+          {
+            "date": "2026-08-01",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 8,
+            "redCards": 0,
+            "fouls": 30,
+            "penalties": 1,
+            "cardIndex": 80,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-25",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 34,
+            "penalties": 0,
+            "cardIndex": 95,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-18",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 4,
+            "redCards": 0,
+            "fouls": 23,
+            "penalties": 0,
+            "cardIndex": 40,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-11",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 28,
+            "penalties": 0,
+            "cardIndex": 95,
+            "varChecks": 4
+          }
+        ],
+        "statistics": {
+          "avgYellow": "6.2",
+          "avgRed": "0.40",
+          "avgFouls": "30.0",
+          "avgPenalties": "0.40",
+          "avgCardIndex": "72.0",
+          "avgVar": "2.6",
+          "strictnessScore": 82
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 15,
+          "type": "goal",
+          "team": "away",
+          "teamName": "海德堡联女足",
+          "description": "海德堡联女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 31,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "凯勒公园女足",
+          "description": "凯勒公园女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 36,
+          "type": "goal",
+          "team": "away",
+          "teamName": "海德堡联女足",
+          "description": "海德堡联女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 36,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "海德堡联女足",
+          "description": "海德堡联女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 72,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "凯勒公园女足",
+          "description": "凯勒公园女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 81,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "凯勒公园女足",
+          "description": "凯勒公园女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 82,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "凯勒公园女足",
+          "description": "凯勒公园女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 86,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "海德堡联女足",
+          "description": "海德堡联女足 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "海德堡联女足 客场奏凯，反击效率极高，xG 2.15 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 82分），全场共出示 6 黄0红，直接影响了比赛节奏"
+      ],
+      "homeTactics": {
+        "formation": "4-4-2",
+        "formationName": "4-4-2 大巴防守",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "RM",
+            "x": 3,
+            "y": 1,
+            "label": "RM"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 3,
+            "label": "RCM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "LM",
+            "x": 3,
+            "y": 5,
+            "label": "LM"
+          },
+          {
+            "pos": "ST1",
+            "x": 5,
+            "y": 2,
+            "label": "ST1"
+          },
+          {
+            "pos": "ST2",
+            "x": 5,
+            "y": 4,
+            "label": "ST2"
+          }
+        ],
+        "tags": [
+          "控球主导",
+          "伪九号回撤",
+          "边中结合",
+          "远射战术"
+        ],
+        "possessionPercent": 44,
+        "ppda": 14.3,
+        "leftAttackPercent": 53,
+        "rightAttackPercent": 47,
+        "setPieceGoalRatio": 17,
+        "counterAttackTrigger": "频繁（主打反击）",
+        "focusSide": "中路均衡",
+        "pressStrength": "偏弱（低位防守）",
+        "strategyText": "本场采用4-4-2阵型应对强敌，以 边中结合 为主 + 远射战术，控球率 44%；频繁（主打反击）（反击场均威胁≥2.1次），定位球得分占比 17%。"
+      },
+      "awayTactics": {
+        "formation": "3-5-2",
+        "formationName": "3-5-2 控球进攻",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "CCB",
+            "x": 2,
+            "y": 3,
+            "label": "CCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "RWB",
+            "x": 3,
+            "y": 1,
+            "label": "RWB"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 2,
+            "label": "RCM"
+          },
+          {
+            "pos": "CM",
+            "x": 3,
+            "y": 3,
+            "label": "CM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "LWB",
+            "x": 3,
+            "y": 5,
+            "label": "LWB"
+          },
+          {
+            "pos": "ST1",
+            "x": 5,
+            "y": 2,
+            "label": "ST1"
+          },
+          {
+            "pos": "ST2",
+            "x": 5,
+            "y": 4,
+            "label": "ST2"
+          }
+        ],
+        "tags": [
+          "大巴防守",
+          "低位防线",
+          "反击战",
+          "高空球"
+        ],
+        "possessionPercent": 55,
+        "ppda": 8.9,
+        "leftAttackPercent": 68,
+        "rightAttackPercent": 32,
+        "setPieceGoalRatio": 15,
+        "counterAttackTrigger": "偶尔（控球为主）",
+        "focusSide": "左路",
+        "pressStrength": "极强（高位逼抢）",
+        "strategyText": "本场采用3-5-2阵型，以 大巴防守 为核心，控球率 55%，压迫强度极强（高位逼抢）（PPDA 8.9）；进攻重心左路占比 68%，通过 中场短传渗透+直塞身后 创造机会。"
+      },
+      "intensity": "★★★",
+      "features": "",
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 38,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 4,
+        "focal": 12,
+        "h2hRecent": 6
+      },
+      "isHotMatch": false
+    }
+  ],
   "todayPreviews": [
     {
       "id": "54449830",
@@ -52,7 +504,7 @@
       "awayTeam": {
         "name": "海德堡联女足",
         "logo": "https://sd.qunliao.info/fastdfs4/M00/C8/75/ChNLklxzj22AHR0tAABIMCy10dE677.png",
-        "rank": "11",
+        "rank": "10",
         "teamId": "t14695",
         "appLogo": {
           "text": "女足",
@@ -67,10 +519,10 @@
       "venue": "凯勒公园女足主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-卡尔文·宗",
-          "name": "卡尔文·宗",
-          "country": "澳大利亚",
-          "age": 37
+          "id": "dqd-斯蒂芬·卢西",
+          "name": "斯蒂芬·卢西",
+          "country": "新西兰",
+          "age": 40
         },
         "history": [
           {
@@ -82,28 +534,6 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
             "varChecks": 1
           },
           {
@@ -127,6 +557,28 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
           }
         ],
         "statistics": {
@@ -184,9 +636,9 @@
   ],
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 女足）",
-    "yesterdaySummary": "",
-    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（常规联赛对决）",
-    "yesterdayCount": 0,
+    "yesterdaySummary": "🇦🇺 澳维女超：凯勒公园女足 0-2 海德堡联女足（海德堡联女足获胜）；🏆 韩女联：华川国民体育振兴公团女足 1-0 仁川现代制铁红天使女足（华川国民体育振兴公团女足获胜）",
+    "todaySummary": "🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）；🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）",
+    "yesterdayCount": 2,
     "todayCount": 2,
     "fullReport": true,
     "_dataSource": "dongqiudi-real",
@@ -197,7 +649,459 @@
   "continentBadges": {},
   "matchesByContinent": {
     "all": {
-      "yesterday": [],
+      "yesterday": [
+        {
+          "id": "54449830",
+          "date": "2026-08-11",
+          "time": "09:30",
+          "league": {
+            "id": "dqd-australia-澳维女超",
+            "name": "澳维女超",
+            "country": "澳维女超",
+            "flag": "🇦🇺",
+            "color": "#57A87B",
+            "region": "australia"
+          },
+          "region": "australia",
+          "gender": "women",
+          "homeTeam": {
+            "name": "凯勒公园女足",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "score": 0,
+            "teamId": "t20519",
+            "rank": null,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#14b8a6",
+                "#0f766e"
+              ],
+              "countryFlag": "🇦🇺"
+            },
+            "countryFlag": "🇦🇺"
+          },
+          "awayTeam": {
+            "name": "海德堡联女足",
+            "logo": "https://sd.qunliao.info/fastdfs4/M00/C8/75/ChNLklxzj22AHR0tAABIMCy10dE677.png",
+            "score": 2,
+            "teamId": "t14695",
+            "rank": 10,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#d946ef",
+                "#a21caf"
+              ],
+              "countryFlag": "🇦🇺"
+            },
+            "countryFlag": "🇦🇺"
+          },
+          "venue": "凯勒公园女足主场",
+          "stats": {
+            "score": {
+              "home": 0,
+              "away": 2
+            },
+            "possession": {
+              "home": 48.8,
+              "away": 51.2
+            },
+            "shots": {
+              "home": 12,
+              "away": 16
+            },
+            "shotsOnTarget": {
+              "home": 5,
+              "away": 7
+            },
+            "xG": {
+              "home": "1.40",
+              "away": "2.15"
+            },
+            "passes": {
+              "home": 544,
+              "away": 556
+            },
+            "passAccuracy": {
+              "home": "78%",
+              "away": "82%"
+            },
+            "tackles": {
+              "home": 17,
+              "away": 21
+            },
+            "interceptions": {
+              "home": 9,
+              "away": 13
+            },
+            "fouls": {
+              "home": 13,
+              "away": 17
+            },
+            "corners": {
+              "home": 5,
+              "away": 6
+            },
+            "yellowCards": {
+              "home": 2,
+              "away": 4
+            },
+            "redCards": {
+              "home": 0,
+              "away": 0
+            },
+            "offsides": {
+              "home": 0,
+              "away": 2
+            },
+            "saves": {
+              "home": 4,
+              "away": 4
+            },
+            "_anchors": {
+              "score_home": 0,
+              "score_away": 2,
+              "yc_home": 2,
+              "yc_away": 4,
+              "rc_home": 0,
+              "rc_away": 0,
+              "corner_home_from_dqd": "5",
+              "corner_away_from_dqd": "6"
+            },
+            "_fromDongqiudi": true
+          },
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-斯蒂芬·卢西",
+              "name": "斯蒂芬·卢西",
+              "country": "新西兰",
+              "age": 40
+            },
+            "history": [
+              {
+                "date": "2026-08-08",
+                "league": "第5轮执法",
+                "match": "比赛1",
+                "yellowCards": 5,
+                "redCards": 0,
+                "fouls": 35,
+                "penalties": 1,
+                "cardIndex": 50,
+                "varChecks": 1
+              },
+              {
+                "date": "2026-08-01",
+                "league": "第4轮执法",
+                "match": "比赛2",
+                "yellowCards": 8,
+                "redCards": 0,
+                "fouls": 30,
+                "penalties": 1,
+                "cardIndex": 80,
+                "varChecks": 2
+              },
+              {
+                "date": "2026-07-25",
+                "league": "第3轮执法",
+                "match": "比赛3",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 34,
+                "penalties": 0,
+                "cardIndex": 95,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-07-18",
+                "league": "第2轮执法",
+                "match": "比赛4",
+                "yellowCards": 4,
+                "redCards": 0,
+                "fouls": 23,
+                "penalties": 0,
+                "cardIndex": 40,
+                "varChecks": 2
+              },
+              {
+                "date": "2026-07-11",
+                "league": "第1轮执法",
+                "match": "比赛5",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 28,
+                "penalties": 0,
+                "cardIndex": 95,
+                "varChecks": 4
+              }
+            ],
+            "statistics": {
+              "avgYellow": "6.2",
+              "avgRed": "0.40",
+              "avgFouls": "30.0",
+              "avgPenalties": "0.40",
+              "avgCardIndex": "72.0",
+              "avgVar": "2.6",
+              "strictnessScore": 82
+            },
+            "style": "严格型",
+            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "keyTraits": [
+              "出牌频率高",
+              "对恶意犯规零容忍",
+              "点球判罚果断",
+              "VAR介入频繁"
+            ]
+          },
+          "keyEvents": [
+            {
+              "minute": 15,
+              "type": "goal",
+              "team": "away",
+              "teamName": "海德堡联女足",
+              "description": "海德堡联女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 31,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "凯勒公园女足",
+              "description": "凯勒公园女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 36,
+              "type": "goal",
+              "team": "away",
+              "teamName": "海德堡联女足",
+              "description": "海德堡联女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 36,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "海德堡联女足",
+              "description": "海德堡联女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 72,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "凯勒公园女足",
+              "description": "凯勒公园女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 81,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "凯勒公园女足",
+              "description": "凯勒公园女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 82,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "凯勒公园女足",
+              "description": "凯勒公园女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 86,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "海德堡联女足",
+              "description": "海德堡联女足 球员犯规吃到黄牌"
+            }
+          ],
+          "analysis": [
+            "海德堡联女足 客场奏凯，反击效率极高，xG 2.15 支撑了最终比分",
+            "双方控球率相对均衡，场面开放对攻激烈",
+            "裁判执法偏严（严格度 82分），全场共出示 6 黄0红，直接影响了比赛节奏"
+          ],
+          "homeTactics": {
+            "formation": "4-4-2",
+            "formationName": "4-4-2 大巴防守",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "RM",
+                "x": 3,
+                "y": 1,
+                "label": "RM"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 3,
+                "label": "RCM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "LM",
+                "x": 3,
+                "y": 5,
+                "label": "LM"
+              },
+              {
+                "pos": "ST1",
+                "x": 5,
+                "y": 2,
+                "label": "ST1"
+              },
+              {
+                "pos": "ST2",
+                "x": 5,
+                "y": 4,
+                "label": "ST2"
+              }
+            ],
+            "tags": [
+              "控球主导",
+              "伪九号回撤",
+              "边中结合",
+              "远射战术"
+            ],
+            "possessionPercent": 44,
+            "ppda": 14.3,
+            "leftAttackPercent": 53,
+            "rightAttackPercent": 47,
+            "setPieceGoalRatio": 17,
+            "counterAttackTrigger": "频繁（主打反击）",
+            "focusSide": "中路均衡",
+            "pressStrength": "偏弱（低位防守）",
+            "strategyText": "本场采用4-4-2阵型应对强敌，以 边中结合 为主 + 远射战术，控球率 44%；频繁（主打反击）（反击场均威胁≥2.1次），定位球得分占比 17%。"
+          },
+          "awayTactics": {
+            "formation": "3-5-2",
+            "formationName": "3-5-2 控球进攻",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "CCB",
+                "x": 2,
+                "y": 3,
+                "label": "CCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "RWB",
+                "x": 3,
+                "y": 1,
+                "label": "RWB"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 2,
+                "label": "RCM"
+              },
+              {
+                "pos": "CM",
+                "x": 3,
+                "y": 3,
+                "label": "CM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "LWB",
+                "x": 3,
+                "y": 5,
+                "label": "LWB"
+              },
+              {
+                "pos": "ST1",
+                "x": 5,
+                "y": 2,
+                "label": "ST1"
+              },
+              {
+                "pos": "ST2",
+                "x": 5,
+                "y": 4,
+                "label": "ST2"
+              }
+            ],
+            "tags": [
+              "大巴防守",
+              "低位防线",
+              "反击战",
+              "高空球"
+            ],
+            "possessionPercent": 55,
+            "ppda": 8.9,
+            "leftAttackPercent": 68,
+            "rightAttackPercent": 32,
+            "setPieceGoalRatio": 15,
+            "counterAttackTrigger": "偶尔（控球为主）",
+            "focusSide": "左路",
+            "pressStrength": "极强（高位逼抢）",
+            "strategyText": "本场采用3-5-2阵型，以 大巴防守 为核心，控球率 55%，压迫强度极强（高位逼抢）（PPDA 8.9）；进攻重心左路占比 68%，通过 中场短传渗透+直塞身后 创造机会。"
+          },
+          "intensity": "★★★",
+          "features": "",
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 38,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 4,
+            "focal": 12,
+            "h2hRecent": 6
+          },
+          "isHotMatch": false
+        }
+      ],
       "today": [
         {
           "id": "54449830",
@@ -231,7 +1135,7 @@
           "awayTeam": {
             "name": "海德堡联女足",
             "logo": "https://sd.qunliao.info/fastdfs4/M00/C8/75/ChNLklxzj22AHR0tAABIMCy10dE677.png",
-            "rank": "11",
+            "rank": "10",
             "teamId": "t14695",
             "appLogo": {
               "text": "女足",
@@ -246,10 +1150,10 @@
           "venue": "凯勒公园女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-卡尔文·宗",
-              "name": "卡尔文·宗",
-              "country": "澳大利亚",
-              "age": 37
+              "id": "dqd-斯蒂芬·卢西",
+              "name": "斯蒂芬·卢西",
+              "country": "新西兰",
+              "age": 40
             },
             "history": [
               {
@@ -261,28 +1165,6 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
                 "varChecks": 1
               },
               {
@@ -306,6 +1188,28 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
               }
             ],
             "statistics": {

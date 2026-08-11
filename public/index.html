@@ -2,7 +2,20 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FT早知道">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="FT早知道">
+<meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#1e40af" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
+<meta name="apple-itunes-app" content="app-argument=https://heliwei-arch.github.io/football/">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" type="image/svg+xml" sizes="any" href="./icons/icon.svg">
+<link rel="apple-touch-icon" href="./icons/icon.svg">
 <title>⚽ 男足 足球赛道日报 - 每日赛事分析与预告</title>
 <style>
   /* =========================================================
@@ -3018,6 +3031,41 @@ document.addEventListener('DOMContentLoaded', async function initApp() {
   // 等数据加载完后，如果有team hash就打开弹窗
   window.__APP_INIT_TEAM__ = h.team;
 
+  // 🔵 PWA Service Worker + 移动端App环境适配
+  try {
+    var isAppEnv = (location.protocol === 'file:') || (typeof window.Capacitor !== 'undefined') || (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.bridge);
+    window.__IS_NATIVE_APP__ = !!isAppEnv;
+    // 隐藏⚡立即更新按钮：本地App壳没有 server.py /api/update 后端（避免点击报错）
+    if (isAppEnv) {
+      var btn = document.getElementById('forceUpdateBtn') || document.querySelector('[data-action="force-update"]') || (function(){ var all=document.querySelectorAll('button'); for(var i=0;i<all.length;i++){ if(/立即更新/.test(all[i].textContent||'')) return all[i];} return null; })();
+      if (btn) { btn.style.display = 'none'; }
+      window.__APP_LAST_UPDATE_PREFIX__ = '📦 App内置版本 · ';
+    }
+    // file协议（本地App壳）不注册SW（WebView会自己缓存本地文件，SW在file://协议下多浏览器不支持）
+    if (!isAppEnv && 'serviceWorker' in navigator) {
+      try {
+        navigator.serviceWorker.register('./service-worker.js', { scope: './', updateViaCache: 'none' })
+          .then(function(reg){
+            console.log('[PWA] Service Worker注册成功，scope=', reg.scope);
+            // 有新版本时（SW updated）通知用户刷新
+            try { reg.addEventListener('updatefound', function(){ console.log('[PWA] 发现新版本SW，正在下载…'); }); } catch(_){}
+          })
+          .catch(function(err){ console.warn('[PWA] Service Worker注册失败（不影响使用，可忽略）：', err && err.message); });
+        // 手动监听SW message（新版本可提示）
+        try {
+          navigator.serviceWorker.addEventListener('message', function(ev){
+            try {
+              if (!ev || !ev.data) return;
+              if (ev.data.type === 'SW_NEW_VERSION') {
+                showToast('📬 有新版本已在后台缓存，下次打开即生效；如需立即生效请长按刷新', 'info', 8000);
+              }
+            } catch(_){}
+          });
+        } catch(_){}
+      } catch(e) { console.warn('[PWA] SW注册异常（可忽略）：', e && e.message); }
+    }
+  } catch(e) { console.warn('[PWA/App环境检测] 异常：', e); }
+
   // 🔴 8秒死锁兜底自动面板注入：任何原因render失败→页面下方不会空，弹大红诊断面板+一键修复按钮
   setTimeout(function(){ try { _mountDeadlockDebugPanel(); } catch(e){ console.warn('debug panel timer err:',e); } }, 8000);
 });
@@ -3413,6 +3461,23 @@ if (document.readyState === 'loading') {
       if (h.date && h.date !== todayStr) CURRENT_ARCHIVE_DATE = h.date;
       try { updateHistoryBanner(CURRENT_ARCHIVE_DATE); } catch(e) {}
       if (h.team) window.__APP_INIT_TEAM__ = h.team;
+      // 🔵 PWA Service Worker + 移动端App环境适配（readyState手动初始化分支也同样执行）
+      try {
+        var isAppEnv2 = (location.protocol === 'file:') || (typeof window.Capacitor !== 'undefined') || (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.bridge);
+        window.__IS_NATIVE_APP__ = window.__IS_NATIVE_APP__ || !!isAppEnv2;
+        if (isAppEnv2) {
+          var btn2 = document.getElementById('forceUpdateBtn') || document.querySelector('[data-action="force-update"]') || (function(){ var all=document.querySelectorAll('button'); for(var i=0;i<all.length;i++){ if(/立即更新/.test(all[i].textContent||'')) return all[i];} return null; })();
+          if (btn2) { btn2.style.display = 'none'; }
+          window.__APP_LAST_UPDATE_PREFIX__ = window.__APP_LAST_UPDATE_PREFIX__ || '📦 App内置版本 · ';
+        }
+        if (!isAppEnv2 && 'serviceWorker' in navigator) {
+          try {
+            navigator.serviceWorker.register('./service-worker.js', { scope: './', updateViaCache: 'none' })
+              .then(function(reg){ console.log('[PWA] Service Worker注册成功(2)，scope=', reg.scope); })
+              .catch(function(err){ console.warn('[PWA] SW注册失败(2，可忽略)：', err && err.message); });
+          } catch(e) {}
+        }
+      } catch(e) { console.warn('[PWA/App环境检测2] 异常：', e); }
       // 🔴 8秒死锁兜底自动面板注入：任何原因render失败→页面下方不会空，弹大红诊断面板+一键修复按钮
       setTimeout(function(){ try { _mountDeadlockDebugPanel(); } catch(e){ console.warn('debug panel timer(2) err:',e); } }, 8000);
       await loadData(CURRENT_GENDER, CURRENT_ARCHIVE_DATE);

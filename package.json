@@ -1,11 +1,39 @@
 {
-  "name": "football-dashboard",
+  "name": "ft-zazao-app",
   "version": "1.0.0",
-  "description": "足球赛道日报仪表盘 - 欧洲/亚洲/澳洲 T-1 Opta风格数据对比 + 裁判分析 + 今日预告",
   "private": true,
+  "description": "FT早知道 · 移动端安装包（Android APK + iOS IPA），基于Capacitor把public/下的PWA静态资源包装成原生WebView App，懂球帝每日9点数据。",
   "scripts": {
-    "dev": "python3 server.py",
-    "build": "python3 generate_static.py",
-    "start": "python3 server.py"
+    "========= 0️⃣ 安装依赖 =============": "",
+    "setup": "npm install",
+    "========= 1️⃣ 构建Web资源（每日9点后跑一次把最新JSON带进App） =============": "",
+    "build:data": "python3 generate_static.py",
+    "========= 2️⃣ 初始化Capacitor（首次才需要，生成android/ios项目目录） =============": "",
+    "cap:init": "npx cap init \"FT早知道\" com.bytedance.ft.zazao --web-dir=public",
+    "cap:add:android": "npx cap add android",
+    "cap:add:ios": "npx cap add ios",
+    "========= 3️⃣ 同步public/资源到原生项目（改了index.html/manifest/JSON后都要跑） =============": "",
+    "cap:sync": "npx cap sync",
+    "cap:sync:android": "npx cap sync android",
+    "cap:sync:ios": "npx cap sync ios",
+    "========= 4️⃣ 打开原生IDE开始编译打包 =============": "",
+    "open:android": "npx cap open android",
+    "open:ios": "npx cap open ios",
+    "========= 5️⃣ 本地浏览器预览（和Pages/PWA一致） =============": "",
+    "dev": "PORT=3001 python3 server.py",
+    "========= 6️⃣ 一键Android Debug APK（无需手动打开AS） =============": "",
+    "build:android:debug": "npm run cap:sync:android && cd android && ./gradlew assembleDebug && echo \"✅ APK output: android/app/build/outputs/apk/debug/app-debug.apk\"",
+    "========= 7️⃣ PWABuilder在线打包（推荐，不用本地装Xcode/AS） =============": "",
+    "pwabuilder": "echo \"👉 请在浏览器打开：https://www.pwabuilder.com/reportcard?site=$(node -e \"console.log(encodeURIComponent('https://heliwei-arch.github.io/football/'))\")\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/ios": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

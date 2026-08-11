@@ -1,0 +1,50 @@
+{
+  "name": "FT早知道 · 足球日报（懂球帝真实数据）",
+  "short_name": "FT早知道",
+  "description": "每日9点懂球帝真实数据男足/女足日报：昨日赛况T-1复盘 + 今日预告T0焦点，28天可回溯，球队详情+战术阵型，支持Hash路由（#men #women #team=xxx #date=YYYY-MM-DD）。字节内网可访问（GitHub Pages白名单）。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "window", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#1e40af",
+  "categories": ["sports", "news", "lifestyle"],
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "男足日报",
+      "short_name": "男足",
+      "description": "直接打开男足版（默认深色）",
+      "url": "./index.html#men",
+      "icons": [{ "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "女足日报",
+      "short_name": "女足",
+      "description": "直接打开女足版（奶白粉浅色）",
+      "url": "./index.html#women",
+      "icons": [{ "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "⚡ 立即更新",
+      "short_name": "更新",
+      "description": "强制调用懂球帝API重抓今日数据（仅本地server.py可用）",
+      "url": "./index.html",
+      "icons": [{ "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ],
+  "prefer_related_applications": false,
+  "screenshots": [],
+  "feature_policy": {},
+  "permissions": []
+}
