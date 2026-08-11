@@ -1,16 +1,30 @@
 {
-  "lastUpdate": "2026-08-11T10:44:19.542387",
+  "lastUpdate": "2026-08-11T11:02:24.516799",
   "latest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
-    "yesterdaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 葡超：圣克拉拉 2-2 马德拉国民（战平）；🇮🇸 冰岛超：雷克雅未克弗拉姆 2-5 雷克雅未克（雷克雅未克获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 葡U23联：维塞乌学院U23 3-0 阿马多拉之星U23（维塞乌学院U23获胜）",
-    "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）",
-    "yesterdayCount": 15,
-    "todayCount": 31,
+    "yesterdaySummary": "",
+    "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 塔什干棉农 vs 伊尔比德侯赛因（塔什干棉农联赛排名靠前）",
+    "yesterdayCount": 0,
+    "todayCount": 34,
     "fullReport": true,
     "_dataSource": "dongqiudi-real",
     "_gender": "men"
   },
   "history": [
+    {
+      "timestamp": "2026-08-11T11:02:24.516799",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
+        "yesterdaySummary": "",
+        "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 塔什干棉农 vs 伊尔比德侯赛因（塔什干棉农联赛排名靠前）",
+        "yesterdayCount": 0,
+        "todayCount": 34,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "men"
+      }
+    },
     {
       "timestamp": "2026-08-11T10:44:19.542387",
       "manual": false,
@@ -56,19 +70,6 @@
     {
       "timestamp": "2026-08-11T09:02:51.619788",
       "manual": true,
-      "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据）",
-        "yesterdaySummary": "🇮🇸 冰岛丁：凯里亚 6-9 雷提尔（雷提尔获胜）；🇮🇸 冰岛丁：BF 108 3-2 KM（BF 108获胜）；🇮🇸 冰岛超：雷克雅未克弗拉姆 2-5 雷克雅未克（雷克雅未克获胜）",
-        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 布拉加U23 vs 法鲁人U23（布拉加U23联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 喀尔巴阡U21 vs LNZ切尔卡瑟U21（喀尔巴阡U21联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 法马利康U23 vs 托里什人联合U23（托里什人联合U23联赛排名靠前）",
-        "yesterdayCount": 18,
-        "todayCount": 33,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real"
-      }
-    },
-    {
-      "timestamp": "2026-08-11T09:01:34.999176",
-      "manual": false,
       "digest": {
         "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据）",
         "yesterdaySummary": "🇮🇸 冰岛丁：凯里亚 6-9 雷提尔（雷提尔获胜）；🇮🇸 冰岛丁：BF 108 3-2 KM（BF 108获胜）；🇮🇸 冰岛超：雷克雅未克弗拉姆 2-5 雷克雅未克（雷克雅未克获胜）",

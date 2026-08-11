@@ -1,6 +1,20 @@
 {
   "history": [
     {
+      "timestamp": "2026-08-11T11:02:24.516799",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
+        "yesterdaySummary": "",
+        "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 塔什干棉农 vs 伊尔比德侯赛因（塔什干棉农联赛排名靠前）",
+        "yesterdayCount": 0,
+        "todayCount": 34,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "men"
+      }
+    },
+    {
       "timestamp": "2026-08-11T10:44:19.542387",
       "manual": false,
       "digest": {

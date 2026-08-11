@@ -1,16 +1,16 @@
 {
   "status": "ok",
-  "deployedAt": "2026-08-11T10:44:19.542387",
-  "lastUpdate": "2026-08-11T10:44:19.542387",
-  "hasData": true,
+  "deployedAt": "2026-08-11T11:02:24.516799",
+  "lastUpdate": "2026-08-11T11:02:24.516799",
+  "hasData": false,
   "dataSource": "dongqiudi-real",
   "counts": {
     "men": {
-      "yesterday": 15,
-      "today": 31
+      "yesterday": 0,
+      "today": 34
     },
     "women": {
-      "yesterday": 3,
+      "yesterday": 0,
       "today": 2
     }
   },
