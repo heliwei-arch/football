@@ -2150,11 +2150,23 @@ function render() {
 }
 
 // ===== 数据加载 =====
-async function tryFetchJson(url, opts) {
+async function tryFetchJson(url, opts, timeoutMs) {
+  const to = timeoutMs || 15000;
+  let aborter = null;
   try {
-    const resp = await fetch(url, opts || {});
-    if (!resp.ok) return null;
-    return await resp.json();
+    const mergedOpts = opts ? Object.assign({}, opts) : {};
+    if (!mergedOpts.signal && typeof AbortController !== 'undefined') {
+      aborter = new AbortController();
+      mergedOpts.signal = aborter.signal;
+    }
+    const timer = aborter ? setTimeout(() => aborter.abort(new Error('timeout-' + to + 'ms')), to) : null;
+    try {
+      const resp = await fetch(url, mergedOpts);
+      if (!resp.ok) return null;
+      return await resp.json();
+    } finally {
+      if (timer) clearTimeout(timer);
+    }
   } catch (e) {
     return null;
   }
@@ -2208,10 +2220,16 @@ async function refreshData() {
   const btn = document.getElementById('refreshBtn');
   btn.textContent = '⏳ 加载中...';
   btn.disabled = true;
-  await loadData();
-  btn.textContent = '🔄 刷新数据';
-  btn.disabled = false;
-  if (APP_DATA) showToast('数据已刷新', 'success');
+  try {
+    await loadData();
+    if (APP_DATA) showToast('数据已刷新', 'success');
+  } catch (e) {
+    console.error(e);
+    showToast('刷新失败：' + (e.message || String(e)), 'error');
+  } finally {
+    btn.textContent = '🔄 刷新数据';
+    btn.disabled = false;
+  }
 }
 
 async function forceUpdate() {
@@ -2223,8 +2241,16 @@ async function forceUpdate() {
     let backendUpdated = false;
     let updateResult = null;
     try {
-      const resp = await fetch(`/api/update?gender=${encodeURIComponent(PAGE_GENDER)}`, { method: 'POST' });
-      if (resp.ok) {
+      let aborter = typeof AbortController !== 'undefined' ? new AbortController() : null;
+      let timer = aborter ? setTimeout(() => aborter.abort(new Error('update-timeout:30s')), 30000) : null;
+      let resp;
+      try {
+        resp = await fetch(`/api/update?gender=${encodeURIComponent(PAGE_GENDER)}`, {
+          method: 'POST',
+          signal: aborter ? aborter.signal : undefined
+        });
+      } finally { if (timer) clearTimeout(timer); }
+      if (resp && resp.ok) {
         updateResult = await resp.json();
         if (updateResult && updateResult.success) backendUpdated = true;
       }
@@ -3008,70 +3034,117 @@ async function initDatePicker() {
 
 // 改造loadData的callback：支持archive日期参数 → 取对应URL → 加载完渲染大洲栏+球队弹窗
 const _origLoadData = loadData;
+
+/** 全局Spinner兜底：任何loadData调用如果超过20秒未渲染出数据，强制隐藏Spinner并给出Toast，避免用户感知卡死 */
+let _APP_LD_STAMP = 0;
+function _ensureSpinnerFallback(stamp) {
+  setTimeout(() => {
+    if (stamp !== _APP_LD_STAMP) return;           // 已被新的loadData覆盖，忽略
+    if (APP_DATA && Array.isArray(APP_DATA.todayPreviews) && APP_DATA.todayPreviews.length) return; // 已渲染出数据，忽略
+    ['yesterdayMatches', 'todayPreviews'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.querySelector('.spinner')) {
+        el.innerHTML = `<div style="padding:24px;text-align:center;opacity:.7;font-size:13px;">
+          ⚠️ 数据加载超时，正在尝试降级备用路径…
+          <br/><br/><strong>快速解决方案</strong>：<br/>
+          ① 点右上角 <kbd>⚡ 立即更新</kbd> 重新触发<br/>
+          ② 或在项目根目录运行 <code>python3 generate_static.py</code> 重新构建静态数据
+        </div>`;
+      }
+    });
+    showToast('⚠️ 数据加载超时（20秒兜底）：已自动取消Spinner显示，可点⚡立即更新重试', 'warn', 10000);
+  }, 20000);
+}
+
 loadData = async function(genderOverride, dateOverride) {
   const gender = genderOverride || CURRENT_GENDER || 'men';
   const date = (typeof dateOverride !== 'undefined') ? dateOverride : CURRENT_ARCHIVE_DATE;
   const todayStr = getTodayStr();
   const isHist = date && date !== todayStr;
+  const stamp = ++_APP_LD_STAMP;
+  _ensureSpinnerFallback(stamp);
 
   let loaded = null;
+  let fatalErr = null;
   try {
-    loaded = await loadArchiveOrToday(gender, date);
-  } catch(e) {
-    console.error('archive load error:', e);
-  }
-
-  if (loaded && loaded.data) {
-    APP_DATA = loaded.data;
-    APP_DATA._loadedFrom = `${loaded.loadedFrom}${isHist ? '·archive:'+date : ''}`;
-    render();
-    // 同步lastUpdate文案，加归档日期前缀
-    const lut = document.getElementById('lastUpdateText');
-    if (lut) {
-      const ts = APP_DATA.lastUpdate || APP_DATA.generatedAt || '—';
-      const baseTxt = isHist ? `📅 归档 ${date}` : '最后更新';
-      lut.innerHTML = `${baseTxt} · <strong>${typeof ts === 'string' ? ts.slice(0,16).replace('T',' ') : ts}</strong>${isHist ? '（按该日时间线展示T-1总结/T0预告）' : ''}`;
+    try {
+      loaded = await loadArchiveOrToday(gender, date);
+    } catch(e) {
+      console.error('archive load error:', e);
+      fatalErr = e;
     }
-  } else {
-    if (isHist) {
-      showToast(`⚠️ ${date} 归档数据不存在：这一天可能还未开始每日构建归档（每天9:00自动保存）。仅支持查看从今天起往前有归档的日期。`, 'warn', 10000);
-      // 回滚到今日
-      CURRENT_ARCHIVE_DATE = null;
-      updateHistoryBanner(null);
-      const cur = parseAppHash(); delete cur.date; writeAppHash(cur, true);
-      return await loadData(gender, null);
+
+    if (loaded && loaded.data) {
+      APP_DATA = loaded.data;
+      APP_DATA._loadedFrom = `${loaded.loadedFrom}${isHist ? '·archive:'+date : ''}`;
+      try {
+        render();
+      } catch(e) {
+        fatalErr = e;
+        console.error('render throw:', e);
+        showToast('渲染出错：' + (e.message || String(e)), 'error');
+      }
+      // 同步lastUpdate文案，加归档日期前缀
+      try {
+        const lut = document.getElementById('lastUpdateText');
+        if (lut) {
+          const ts = APP_DATA.lastUpdate || APP_DATA.generatedAt || '—';
+          const baseTxt = isHist ? `📅 归档 ${date}` : '最后更新';
+          lut.innerHTML = `${baseTxt} · <strong>${typeof ts === 'string' ? ts.slice(0,16).replace('T',' ') : ts}</strong>${isHist ? '（按该日时间线展示T-1总结/T0预告）' : ''}`;
+        }
+      } catch(e) { console.warn('lastUpdate sync err:', e); }
     } else {
-      showToast(`数据加载失败（${gender === 'men' ? '男足' : '女足'}版）：既没有可用的后端服务，也没有找到预生成的静态数据文件。请在项目根目录运行 \`python3 generate_static.py\` 或启动 \`python3 server.py\` 后再访问。`, 'error', 15000);
-      return null;
+      if (isHist) {
+        showToast(`⚠️ ${date} 归档数据不存在：这一天可能还未开始每日构建归档（每天9:00自动保存）。仅支持查看从今天起往前有归档的日期。`, 'warn', 10000);
+        // 回滚到今日
+        CURRENT_ARCHIVE_DATE = null;
+        updateHistoryBanner(null);
+        const cur = parseAppHash(); delete cur.date; writeAppHash(cur, true);
+        try { return await loadData(gender, null); } catch(e) { return null; }
+      } else {
+        showToast(`数据加载失败（${gender === 'men' ? '男足' : '女足'}版）：既没有可用的后端服务，也没有找到预生成的静态数据文件。请在项目根目录运行 \`python3 generate_static.py\` 或启动 \`python3 server.py\` 后再访问。`, 'error', 15000);
+        return null;
+      }
     }
-  }
 
-  // 渲染左侧大洲栏（从APP_DATA.continentBadges取）
-  const badges = (APP_DATA && APP_DATA.continentBadges) ? APP_DATA.continentBadges
-    : (APP_DATA.matchesByContinent ? {
-        all: {yesterday: APP_DATA.yesterdayMatches.length, today: APP_DATA.todayPreviews.length},
-        europe: {
-          yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'europe').length,
-          today: APP_DATA.todayPreviews.filter(m => m.region === 'europe').length,
-        },
-        asia: {
-          yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'asia').length,
-          today: APP_DATA.todayPreviews.filter(m => m.region === 'asia').length,
-        },
-        australia: {
-          yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'australia').length,
-          today: APP_DATA.todayPreviews.filter(m => m.region === 'australia').length,
-        },
-      } : null);
-  renderContinentNav(badges);
-  filterByRegion(CURRENT_REGION || 'all');
-  // 如果初始化时有#team=xxx hash→打开弹窗（仅非archive路径延迟打开，避免和日期切换冲突）
-  if (window.__APP_INIT_TEAM__) {
-    const id = window.__APP_INIT_TEAM__;
-    delete window.__APP_INIT_TEAM__;
-    setTimeout(() => openTeamModalByHash(id), 450);
+    // 渲染左侧大洲栏（从APP_DATA.continentBadges取）
+    try {
+      const badges = (APP_DATA && APP_DATA.continentBadges) ? APP_DATA.continentBadges
+        : (APP_DATA && APP_DATA.matchesByContinent ? {
+            all: {yesterday: APP_DATA.yesterdayMatches.length, today: APP_DATA.todayPreviews.length},
+            europe: {
+              yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'europe').length,
+              today: APP_DATA.todayPreviews.filter(m => m.region === 'europe').length,
+            },
+            asia: {
+              yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'asia').length,
+              today: APP_DATA.todayPreviews.filter(m => m.region === 'asia').length,
+            },
+            australia: {
+              yesterday: APP_DATA.yesterdayMatches.filter(m => m.region === 'australia').length,
+              today: APP_DATA.todayPreviews.filter(m => m.region === 'australia').length,
+            },
+          } : null);
+      renderContinentNav(badges);
+      filterByRegion(CURRENT_REGION || 'all');
+    } catch(e) { console.warn('continent nav err:', e); }
+
+    // 如果初始化时有#team=xxx hash→打开弹窗（仅非archive路径延迟打开，避免和日期切换冲突）
+    try {
+      if (window.__APP_INIT_TEAM__) {
+        const id = window.__APP_INIT_TEAM__;
+        delete window.__APP_INIT_TEAM__;
+        setTimeout(() => openTeamModalByHash(id), 450);
+      }
+    } catch(e) { console.warn('team modal err:', e); }
+
+    return loaded ? loaded.data : null;
+  } catch (e) {
+    fatalErr = e;
+    console.error('loadData fatal:', e);
+    showToast('加载致命错误：' + (e.message || String(e)), 'error', 10000);
+    return null;
   }
-  return loaded ? loaded.data : null;
 };
 
 // 初始化（DOMContentLoaded已经在上面绑定了，原loadData调用被我们覆盖；这里保留调用以防DOMContentLoaded已触发）
@@ -3089,23 +3162,39 @@ if (document.readyState === 'loading') {
 } else {
   // 已经就绪，手动触发一次初始化流程（避免旧代码直接loadData没走我们的改造）
   (async function(){
-    bindTeamModalCloseOnce();
-    const h = parseAppHash();
-    document.body.setAttribute('data-theme', h.gender === 'women' ? 'women-light' : 'men-dark');
-    CURRENT_GENDER = h.gender === 'women' ? 'women' : 'men';
-    document.querySelectorAll('.gpill').forEach(btn => btn.classList.toggle('active', btn.dataset.gender === CURRENT_GENDER));
-    const ttl = document.getElementById('datasourceTitle');
-    if (ttl) ttl.textContent = `FT早知道 · ${CURRENT_GENDER === 'men' ? '男足版（深蓝深色主题）' : '女足版（奶白粉浅色主题）'}（懂球帝真实数据）：`;
-    document.title = CURRENT_GENDER === 'men'
-      ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
-      : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
-    // 日期选择器 + hash日期应用
-    await initDatePicker();
-    const todayStr = getTodayStr();
-    if (h.date && h.date !== todayStr) CURRENT_ARCHIVE_DATE = h.date;
-    updateHistoryBanner(CURRENT_ARCHIVE_DATE);
-    if (h.team) window.__APP_INIT_TEAM__ = h.team;
-    await loadData(CURRENT_GENDER, CURRENT_ARCHIVE_DATE);
+    try {
+      bindTeamModalCloseOnce();
+      const h = parseAppHash();
+      document.body.setAttribute('data-theme', h.gender === 'women' ? 'women-light' : 'men-dark');
+      CURRENT_GENDER = h.gender === 'women' ? 'women' : 'men';
+      document.querySelectorAll('.gpill').forEach(btn => btn.classList.toggle('active', btn.dataset.gender === CURRENT_GENDER));
+      const ttl = document.getElementById('datasourceTitle');
+      if (ttl) ttl.textContent = `FT早知道 · ${CURRENT_GENDER === 'men' ? '男足版（深蓝深色主题）' : '女足版（奶白粉浅色主题）'}（懂球帝真实数据）：`;
+      document.title = CURRENT_GENDER === 'men'
+        ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
+        : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
+      // 日期选择器 + hash日期应用（最长10秒兜底，避免archive_index请求hang住导致整页白屏）
+      try {
+        const initDP = initDatePicker();
+        if (typeof Promise !== 'undefined' && initDP && typeof initDP.then === 'function') {
+          let dpTimer = null;
+          const race = Promise.race([
+            initDP,
+            new Promise(res => { dpTimer = setTimeout(() => { console.warn('initDatePicker超时兜底10s'); res('timeout'); }, 10000); })
+          ]);
+          await race;
+          if (dpTimer) clearTimeout(dpTimer);
+        }
+      } catch(e) { console.warn('initDatePicker err (safe-ignored):', e); }
+      const todayStr = getTodayStr();
+      if (h.date && h.date !== todayStr) CURRENT_ARCHIVE_DATE = h.date;
+      try { updateHistoryBanner(CURRENT_ARCHIVE_DATE); } catch(e) {}
+      if (h.team) window.__APP_INIT_TEAM__ = h.team;
+      await loadData(CURRENT_GENDER, CURRENT_ARCHIVE_DATE);
+    } catch (e) {
+      console.error('初始化致命错误：', e);
+      try { showToast('初始化失败：' + (e.message || String(e)) + '。可尝试按⚡立即更新或刷新页面重试', 'error', 15000); } catch(_) {}
+    }
   })();
 }
 </script>

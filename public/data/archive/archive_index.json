@@ -1,12 +1,12 @@
 {
-  "lastUpdate": "2026-08-11T12:49:33.782361",
+  "lastUpdate": "2026-08-11T13:24:33.145577",
   "retentionDays": 30,
   "selectorMinDate": "2026-07-15",
   "selectorMaxDate": "2026-08-11",
   "days": [
     {
       "date": "2026-08-11",
-      "archivedAt": "2026-08-11T12:49:33.782361",
+      "archivedAt": "2026-08-11T13:24:33.145577",
       "counts": {
         "men": {
           "yesterday": 0,

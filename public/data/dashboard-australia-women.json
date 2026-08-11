@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-11T12:49:33.782361",
-  "generatedAt": "2026-08-11T12:49:35.430402",
+  "lastUpdate": "2026-08-11T13:24:33.145577",
+  "generatedAt": "2026-08-11T13:24:34.945346",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "australia": [
@@ -67,10 +67,10 @@
       "venue": "凯勒公园女足主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-克里斯·比斯",
-          "name": "克里斯·比斯",
+          "id": "dqd-阿列克斯·金",
+          "name": "阿列克斯·金",
           "country": "澳大利亚",
-          "age": 41
+          "age": 39
         },
         "history": [
           {
@@ -82,7 +82,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           },
           {
             "date": "",
@@ -93,7 +93,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           },
           {
             "date": "",
@@ -135,7 +135,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.6",
+          "avgVar": "2.0",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -148,10 +148,11 @@
         ]
       },
       "features": [
+        "主裁尺度偏严，注意出牌风险",
         "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 5,
-      "intensity": "★★★★★",
+      "predictedDifficulty": 4,
+      "intensity": "★★★★",
       "homeRecentForm": [
         "负",
         "胜",
@@ -185,7 +186,7 @@
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 女足）",
     "yesterdaySummary": "",
-    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（双方实力接近，值得关注）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）",
+    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）",
     "yesterdayCount": 0,
     "todayCount": 2,
     "fullReport": true,
@@ -246,10 +247,10 @@
           "venue": "凯勒公园女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-克里斯·比斯",
-              "name": "克里斯·比斯",
+              "id": "dqd-阿列克斯·金",
+              "name": "阿列克斯·金",
               "country": "澳大利亚",
-              "age": 41
+              "age": 39
             },
             "history": [
               {
@@ -261,7 +262,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -272,7 +273,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -314,7 +315,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.6",
+              "avgVar": "2.0",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -327,10 +328,11 @@
             ]
           },
           "features": [
+            "主裁尺度偏严，注意出牌风险",
             "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 5,
-          "intensity": "★★★★★",
+          "predictedDifficulty": 4,
+          "intensity": "★★★★",
           "homeRecentForm": [
             "负",
             "胜",
