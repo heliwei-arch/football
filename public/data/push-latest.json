@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2026-08-11T11:12:43.541562",
+  "lastUpdate": "2026-08-11T12:49:33.782361",
   "latest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
     "yesterdaySummary": "",
-    "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）",
+    "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）",
     "yesterdayCount": 0,
     "todayCount": 34,
     "fullReport": true,
@@ -11,6 +11,20 @@
     "_gender": "men"
   },
   "history": [
+    {
+      "timestamp": "2026-08-11T12:49:33.782361",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
+        "yesterdaySummary": "",
+        "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）",
+        "yesterdayCount": 0,
+        "todayCount": 34,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "men"
+      }
+    },
     {
       "timestamp": "2026-08-11T11:12:43.541562",
       "manual": false,
@@ -59,20 +73,6 @@
       "digest": {
         "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
         "yesterdaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 葡超：圣克拉拉 2-2 马德拉国民（战平）；🇮🇸 冰岛超：雷克雅未克弗拉姆 2-5 雷克雅未克（雷克雅未克获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 葡U23联：维塞乌学院U23 3-0 阿马多拉之星U23（维塞乌学院U23获胜）",
-        "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）",
-        "yesterdayCount": 15,
-        "todayCount": 31,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real",
-        "_gender": "men"
-      }
-    },
-    {
-      "timestamp": "2026-08-11T10:41:01.465708",
-      "manual": false,
-      "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
-        "yesterdaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 葡超：圣克拉拉 2-2 马德拉国民（战平）；🏆 乌兹甲：洛钦 2-1 奇兹里克FC（洛钦获胜）；🇮🇸 冰岛超：雷克雅未克弗拉姆 2-5 雷克雅未克（雷克雅未克获胜）",
         "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）",
         "yesterdayCount": 15,
         "todayCount": 31,

@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-11T11:12:43.541562",
-  "generatedAt": "2026-08-11T11:12:44.967347",
+  "lastUpdate": "2026-08-11T12:49:33.782361",
+  "generatedAt": "2026-08-11T12:49:35.377321",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "europe": [
@@ -137,10 +137,10 @@
       "venue": "凯勒公园女足主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-肖恩·埃文斯",
-          "name": "肖恩·埃文斯",
+          "id": "dqd-克里斯·比斯",
+          "name": "克里斯·比斯",
           "country": "澳大利亚",
-          "age": 43
+          "age": 41
         },
         "history": [
           {
@@ -196,7 +196,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           }
         ],
         "statistics": {
@@ -205,7 +205,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.4",
+          "avgVar": "1.6",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -218,7 +218,6 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险",
         "双方实力接近，值得关注"
       ],
       "predictedDifficulty": 5,
@@ -299,10 +298,10 @@
       "venue": "华川国民体育振兴公团女足主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-阿卜杜拉·阿马尔",
-          "name": "阿卜杜拉·阿马尔",
-          "country": "阿联酋",
-          "age": 39
+          "id": "dqd-阿利舍尔·奥斯曼诺夫",
+          "name": "阿利舍尔·奥斯曼诺夫",
+          "country": "乌兹别克斯坦",
+          "age": 42
         },
         "history": [
           {
@@ -314,7 +313,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -336,7 +335,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -358,7 +357,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           }
         ],
         "statistics": {
@@ -367,7 +366,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "2.0",
+          "avgVar": "1.4",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -380,10 +379,11 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 4,
+      "intensity": "★★★★",
       "homeRecentForm": [
         "负",
         "胜",
@@ -404,11 +404,11 @@
         "awayWins": 2
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 25,
+      "heatScore": 34,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 6,
+        "focal": 15,
         "h2hRecent": 3
       },
       "isHotMatch": false
@@ -417,7 +417,7 @@
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 女足）",
     "yesterdaySummary": "",
-    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）",
+    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（双方实力接近，值得关注）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）",
     "yesterdayCount": 0,
     "todayCount": 2,
     "fullReport": true,
@@ -495,10 +495,10 @@
           "venue": "凯勒公园女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-肖恩·埃文斯",
-              "name": "肖恩·埃文斯",
+              "id": "dqd-克里斯·比斯",
+              "name": "克里斯·比斯",
               "country": "澳大利亚",
-              "age": 43
+              "age": 41
             },
             "history": [
               {
@@ -554,7 +554,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -563,7 +563,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.4",
+              "avgVar": "1.6",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -576,7 +576,6 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险",
             "双方实力接近，值得关注"
           ],
           "predictedDifficulty": 5,
@@ -657,10 +656,10 @@
           "venue": "华川国民体育振兴公团女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿卜杜拉·阿马尔",
-              "name": "阿卜杜拉·阿马尔",
-              "country": "阿联酋",
-              "age": 39
+              "id": "dqd-阿利舍尔·奥斯曼诺夫",
+              "name": "阿利舍尔·奥斯曼诺夫",
+              "country": "乌兹别克斯坦",
+              "age": 42
             },
             "history": [
               {
@@ -672,7 +671,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -694,7 +693,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -716,7 +715,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               }
             ],
             "statistics": {
@@ -725,7 +724,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "2.0",
+              "avgVar": "1.4",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -738,10 +737,11 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "主裁尺度偏严，注意出牌风险",
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 4,
+          "intensity": "★★★★",
           "homeRecentForm": [
             "负",
             "胜",
@@ -762,11 +762,11 @@
             "awayWins": 2
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 25,
+          "heatScore": 34,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 6,
+            "focal": 15,
             "h2hRecent": 3
           },
           "isHotMatch": false
@@ -827,10 +827,10 @@
           "venue": "华川国民体育振兴公团女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿卜杜拉·阿马尔",
-              "name": "阿卜杜拉·阿马尔",
-              "country": "阿联酋",
-              "age": 39
+              "id": "dqd-阿利舍尔·奥斯曼诺夫",
+              "name": "阿利舍尔·奥斯曼诺夫",
+              "country": "乌兹别克斯坦",
+              "age": 42
             },
             "history": [
               {
@@ -842,7 +842,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -864,7 +864,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -886,7 +886,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               }
             ],
             "statistics": {
@@ -895,7 +895,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "2.0",
+              "avgVar": "1.4",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -908,10 +908,11 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "主裁尺度偏严，注意出牌风险",
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 4,
+          "intensity": "★★★★",
           "homeRecentForm": [
             "负",
             "胜",
@@ -932,11 +933,11 @@
             "awayWins": 2
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 25,
+          "heatScore": 34,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 6,
+            "focal": 15,
             "h2hRecent": 3
           },
           "isHotMatch": false
@@ -993,10 +994,10 @@
           "venue": "凯勒公园女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-肖恩·埃文斯",
-              "name": "肖恩·埃文斯",
+              "id": "dqd-克里斯·比斯",
+              "name": "克里斯·比斯",
               "country": "澳大利亚",
-              "age": 43
+              "age": 41
             },
             "history": [
               {
@@ -1052,7 +1053,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -1061,7 +1062,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.4",
+              "avgVar": "1.6",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -1074,7 +1075,6 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险",
             "双方实力接近，值得关注"
           ],
           "predictedDifficulty": 5,
