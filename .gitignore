@@ -17,6 +17,10 @@ dqd_raw_*.json
 # 如果Actions构建push history不跨run保留，我们可以用GitHub Pages的history.json作为回源（每次构建先下载旧的push-history.json再insert最新一条），实现真正30天滚动
 # 简单起见，先忽略cache.json，workflow里在构建前下载当前Pages已发布的push-history*.json作为历史源（跨run持久化）
 
+cache.json
+# 28天回溯archive_index本地缓存（构建时用Pages在线恢复或本地cache兜底，不进git）
+cache_archive_index.json
+
 # IDE
 .vscode/
 .idea/

@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-11T11:02:24.516799",
-  "generatedAt": "2026-08-11T11:02:26.705411",
+  "lastUpdate": "2026-08-11T11:12:43.541562",
+  "generatedAt": "2026-08-11T11:12:45.016508",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "asia": [
@@ -100,17 +100,6 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
             "varChecks": 2
           },
           {
@@ -144,7 +133,18 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
           }
         ],
         "statistics": {
@@ -153,7 +153,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.6",
+          "avgVar": "2.0",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -166,10 +166,10 @@
         ]
       },
       "features": [
-        "双方实力接近，值得关注"
+        "主裁尺度偏严，注意出牌风险"
       ],
-      "predictedDifficulty": 5,
-      "intensity": "★★★★★",
+      "predictedDifficulty": 2,
+      "intensity": "★★",
       "homeRecentForm": [
         "负",
         "胜",
@@ -190,11 +190,11 @@
         "awayWins": 2
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 34,
+      "heatScore": 25,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 15,
+        "focal": 6,
         "h2hRecent": 3
       },
       "isHotMatch": false
@@ -203,7 +203,7 @@
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 女足）",
     "yesterdaySummary": "",
-    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（双方实力接近，值得关注）",
+    "todaySummary": "🇦🇺 凯勒公园女足 vs 海德堡联女足（主裁尺度偏严，注意出牌风险）；🏆 华川国民体育振兴公团女足 vs 仁川现代制铁红天使女足（主裁尺度偏严，注意出牌风险）",
     "yesterdayCount": 0,
     "todayCount": 2,
     "fullReport": true,
@@ -279,17 +279,6 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
                 "varChecks": 2
               },
               {
@@ -323,7 +312,18 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -332,7 +332,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.6",
+              "avgVar": "2.0",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -345,10 +345,10 @@
             ]
           },
           "features": [
-            "双方实力接近，值得关注"
+            "主裁尺度偏严，注意出牌风险"
           ],
-          "predictedDifficulty": 5,
-          "intensity": "★★★★★",
+          "predictedDifficulty": 2,
+          "intensity": "★★",
           "homeRecentForm": [
             "负",
             "胜",
@@ -369,11 +369,11 @@
             "awayWins": 2
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 34,
+          "heatScore": 25,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 15,
+            "focal": 6,
             "h2hRecent": 3
           },
           "isHotMatch": false

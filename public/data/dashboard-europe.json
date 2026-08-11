@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-11T11:02:24.516799",
-  "generatedAt": "2026-08-11T11:02:26.693133",
+  "lastUpdate": "2026-08-11T11:12:43.541562",
+  "generatedAt": "2026-08-11T11:12:45.003821",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "europe": [
@@ -128,6 +128,17 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
             "varChecks": 2
           },
           {
@@ -139,18 +150,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           }
         ],
         "statistics": {
@@ -159,7 +159,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.4",
+          "avgVar": "1.6",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -174,10 +174,11 @@
       "features": [
         "阿拉木图凯拉特联赛排名靠前",
         "索菲亚列夫斯基联赛排名靠前",
-        "主裁尺度偏严，注意出牌风险"
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
       "homeRecentForm": [
         "胜",
         "胜",
@@ -198,501 +199,14 @@
         "awayWins": 1
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 75,
+      "heatScore": 84,
       "heatBreakdown": {
         "league": 46,
         "rank": 20,
-        "focal": 6,
+        "focal": 15,
         "h2hRecent": 3
       },
       "isHotMatch": true
-    },
-    {
-      "id": "54545221",
-      "date": "2026-08-11",
-      "time": "10:00",
-      "league": {
-        "id": "dqd-europe-乌克青",
-        "name": "乌克青",
-        "country": "乌克青",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "color": "#CA5139",
-        "region": "europe"
-      },
-      "region": "europe",
-      "gender": "men",
-      "homeTeam": {
-        "name": "喀尔巴阡U21",
-        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7F/ChOxM1xC2UeAVqLKAAAXytNHCpQ006.png",
-        "rank": "5",
-        "teamId": "t13224",
-        "appLogo": {
-          "text": "21",
-          "colors": [
-            "#84cc16",
-            "#4d7c0f"
-          ],
-          "countryFlag": "🇺🇦"
-        },
-        "countryFlag": "🇺🇦"
-      },
-      "awayTeam": {
-        "name": "LNZ切尔卡瑟U21",
-        "logo": "https://sd.qunliao.info/fastdfs6/M00/87/75/rBUESWSrXsKAIU-UAAA6JkBy4rs087.png",
-        "rank": "11",
-        "teamId": "t132665",
-        "appLogo": {
-          "text": "LN",
-          "colors": [
-            "#ec4899",
-            "#be185d"
-          ],
-          "countryFlag": "🇺🇦"
-        },
-        "countryFlag": "🇺🇦"
-      },
-      "venue": "喀尔巴阡U21主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-达尼埃莱·奥萨托",
-          "name": "达尼埃莱·奥萨托",
-          "country": "意大利",
-          "age": 48
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "喀尔巴阡U21联赛排名靠前",
-        "主裁尺度偏严，注意出牌风险",
-        "双方实力接近，值得关注"
-      ],
-      "predictedDifficulty": 5,
-      "intensity": "★★★★★",
-      "homeRecentForm": [
-        "平",
-        "平",
-        "平",
-        "负",
-        "负"
-      ],
-      "awayRecentForm": [
-        "负",
-        "负",
-        "负",
-        "胜",
-        "平"
-      ],
-      "h2hLast5": {
-        "homeWins": 0,
-        "draws": 3,
-        "awayWins": 0
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 45,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 11,
-        "focal": 15,
-        "h2hRecent": 3
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54552749",
-      "date": "2026-08-11",
-      "time": "14:00",
-      "league": {
-        "id": "dqd-europe-英协联杯",
-        "name": "英协联杯",
-        "country": "英协联杯",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "color": "#333333",
-        "region": "europe"
-      },
-      "region": "europe",
-      "gender": "men",
-      "homeTeam": {
-        "name": "哈特尔浦联",
-        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/75/ChOxM1xC2GCAF8UjAABvLYFTxak312.png",
-        "rank": "5",
-        "teamId": "t562",
-        "appLogo": {
-          "text": "浦联",
-          "colors": [
-            "#14b8a6",
-            "#0f766e"
-          ],
-          "countryFlag": "🏴"
-        },
-        "countryFlag": "🏴"
-      },
-      "awayTeam": {
-        "name": "米德尔斯堡U21",
-        "logo": "https://sd.qunliao.info/fastdfs8/M00/3A/3C/rBXRDGo0hTOAYzQaAACZEXUr4Dk422.png",
-        "rank": null,
-        "teamId": "t16748",
-        "appLogo": {
-          "text": "21",
-          "colors": [
-            "#f59e0b",
-            "#c2410c"
-          ],
-          "countryFlag": "🏴"
-        },
-        "countryFlag": "🏴"
-      },
-      "venue": "哈特尔浦联主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-达尼埃莱·奥萨托",
-          "name": "达尼埃莱·奥萨托",
-          "country": "意大利",
-          "age": 48
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "哈特尔浦联联赛排名靠前",
-        "主裁尺度偏严，注意出牌风险",
-        "双方实力接近，值得关注"
-      ],
-      "predictedDifficulty": 5,
-      "intensity": "★★★★★",
-      "homeRecentForm": [
-        "负",
-        "胜",
-        "胜",
-        "平",
-        "胜"
-      ],
-      "awayRecentForm": [
-        "负",
-        "负",
-        "负",
-        "平",
-        "胜"
-      ],
-      "h2hLast5": {
-        "homeWins": 1,
-        "draws": 1,
-        "awayWins": 1
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 42,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 7,
-        "focal": 15,
-        "h2hRecent": 4
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54545500",
-      "date": "2026-08-11",
-      "time": "10:00",
-      "league": {
-        "id": "dqd-europe-葡U23联",
-        "name": "葡U23联",
-        "country": "葡U23联",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "color": "#A53610",
-        "region": "europe"
-      },
-      "region": "europe",
-      "gender": "men",
-      "homeTeam": {
-        "name": "布拉加U23",
-        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PKAS-yeAAAbMWD4AN4598.png",
-        "rank": "5",
-        "teamId": "t75980",
-        "appLogo": {
-          "text": "23",
-          "colors": [
-            "#ec4899",
-            "#be185d"
-          ],
-          "countryFlag": "🇵🇹"
-        },
-        "countryFlag": "🇵🇹"
-      },
-      "awayTeam": {
-        "name": "法鲁人U23",
-        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PiAMAISAABPXh92n0Y718.png",
-        "rank": "7",
-        "teamId": "t110663",
-        "appLogo": {
-          "text": "23",
-          "colors": [
-            "#22c55e",
-            "#15803d"
-          ],
-          "countryFlag": "🇵🇹"
-        },
-        "countryFlag": "🇵🇹"
-      },
-      "venue": "布拉加U23主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-阿图尔·迪亚斯",
-          "name": "阿图尔·迪亚斯",
-          "country": "葡萄牙",
-          "age": 44
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "布拉加U23联赛排名靠前"
-      ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
-      "homeRecentForm": [
-        "负",
-        "平",
-        "平",
-        "胜",
-        "平"
-      ],
-      "awayRecentForm": [
-        "胜",
-        "胜",
-        "平",
-        "胜",
-        "平"
-      ],
-      "h2hLast5": {
-        "homeWins": 2,
-        "draws": 1,
-        "awayWins": 0
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 40,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 14,
-        "focal": 6,
-        "h2hRecent": 4
-      },
-      "isHotMatch": false
     },
     {
       "id": "54545501",
@@ -800,7 +314,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           }
         ],
         "statistics": {
@@ -809,7 +323,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.2",
+          "avgVar": "1.4",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -822,11 +336,10 @@
         ]
       },
       "features": [
-        "托里什人联合U23联赛排名靠前",
-        "主裁尺度偏严，注意出牌风险"
+        "托里什人联合U23联赛排名靠前"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 3,
+      "intensity": "★★★",
       "homeRecentForm": [
         "负",
         "胜",
@@ -847,68 +360,242 @@
         "awayWins": 1
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 40,
+      "heatScore": 46,
       "heatBreakdown": {
         "league": 16,
         "rank": 14,
-        "focal": 6,
+        "focal": 12,
         "h2hRecent": 4
       },
       "isHotMatch": false
     },
     {
-      "id": "54551257",
+      "id": "54545221",
       "date": "2026-08-11",
-      "time": "15:00",
+      "time": "10:00",
       "league": {
-        "id": "dqd-europe-斯伐杯",
-        "name": "斯伐杯",
-        "country": "斯伐杯",
+        "id": "dqd-europe-乌克青",
+        "name": "乌克青",
+        "country": "乌克青",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "color": "#006666",
+        "color": "#CA5139",
         "region": "europe"
       },
       "region": "europe",
       "gender": "men",
       "homeTeam": {
-        "name": "斯尼纳",
-        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-        "rank": null,
-        "teamId": "t8916",
+        "name": "喀尔巴阡U21",
+        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7F/ChOxM1xC2UeAVqLKAAAXytNHCpQ006.png",
+        "rank": "5",
+        "teamId": "t13224",
         "appLogo": {
-          "text": "尼纳",
+          "text": "21",
           "colors": [
-            "#ef4444",
-            "#991b1b"
+            "#84cc16",
+            "#4d7c0f"
           ],
-          "countryFlag": "🏳️"
+          "countryFlag": "🇺🇦"
         },
-        "countryFlag": "🏳️"
+        "countryFlag": "🇺🇦"
       },
       "awayTeam": {
-        "name": "胡门尼",
-        "logo": "https://sd.qunliao.info/fastdfs5/M00/23/15/rB8BO173VaCACs-YAABe-SAChPI573.png",
-        "rank": "12",
-        "teamId": "t1733",
+        "name": "LNZ切尔卡瑟U21",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/87/75/rBUESWSrXsKAIU-UAAA6JkBy4rs087.png",
+        "rank": "11",
+        "teamId": "t132665",
         "appLogo": {
-          "text": "门尼",
+          "text": "LN",
           "colors": [
-            "#f59e0b",
-            "#c2410c"
+            "#ec4899",
+            "#be185d"
           ],
-          "countryFlag": "🏳️"
+          "countryFlag": "🇺🇦"
         },
-        "countryFlag": "🏳️"
+        "countryFlag": "🇺🇦"
       },
-      "venue": "斯尼纳主场",
+      "venue": "喀尔巴阡U21主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-安东尼奥·马特乌·拉奥斯",
-          "name": "安东尼奥·马特乌·拉奥斯",
-          "country": "西班牙",
-          "age": 47
+          "id": "dqd-费利克斯·布里赫",
+          "name": "费利克斯·布里赫",
+          "country": "德国",
+          "age": 48
         },
         "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "喀尔巴阡U21联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
+      "homeRecentForm": [
+        "平",
+        "平",
+        "平",
+        "负",
+        "负"
+      ],
+      "awayRecentForm": [
+        "负",
+        "负",
+        "负",
+        "胜",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 3,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 45,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 11,
+        "focal": 15,
+        "h2hRecent": 3
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54545500",
+      "date": "2026-08-11",
+      "time": "10:00",
+      "league": {
+        "id": "dqd-europe-葡U23联",
+        "name": "葡U23联",
+        "country": "葡U23联",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#A53610",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": {
+        "name": "布拉加U23",
+        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PKAS-yeAAAbMWD4AN4598.png",
+        "rank": "5",
+        "teamId": "t75980",
+        "appLogo": {
+          "text": "23",
+          "colors": [
+            "#ec4899",
+            "#be185d"
+          ],
+          "countryFlag": "🇵🇹"
+        },
+        "countryFlag": "🇵🇹"
+      },
+      "awayTeam": {
+        "name": "法鲁人U23",
+        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PiAMAISAABPXh92n0Y718.png",
+        "rank": "7",
+        "teamId": "t110663",
+        "appLogo": {
+          "text": "23",
+          "colors": [
+            "#22c55e",
+            "#15803d"
+          ],
+          "countryFlag": "🇵🇹"
+        },
+        "countryFlag": "🇵🇹"
+      },
+      "venue": "布拉加U23主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-安东尼·泰勒",
+          "name": "安东尼·泰勒",
+          "country": "英格兰",
+          "age": 45
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
           {
             "date": "",
             "league": "",
@@ -930,6 +617,157 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.4",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "布拉加U23联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 2,
+      "intensity": "★★",
+      "homeRecentForm": [
+        "负",
+        "平",
+        "平",
+        "胜",
+        "平"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "胜",
+        "平",
+        "胜",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 1,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 40,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 14,
+        "focal": 6,
+        "h2hRecent": 4
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54552749",
+      "date": "2026-08-11",
+      "time": "14:00",
+      "league": {
+        "id": "dqd-europe-英协联杯",
+        "name": "英协联杯",
+        "country": "英协联杯",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#333333",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": {
+        "name": "哈特尔浦联",
+        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/75/ChOxM1xC2GCAF8UjAABvLYFTxak312.png",
+        "rank": "5",
+        "teamId": "t562",
+        "appLogo": {
+          "text": "浦联",
+          "colors": [
+            "#14b8a6",
+            "#0f766e"
+          ],
+          "countryFlag": "🏴"
+        },
+        "countryFlag": "🏴"
+      },
+      "awayTeam": {
+        "name": "米德尔斯堡U21",
+        "logo": "https://sd.qunliao.info/fastdfs8/M00/3A/3C/rBXRDGo0hTOAYzQaAACZEXUr4Dk422.png",
+        "rank": null,
+        "teamId": "t16748",
+        "appLogo": {
+          "text": "21",
+          "colors": [
+            "#f59e0b",
+            "#c2410c"
+          ],
+          "countryFlag": "🏴"
+        },
+        "countryFlag": "🏴"
+      },
+      "venue": "哈特尔浦联主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-安德烈斯·埃克贝里",
+          "name": "安德烈斯·埃克贝里",
+          "country": "瑞典",
+          "age": 39
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
           },
           {
             "date": "",
@@ -984,11 +822,172 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险",
+        "哈特尔浦联联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 3,
+      "intensity": "★★★",
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "胜",
+        "平",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "负",
+        "负",
+        "负",
+        "平",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 1,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 39,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 7,
+        "focal": 12,
+        "h2hRecent": 4
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54551257",
+      "date": "2026-08-11",
+      "time": "15:00",
+      "league": {
+        "id": "dqd-europe-斯伐杯",
+        "name": "斯伐杯",
+        "country": "斯伐杯",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#006666",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": {
+        "name": "斯尼纳",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "rank": null,
+        "teamId": "t8916",
+        "appLogo": {
+          "text": "尼纳",
+          "colors": [
+            "#ef4444",
+            "#991b1b"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "awayTeam": {
+        "name": "胡门尼",
+        "logo": "https://sd.qunliao.info/fastdfs5/M00/23/15/rB8BO173VaCACs-YAABe-SAChPI573.png",
+        "rank": "12",
+        "teamId": "t1733",
+        "appLogo": {
+          "text": "门尼",
+          "colors": [
+            "#f59e0b",
+            "#c2410c"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "venue": "斯尼纳主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-阿图尔·迪亚斯",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
         "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 4,
-      "intensity": "★★★★",
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
       "homeRecentForm": [
         "平",
         "负",
@@ -1065,10 +1064,10 @@
       "venue": "卡尔马U21主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-安东尼奥·马特乌·拉奥斯",
-          "name": "安东尼奥·马特乌·拉奥斯",
-          "country": "西班牙",
-          "age": 47
+          "id": "dqd-伊斯特万·科瓦奇",
+          "name": "伊斯特万·科瓦奇",
+          "country": "罗马尼亚",
+          "age": 40
         },
         "history": [
           {
@@ -1102,29 +1101,29 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
             "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
           }
         ],
         "statistics": {
@@ -1146,11 +1145,10 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险",
         "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 4,
-      "intensity": "★★★★",
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
       "homeRecentForm": [
         "平",
         "平",
@@ -1181,217 +1179,56 @@
       "isHotMatch": false
     },
     {
-      "id": "54407681",
+      "id": "54554516",
       "date": "2026-08-11",
-      "time": "12:00",
+      "time": "15:00",
       "league": {
-        "id": "dqd-europe-瑞典U21",
-        "name": "瑞典U21",
-        "country": "瑞典U21",
-        "flag": "🇸🇪",
-        "color": "#889933",
+        "id": "dqd-europe-爱沙U19",
+        "name": "爱沙U19",
+        "country": "爱沙U19",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#996744",
         "region": "europe"
       },
       "region": "europe",
       "gender": "men",
       "homeTeam": {
-        "name": "诺尔比U21",
+        "name": "祖维凤凰U19",
         "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
         "rank": null,
-        "teamId": "t101993",
+        "teamId": "t153630",
         "appLogo": {
-          "text": "21",
+          "text": "19",
           "colors": [
-            "#d946ef",
-            "#a21caf"
+            "#6366f1",
+            "#4338ca"
           ],
-          "countryFlag": "🇸🇪"
+          "countryFlag": "🏳️"
         },
-        "countryFlag": "🇸🇪"
+        "countryFlag": "🏳️"
       },
       "awayTeam": {
-        "name": "奥迪沃德U21",
-        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "name": "塔林春神U19",
+        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/76/ChOxM1xC2G6AF-UuAAAlJrXmAJE391.png",
         "rank": null,
-        "teamId": "t138784",
+        "teamId": "t69107",
         "appLogo": {
-          "text": "21",
+          "text": "19",
           "colors": [
             "#06b6d4",
             "#0e7490"
           ],
-          "countryFlag": "🇸🇪"
+          "countryFlag": "🏳️"
         },
-        "countryFlag": "🇸🇪"
+        "countryFlag": "🏳️"
       },
-      "venue": "诺尔比U21主场",
+      "venue": "祖维凤凰U19主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-斯拉夫科·文齐奇",
-          "name": "斯拉夫科·文齐奇",
-          "country": "斯洛文尼亚",
-          "age": 39
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "双方实力接近，值得关注"
-      ],
-      "predictedDifficulty": 4,
-      "intensity": "★★★★",
-      "homeRecentForm": [
-        "负",
-        "胜",
-        "负",
-        "负",
-        "平"
-      ],
-      "awayRecentForm": [
-        "平",
-        "胜",
-        "胜",
-        "平",
-        "平"
-      ],
-      "h2hLast5": {
-        "homeWins": 3,
-        "draws": 0,
-        "awayWins": 0
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 35,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 0,
-        "focal": 15,
-        "h2hRecent": 4
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54543495",
-      "date": "2026-08-11",
-      "time": "14:00",
-      "league": {
-        "id": "dqd-europe-希腊杯",
-        "name": "希腊杯",
-        "country": "希腊杯",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "color": "#BCBCC2",
-        "region": "europe"
-      },
-      "region": "europe",
-      "gender": "men",
-      "homeTeam": {
-        "name": "特里卡拉",
-        "logo": "https://sd.qunliao.info/fastdfs3/M00/9D/A6/ChOxM1waTxuAWY7pAABjZaXT45E129.png",
-        "rank": null,
-        "teamId": "t2506",
-        "appLogo": {
-          "text": "卡拉",
-          "colors": [
-            "#22c55e",
-            "#15803d"
-          ],
-          "countryFlag": "🇬🇷"
-        },
-        "countryFlag": "🇬🇷"
-      },
-      "awayTeam": {
-        "name": "拉里萨",
-        "logo": "https://sd.qunliao.info/fastdfs8/M00/E4/20/rBXRDGmw1SiAXi9sAABVyEa89Sc345.png",
-        "rank": null,
-        "teamId": "t898",
-        "appLogo": {
-          "text": "里萨",
-          "colors": [
-            "#ec4899",
-            "#be185d"
-          ],
-          "countryFlag": "🇬🇷"
-        },
-        "countryFlag": "🇬🇷"
-      },
-      "venue": "特里卡拉主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-安东尼奥·马特乌·拉奥斯",
-          "name": "安东尼奥·马特乌·拉奥斯",
-          "country": "西班牙",
-          "age": 47
+          "id": "dqd-桑德罗·舍雷尔",
+          "name": "桑德罗·舍雷尔",
+          "country": "瑞士",
+          "age": 41
         },
         "history": [
           {
@@ -1472,516 +1309,33 @@
         "主裁尺度偏严，注意出牌风险",
         "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 4,
-      "intensity": "★★★★",
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
       "homeRecentForm": [
-        "平",
-        "胜",
-        "平",
         "负",
+        "平",
+        "平",
+        "平",
         "平"
       ],
       "awayRecentForm": [
-        "胜",
+        "负",
         "平",
+        "负",
         "平",
-        "平",
-        "平"
+        "负"
       ],
       "h2hLast5": {
-        "homeWins": 1,
-        "draws": 0,
-        "awayWins": 2
+        "homeWins": 2,
+        "draws": 1,
+        "awayWins": 0
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 33,
+      "heatScore": 34,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
         "focal": 15,
-        "h2hRecent": 2
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54501887",
-      "date": "2026-08-11",
-      "time": "15:00",
-      "league": {
-        "id": "dqd-europe-保乙",
-        "name": "保乙",
-        "country": "保乙",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "color": "#A739AF",
-        "region": "europe"
-      },
-      "region": "europe",
-      "gender": "men",
-      "homeTeam": {
-        "name": "索菲亚中央陆军二队",
-        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/73/ChOxM1xC2DGAXjBvAAAX08tnPlE442.png",
-        "rank": "9",
-        "teamId": "t16732",
-        "appLogo": {
-          "text": "二队",
-          "colors": [
-            "#14b8a6",
-            "#0f766e"
-          ],
-          "countryFlag": "🏳️"
-        },
-        "countryFlag": "🏳️"
-      },
-      "awayTeam": {
-        "name": "赫巴尔",
-        "logo": "https://sd.qunliao.info/fastdfs5/M00/1A/39/rB8BO17GJCOAPkE8AABfNpK-awY054.png",
-        "rank": "16",
-        "teamId": "t51139",
-        "appLogo": {
-          "text": "巴尔",
-          "colors": [
-            "#0ea5e9",
-            "#6366f1"
-          ],
-          "countryFlag": "🏳️"
-        },
-        "countryFlag": "🏳️"
-      },
-      "venue": "索菲亚中央陆军二队主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-阿图尔·迪亚斯",
-          "name": "阿图尔·迪亚斯",
-          "country": "葡萄牙",
-          "age": 44
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "常规联赛对决"
-      ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
-      "homeRecentForm": [
-        "负",
-        "平",
-        "胜",
-        "胜",
-        "胜"
-      ],
-      "awayRecentForm": [
-        "负",
-        "胜",
-        "负",
-        "胜",
-        "平"
-      ],
-      "h2hLast5": {
-        "homeWins": 0,
-        "draws": 1,
-        "awayWins": 2
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 32,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 6,
-        "focal": 6,
-        "h2hRecent": 4
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54543489",
-      "date": "2026-08-11",
-      "time": "14:00",
-      "league": {
-        "id": "dqd-europe-俄杯",
-        "name": "俄杯",
-        "country": "俄杯",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "color": "#003309",
-        "region": "europe"
-      },
-      "region": "europe",
-      "gender": "men",
-      "homeTeam": {
-        "name": "圣彼得堡迪纳摩",
-        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-        "rank": null,
-        "teamId": "t108689",
-        "appLogo": {
-          "text": "纳摩",
-          "colors": [
-            "#f97316",
-            "#9a3412"
-          ],
-          "countryFlag": "🇷🇺"
-        },
-        "countryFlag": "🇷🇺"
-      },
-      "awayTeam": {
-        "name": "FC 10",
-        "logo": "https://sd.qunliao.info/fastdfs8/M00/64/92/rBXRDGpErlWACHgKAAC9MesVLIM399.png",
-        "rank": null,
-        "teamId": "t171503",
-        "appLogo": {
-          "text": "10",
-          "colors": [
-            "#06b6d4",
-            "#0e7490"
-          ],
-          "countryFlag": "🇷🇺"
-        },
-        "countryFlag": "🇷🇺"
-      },
-      "venue": "圣彼得堡迪纳摩主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-阿图尔·迪亚斯",
-          "name": "阿图尔·迪亚斯",
-          "country": "葡萄牙",
-          "age": 44
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "常规联赛对决"
-      ],
-      "predictedDifficulty": 3,
-      "intensity": "★★★",
-      "homeRecentForm": [
-        "平",
-        "负",
-        "负",
-        "平",
-        "胜"
-      ],
-      "awayRecentForm": [
-        "负",
-        "平",
-        "平",
-        "平",
-        "胜"
-      ],
-      "h2hLast5": {
-        "homeWins": 0,
-        "draws": 1,
-        "awayWins": 2
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 31,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 0,
-        "focal": 12,
-        "h2hRecent": 3
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54554515",
-      "date": "2026-08-11",
-      "time": "14:00",
-      "league": {
-        "id": "dqd-europe-爱沙U19",
-        "name": "爱沙U19",
-        "country": "爱沙U19",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "color": "#996744",
-        "region": "europe"
-      },
-      "region": "europe",
-      "gender": "men",
-      "homeTeam": {
-        "name": "FC塔林U19",
-        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-        "rank": null,
-        "teamId": "t172333",
-        "appLogo": {
-          "text": "19",
-          "colors": [
-            "#f43f5e",
-            "#be123c"
-          ],
-          "countryFlag": "🏳️"
-        },
-        "countryFlag": "🏳️"
-      },
-      "awayTeam": {
-        "name": "帕努U19",
-        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-        "rank": null,
-        "teamId": "t129507",
-        "appLogo": {
-          "text": "19",
-          "colors": [
-            "#a855f7",
-            "#7e22ce"
-          ],
-          "countryFlag": "🏳️"
-        },
-        "countryFlag": "🏳️"
-      },
-      "venue": "FC塔林U19主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-克莱芒·蒂尔潘",
-          "name": "克莱芒·蒂尔潘",
-          "country": "法国",
-          "age": 41
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "主裁尺度偏严，注意出牌风险"
-      ],
-      "predictedDifficulty": 3,
-      "intensity": "★★★",
-      "homeRecentForm": [
-        "平",
-        "负",
-        "平",
-        "平",
-        "平"
-      ],
-      "awayRecentForm": [
-        "平",
-        "负",
-        "负",
-        "胜",
-        "胜"
-      ],
-      "h2hLast5": {
-        "homeWins": 3,
-        "draws": 0,
-        "awayWins": 0
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 31,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 0,
-        "focal": 12,
         "h2hRecent": 3
       },
       "isHotMatch": false
@@ -2033,10 +1387,10 @@
       "venue": "帕瓦罗维科特主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-阿图尔·迪亚斯",
-          "name": "阿图尔·迪亚斯",
-          "country": "葡萄牙",
-          "age": 44
+          "id": "dqd-费利克斯·布里赫",
+          "name": "费利克斯·布里赫",
+          "country": "德国",
+          "age": 48
         },
         "history": [
           {
@@ -2059,28 +1413,6 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
             "varChecks": 1
           },
           {
@@ -2093,6 +1425,28 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
           }
         ],
         "statistics": {
@@ -2114,10 +1468,11 @@
         ]
       },
       "features": [
-        "常规联赛对决"
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 3,
-      "intensity": "★★★",
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
       "homeRecentForm": [
         "平",
         "平",
@@ -2138,11 +1493,11 @@
         "awayWins": 0
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 31,
+      "heatScore": 34,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 12,
+        "focal": 15,
         "h2hRecent": 3
       },
       "isHotMatch": false
@@ -2194,34 +1549,12 @@
       "venue": "波利西亚日托米尔U21主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-费利克斯·布里赫",
-          "name": "费利克斯·布里赫",
-          "country": "德国",
-          "age": 48
+          "id": "dqd-克莱芒·蒂尔潘",
+          "name": "克莱芒·蒂尔潘",
+          "country": "法国",
+          "age": 41
         },
         "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
           {
             "date": "",
             "league": "",
@@ -2254,6 +1587,28 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
           }
         ],
         "statistics": {
@@ -2275,10 +1630,10 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 3,
-      "intensity": "★★★",
+      "predictedDifficulty": 4,
+      "intensity": "★★★★",
       "homeRecentForm": [
         "平",
         "胜",
@@ -2299,11 +1654,11 @@
         "awayWins": 1
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 30,
+      "heatScore": 33,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 12,
+        "focal": 15,
         "h2hRecent": 2
       },
       "isHotMatch": false
@@ -2370,6 +1725,167 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.6",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "双方实力接近，值得关注"
+      ],
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
+      "homeRecentForm": [
+        "负",
+        "负",
+        "平",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "负",
+        "平",
+        "负",
+        "胜",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 0,
+        "awayWins": 1
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 33,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 0,
+        "focal": 15,
+        "h2hRecent": 2
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54543495",
+      "date": "2026-08-11",
+      "time": "14:00",
+      "league": {
+        "id": "dqd-europe-希腊杯",
+        "name": "希腊杯",
+        "country": "希腊杯",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#BCBCC2",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": {
+        "name": "特里卡拉",
+        "logo": "https://sd.qunliao.info/fastdfs3/M00/9D/A6/ChOxM1waTxuAWY7pAABjZaXT45E129.png",
+        "rank": null,
+        "teamId": "t2506",
+        "appLogo": {
+          "text": "卡拉",
+          "colors": [
+            "#22c55e",
+            "#15803d"
+          ],
+          "countryFlag": "🇬🇷"
+        },
+        "countryFlag": "🇬🇷"
+      },
+      "awayTeam": {
+        "name": "拉里萨",
+        "logo": "https://sd.qunliao.info/fastdfs8/M00/E4/20/rBXRDGmw1SiAXi9sAABVyEa89Sc345.png",
+        "rank": null,
+        "teamId": "t898",
+        "appLogo": {
+          "text": "里萨",
+          "colors": [
+            "#ec4899",
+            "#be185d"
+          ],
+          "countryFlag": "🇬🇷"
+        },
+        "countryFlag": "🇬🇷"
+      },
+      "venue": "特里卡拉主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-丹尼·马克列",
+          "name": "丹尼·马克列",
+          "country": "荷兰",
+          "age": 40
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
             "varChecks": 1
           },
           {
@@ -2436,35 +1952,35 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 4,
+      "intensity": "★★★★",
       "homeRecentForm": [
-        "负",
-        "负",
+        "平",
+        "胜",
         "平",
         "负",
         "平"
       ],
       "awayRecentForm": [
-        "负",
-        "平",
-        "负",
         "胜",
-        "胜"
+        "平",
+        "平",
+        "平",
+        "平"
       ],
       "h2hLast5": {
-        "homeWins": 2,
+        "homeWins": 1,
         "draws": 0,
-        "awayWins": 1
+        "awayWins": 2
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 24,
+      "heatScore": 33,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 6,
+        "focal": 15,
         "h2hRecent": 2
       },
       "isHotMatch": false
@@ -2531,7 +2047,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -2584,7 +2100,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.4",
+          "avgVar": "1.2",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -2597,10 +2113,10 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
       "homeRecentForm": [
         "胜",
         "负",
@@ -2621,12 +2137,495 @@
         "awayWins": 1
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 24,
+      "heatScore": 33,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 0,
+        "focal": 15,
+        "h2hRecent": 2
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54554515",
+      "date": "2026-08-11",
+      "time": "14:00",
+      "league": {
+        "id": "dqd-europe-爱沙U19",
+        "name": "爱沙U19",
+        "country": "爱沙U19",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#996744",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": {
+        "name": "FC塔林U19",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "rank": null,
+        "teamId": "t172333",
+        "appLogo": {
+          "text": "19",
+          "colors": [
+            "#f43f5e",
+            "#be123c"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "awayTeam": {
+        "name": "帕努U19",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "rank": null,
+        "teamId": "t129507",
+        "appLogo": {
+          "text": "19",
+          "colors": [
+            "#a855f7",
+            "#7e22ce"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "venue": "FC塔林U19主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-阿图尔·迪亚斯",
+          "name": "阿图尔·迪亚斯",
+          "country": "葡萄牙",
+          "age": 44
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.6",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "常规联赛对决"
+      ],
+      "predictedDifficulty": 3,
+      "intensity": "★★★",
+      "homeRecentForm": [
+        "平",
+        "负",
+        "平",
+        "平",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "负",
+        "负",
+        "胜",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 3,
+        "draws": 0,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 31,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 0,
+        "focal": 12,
+        "h2hRecent": 3
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54407681",
+      "date": "2026-08-11",
+      "time": "12:00",
+      "league": {
+        "id": "dqd-europe-瑞典U21",
+        "name": "瑞典U21",
+        "country": "瑞典U21",
+        "flag": "🇸🇪",
+        "color": "#889933",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": {
+        "name": "诺尔比U21",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "rank": null,
+        "teamId": "t101993",
+        "appLogo": {
+          "text": "21",
+          "colors": [
+            "#d946ef",
+            "#a21caf"
+          ],
+          "countryFlag": "🇸🇪"
+        },
+        "countryFlag": "🇸🇪"
+      },
+      "awayTeam": {
+        "name": "奥迪沃德U21",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "rank": null,
+        "teamId": "t138784",
+        "appLogo": {
+          "text": "21",
+          "colors": [
+            "#06b6d4",
+            "#0e7490"
+          ],
+          "countryFlag": "🇸🇪"
+        },
+        "countryFlag": "🇸🇪"
+      },
+      "venue": "诺尔比U21主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-安德烈斯·埃克贝里",
+          "name": "安德烈斯·埃克贝里",
+          "country": "瑞典",
+          "age": 39
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.8",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 2,
+      "intensity": "★★",
+      "homeRecentForm": [
+        "负",
+        "胜",
+        "负",
+        "负",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "胜",
+        "胜",
+        "平",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 3,
+        "draws": 0,
+        "awayWins": 0
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 26,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
         "focal": 6,
-        "h2hRecent": 2
+        "h2hRecent": 4
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54543489",
+      "date": "2026-08-11",
+      "time": "14:00",
+      "league": {
+        "id": "dqd-europe-俄杯",
+        "name": "俄杯",
+        "country": "俄杯",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#003309",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "men",
+      "homeTeam": {
+        "name": "圣彼得堡迪纳摩",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "rank": null,
+        "teamId": "t108689",
+        "appLogo": {
+          "text": "纳摩",
+          "colors": [
+            "#f97316",
+            "#9a3412"
+          ],
+          "countryFlag": "🇷🇺"
+        },
+        "countryFlag": "🇷🇺"
+      },
+      "awayTeam": {
+        "name": "FC 10",
+        "logo": "https://sd.qunliao.info/fastdfs8/M00/64/92/rBXRDGpErlWACHgKAAC9MesVLIM399.png",
+        "rank": null,
+        "teamId": "t171503",
+        "appLogo": {
+          "text": "10",
+          "colors": [
+            "#06b6d4",
+            "#0e7490"
+          ],
+          "countryFlag": "🇷🇺"
+        },
+        "countryFlag": "🇷🇺"
+      },
+      "venue": "圣彼得堡迪纳摩主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-斯拉夫科·文齐奇",
+          "name": "斯拉夫科·文齐奇",
+          "country": "斯洛文尼亚",
+          "age": 39
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "2.0",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 2,
+      "intensity": "★★",
+      "homeRecentForm": [
+        "平",
+        "负",
+        "负",
+        "平",
+        "胜"
+      ],
+      "awayRecentForm": [
+        "负",
+        "平",
+        "平",
+        "平",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 1,
+        "awayWins": 2
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 25,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 0,
+        "focal": 6,
+        "h2hRecent": 3
       },
       "isHotMatch": false
     }
@@ -2634,7 +2633,7 @@
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
     "yesterdaySummary": "",
-    "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 塔什干棉农 vs 伊尔比德侯赛因（塔什干棉农联赛排名靠前）",
+    "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）",
     "yesterdayCount": 0,
     "todayCount": 34,
     "fullReport": true,
@@ -2732,6 +2731,17 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
                 "varChecks": 2
               },
               {
@@ -2743,18 +2753,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -2763,7 +2762,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.4",
+              "avgVar": "1.6",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -2778,10 +2777,11 @@
           "features": [
             "阿拉木图凯拉特联赛排名靠前",
             "索菲亚列夫斯基联赛排名靠前",
-            "主裁尺度偏严，注意出牌风险"
+            "主裁尺度偏严，注意出牌风险",
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
           "homeRecentForm": [
             "胜",
             "胜",
@@ -2802,501 +2802,14 @@
             "awayWins": 1
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 75,
+          "heatScore": 84,
           "heatBreakdown": {
             "league": 46,
             "rank": 20,
-            "focal": 6,
+            "focal": 15,
             "h2hRecent": 3
           },
           "isHotMatch": true
-        },
-        {
-          "id": "54545221",
-          "date": "2026-08-11",
-          "time": "10:00",
-          "league": {
-            "id": "dqd-europe-乌克青",
-            "name": "乌克青",
-            "country": "乌克青",
-            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-            "color": "#CA5139",
-            "region": "europe"
-          },
-          "region": "europe",
-          "gender": "men",
-          "homeTeam": {
-            "name": "喀尔巴阡U21",
-            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7F/ChOxM1xC2UeAVqLKAAAXytNHCpQ006.png",
-            "rank": "5",
-            "teamId": "t13224",
-            "appLogo": {
-              "text": "21",
-              "colors": [
-                "#84cc16",
-                "#4d7c0f"
-              ],
-              "countryFlag": "🇺🇦"
-            },
-            "countryFlag": "🇺🇦"
-          },
-          "awayTeam": {
-            "name": "LNZ切尔卡瑟U21",
-            "logo": "https://sd.qunliao.info/fastdfs6/M00/87/75/rBUESWSrXsKAIU-UAAA6JkBy4rs087.png",
-            "rank": "11",
-            "teamId": "t132665",
-            "appLogo": {
-              "text": "LN",
-              "colors": [
-                "#ec4899",
-                "#be185d"
-              ],
-              "countryFlag": "🇺🇦"
-            },
-            "countryFlag": "🇺🇦"
-          },
-          "venue": "喀尔巴阡U21主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-达尼埃莱·奥萨托",
-              "name": "达尼埃莱·奥萨托",
-              "country": "意大利",
-              "age": 48
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "喀尔巴阡U21联赛排名靠前",
-            "主裁尺度偏严，注意出牌风险",
-            "双方实力接近，值得关注"
-          ],
-          "predictedDifficulty": 5,
-          "intensity": "★★★★★",
-          "homeRecentForm": [
-            "平",
-            "平",
-            "平",
-            "负",
-            "负"
-          ],
-          "awayRecentForm": [
-            "负",
-            "负",
-            "负",
-            "胜",
-            "平"
-          ],
-          "h2hLast5": {
-            "homeWins": 0,
-            "draws": 3,
-            "awayWins": 0
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 45,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 11,
-            "focal": 15,
-            "h2hRecent": 3
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54552749",
-          "date": "2026-08-11",
-          "time": "14:00",
-          "league": {
-            "id": "dqd-europe-英协联杯",
-            "name": "英协联杯",
-            "country": "英协联杯",
-            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-            "color": "#333333",
-            "region": "europe"
-          },
-          "region": "europe",
-          "gender": "men",
-          "homeTeam": {
-            "name": "哈特尔浦联",
-            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/75/ChOxM1xC2GCAF8UjAABvLYFTxak312.png",
-            "rank": "5",
-            "teamId": "t562",
-            "appLogo": {
-              "text": "浦联",
-              "colors": [
-                "#14b8a6",
-                "#0f766e"
-              ],
-              "countryFlag": "🏴"
-            },
-            "countryFlag": "🏴"
-          },
-          "awayTeam": {
-            "name": "米德尔斯堡U21",
-            "logo": "https://sd.qunliao.info/fastdfs8/M00/3A/3C/rBXRDGo0hTOAYzQaAACZEXUr4Dk422.png",
-            "rank": null,
-            "teamId": "t16748",
-            "appLogo": {
-              "text": "21",
-              "colors": [
-                "#f59e0b",
-                "#c2410c"
-              ],
-              "countryFlag": "🏴"
-            },
-            "countryFlag": "🏴"
-          },
-          "venue": "哈特尔浦联主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-达尼埃莱·奥萨托",
-              "name": "达尼埃莱·奥萨托",
-              "country": "意大利",
-              "age": 48
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "哈特尔浦联联赛排名靠前",
-            "主裁尺度偏严，注意出牌风险",
-            "双方实力接近，值得关注"
-          ],
-          "predictedDifficulty": 5,
-          "intensity": "★★★★★",
-          "homeRecentForm": [
-            "负",
-            "胜",
-            "胜",
-            "平",
-            "胜"
-          ],
-          "awayRecentForm": [
-            "负",
-            "负",
-            "负",
-            "平",
-            "胜"
-          ],
-          "h2hLast5": {
-            "homeWins": 1,
-            "draws": 1,
-            "awayWins": 1
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 42,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 7,
-            "focal": 15,
-            "h2hRecent": 4
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54545500",
-          "date": "2026-08-11",
-          "time": "10:00",
-          "league": {
-            "id": "dqd-europe-葡U23联",
-            "name": "葡U23联",
-            "country": "葡U23联",
-            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-            "color": "#A53610",
-            "region": "europe"
-          },
-          "region": "europe",
-          "gender": "men",
-          "homeTeam": {
-            "name": "布拉加U23",
-            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PKAS-yeAAAbMWD4AN4598.png",
-            "rank": "5",
-            "teamId": "t75980",
-            "appLogo": {
-              "text": "23",
-              "colors": [
-                "#ec4899",
-                "#be185d"
-              ],
-              "countryFlag": "🇵🇹"
-            },
-            "countryFlag": "🇵🇹"
-          },
-          "awayTeam": {
-            "name": "法鲁人U23",
-            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PiAMAISAABPXh92n0Y718.png",
-            "rank": "7",
-            "teamId": "t110663",
-            "appLogo": {
-              "text": "23",
-              "colors": [
-                "#22c55e",
-                "#15803d"
-              ],
-              "countryFlag": "🇵🇹"
-            },
-            "countryFlag": "🇵🇹"
-          },
-          "venue": "布拉加U23主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-阿图尔·迪亚斯",
-              "name": "阿图尔·迪亚斯",
-              "country": "葡萄牙",
-              "age": 44
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "布拉加U23联赛排名靠前"
-          ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
-          "homeRecentForm": [
-            "负",
-            "平",
-            "平",
-            "胜",
-            "平"
-          ],
-          "awayRecentForm": [
-            "胜",
-            "胜",
-            "平",
-            "胜",
-            "平"
-          ],
-          "h2hLast5": {
-            "homeWins": 2,
-            "draws": 1,
-            "awayWins": 0
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 40,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 14,
-            "focal": 6,
-            "h2hRecent": 4
-          },
-          "isHotMatch": false
         },
         {
           "id": "54545501",
@@ -3404,7 +2917,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -3413,7 +2926,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.2",
+              "avgVar": "1.4",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -3426,11 +2939,10 @@
             ]
           },
           "features": [
-            "托里什人联合U23联赛排名靠前",
-            "主裁尺度偏严，注意出牌风险"
+            "托里什人联合U23联赛排名靠前"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 3,
+          "intensity": "★★★",
           "homeRecentForm": [
             "负",
             "胜",
@@ -3451,68 +2963,242 @@
             "awayWins": 1
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 40,
+          "heatScore": 46,
           "heatBreakdown": {
             "league": 16,
             "rank": 14,
-            "focal": 6,
+            "focal": 12,
             "h2hRecent": 4
           },
           "isHotMatch": false
         },
         {
-          "id": "54551257",
+          "id": "54545221",
           "date": "2026-08-11",
-          "time": "15:00",
+          "time": "10:00",
           "league": {
-            "id": "dqd-europe-斯伐杯",
-            "name": "斯伐杯",
-            "country": "斯伐杯",
+            "id": "dqd-europe-乌克青",
+            "name": "乌克青",
+            "country": "乌克青",
             "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-            "color": "#006666",
+            "color": "#CA5139",
             "region": "europe"
           },
           "region": "europe",
           "gender": "men",
           "homeTeam": {
-            "name": "斯尼纳",
-            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-            "rank": null,
-            "teamId": "t8916",
+            "name": "喀尔巴阡U21",
+            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7F/ChOxM1xC2UeAVqLKAAAXytNHCpQ006.png",
+            "rank": "5",
+            "teamId": "t13224",
             "appLogo": {
-              "text": "尼纳",
+              "text": "21",
               "colors": [
-                "#ef4444",
-                "#991b1b"
+                "#84cc16",
+                "#4d7c0f"
               ],
-              "countryFlag": "🏳️"
+              "countryFlag": "🇺🇦"
             },
-            "countryFlag": "🏳️"
+            "countryFlag": "🇺🇦"
           },
           "awayTeam": {
-            "name": "胡门尼",
-            "logo": "https://sd.qunliao.info/fastdfs5/M00/23/15/rB8BO173VaCACs-YAABe-SAChPI573.png",
-            "rank": "12",
-            "teamId": "t1733",
+            "name": "LNZ切尔卡瑟U21",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/87/75/rBUESWSrXsKAIU-UAAA6JkBy4rs087.png",
+            "rank": "11",
+            "teamId": "t132665",
             "appLogo": {
-              "text": "门尼",
+              "text": "LN",
               "colors": [
-                "#f59e0b",
-                "#c2410c"
+                "#ec4899",
+                "#be185d"
               ],
-              "countryFlag": "🏳️"
+              "countryFlag": "🇺🇦"
             },
-            "countryFlag": "🏳️"
+            "countryFlag": "🇺🇦"
           },
-          "venue": "斯尼纳主场",
+          "venue": "喀尔巴阡U21主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-安东尼奥·马特乌·拉奥斯",
-              "name": "安东尼奥·马特乌·拉奥斯",
-              "country": "西班牙",
-              "age": 47
+              "id": "dqd-费利克斯·布里赫",
+              "name": "费利克斯·布里赫",
+              "country": "德国",
+              "age": 48
             },
             "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.8",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "喀尔巴阡U21联赛排名靠前",
+            "主裁尺度偏严，注意出牌风险",
+            "双方实力接近，值得关注"
+          ],
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
+          "homeRecentForm": [
+            "平",
+            "平",
+            "平",
+            "负",
+            "负"
+          ],
+          "awayRecentForm": [
+            "负",
+            "负",
+            "负",
+            "胜",
+            "平"
+          ],
+          "h2hLast5": {
+            "homeWins": 0,
+            "draws": 3,
+            "awayWins": 0
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 45,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 11,
+            "focal": 15,
+            "h2hRecent": 3
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54545500",
+          "date": "2026-08-11",
+          "time": "10:00",
+          "league": {
+            "id": "dqd-europe-葡U23联",
+            "name": "葡U23联",
+            "country": "葡U23联",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#A53610",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "men",
+          "homeTeam": {
+            "name": "布拉加U23",
+            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PKAS-yeAAAbMWD4AN4598.png",
+            "rank": "5",
+            "teamId": "t75980",
+            "appLogo": {
+              "text": "23",
+              "colors": [
+                "#ec4899",
+                "#be185d"
+              ],
+              "countryFlag": "🇵🇹"
+            },
+            "countryFlag": "🇵🇹"
+          },
+          "awayTeam": {
+            "name": "法鲁人U23",
+            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PiAMAISAABPXh92n0Y718.png",
+            "rank": "7",
+            "teamId": "t110663",
+            "appLogo": {
+              "text": "23",
+              "colors": [
+                "#22c55e",
+                "#15803d"
+              ],
+              "countryFlag": "🇵🇹"
+            },
+            "countryFlag": "🇵🇹"
+          },
+          "venue": "布拉加U23主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-安东尼·泰勒",
+              "name": "安东尼·泰勒",
+              "country": "英格兰",
+              "age": 45
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
               {
                 "date": "",
                 "league": "",
@@ -3534,6 +3220,157 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.4",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "布拉加U23联赛排名靠前",
+            "主裁尺度偏严，注意出牌风险"
+          ],
+          "predictedDifficulty": 2,
+          "intensity": "★★",
+          "homeRecentForm": [
+            "负",
+            "平",
+            "平",
+            "胜",
+            "平"
+          ],
+          "awayRecentForm": [
+            "胜",
+            "胜",
+            "平",
+            "胜",
+            "平"
+          ],
+          "h2hLast5": {
+            "homeWins": 2,
+            "draws": 1,
+            "awayWins": 0
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 40,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 14,
+            "focal": 6,
+            "h2hRecent": 4
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54552749",
+          "date": "2026-08-11",
+          "time": "14:00",
+          "league": {
+            "id": "dqd-europe-英协联杯",
+            "name": "英协联杯",
+            "country": "英协联杯",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#333333",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "men",
+          "homeTeam": {
+            "name": "哈特尔浦联",
+            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/75/ChOxM1xC2GCAF8UjAABvLYFTxak312.png",
+            "rank": "5",
+            "teamId": "t562",
+            "appLogo": {
+              "text": "浦联",
+              "colors": [
+                "#14b8a6",
+                "#0f766e"
+              ],
+              "countryFlag": "🏴"
+            },
+            "countryFlag": "🏴"
+          },
+          "awayTeam": {
+            "name": "米德尔斯堡U21",
+            "logo": "https://sd.qunliao.info/fastdfs8/M00/3A/3C/rBXRDGo0hTOAYzQaAACZEXUr4Dk422.png",
+            "rank": null,
+            "teamId": "t16748",
+            "appLogo": {
+              "text": "21",
+              "colors": [
+                "#f59e0b",
+                "#c2410c"
+              ],
+              "countryFlag": "🏴"
+            },
+            "countryFlag": "🏴"
+          },
+          "venue": "哈特尔浦联主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-安德烈斯·埃克贝里",
+              "name": "安德烈斯·埃克贝里",
+              "country": "瑞典",
+              "age": 39
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -3588,11 +3425,172 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险",
+            "哈特尔浦联联赛排名靠前",
+            "主裁尺度偏严，注意出牌风险"
+          ],
+          "predictedDifficulty": 3,
+          "intensity": "★★★",
+          "homeRecentForm": [
+            "负",
+            "胜",
+            "胜",
+            "平",
+            "胜"
+          ],
+          "awayRecentForm": [
+            "负",
+            "负",
+            "负",
+            "平",
+            "胜"
+          ],
+          "h2hLast5": {
+            "homeWins": 1,
+            "draws": 1,
+            "awayWins": 1
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 39,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 7,
+            "focal": 12,
+            "h2hRecent": 4
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54551257",
+          "date": "2026-08-11",
+          "time": "15:00",
+          "league": {
+            "id": "dqd-europe-斯伐杯",
+            "name": "斯伐杯",
+            "country": "斯伐杯",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#006666",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "men",
+          "homeTeam": {
+            "name": "斯尼纳",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "rank": null,
+            "teamId": "t8916",
+            "appLogo": {
+              "text": "尼纳",
+              "colors": [
+                "#ef4444",
+                "#991b1b"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "awayTeam": {
+            "name": "胡门尼",
+            "logo": "https://sd.qunliao.info/fastdfs5/M00/23/15/rB8BO173VaCACs-YAABe-SAChPI573.png",
+            "rank": "12",
+            "teamId": "t1733",
+            "appLogo": {
+              "text": "门尼",
+              "colors": [
+                "#f59e0b",
+                "#c2410c"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "venue": "斯尼纳主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-阿图尔·迪亚斯",
+              "name": "阿图尔·迪亚斯",
+              "country": "葡萄牙",
+              "age": 44
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.8",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
             "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 4,
-          "intensity": "★★★★",
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
           "homeRecentForm": [
             "平",
             "负",
@@ -3669,10 +3667,10 @@
           "venue": "卡尔马U21主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-安东尼奥·马特乌·拉奥斯",
-              "name": "安东尼奥·马特乌·拉奥斯",
-              "country": "西班牙",
-              "age": 47
+              "id": "dqd-伊斯特万·科瓦奇",
+              "name": "伊斯特万·科瓦奇",
+              "country": "罗马尼亚",
+              "age": 40
             },
             "history": [
               {
@@ -3706,29 +3704,29 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
                 "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
               }
             ],
             "statistics": {
@@ -3750,11 +3748,10 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险",
             "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 4,
-          "intensity": "★★★★",
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
           "homeRecentForm": [
             "平",
             "平",
@@ -3785,217 +3782,56 @@
           "isHotMatch": false
         },
         {
-          "id": "54407681",
+          "id": "54554516",
           "date": "2026-08-11",
-          "time": "12:00",
+          "time": "15:00",
           "league": {
-            "id": "dqd-europe-瑞典U21",
-            "name": "瑞典U21",
-            "country": "瑞典U21",
-            "flag": "🇸🇪",
-            "color": "#889933",
+            "id": "dqd-europe-爱沙U19",
+            "name": "爱沙U19",
+            "country": "爱沙U19",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#996744",
             "region": "europe"
           },
           "region": "europe",
           "gender": "men",
           "homeTeam": {
-            "name": "诺尔比U21",
+            "name": "祖维凤凰U19",
             "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
             "rank": null,
-            "teamId": "t101993",
+            "teamId": "t153630",
             "appLogo": {
-              "text": "21",
+              "text": "19",
               "colors": [
-                "#d946ef",
-                "#a21caf"
+                "#6366f1",
+                "#4338ca"
               ],
-              "countryFlag": "🇸🇪"
+              "countryFlag": "🏳️"
             },
-            "countryFlag": "🇸🇪"
+            "countryFlag": "🏳️"
           },
           "awayTeam": {
-            "name": "奥迪沃德U21",
-            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "name": "塔林春神U19",
+            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/76/ChOxM1xC2G6AF-UuAAAlJrXmAJE391.png",
             "rank": null,
-            "teamId": "t138784",
+            "teamId": "t69107",
             "appLogo": {
-              "text": "21",
+              "text": "19",
               "colors": [
                 "#06b6d4",
                 "#0e7490"
               ],
-              "countryFlag": "🇸🇪"
+              "countryFlag": "🏳️"
             },
-            "countryFlag": "🇸🇪"
+            "countryFlag": "🏳️"
           },
-          "venue": "诺尔比U21主场",
+          "venue": "祖维凤凰U19主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-斯拉夫科·文齐奇",
-              "name": "斯拉夫科·文齐奇",
-              "country": "斯洛文尼亚",
-              "age": 39
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "双方实力接近，值得关注"
-          ],
-          "predictedDifficulty": 4,
-          "intensity": "★★★★",
-          "homeRecentForm": [
-            "负",
-            "胜",
-            "负",
-            "负",
-            "平"
-          ],
-          "awayRecentForm": [
-            "平",
-            "胜",
-            "胜",
-            "平",
-            "平"
-          ],
-          "h2hLast5": {
-            "homeWins": 3,
-            "draws": 0,
-            "awayWins": 0
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 35,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 0,
-            "focal": 15,
-            "h2hRecent": 4
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54543495",
-          "date": "2026-08-11",
-          "time": "14:00",
-          "league": {
-            "id": "dqd-europe-希腊杯",
-            "name": "希腊杯",
-            "country": "希腊杯",
-            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-            "color": "#BCBCC2",
-            "region": "europe"
-          },
-          "region": "europe",
-          "gender": "men",
-          "homeTeam": {
-            "name": "特里卡拉",
-            "logo": "https://sd.qunliao.info/fastdfs3/M00/9D/A6/ChOxM1waTxuAWY7pAABjZaXT45E129.png",
-            "rank": null,
-            "teamId": "t2506",
-            "appLogo": {
-              "text": "卡拉",
-              "colors": [
-                "#22c55e",
-                "#15803d"
-              ],
-              "countryFlag": "🇬🇷"
-            },
-            "countryFlag": "🇬🇷"
-          },
-          "awayTeam": {
-            "name": "拉里萨",
-            "logo": "https://sd.qunliao.info/fastdfs8/M00/E4/20/rBXRDGmw1SiAXi9sAABVyEa89Sc345.png",
-            "rank": null,
-            "teamId": "t898",
-            "appLogo": {
-              "text": "里萨",
-              "colors": [
-                "#ec4899",
-                "#be185d"
-              ],
-              "countryFlag": "🇬🇷"
-            },
-            "countryFlag": "🇬🇷"
-          },
-          "venue": "特里卡拉主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-安东尼奥·马特乌·拉奥斯",
-              "name": "安东尼奥·马特乌·拉奥斯",
-              "country": "西班牙",
-              "age": 47
+              "id": "dqd-桑德罗·舍雷尔",
+              "name": "桑德罗·舍雷尔",
+              "country": "瑞士",
+              "age": 41
             },
             "history": [
               {
@@ -4076,516 +3912,33 @@
             "主裁尺度偏严，注意出牌风险",
             "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 4,
-          "intensity": "★★★★",
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
           "homeRecentForm": [
-            "平",
-            "胜",
-            "平",
             "负",
+            "平",
+            "平",
+            "平",
             "平"
           ],
           "awayRecentForm": [
-            "胜",
+            "负",
             "平",
+            "负",
             "平",
-            "平",
-            "平"
+            "负"
           ],
           "h2hLast5": {
-            "homeWins": 1,
-            "draws": 0,
-            "awayWins": 2
+            "homeWins": 2,
+            "draws": 1,
+            "awayWins": 0
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 33,
+          "heatScore": 34,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
             "focal": 15,
-            "h2hRecent": 2
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54501887",
-          "date": "2026-08-11",
-          "time": "15:00",
-          "league": {
-            "id": "dqd-europe-保乙",
-            "name": "保乙",
-            "country": "保乙",
-            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-            "color": "#A739AF",
-            "region": "europe"
-          },
-          "region": "europe",
-          "gender": "men",
-          "homeTeam": {
-            "name": "索菲亚中央陆军二队",
-            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/73/ChOxM1xC2DGAXjBvAAAX08tnPlE442.png",
-            "rank": "9",
-            "teamId": "t16732",
-            "appLogo": {
-              "text": "二队",
-              "colors": [
-                "#14b8a6",
-                "#0f766e"
-              ],
-              "countryFlag": "🏳️"
-            },
-            "countryFlag": "🏳️"
-          },
-          "awayTeam": {
-            "name": "赫巴尔",
-            "logo": "https://sd.qunliao.info/fastdfs5/M00/1A/39/rB8BO17GJCOAPkE8AABfNpK-awY054.png",
-            "rank": "16",
-            "teamId": "t51139",
-            "appLogo": {
-              "text": "巴尔",
-              "colors": [
-                "#0ea5e9",
-                "#6366f1"
-              ],
-              "countryFlag": "🏳️"
-            },
-            "countryFlag": "🏳️"
-          },
-          "venue": "索菲亚中央陆军二队主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-阿图尔·迪亚斯",
-              "name": "阿图尔·迪亚斯",
-              "country": "葡萄牙",
-              "age": 44
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "常规联赛对决"
-          ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
-          "homeRecentForm": [
-            "负",
-            "平",
-            "胜",
-            "胜",
-            "胜"
-          ],
-          "awayRecentForm": [
-            "负",
-            "胜",
-            "负",
-            "胜",
-            "平"
-          ],
-          "h2hLast5": {
-            "homeWins": 0,
-            "draws": 1,
-            "awayWins": 2
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 32,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 6,
-            "focal": 6,
-            "h2hRecent": 4
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54543489",
-          "date": "2026-08-11",
-          "time": "14:00",
-          "league": {
-            "id": "dqd-europe-俄杯",
-            "name": "俄杯",
-            "country": "俄杯",
-            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-            "color": "#003309",
-            "region": "europe"
-          },
-          "region": "europe",
-          "gender": "men",
-          "homeTeam": {
-            "name": "圣彼得堡迪纳摩",
-            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-            "rank": null,
-            "teamId": "t108689",
-            "appLogo": {
-              "text": "纳摩",
-              "colors": [
-                "#f97316",
-                "#9a3412"
-              ],
-              "countryFlag": "🇷🇺"
-            },
-            "countryFlag": "🇷🇺"
-          },
-          "awayTeam": {
-            "name": "FC 10",
-            "logo": "https://sd.qunliao.info/fastdfs8/M00/64/92/rBXRDGpErlWACHgKAAC9MesVLIM399.png",
-            "rank": null,
-            "teamId": "t171503",
-            "appLogo": {
-              "text": "10",
-              "colors": [
-                "#06b6d4",
-                "#0e7490"
-              ],
-              "countryFlag": "🇷🇺"
-            },
-            "countryFlag": "🇷🇺"
-          },
-          "venue": "圣彼得堡迪纳摩主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-阿图尔·迪亚斯",
-              "name": "阿图尔·迪亚斯",
-              "country": "葡萄牙",
-              "age": 44
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "常规联赛对决"
-          ],
-          "predictedDifficulty": 3,
-          "intensity": "★★★",
-          "homeRecentForm": [
-            "平",
-            "负",
-            "负",
-            "平",
-            "胜"
-          ],
-          "awayRecentForm": [
-            "负",
-            "平",
-            "平",
-            "平",
-            "胜"
-          ],
-          "h2hLast5": {
-            "homeWins": 0,
-            "draws": 1,
-            "awayWins": 2
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 31,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 0,
-            "focal": 12,
-            "h2hRecent": 3
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54554515",
-          "date": "2026-08-11",
-          "time": "14:00",
-          "league": {
-            "id": "dqd-europe-爱沙U19",
-            "name": "爱沙U19",
-            "country": "爱沙U19",
-            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-            "color": "#996744",
-            "region": "europe"
-          },
-          "region": "europe",
-          "gender": "men",
-          "homeTeam": {
-            "name": "FC塔林U19",
-            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-            "rank": null,
-            "teamId": "t172333",
-            "appLogo": {
-              "text": "19",
-              "colors": [
-                "#f43f5e",
-                "#be123c"
-              ],
-              "countryFlag": "🏳️"
-            },
-            "countryFlag": "🏳️"
-          },
-          "awayTeam": {
-            "name": "帕努U19",
-            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-            "rank": null,
-            "teamId": "t129507",
-            "appLogo": {
-              "text": "19",
-              "colors": [
-                "#a855f7",
-                "#7e22ce"
-              ],
-              "countryFlag": "🏳️"
-            },
-            "countryFlag": "🏳️"
-          },
-          "venue": "FC塔林U19主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-克莱芒·蒂尔潘",
-              "name": "克莱芒·蒂尔潘",
-              "country": "法国",
-              "age": 41
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "主裁尺度偏严，注意出牌风险"
-          ],
-          "predictedDifficulty": 3,
-          "intensity": "★★★",
-          "homeRecentForm": [
-            "平",
-            "负",
-            "平",
-            "平",
-            "平"
-          ],
-          "awayRecentForm": [
-            "平",
-            "负",
-            "负",
-            "胜",
-            "胜"
-          ],
-          "h2hLast5": {
-            "homeWins": 3,
-            "draws": 0,
-            "awayWins": 0
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 31,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 0,
-            "focal": 12,
             "h2hRecent": 3
           },
           "isHotMatch": false
@@ -4637,10 +3990,10 @@
           "venue": "帕瓦罗维科特主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿图尔·迪亚斯",
-              "name": "阿图尔·迪亚斯",
-              "country": "葡萄牙",
-              "age": 44
+              "id": "dqd-费利克斯·布里赫",
+              "name": "费利克斯·布里赫",
+              "country": "德国",
+              "age": 48
             },
             "history": [
               {
@@ -4663,28 +4016,6 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
                 "varChecks": 1
               },
               {
@@ -4697,6 +4028,28 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -4718,10 +4071,11 @@
             ]
           },
           "features": [
-            "常规联赛对决"
+            "主裁尺度偏严，注意出牌风险",
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 3,
-          "intensity": "★★★",
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
           "homeRecentForm": [
             "平",
             "平",
@@ -4742,11 +4096,11 @@
             "awayWins": 0
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 31,
+          "heatScore": 34,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 12,
+            "focal": 15,
             "h2hRecent": 3
           },
           "isHotMatch": false
@@ -4798,34 +4152,12 @@
           "venue": "波利西亚日托米尔U21主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-费利克斯·布里赫",
-              "name": "费利克斯·布里赫",
-              "country": "德国",
-              "age": 48
+              "id": "dqd-克莱芒·蒂尔潘",
+              "name": "克莱芒·蒂尔潘",
+              "country": "法国",
+              "age": 41
             },
             "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
               {
                 "date": "",
                 "league": "",
@@ -4858,6 +4190,28 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
               }
             ],
             "statistics": {
@@ -4879,10 +4233,10 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 3,
-          "intensity": "★★★",
+          "predictedDifficulty": 4,
+          "intensity": "★★★★",
           "homeRecentForm": [
             "平",
             "胜",
@@ -4903,11 +4257,11 @@
             "awayWins": 1
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 30,
+          "heatScore": 33,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 12,
+            "focal": 15,
             "h2hRecent": 2
           },
           "isHotMatch": false
@@ -4974,6 +4328,167 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.6",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "双方实力接近，值得关注"
+          ],
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
+          "homeRecentForm": [
+            "负",
+            "负",
+            "平",
+            "负",
+            "平"
+          ],
+          "awayRecentForm": [
+            "负",
+            "平",
+            "负",
+            "胜",
+            "胜"
+          ],
+          "h2hLast5": {
+            "homeWins": 2,
+            "draws": 0,
+            "awayWins": 1
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 33,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 0,
+            "focal": 15,
+            "h2hRecent": 2
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54543495",
+          "date": "2026-08-11",
+          "time": "14:00",
+          "league": {
+            "id": "dqd-europe-希腊杯",
+            "name": "希腊杯",
+            "country": "希腊杯",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#BCBCC2",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "men",
+          "homeTeam": {
+            "name": "特里卡拉",
+            "logo": "https://sd.qunliao.info/fastdfs3/M00/9D/A6/ChOxM1waTxuAWY7pAABjZaXT45E129.png",
+            "rank": null,
+            "teamId": "t2506",
+            "appLogo": {
+              "text": "卡拉",
+              "colors": [
+                "#22c55e",
+                "#15803d"
+              ],
+              "countryFlag": "🇬🇷"
+            },
+            "countryFlag": "🇬🇷"
+          },
+          "awayTeam": {
+            "name": "拉里萨",
+            "logo": "https://sd.qunliao.info/fastdfs8/M00/E4/20/rBXRDGmw1SiAXi9sAABVyEa89Sc345.png",
+            "rank": null,
+            "teamId": "t898",
+            "appLogo": {
+              "text": "里萨",
+              "colors": [
+                "#ec4899",
+                "#be185d"
+              ],
+              "countryFlag": "🇬🇷"
+            },
+            "countryFlag": "🇬🇷"
+          },
+          "venue": "特里卡拉主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-丹尼·马克列",
+              "name": "丹尼·马克列",
+              "country": "荷兰",
+              "age": 40
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
                 "varChecks": 1
               },
               {
@@ -5040,35 +4555,35 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 4,
+          "intensity": "★★★★",
           "homeRecentForm": [
-            "负",
-            "负",
+            "平",
+            "胜",
             "平",
             "负",
             "平"
           ],
           "awayRecentForm": [
-            "负",
-            "平",
-            "负",
             "胜",
-            "胜"
+            "平",
+            "平",
+            "平",
+            "平"
           ],
           "h2hLast5": {
-            "homeWins": 2,
+            "homeWins": 1,
             "draws": 0,
-            "awayWins": 1
+            "awayWins": 2
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 24,
+          "heatScore": 33,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 6,
+            "focal": 15,
             "h2hRecent": 2
           },
           "isHotMatch": false
@@ -5135,7 +4650,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -5188,7 +4703,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.4",
+              "avgVar": "1.2",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -5201,10 +4716,10 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
           "homeRecentForm": [
             "胜",
             "负",
@@ -5225,12 +4740,495 @@
             "awayWins": 1
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 24,
+          "heatScore": 33,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 0,
+            "focal": 15,
+            "h2hRecent": 2
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54554515",
+          "date": "2026-08-11",
+          "time": "14:00",
+          "league": {
+            "id": "dqd-europe-爱沙U19",
+            "name": "爱沙U19",
+            "country": "爱沙U19",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#996744",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "men",
+          "homeTeam": {
+            "name": "FC塔林U19",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "rank": null,
+            "teamId": "t172333",
+            "appLogo": {
+              "text": "19",
+              "colors": [
+                "#f43f5e",
+                "#be123c"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "awayTeam": {
+            "name": "帕努U19",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "rank": null,
+            "teamId": "t129507",
+            "appLogo": {
+              "text": "19",
+              "colors": [
+                "#a855f7",
+                "#7e22ce"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "venue": "FC塔林U19主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-阿图尔·迪亚斯",
+              "name": "阿图尔·迪亚斯",
+              "country": "葡萄牙",
+              "age": 44
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.6",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "常规联赛对决"
+          ],
+          "predictedDifficulty": 3,
+          "intensity": "★★★",
+          "homeRecentForm": [
+            "平",
+            "负",
+            "平",
+            "平",
+            "平"
+          ],
+          "awayRecentForm": [
+            "平",
+            "负",
+            "负",
+            "胜",
+            "胜"
+          ],
+          "h2hLast5": {
+            "homeWins": 3,
+            "draws": 0,
+            "awayWins": 0
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 31,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 0,
+            "focal": 12,
+            "h2hRecent": 3
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54407681",
+          "date": "2026-08-11",
+          "time": "12:00",
+          "league": {
+            "id": "dqd-europe-瑞典U21",
+            "name": "瑞典U21",
+            "country": "瑞典U21",
+            "flag": "🇸🇪",
+            "color": "#889933",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "men",
+          "homeTeam": {
+            "name": "诺尔比U21",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "rank": null,
+            "teamId": "t101993",
+            "appLogo": {
+              "text": "21",
+              "colors": [
+                "#d946ef",
+                "#a21caf"
+              ],
+              "countryFlag": "🇸🇪"
+            },
+            "countryFlag": "🇸🇪"
+          },
+          "awayTeam": {
+            "name": "奥迪沃德U21",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "rank": null,
+            "teamId": "t138784",
+            "appLogo": {
+              "text": "21",
+              "colors": [
+                "#06b6d4",
+                "#0e7490"
+              ],
+              "countryFlag": "🇸🇪"
+            },
+            "countryFlag": "🇸🇪"
+          },
+          "venue": "诺尔比U21主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-安德烈斯·埃克贝里",
+              "name": "安德烈斯·埃克贝里",
+              "country": "瑞典",
+              "age": 39
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.8",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "主裁尺度偏严，注意出牌风险"
+          ],
+          "predictedDifficulty": 2,
+          "intensity": "★★",
+          "homeRecentForm": [
+            "负",
+            "胜",
+            "负",
+            "负",
+            "平"
+          ],
+          "awayRecentForm": [
+            "平",
+            "胜",
+            "胜",
+            "平",
+            "平"
+          ],
+          "h2hLast5": {
+            "homeWins": 3,
+            "draws": 0,
+            "awayWins": 0
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 26,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
             "focal": 6,
-            "h2hRecent": 2
+            "h2hRecent": 4
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54543489",
+          "date": "2026-08-11",
+          "time": "14:00",
+          "league": {
+            "id": "dqd-europe-俄杯",
+            "name": "俄杯",
+            "country": "俄杯",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#003309",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "men",
+          "homeTeam": {
+            "name": "圣彼得堡迪纳摩",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "rank": null,
+            "teamId": "t108689",
+            "appLogo": {
+              "text": "纳摩",
+              "colors": [
+                "#f97316",
+                "#9a3412"
+              ],
+              "countryFlag": "🇷🇺"
+            },
+            "countryFlag": "🇷🇺"
+          },
+          "awayTeam": {
+            "name": "FC 10",
+            "logo": "https://sd.qunliao.info/fastdfs8/M00/64/92/rBXRDGpErlWACHgKAAC9MesVLIM399.png",
+            "rank": null,
+            "teamId": "t171503",
+            "appLogo": {
+              "text": "10",
+              "colors": [
+                "#06b6d4",
+                "#0e7490"
+              ],
+              "countryFlag": "🇷🇺"
+            },
+            "countryFlag": "🇷🇺"
+          },
+          "venue": "圣彼得堡迪纳摩主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-斯拉夫科·文齐奇",
+              "name": "斯拉夫科·文齐奇",
+              "country": "斯洛文尼亚",
+              "age": 39
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "2.0",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "主裁尺度偏严，注意出牌风险"
+          ],
+          "predictedDifficulty": 2,
+          "intensity": "★★",
+          "homeRecentForm": [
+            "平",
+            "负",
+            "负",
+            "平",
+            "胜"
+          ],
+          "awayRecentForm": [
+            "负",
+            "平",
+            "平",
+            "平",
+            "胜"
+          ],
+          "h2hLast5": {
+            "homeWins": 0,
+            "draws": 1,
+            "awayWins": 2
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 25,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 0,
+            "focal": 6,
+            "h2hRecent": 3
           },
           "isHotMatch": false
         }

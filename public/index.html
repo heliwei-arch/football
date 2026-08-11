@@ -1480,6 +1480,103 @@
     border-radius: 16px;
   }
 
+  /* ========== FT早知道 · 28天回溯日期选择器 ========== */
+  .date-selector-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+  }
+  .date-selector-wrap label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  input[type="date"].date-input {
+    border: 0;
+    background: transparent;
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 6px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  input[type="date"].date-input:hover {
+    background: var(--hover-bg, rgba(148,163,184,0.08));
+  }
+  input[type="date"].date-input::-webkit-calendar-picker-indicator {
+    filter: var(--date-icon-filter, invert(0.7));
+    cursor: pointer;
+  }
+  body[data-theme="women-light"] input[type="date"].date-input::-webkit-calendar-picker-indicator {
+    filter: invert(0.3);
+  }
+  .date-today-btn {
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: linear-gradient(90deg,var(--accent),var(--gender));
+    color: #fff;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+    transition: transform 0.15s;
+  }
+  .date-today-btn:hover { transform: translateY(-1px); }
+  .date-today-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+  /* 非今日数据的橙色横幅提示 */
+  .history-banner {
+    margin: 8px 24px 0 24px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: linear-gradient(90deg,#fff7ed,#ffedd5);
+    border: 1px solid #fdba74;
+    color: #9a3412;
+    font-size: 13px;
+    font-weight: 500;
+    display: none;
+    align-items: center;
+    gap: 8px;
+  }
+  body[data-theme="women-light"] .history-banner {
+    background: linear-gradient(90deg,#fff1f2,#ffe4e6);
+    border-color: #fda4af;
+    color: #9f1239;
+  }
+  body[data-theme="men-dark"] .history-banner {
+    background: linear-gradient(90deg,rgba(251,146,60,0.12),rgba(249,115,22,0.08));
+    border-color: rgba(251,146,60,0.4);
+    color: #fdba74;
+  }
+  .history-banner.show { display: flex; }
+  .history-banner .hdate {
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.7);
+  }
+  body[data-theme="men-dark"] .history-banner .hdate {
+    background: rgba(251,146,60,0.18);
+  }
+  @media (max-width: 720px) {
+    .date-selector-wrap { padding: 5px 8px; gap: 4px; }
+    .date-selector-wrap label { display: none; }
+    .date-today-btn { font-size: 10px; padding: 4px 8px; }
+  }
+
 </style>
 </head>
 <body data-theme="men-dark">
@@ -1536,6 +1633,12 @@
         <span class="pulse-dot"></span>
         <span id="lastUpdateText">加载中...</span>
       </div>
+      <!-- 【28天回溯】日期选择器：input type=date + 回到今天按钮 -->
+      <div class="date-selector-wrap" title="选择日期回溯查看 28 天内的 T-1 总结 / T0 预告">
+        <label for="datePicker">📅 回溯</label>
+        <input type="date" id="datePicker" class="date-input" />
+        <button type="button" class="date-today-btn" id="dateTodayBtn" onclick="setArchiveDate(null,true)">☀️ 今天</button>
+      </div>
       <button class="btn" onclick="refreshData()" id="refreshBtn">
         🔄 刷新
       </button>
@@ -1544,6 +1647,16 @@
       </button>
     </div>
   </div>
+</div>
+
+<!-- 【28天回溯】非今日数据的橙色醒目提示 -->
+<div class="history-banner" id="historyBanner" role="alert">
+  🕰️ 您正在查看
+  <span class="hdate" id="historyBannerDate">—</span>
+  的历史归档数据（T-1已结束比赛总结 / T0该日预告口径均按当日时间线）
+  · 回到今日按
+  <strong>☀️ 今天</strong>
+  按钮
 </div>
 
 <div class="app-shell">
@@ -2665,7 +2778,7 @@ async function openTeamModal(teamId, updateHash = true) {
 // --- ⑥ hash路由解析/写入（#men / #women / #team=<id> 可组合，刷新不丢失）---
 function parseAppHash() {
   const h = (location.hash || '').replace(/^#/, '').trim();
-  const result = { gender: CURRENT_GENDER || 'men', team: null };
+  const result = { gender: CURRENT_GENDER || 'men', team: null, date: null };
   if (!h) return result;
   // 支持两种格式：#team=id,gender=women 或者 #women#team=id 或者逗号 / 分号 分隔
   const parts = h.split(/[&,;]/).filter(Boolean);
@@ -2676,6 +2789,11 @@ function parseAppHash() {
       try { result.team = decodeURIComponent(p.slice(5)); } catch(e) { result.team = p.slice(5); }
       return;
     }
+    if (p.startsWith('date=')) {
+      const dv = p.slice(5).trim();
+      if (/^\d{4}-\d{2}-\d{2}$/.test(dv)) result.date = dv;
+      return;
+    }
     if (p.startsWith('region=')) return;  // 向后兼容
   });
   return result;
@@ -2684,6 +2802,7 @@ function writeAppHash(obj, replace) {
   const parts = [];
   if (obj.gender && obj.gender !== 'men') parts.push(obj.gender);
   if (obj.team) parts.push('team=' + encodeURIComponent(obj.team));
+  if (obj.date) parts.push('date=' + obj.date);
   const hash = parts.length ? '#' + parts.join('&') : '';
   if (replace) history.replaceState(null, '', hash);
   else history.pushState(null, '', hash);
@@ -2728,26 +2847,205 @@ document.addEventListener('DOMContentLoaded', async function initApp() {
   document.title = CURRENT_GENDER === 'men'
     ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
     : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
-  // popstate 监听（浏览器前进/后退按钮→刷新tab/球队弹窗）
+  // popstate 监听（浏览器前进/后退按钮→刷新tab/球队弹窗/归档日期）
   window.addEventListener('popstate', async () => {
     const cur = parseAppHash();
+    // 日期变化：直接应用当前date hash（不重写hash，因为hash已经变了）
+    const todayStr = getTodayStr();
+    const wantDate = (cur.date && cur.date !== todayStr) ? cur.date : null;
+    const dateChanged = wantDate !== CURRENT_ARCHIVE_DATE;
+    if (dateChanged) {
+      CURRENT_ARCHIVE_DATE = wantDate;
+      updateHistoryBanner(wantDate);
+    }
+    let loaded = null;
     if (cur.gender !== CURRENT_GENDER) {
-      await setGender(cur.gender, false);
+      loaded = await setGender(cur.gender, false);  // 内部会loadData（带CURRENT_ARCHIVE_DATE）
+    } else if (dateChanged) {
+      loaded = await loadData(CURRENT_GENDER, wantDate);
     } else {
       if (!cur.team) closeTeamModal(true);
     }
     if (cur.team) openTeamModalByHash(cur.team);
+    return loaded;
   });
+  // 日期选择器初始化（archive_index min/max + 事件）
+  initDatePicker();
+  if (h.date) CURRENT_ARCHIVE_DATE = h.date;  // hash里有date→暂存，loadData里会应用
   // 等数据加载完后，如果有team hash就打开弹窗
   window.__APP_INIT_TEAM__ = h.team;
 });
 
-// 改造loadData的callback：数据加载完成后→渲染大洲栏徽章，然后处理team hash
+// ================ 【28天回溯】日期选择器核心逻辑 ================
+let CURRENT_ARCHIVE_DATE = null;   // null = 今日; 'YYYY-MM-DD' = 历史归档日
+let ARCHIVE_INDEX_CACHE = null;
+
+function _fmt2(n) { return String(n).padStart(2,'0'); }
+function getTodayStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${_fmt2(d.getMonth()+1)}-${_fmt2(d.getDate())}`;
+}
+
+/**
+ * 根据 gender + 选中日期拼 dashboard JSON URL
+ *   - 今日模式：data/dashboard.json / data/dashboard-women.json（同时尝试/api后端）
+ *   - 历史模式：data/archive/YYYY-MM-DD/dashboard[-women].json
+ */
+function getArchiveDashboardUrl(gender, dateStr) {
+  const fname = (gender === 'women') ? 'dashboard-women.json' : 'dashboard.json';
+  const todayStr = getTodayStr();
+  if (dateStr && dateStr !== todayStr) {
+    return `data/archive/${dateStr}/${fname}`;
+  }
+  return `data/${fname}`;
+}
+
+/** 尝试加载数据（三级降级：仅今日支持/api后端） */
+async function loadArchiveOrToday(gender, dateStr) {
+  const staticUrl = getArchiveDashboardUrl(gender, dateStr);
+  const todayStr = getTodayStr();
+  const isTodayMode = !dateStr || dateStr === todayStr;
+  // 1. 动态后端（仅今日）
+  if (isTodayMode) {
+    const serverPath = `/api/dashboard?gender=${encodeURIComponent(gender)}`;
+    const d = await tryFetchJson(serverPath);
+    if (d && Array.isArray(d.yesterdayMatches)) return { data: d, loadedFrom: 'server', url: serverPath };
+  }
+  // 2. 静态绝对路径
+  let d = await tryFetchJson(staticUrl);
+  if (d && Array.isArray(d.yesterdayMatches)) return { data: d, loadedFrom: 'static', url: staticUrl };
+  // 3. 静态相对路径
+  d = await tryFetchJson('./' + staticUrl);
+  if (d && Array.isArray(d.yesterdayMatches)) return { data: d, loadedFrom: 'static-relative', url: './' + staticUrl };
+  return null;
+}
+
+/** 同步横幅样式 / 按钮状态 / 输入框值 */
+function updateHistoryBanner(dateStr) {
+  const banner = document.getElementById('historyBanner');
+  const dateTxt = document.getElementById('historyBannerDate');
+  const todayBtn = document.getElementById('dateTodayBtn');
+  const picker = document.getElementById('datePicker');
+  const todayStr = getTodayStr();
+  const isHist = dateStr && dateStr !== todayStr;
+  if (banner) banner.classList.toggle('show', !!isHist);
+  if (dateTxt) dateTxt.textContent = dateStr || todayStr;
+  if (todayBtn) todayBtn.disabled = !isHist;
+  if (picker && picker.value !== (dateStr || todayStr)) picker.value = dateStr || todayStr;
+  // 同步 lastUpdate 文案（提示"归档日期"）
+  const label = document.querySelector('[data-archived-label]');
+  if (!label) {
+    const lut = document.getElementById('lastUpdateText');
+    if (lut) lut.setAttribute('data-archived-label', '1');
+  }
+}
+
+/**
+ * 切换归档日期主入口
+ *   setArchiveDate(null)   → 回到今天
+ *   setArchiveDate('2026-08-05') → 回溯某天
+ */
+async function setArchiveDate(dateStr, fromUserClick) {
+  const todayStr = getTodayStr();
+  const target = (!dateStr || dateStr === todayStr) ? null : dateStr;
+  // 合法性校验：YYYY-MM-DD 格式且在过去28天内
+  if (target) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(target)) {
+      showToast('日期格式无效：需要 YYYY-MM-DD', 'error', 4000);
+      return;
+    }
+    const t = new Date(target + 'T00:00:00');
+    const today = new Date(todayStr + 'T00:00:00');
+    const diffDays = Math.round((today.getTime() - t.getTime()) / 86400000);
+    if (isNaN(diffDays) || diffDays < 0) {
+      showToast('不能选择未来日期', 'warn', 4000);
+      updateHistoryBanner(CURRENT_ARCHIVE_DATE);
+      return;
+    }
+    if (diffDays > 28) {
+      showToast(`仅支持回溯最近 28 天内的日期（当前所选是 ${diffDays} 天前）`, 'warn', 5000);
+      updateHistoryBanner(CURRENT_ARCHIVE_DATE);
+      return;
+    }
+  }
+  CURRENT_ARCHIVE_DATE = target;
+  // 更新 hash
+  const cur = parseAppHash();
+  if (target) cur.date = target; else delete cur.date;
+  writeAppHash(cur, !fromUserClick);
+  // 更新 UI（横幅 / 按钮 / input值）
+  updateHistoryBanner(target);
+  // 重加载该日数据
+  return await loadData(CURRENT_GENDER, target);
+}
+
+/** 初始化日期选择器控件：min/max、change事件、archive_index可用日期提示 */
+async function initDatePicker() {
+  const picker = document.getElementById('datePicker');
+  if (!picker) return;
+  const todayStr = getTodayStr();
+  const today = new Date(todayStr + 'T00:00:00');
+  const dMin = new Date(today.getTime() - 27 * 86400000);
+  const minStr = `${dMin.getFullYear()}-${_fmt2(dMin.getMonth()+1)}-${_fmt2(dMin.getDate())}`;
+  picker.min = minStr;
+  picker.max = todayStr;
+  picker.value = CURRENT_ARCHIVE_DATE || todayStr;
+  // 尝试从 archive_index.json 拿更准的 min/max 和已归档日期提示
+  try {
+    ARCHIVE_INDEX_CACHE = await tryFetchJson('data/archive/archive_index.json');
+    if (ARCHIVE_INDEX_CACHE && typeof ARCHIVE_INDEX_CACHE === 'object') {
+      if (ARCHIVE_INDEX_CACHE.selectorMinDate) picker.min = ARCHIVE_INDEX_CACHE.selectorMinDate;
+      if (ARCHIVE_INDEX_CACHE.selectorMaxDate) picker.max = ARCHIVE_INDEX_CACHE.selectorMaxDate;
+    }
+  } catch(e) { /* 无archive说明是首次构建，忽略 */ }
+  // change事件：用户选日期→setArchiveDate
+  picker.addEventListener('change', (e) => {
+    const v = e.target.value;
+    if (v) setArchiveDate(v, true);
+  });
+  updateHistoryBanner(CURRENT_ARCHIVE_DATE);
+}
+
+// 改造loadData的callback：支持archive日期参数 → 取对应URL → 加载完渲染大洲栏+球队弹窗
 const _origLoadData = loadData;
-loadData = async function(genderOverride) {
+loadData = async function(genderOverride, dateOverride) {
   const gender = genderOverride || CURRENT_GENDER || 'men';
-  // 执行原loadData，它会设置APP_DATA和render页面
-  const res = await _origLoadData(gender);
+  const date = (typeof dateOverride !== 'undefined') ? dateOverride : CURRENT_ARCHIVE_DATE;
+  const todayStr = getTodayStr();
+  const isHist = date && date !== todayStr;
+
+  let loaded = null;
+  try {
+    loaded = await loadArchiveOrToday(gender, date);
+  } catch(e) {
+    console.error('archive load error:', e);
+  }
+
+  if (loaded && loaded.data) {
+    APP_DATA = loaded.data;
+    APP_DATA._loadedFrom = `${loaded.loadedFrom}${isHist ? '·archive:'+date : ''}`;
+    render();
+    // 同步lastUpdate文案，加归档日期前缀
+    const lut = document.getElementById('lastUpdateText');
+    if (lut) {
+      const ts = APP_DATA.lastUpdate || APP_DATA.generatedAt || '—';
+      const baseTxt = isHist ? `📅 归档 ${date}` : '最后更新';
+      lut.innerHTML = `${baseTxt} · <strong>${typeof ts === 'string' ? ts.slice(0,16).replace('T',' ') : ts}</strong>${isHist ? '（按该日时间线展示T-1总结/T0预告）' : ''}`;
+    }
+  } else {
+    if (isHist) {
+      showToast(`⚠️ ${date} 归档数据不存在：这一天可能还未开始每日构建归档（每天9:00自动保存）。仅支持查看从今天起往前有归档的日期。`, 'warn', 10000);
+      // 回滚到今日
+      CURRENT_ARCHIVE_DATE = null;
+      updateHistoryBanner(null);
+      const cur = parseAppHash(); delete cur.date; writeAppHash(cur, true);
+      return await loadData(gender, null);
+    } else {
+      showToast(`数据加载失败（${gender === 'men' ? '男足' : '女足'}版）：既没有可用的后端服务，也没有找到预生成的静态数据文件。请在项目根目录运行 \`python3 generate_static.py\` 或启动 \`python3 server.py\` 后再访问。`, 'error', 15000);
+      return null;
+    }
+  }
+
   // 渲染左侧大洲栏（从APP_DATA.continentBadges取）
   const badges = (APP_DATA && APP_DATA.continentBadges) ? APP_DATA.continentBadges
     : (APP_DATA.matchesByContinent ? {
@@ -2766,15 +3064,14 @@ loadData = async function(genderOverride) {
         },
       } : null);
   renderContinentNav(badges);
-  // 大洲栏初始化激活当前region
   filterByRegion(CURRENT_REGION || 'all');
-  // 如果初始化时有#team=xxx hash→打开弹窗
+  // 如果初始化时有#team=xxx hash→打开弹窗（仅非archive路径延迟打开，避免和日期切换冲突）
   if (window.__APP_INIT_TEAM__) {
     const id = window.__APP_INIT_TEAM__;
     delete window.__APP_INIT_TEAM__;
-    setTimeout(() => openTeamModalByHash(id), 400);
+    setTimeout(() => openTeamModalByHash(id), 450);
   }
-  return res;
+  return loaded ? loaded.data : null;
 };
 
 // 初始化（DOMContentLoaded已经在上面绑定了，原loadData调用被我们覆盖；这里保留调用以防DOMContentLoaded已触发）
@@ -2802,8 +3099,13 @@ if (document.readyState === 'loading') {
     document.title = CURRENT_GENDER === 'men'
       ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
       : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
+    // 日期选择器 + hash日期应用
+    await initDatePicker();
+    const todayStr = getTodayStr();
+    if (h.date && h.date !== todayStr) CURRENT_ARCHIVE_DATE = h.date;
+    updateHistoryBanner(CURRENT_ARCHIVE_DATE);
     if (h.team) window.__APP_INIT_TEAM__ = h.team;
-    await loadData(CURRENT_GENDER);
+    await loadData(CURRENT_GENDER, CURRENT_ARCHIVE_DATE);
   })();
 }
 </script>

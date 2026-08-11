@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-11T11:02:24.516799",
-  "generatedAt": "2026-08-11T11:02:26.707176",
+  "lastUpdate": "2026-08-11T11:12:43.541562",
+  "generatedAt": "2026-08-11T11:12:45.018308",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "australia": [
@@ -67,10 +67,10 @@
       "venue": "SD公鹿FC主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-斯蒂芬·卢西",
-          "name": "斯蒂芬·卢西",
-          "country": "新西兰",
-          "age": 40
+          "id": "dqd-阿列克斯·金",
+          "name": "阿列克斯·金",
+          "country": "澳大利亚",
+          "age": 39
         },
         "history": [
           {
@@ -93,29 +93,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -127,6 +105,28 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
           }
         ],
         "statistics": {
@@ -135,7 +135,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.6",
+          "avgVar": "1.4",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -148,10 +148,11 @@
         ]
       },
       "features": [
-        "常规联赛对决"
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
       "homeRecentForm": [
         "负",
         "负",
@@ -172,11 +173,11 @@
         "awayWins": 1
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 38,
+      "heatScore": 47,
       "heatBreakdown": {
         "league": 16,
         "rank": 11,
-        "focal": 6,
+        "focal": 15,
         "h2hRecent": 5
       },
       "isHotMatch": false
@@ -228,10 +229,10 @@
       "venue": "昆士兰狮主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-克里斯·比斯",
-          "name": "克里斯·比斯",
+          "id": "dqd-肖恩·埃文斯",
+          "name": "肖恩·埃文斯",
           "country": "澳大利亚",
-          "age": 41
+          "age": 43
         },
         "history": [
           {
@@ -254,7 +255,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -276,7 +277,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -296,7 +297,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.4",
+          "avgVar": "1.0",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -310,10 +311,11 @@
       },
       "features": [
         "昆士兰狮联赛排名靠前",
-        "主裁尺度偏严，注意出牌风险"
+        "主裁尺度偏严，注意出牌风险",
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 4,
+      "intensity": "★★★★",
       "homeRecentForm": [
         "胜",
         "负",
@@ -334,11 +336,11 @@
         "awayWins": 0
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 38,
+      "heatScore": 47,
       "heatBreakdown": {
         "league": 16,
         "rank": 14,
-        "focal": 6,
+        "focal": 15,
         "h2hRecent": 2
       },
       "isHotMatch": false
@@ -416,40 +418,40 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
             "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
           }
         ],
         "statistics": {
@@ -471,10 +473,10 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "双方实力接近，值得关注"
       ],
-      "predictedDifficulty": 3,
-      "intensity": "★★★",
+      "predictedDifficulty": 5,
+      "intensity": "★★★★★",
       "homeRecentForm": [
         "平",
         "负",
@@ -495,11 +497,11 @@
         "awayWins": 1
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 31,
+      "heatScore": 34,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 12,
+        "focal": 15,
         "h2hRecent": 3
       },
       "isHotMatch": false
@@ -508,7 +510,7 @@
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
     "yesterdaySummary": "",
-    "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 塔什干棉农 vs 伊尔比德侯赛因（塔什干棉农联赛排名靠前）",
+    "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 阿拉木图凯拉特 vs 索菲亚列夫斯基（阿拉木图凯拉特联赛排名靠前）；🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）",
     "yesterdayCount": 0,
     "todayCount": 34,
     "fullReport": true,
@@ -569,10 +571,10 @@
           "venue": "SD公鹿FC主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-斯蒂芬·卢西",
-              "name": "斯蒂芬·卢西",
-              "country": "新西兰",
-              "age": 40
+              "id": "dqd-阿列克斯·金",
+              "name": "阿列克斯·金",
+              "country": "澳大利亚",
+              "age": 39
             },
             "history": [
               {
@@ -595,29 +597,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -629,6 +609,28 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -637,7 +639,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.6",
+              "avgVar": "1.4",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -650,10 +652,11 @@
             ]
           },
           "features": [
-            "常规联赛对决"
+            "主裁尺度偏严，注意出牌风险",
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
           "homeRecentForm": [
             "负",
             "负",
@@ -674,11 +677,11 @@
             "awayWins": 1
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 38,
+          "heatScore": 47,
           "heatBreakdown": {
             "league": 16,
             "rank": 11,
-            "focal": 6,
+            "focal": 15,
             "h2hRecent": 5
           },
           "isHotMatch": false
@@ -730,10 +733,10 @@
           "venue": "昆士兰狮主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-克里斯·比斯",
-              "name": "克里斯·比斯",
+              "id": "dqd-肖恩·埃文斯",
+              "name": "肖恩·埃文斯",
               "country": "澳大利亚",
-              "age": 41
+              "age": 43
             },
             "history": [
               {
@@ -756,7 +759,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -778,7 +781,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -798,7 +801,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.4",
+              "avgVar": "1.0",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -812,10 +815,11 @@
           },
           "features": [
             "昆士兰狮联赛排名靠前",
-            "主裁尺度偏严，注意出牌风险"
+            "主裁尺度偏严，注意出牌风险",
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 4,
+          "intensity": "★★★★",
           "homeRecentForm": [
             "胜",
             "负",
@@ -836,11 +840,11 @@
             "awayWins": 0
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 38,
+          "heatScore": 47,
           "heatBreakdown": {
             "league": 16,
             "rank": 14,
-            "focal": 6,
+            "focal": 15,
             "h2hRecent": 2
           },
           "isHotMatch": false
@@ -918,40 +922,40 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
                 "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
               }
             ],
             "statistics": {
@@ -973,10 +977,10 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "双方实力接近，值得关注"
           ],
-          "predictedDifficulty": 3,
-          "intensity": "★★★",
+          "predictedDifficulty": 5,
+          "intensity": "★★★★★",
           "homeRecentForm": [
             "平",
             "负",
@@ -997,11 +1001,11 @@
             "awayWins": 1
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 31,
+          "heatScore": 34,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 12,
+            "focal": 15,
             "h2hRecent": 3
           },
           "isHotMatch": false

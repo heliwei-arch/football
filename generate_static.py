@@ -40,6 +40,48 @@ def save_json(relpath, obj):
     print(f"  ✅ 写入 {relpath}")
 
 
+# ================= 日期回溯归档（28天选择器）=================
+def _fmt_date(d_obj):
+    return f"{d_obj.year:04d}-{d_obj.month:02d}-{d_obj.day:02d}"
+
+def _parse_date(s):
+    try:
+        parts = s.split("-")
+        return datetime(int(parts[0]), int(parts[1]), int(parts[2]))
+    except Exception:
+        return None
+
+def _date_n_days_ago(n, today=None):
+    """返回 N 天前的日期字符串 YYYY-MM-DD（today=datetime对象，默认今天）"""
+    from datetime import timedelta
+    t = today or datetime.now()
+    return _fmt_date(t - timedelta(days=n))
+
+def save_archive_day(date_str, timestamp):
+    """把当天构建的 dashboard[-women].json/teams.json 复制一份到 data/archive/{date_str}/ 用于日期选择器回溯"""
+    arch_dir = f"archive/{date_str}"
+    # 逐个读取当前文件再写入archive（跨fs更稳，不依赖shutil.copy）
+    for fname in ("dashboard.json", "dashboard-women.json", "teams.json", "health.json"):
+        src = os.path.join(DATA_DIR, fname)
+        if not os.path.exists(src):
+            continue
+        try:
+            with open(src, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        save_json(f"{arch_dir}/{fname}", data)
+    # 当日归档索引条目（用于archive_index.json counts展示）
+    try:
+        with open(os.path.join(DATA_DIR, "health.json"), "r", encoding="utf-8") as f:
+            h = json.load(f)
+        counts = h.get("counts", {})
+    except Exception:
+        counts = {}
+    return {"date": date_str, "archivedAt": timestamp, "counts": counts,
+            "hasArchive": True}
+
+
 # ------------- 懂球帝 → 前端兼容结构 Adapter -------------
 
 def _region_flag(region, league_name, area_name):
@@ -808,6 +850,74 @@ def main():
         tp_women_r = [m for m in women_t if m.get("region") == region]
         save_dashboard(f"dashboard-{region}-women.json", ym_women_r, tp_women_r, women_push_digest,
                        leagues={region: LEAGUES.get(region, {})})
+
+    # 9. 28天回溯归档（archive/{date}/ 每日独立JSON + archive_index.json）
+    from datetime import timedelta as _td
+    today_dt_obj = getToday()
+    today_date_str = formatDate(today_dt_obj)  # YYYY-MM-DD（getToday返回datetime对象，formatDate转字符串）
+    # 9.1 尝试从 Pages 在线恢复旧 archive_index（跨 Actions run 持久化）
+    old_archive_url = (os.environ.get("OLD_PUSH_HISTORY_URL", "") or "").replace("push-history.json", "archive/archive_index.json").strip()
+    old_index = {"days": [], "retentionDays": 30}
+    try:
+        restored = _dl_json(old_archive_url) if old_archive_url else None
+        if isinstance(restored, dict) and isinstance(restored.get("days"), list):
+            old_index = restored
+            print(f"  ✅ 从 Pages 恢复历史归档索引：{len(old_index['days'])} 天")
+    except Exception:
+        pass
+    # 9.2 再尝试本地 cache 里的旧 archive_index（本地构建兜底）
+    cache_arch = os.path.join(BASE_DIR, "cache_archive_index.json")
+    if not old_index.get("days") and os.path.exists(cache_arch):
+        try:
+            with open(cache_arch, "r", encoding="utf-8") as f:
+                cached = json.load(f)
+                if isinstance(cached, dict) and isinstance(cached.get("days"), list):
+                    old_index = cached
+                    print(f"  ℹ️  从本地 cache_archive_index 恢复：{len(old_index['days'])} 天")
+        except Exception:
+            pass
+    # 9.3 保存当日归档到 data/archive/YYYY-MM-DD/
+    today_entry = save_archive_day(today_date_str, timestamp)
+    # 9.4 合并old_index.days + today_entry（按date去重，当日覆盖旧条目）
+    days_by_key = OrderedDict()
+    for entry in (old_index.get("days") or []):
+        if isinstance(entry, dict) and entry.get("date"):
+            days_by_key[entry["date"]] = entry
+    days_by_key[today_date_str] = today_entry  # 今日覆盖
+    # 9.5 保留<=30天，删除超期目录（28天需求+2天冗余）
+    keep_cutoff = today_dt_obj - _td(days=30)
+    kept_days = []
+    for d_str, entry in list(days_by_key.items()):
+        d_dt = _parse_date(d_str)
+        if d_dt and d_dt >= keep_cutoff:
+            kept_days.append(entry)
+        else:
+            # 超期：尝试删除本地archive目录
+            try:
+                arch_folder = os.path.join(DATA_DIR, "archive", d_str)
+                if os.path.isdir(arch_folder):
+                    import shutil as _sh
+                    _sh.rmtree(arch_folder, ignore_errors=True)
+            except Exception:
+                pass
+    kept_days.sort(key=lambda e: e.get("date", ""), reverse=True)  # 日期降序（今天在前）
+    # 9.6 保存 archive_index.json（前端日期选择器取可用列表用）
+    archive_index = OrderedDict([
+        ("lastUpdate", timestamp),
+        ("retentionDays", 30),
+        ("selectorMinDate", _date_n_days_ago(27, today_dt_obj)),  # 28天窗口：今天+前27天
+        ("selectorMaxDate", today_date_str),
+        ("days", kept_days),
+        ("_note", "日期选择器：前端用 min/max 限制为28天；取数 URL = data/archive/<YYYY-MM-DD>/dashboard.json"),
+    ])
+    save_json("archive/archive_index.json", archive_index)
+    # 本地缓存archive_index供下次无Pages环境兜底
+    try:
+        with open(cache_arch, "w", encoding="utf-8") as f:
+            json.dump(archive_index, f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
+    print(f"  📅 28天回溯归档：已保留 {len(kept_days)} 天（最早 {kept_days[-1]['date'] if kept_days else today_date_str}）")
 
     print(f"\n🎉 构建完成：男足 默认昨日 {len(men_y)} 场 / 今日 {len(men_t)} 场预告")
     print(f"           女足 独立页 昨日 {len(women_y)} 场 / 今日 {len(women_t)} 场预告  "
