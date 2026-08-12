@@ -282,6 +282,8 @@ def adapt_yesterday(dqd_list, region):
             "awayTactics": m.get("awayTactics"),
             "intensity": m.get("intensity", "★★★"),
             "features": m.get("features", ""),
+            "marketExpectation": m.get("marketExpectation"),
+            "t1Comparison": m.get("t1Comparison"),
             "_dataSource": m.get("dataSource", "dongqiudi-real"),
         })
     return out

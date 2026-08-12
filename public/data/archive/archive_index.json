@@ -1,20 +1,20 @@
 {
-  "lastUpdate": "2026-08-12T16:15:25.874837",
+  "lastUpdate": "2026-08-12T20:49:32.857689",
   "retentionDays": 30,
   "selectorMinDate": "2026-07-16",
   "selectorMaxDate": "2026-08-12",
   "days": [
     {
       "date": "2026-08-12",
-      "archivedAt": "2026-08-12T16:15:25.874837",
+      "archivedAt": "2026-08-12T20:49:32.857689",
       "counts": {
         "men": {
-          "yesterday": 2,
+          "yesterday": 23,
           "today": 38
         },
         "women": {
-          "yesterday": 0,
-          "today": 1
+          "yesterday": 2,
+          "today": 2
         }
       },
       "hasArchive": true

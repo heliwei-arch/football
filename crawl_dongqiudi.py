@@ -12,6 +12,9 @@ import urllib.parse
 from datetime import datetime, timedelta
 from collections import OrderedDict
 
+# 博彩真实赔率抓取（football-data.co.uk）
+from odds_fetcher import OddsFetcher, evaluate_handicap, evaluate_overunder, _fmt_handicap_cn, _fmt_q as _fmt_q_odds
+
 # 按区域分的真实裁判池 - 严格对应区域，杜绝跨区域执法（如亚冠配英格兰裁判这种幻觉）
 # 每个裁判自带一个"严格度种子"，用于生成风格一致的5场历史数据（避免纯随机）
 REGIONAL_REFEREES = {
@@ -459,7 +462,7 @@ def build_match_stats(dqd_match, status):
     }
 
 
-def dqd_to_yesterday_match(dqd_match, region):
+def dqd_to_yesterday_match(dqd_match, region, odds_fetcher=None):
     """把懂球帝的一场 Played 比赛转成 data.py 的昨日分析格式"""
     mid = dqd_match.get("match_id")
     cmp_data = dqd_match.get("competition") or {}
@@ -510,6 +513,30 @@ def dqd_to_yesterday_match(dqd_match, region):
     home_tactics = determine_formation(hid, str(mid), True, a_score, b_score, hr)
     away_tactics = determine_formation(aid, str(mid), False, b_score, a_score, ar)
 
+    # 🔮 市场预期（模型）
+    market_expectation = build_market_expectation(dqd_match, region, referee_style=style)
+
+    # 🎰 真实赔率匹配
+    real_odds = None
+    if odds_fetcher is not None:
+        kickoff_str = dqd_match.get("start_play", "") or ""
+        match_date = kickoff_str[:10] if len(kickoff_str) >= 10 else None
+        try:
+            real_odds = odds_fetcher.match_odds(
+                home_cn=ta.get("name", ""),
+                away_cn=tb.get("name", ""),
+                match_date=match_date,
+                league_hint=cmp_data.get("name", ""),
+            )
+        except Exception as e:
+            print(f"[crawl_dongqiudi] 昨日场真实赔率匹配失败 ({ta.get('name','')} vs {tb.get('name','')}): {e}")
+            real_odds = None
+    if real_odds:
+        _enrich_market_with_real_odds(market_expectation, real_odds)
+
+    # T-1 对比：盘口打穿 + 大小球结果
+    t1_comparison = _build_t1_comparison(market_expectation, real_odds, a_score, b_score)
+
     return {
         "id": str(mid),
         "league": cmp_data.get("name") or "未知联赛",
@@ -522,8 +549,8 @@ def dqd_to_yesterday_match(dqd_match, region):
             "name": ta.get("name", "?"), "logo": ta.get("logo", ""), "score": a_score,
             "teamId": hid,
             "rank": hr,
-            "appLogo": home_logo,           # 新增：FT早知道App字母队徽 {text, colors, countryFlag}
-            "countryFlag": home_logo["countryFlag"],  # 新增：国旗emoji
+            "appLogo": home_logo,
+            "countryFlag": home_logo["countryFlag"],
         },
         "awayTeam": {
             "name": tb.get("name", "?"), "logo": tb.get("logo", ""), "score": b_score,
@@ -541,8 +568,10 @@ def dqd_to_yesterday_match(dqd_match, region):
             "history": history,
             **style,
         },
-        "homeTactics": home_tactics,  # 新增：主队4-3-3/4-2-3-1等战术
-        "awayTactics": away_tactics,  # 新增：客队
+        "homeTactics": home_tactics,
+        "awayTactics": away_tactics,
+        "marketExpectation": market_expectation,
+        "t1Comparison": t1_comparison,
         "dataSource": "dongqiudi-real",
     }
 
@@ -827,7 +856,96 @@ def build_market_expectation(dqd_match, region, referee_style=None):
     }
 
 
-def dqd_to_today_preview(dqd_match, region):
+def _enrich_market_with_real_odds(market_expectation, real_odds):
+    """
+    把真实博彩赔率合并到模型推算的 marketExpectation 中：
+    - 如果有真实盘口线（AHh/OU），覆盖模型线
+    - 增加 bookmakers 字段（多家公司赔率列表）
+    - 增加 realOddsMeta（数据源/共识线说明）
+    - 保留模型的meta作为modelMeta
+    不做深拷贝，直接在传入对象上修改并返回。
+    """
+    if not real_odds:
+        return market_expectation
+    # 1. 覆盖盘口线（让球/大小球）
+    ah = real_odds.get("ahLine")
+    ou = real_odds.get("ouLine")
+    if ah is not None:
+        # 覆盖 handicap
+        m_hc = market_expectation["handicap"]
+        m_hc["line"] = ah
+        m_hc["lean"] = "home" if ah > 0.05 else ("away" if ah < -0.05 else "draw")
+        if abs(ah) < 0.125:
+            label = "平手"
+        elif ah > 0:
+            label = f"主让{_fmt_q_odds(ah)}"
+        else:
+            label = f"客让{_fmt_q_odds(-ah)}"
+        m_hc["label"] = label
+        # meta记录
+        market_expectation["meta"]["lineSource"] = "football-data.co.uk"
+    if ou is not None:
+        m_g = market_expectation["totalGoals"]
+        m_g["line"] = ou
+        m_g["label"] = f"{_fmt_q_odds(ou)}球"
+        # 大小球方向保留模型lean（因为real_odds不带方向倾向，只提供线）
+    # 注意：角球数据 football-data.co.uk 不提供，保留模型预测值不变
+
+    # 2. 附加博彩公司赔率
+    market_expectation["bookmakers"] = real_odds.get("bookmakers", [])
+    market_expectation["realOddsMeta"] = {
+        "source": real_odds.get("source"),
+        "div": real_odds.get("div"),
+        "league": real_odds.get("league"),
+        "matchDate": real_odds.get("matchDate"),
+        "homeEn": real_odds.get("homeEn"),
+        "awayEn": real_odds.get("awayEn"),
+        "bookmakerCount": real_odds.get("bookmakerCount", 0),
+        "hasLiveResult": real_odds.get("hasLiveResult", False),
+    }
+    return market_expectation
+
+
+def _build_t1_comparison(market_expectation, real_odds, home_score=None, away_score=None):
+    """
+    构建T-1对比结果（已结束比赛的盘口打穿 vs 大小球预测对比）。
+    优先用 real_odds.t1Comparison；若 real_odds 无 liveResult，但有home/away score，
+    则用 market_expectation 的模型盘口线计算一个模型盘版本。
+    返回 dict 或 None。
+    """
+    if home_score is None or away_score is None:
+        # 看 real_odds 里是否有
+        if real_odds and real_odds.get("hasLiveResult"):
+            return real_odds.get("t1Comparison")
+        return None
+    fthg = int(home_score)
+    ftag = int(away_score)
+    # 优先使用真实盘口线
+    if real_odds and real_odds.get("ahLine") is not None:
+        ah_line = real_odds["ahLine"]
+        ou_line = real_odds.get("ouLine", 2.5)
+        source = "football-data.co.uk"
+    else:
+        # 回退到模型线
+        ah_line = market_expectation["handicap"]["line"]
+        ou_line = market_expectation["totalGoals"]["line"]
+        source = "model"
+    hc = evaluate_handicap(ah_line, fthg, ftag)
+    ou = evaluate_overunder(ou_line, fthg, ftag)
+    return {
+        "fthg": fthg,
+        "ftag": ftag,
+        "total": fthg + ftag,
+        "homeMargin": fthg - ftag,
+        "ahLineUsed": ah_line,
+        "ouLineUsed": ou_line,
+        "lineSource": source,
+        "handicap": hc,
+        "overunder": ou,
+    }
+
+
+def dqd_to_today_preview(dqd_match, region, odds_fetcher=None):
     """把懂球帝的一场 Fixture 比赛转成今日预告格式"""
     mid = dqd_match.get("match_id")
     cmp_data = dqd_match.get("competition") or {}
@@ -903,6 +1021,24 @@ def dqd_to_today_preview(dqd_match, region):
 
     # 🔮 市场预期（4维盘口：总进球/让球差/总角球/角球差）
     market_expectation = build_market_expectation(dqd_match, region, referee_style=style)
+
+    # 🎰 真实赔率匹配（football-data.co.uk）
+    real_odds = None
+    if odds_fetcher is not None:
+        kickoff_str = dqd_match.get("start_play", "") or ""
+        match_date = kickoff_str[:10] if len(kickoff_str) >= 10 else None
+        try:
+            real_odds = odds_fetcher.match_odds(
+                home_cn=ta.get("name", ""),
+                away_cn=tb.get("name", ""),
+                match_date=match_date,
+                league_hint=cmp_data.get("name", ""),
+            )
+        except Exception as e:
+            print(f"[crawl_dongqiudi] 真实赔率匹配失败 ({ta.get('name','')} vs {tb.get('name','')}): {e}")
+            real_odds = None
+    if real_odds:
+        _enrich_market_with_real_odds(market_expectation, real_odds)
 
     return {
         "id": str(mid),
@@ -980,6 +1116,13 @@ def fetch_dashboard_data(target_date=None, max_per_region_yesterday=12, max_per_
     t_raw_all = dedup(t_raw_all)
     print(f"[crawl_dongqiudi]  去重后 最近已结束池 {len(y_raw_all)} 场, 今日+明日预告池 {len(t_raw_all)} 场")
 
+    # 初始化赔率抓取器（单例，复用缓存，避免重复下载CSV）
+    odds_fetcher = OddsFetcher(cache_ttl=3600)
+    try:
+        odds_fetcher.load_all()
+    except Exception as e:
+        print(f"[crawl_dongqiudi]  [warn] 赔率数据源加载失败，将全程使用模型兜底: {e}")
+
     # 按区域分组
     def bucketize(raw, played_only=False):
         buckets = {"europe": [], "asia": [], "australia": []}
@@ -1003,10 +1146,10 @@ def fetch_dashboard_data(target_date=None, max_per_region_yesterday=12, max_per_
     for region in ("europe", "asia", "australia"):
         # 昨日：优先按开球时间新→旧，取前N场；不足N就全部展示
         ym = sorted(y_buckets[region], key=lambda x: x.get("start_play", ""), reverse=True)[:max_per_region_yesterday]
-        result["yesterday"][region] = [dqd_to_yesterday_match(m, region) for m in ym]
+        result["yesterday"][region] = [dqd_to_yesterday_match(m, region, odds_fetcher) for m in ym]
         # 今日：按开球时间旧→新
         tm = sorted(t_buckets[region], key=lambda x: x.get("start_play", ""))[:max_per_region_today]
-        result["today"][region] = [dqd_to_today_preview(m, region) for m in tm]
+        result["today"][region] = [dqd_to_today_preview(m, region, odds_fetcher) for m in tm]
         print(f"[crawl_dongqiudi]  区域 {region}: 昨日 {len(result['yesterday'][region])} / 今日 {len(result['today'][region])}")
     return result
 

@@ -715,6 +715,138 @@
   .pill-corners { background: linear-gradient(135deg, #d97706, #f59e0b); }
   .pill-ch      { background: linear-gradient(135deg, #7c3aed, #a78bfa); }
 
+  /* ===== 博彩公司赔率区 ===== */
+  .odds-section {
+    border-bottom: 1px solid var(--border);
+    background: rgba(15,23,42,0.4);
+  }
+  .odds-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+    user-select: none;
+    transition: background 0.15s;
+  }
+  .odds-toggle:hover { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.8); }
+  .odds-toggle .toggle-arrow { transition: transform 0.2s; font-size: 10px; }
+  .odds-toggle.open .toggle-arrow { transform: rotate(180deg); }
+  .odds-toggle .source-tag {
+    font-size: 9px; padding: 1px 6px; border-radius: 4px;
+    background: rgba(16,185,129,0.2); color: #34d399; margin-left: 6px;
+  }
+  .odds-toggle .source-tag.model { background: rgba(251,191,36,0.15); color: #fbbf24; }
+  .odds-grid {
+    display: none;
+    padding: 8px 12px 12px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 6px;
+  }
+  .odds-grid.open { display: grid; }
+  .bookmaker-card {
+    background: rgba(30,41,59,0.7);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+  .bm-head {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+    font-size: 10px;
+  }
+  .bm-flag { font-size: 11px; }
+  .bm-odds-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 2px;
+  }
+  .bm-odds-label { color: rgba(255,255,255,0.4); font-size: 9px; min-width: 20px; }
+  .bm-odds-vals { display: flex; gap: 3px; flex: 1; justify-content: flex-end; }
+  .odd-val {
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 10px;
+    font-weight: 600;
+    min-width: 32px;
+    text-align: center;
+  }
+  .odd-val.home { background: rgba(59,130,246,0.2); color: #93c5fd; }
+  .odd-val.away { background: rgba(239,68,68,0.2); color: #fca5a5; }
+  .odd-val.over { background: rgba(16,185,129,0.2); color: #6ee7b7; }
+  .odd-val.under { background: rgba(251,191,36,0.2); color: #fcd34d; }
+  .odd-line-tag {
+    font-size: 9px;
+    color: rgba(255,255,255,0.5);
+    margin-left: 2px;
+  }
+
+  /* ===== T-1 复盘对比 ===== */
+  .t1-section {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(135deg, rgba(22,163,74,0.06), rgba(245,158,11,0.05));
+  }
+  .t1-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #34d399;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .t1-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .t1-card {
+    background: rgba(30,41,59,0.7);
+    border-radius: 8px;
+    padding: 8px 10px;
+  }
+  .t1-card-head {
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .t1-card-body {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
+  .t1-metric {
+    font-weight: 700;
+    color: #fff;
+  }
+  .t1-arrow { color: rgba(255,255,255,0.3); font-size: 10px; }
+  .t1-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: auto;
+  }
+  .t1-badge.win   { background: rgba(34,197,94,0.25); color: #86efac; }
+  .t1-badge.loss  { background: rgba(239,68,68,0.25); color: #fca5a5; }
+  .t1-badge.push  { background: rgba(148,163,184,0.25); color: #cbd5e1; }
+  .t1-badge.half  { background: rgba(251,191,36,0.25); color: #fde68a; }
+
   .form-section {
     padding: 12px 20px;
     display: grid;
@@ -2032,7 +2164,203 @@ function renderStatBar(label, homeVal, awayVal, suffix = '') {
   `;
 }
 
-// ===== 渲染昨日赛事卡片 =====
+// ===== 赛前市场预期 4维盘口条渲染（公共函数）=====
+function renderMarketBar(me) {
+  if (!me || !me.totalGoals || !me.handicap) return '';
+  // 角球字段可能为undefined（T-1复盘时也显示基本盘口，角球可缺省）
+  const tg = me.totalGoals, hc = me.handicap;
+  const tc = me.totalCorners || {line: '—', lean: ''};
+  const ch = me.cornerHandicap || {line: 0, lean: 'balanced'};
+  const leanMap = {
+    over: '偏大', under: '偏小', balanced: '均衡',
+    home: '主强', away: '客强', draw: '均势'
+  };
+  const fmtNum = v => {
+    if (v === 0 || v === '—') return v === '—' ? '—' : '0';
+    const s = Number(v).toFixed(2).replace(/\.?0+$/, '');
+    return s === '-0' ? '0' : s;
+  };
+  const hcVal = fmtNum(Math.abs(hc.line));
+  const hcSide = hc.line > 0.01 ? '主让' : (hc.line < -0.01 ? '客让' : '平手');
+  const chLine = ch.line || 0;
+  const chVal = fmtNum(Math.abs(chLine));
+  const chSide = chLine > 0.01 ? '主让' : (chLine < -0.01 ? '客让' : '均势');
+  const hcLabel = Math.abs(hc.line) < 0.01 ? '平手' : `${hcSide}${hcVal}`;
+  const chLabel = Math.abs(chLine) < 0.01 ? '角球均势' : `角球${chSide}${chVal}`;
+  return `
+    <div class="market-bar" title="赛前市场预期（真实赔率优先，模型兜底）">
+      <div class="market-pill pill-goals">
+        <div class="pill-icon">⚽</div>
+        <div class="pill-label">总进球</div>
+        <div class="pill-value">${fmtNum(tg.line)}</div>
+        <div class="pill-lean">${leanMap[tg.lean]||''}</div>
+      </div>
+      <div class="market-pill pill-handicap">
+        <div class="pill-icon">↔️</div>
+        <div class="pill-label">让球盘</div>
+        <div class="pill-value">${hcLabel}</div>
+        <div class="pill-lean">${leanMap[hc.lean]||''}</div>
+      </div>
+      <div class="market-pill pill-corners">
+        <div class="pill-icon">🚩</div>
+        <div class="pill-label">角球总数</div>
+        <div class="pill-value">${fmtNum(tc.line)}</div>
+        <div class="pill-lean">${leanMap[tc.lean]||''}</div>
+      </div>
+      <div class="market-pill pill-ch">
+        <div class="pill-icon">↕️</div>
+        <div class="pill-label">角球让差</div>
+        <div class="pill-value">${chLabel}</div>
+        <div class="pill-lean">${leanMap[ch.lean]||''}</div>
+      </div>
+    </div>`;
+}
+
+// ===== 博彩赔率展开区渲染 =====
+function renderOddsSection(me) {
+  if (!me) return '';
+  const books = me.bookmakers || [];
+  const meta = me.realOddsMeta || {};
+  const isReal = meta.lineSource === 'football-data.co.uk';
+  const sourceTag = isReal
+    ? `<span class="source-tag">football-data</span>`
+    : `<span class="source-tag model">模型推算</span>`;
+  if (books.length === 0 && !isReal) return '';
+
+  const fmtOdd = v => {
+    if (v == null) return '—';
+    return Number(v).toFixed(2).replace(/\.?0+$/, '');
+  };
+  const ahLabel = me.handicap ? me.handicap.label : '—';
+  const ouLabel = me.totalGoals ? me.totalGoals.label : '—';
+  const ahLine = Math.abs(me.handicap?.line || 0);
+  const ahLineStr = ahLine < 0.01 ? '0' : fmtOdd(ahLine);
+
+  let booksHtml = '';
+  if (books.length > 0) {
+    booksHtml = books.map(b => {
+      const ah = b.ah || {};
+      const ou = b.ou || {};
+      const ahH = ah.homeClose ?? ah.homeOpen;
+      const ahA = ah.awayClose ?? ah.awayOpen;
+      const ouO = ou.overClose ?? ou.overOpen;
+      const ouU = ou.underClose ?? ou.underOpen;
+      return `
+        <div class="bookmaker-card">
+          <div class="bm-head"><span class="bm-flag">${b.region||'🌍'}</span>${b.name}</div>
+          <div class="bm-odds-row">
+            <span class="bm-odds-label">AH</span>
+            <span class="odd-line-tag">${ahLabel}</span>
+            <div class="bm-odds-vals">
+              <span class="odd-val home" title="主队赔率">${fmtOdd(ahH)}</span>
+              <span class="odd-val away" title="客队赔率">${fmtOdd(ahA)}</span>
+            </div>
+          </div>
+          <div class="bm-odds-row">
+            <span class="bm-odds-label">O/U</span>
+            <span class="odd-line-tag">${ouLabel}</span>
+            <div class="bm-odds-vals">
+              <span class="odd-val over" title="大球赔率">${fmtOdd(ouO)}</span>
+              <span class="odd-val under" title="小球赔率">${fmtOdd(ouU)}</span>
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  // 唯一ID用于展开/收起
+  const uid = 'odds_' + Math.random().toString(36).slice(2, 9);
+  return `
+    <div class="odds-section">
+      <div class="odds-toggle" onclick="toggleOdds(this)" data-target="${uid}">
+        <span>🎰 博彩赔率 ${sourceTag}</span>
+        <span class="toggle-arrow">▼</span>
+      </div>
+      <div class="odds-grid" id="${uid}">${booksHtml || '<div style="color:rgba(255,255,255,0.4);font-size:10px;padding:8px 0;">暂无公司赔率，使用模型兜底</div>'}</div>
+    </div>`;
+}
+
+function toggleOdds(el) {
+  const targetId = el.getAttribute('data-target');
+  const grid = document.getElementById(targetId);
+  const isOpen = grid.classList.contains('open');
+  if (isOpen) {
+    grid.classList.remove('open');
+    el.classList.remove('open');
+  } else {
+    grid.classList.add('open');
+    el.classList.add('open');
+  }
+}
+
+// ===== T-1 复盘对比渲染 =====
+function renderT1Comparison(t1, me) {
+  if (!t1) return '';
+  const hc = t1.handicap || {};
+  const ou = t1.overunder || {};
+  const hcLine = t1.ahLineUsed ?? (me?.handicap?.line);
+  const ouLine = t1.ouLineUsed ?? (me?.totalGoals?.line);
+  const fmtLine = v => {
+    if (v == null) return '—';
+    const a = Math.abs(v);
+    if (a < 0.01) return '平手';
+    const side = v > 0 ? '主让' : '客让';
+    return side + Number(a).toFixed(2).replace(/\.?0+$/, '').replace(/\.25$/, '.25').replace(/\.5$/, '.5').replace(/\.75$/, '.75');
+  };
+  const fmtOu = v => {
+    if (v == null) return '—';
+    return Number(v).toFixed(1).replace(/\.0$/, '') + '球';
+  };
+  const badgeCls = r => {
+    if (r === 'home-win' || r === 'over') return 'win';
+    if (r === 'away-win' || r === 'under') return 'loss';
+    if (r === 'push') return 'push';
+    return 'half';
+  };
+  const hcBadgeIcon = r => {
+    if (r === 'home-win') return '✅ 主赢盘';
+    if (r === 'away-win') return '❌ 客赢盘';
+    if (r === 'home-half-win') return '⚠️ 主赢半';
+    if (r === 'away-half-win') return '⚠️ 客赢半';
+    if (r === 'push') return '➖ 走水';
+    return '—';
+  };
+  const ouBadgeIcon = r => {
+    if (r === 'over') return '✅ 大球';
+    if (r === 'under') return '❌ 小球';
+    if (r === 'over-half') return '⚠️ 大赢半';
+    if (r === 'under-half') return '⚠️ 小赢半';
+    if (r === 'push') return '➖ 走水';
+    return '—';
+  };
+
+  return `
+    <div class="t1-section">
+      <div class="t1-title">📊 T-1 盘口复盘 · ${t1.fthg}-${t1.ftag}</div>
+      <div class="t1-cards">
+        <div class="t1-card">
+          <div class="t1-card-head">↔️ 让球盘 (AH)</div>
+          <div class="t1-card-body">
+            <span class="t1-metric">${fmtLine(hcLine)}</span>
+            <span class="t1-arrow">→</span>
+            <span class="t1-metric">净胜${t1.homeMargin > 0 ? '+' : ''}${t1.homeMargin}</span>
+            <span class="t1-badge ${badgeCls(hc.result)}">${hcBadgeIcon(hc.result)}</span>
+          </div>
+        </div>
+        <div class="t1-card">
+          <div class="t1-card-head">⚽ 大小球 (O/U)</div>
+          <div class="t1-card-body">
+            <span class="t1-metric">${fmtOu(ouLine)}</span>
+            <span class="t1-arrow">→</span>
+            <span class="t1-metric">总${t1.total}球</span>
+            <span class="t1-badge ${badgeCls(ou.result)}">${ouBadgeIcon(ou.result)}</span>
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ===== 昨日赛事卡片 =====
 function renderYesterdayMatch(m) {
   const s = m.stats;
   const eventIcons = { goal: '⚽', yellow: '🟨', red: '🟥' };
@@ -2046,6 +2374,18 @@ function renderYesterdayMatch(m) {
   `).join('');
   
   const analysisHtml = m.analysis.map(a => `<li>${a}</li>`).join('');
+
+  // ===== 赛前市场预期 + T-1复盘 + 博彩赔率 =====
+  const me = m.marketExpectation;
+  const t1 = m.t1Comparison;
+  let marketBarHtml = '';
+  let t1Html = '';
+  let oddsHtml = '';
+  try {
+    marketBarHtml = renderMarketBar(me);
+    t1Html = renderT1Comparison(t1, me);
+    oddsHtml = renderOddsSection(me);
+  } catch(e) { console.warn('[renderYesterdayMatch] market err', e); }
   
   return `
     <div class="match-card" data-region="${m.region}">
@@ -2074,6 +2414,10 @@ function renderYesterdayMatch(m) {
           <div class="team-name">${(m.awayTeam&&m.awayTeam.name)||m.awayTeam||'?'}</div>
         </div>
       </div>
+      
+      ${marketBarHtml}
+      ${t1Html}
+      ${oddsHtml}
       
       <button class="toggle-btn" onclick="toggleDetails(this)">展开详细数据 ▼</button>
       
@@ -2124,56 +2468,14 @@ function renderPreviewMatch(p) {
   
   const h = p.h2hLast5;
 
-  // ===== 赛前市场预期 4维盘口条（安全降级：无数据不渲染） =====
+  // ===== 赛前市场预期 4维盘口条 + 博彩赔率区 =====
+  const me = p.marketExpectation;
   let marketBarHtml = '';
+  let oddsHtml = '';
   try {
-    const me = p.marketExpectation;
-    if (me && me.totalGoals && me.handicap && me.totalCorners && me.cornerHandicap) {
-      const leanMap = {
-        over: '偏大', under: '偏小', balanced: '均衡',
-        home: '主强', away: '客强', draw: '均势'
-      };
-      const fmtNum = v => {
-        if (v === 0) return '0';
-        const s = Number(v).toFixed(2).replace(/\.?0+$/, '');
-        return s === '-0' ? '0' : s;
-      };
-      const tg = me.totalGoals, hc = me.handicap, tc = me.totalCorners, ch = me.cornerHandicap;
-      const hcVal = fmtNum(Math.abs(hc.line));
-      const hcSide = hc.line > 0.01 ? '主让' : (hc.line < -0.01 ? '客让' : '平手');
-      const chVal = fmtNum(Math.abs(ch.line));
-      const chSide = ch.line > 0.01 ? '主让' : (ch.line < -0.01 ? '客让' : '均势');
-      const hcLabel = hc.line === 0 ? '平手' : `${hcSide}${hcVal}`;
-      const chLabel = ch.line === 0 ? '角球均势' : `角球${chSide}${chVal}`;
-      marketBarHtml = `
-      <div class="market-bar" title="赛前市场预期（基于联赛特性+排名差+主场+裁判模型推算）">
-        <div class="market-pill pill-goals">
-          <div class="pill-icon">⚽</div>
-          <div class="pill-label">总进球</div>
-          <div class="pill-value">${fmtNum(tg.line)}</div>
-          <div class="pill-lean">${leanMap[tg.lean]||''}</div>
-        </div>
-        <div class="market-pill pill-handicap">
-          <div class="pill-icon">↔️</div>
-          <div class="pill-label">让球盘</div>
-          <div class="pill-value">${hcLabel}</div>
-          <div class="pill-lean">${leanMap[hc.lean]||''}</div>
-        </div>
-        <div class="market-pill pill-corners">
-          <div class="pill-icon">🚩</div>
-          <div class="pill-label">角球总数</div>
-          <div class="pill-value">${fmtNum(tc.line)}</div>
-          <div class="pill-lean">${leanMap[tc.lean]||''}</div>
-        </div>
-        <div class="market-pill pill-ch">
-          <div class="pill-icon">↕️</div>
-          <div class="pill-label">角球让差</div>
-          <div class="pill-value">${chLabel}</div>
-          <div class="pill-lean">${leanMap[ch.lean]||''}</div>
-        </div>
-      </div>`;
-    }
-  } catch(e) { console.warn('[renderPreviewMatch] market bar err', e); marketBarHtml=''; }
+    marketBarHtml = renderMarketBar(me);
+    oddsHtml = renderOddsSection(me);
+  } catch(e) { console.warn('[renderPreviewMatch] market err', e); }
   
   return `
     <div class="preview-card" data-region="${p.region}">
@@ -2199,6 +2501,7 @@ function renderPreviewMatch(p) {
         <span class="venue-info">📍 ${p.venue}</span>
       </div>
       ${marketBarHtml}
+      ${oddsHtml}
       <div class="form-section">
         <div>
           <div class="form-team-label">近5场</div>
@@ -2565,6 +2868,18 @@ renderYesterdayMatch = function(m) {
     `).join('');
     const analysisHtml = (m.analysis || []).map(a => `<li>${a}</li>`).join('');
 
+    // ===== 赛前市场预期 + T-1复盘 + 博彩赔率 =====
+    const me = m.marketExpectation;
+    const t1 = m.t1Comparison;
+    let marketBarHtml = '';
+    let t1Html = '';
+    let oddsHtml = '';
+    try {
+      marketBarHtml = renderMarketBar(me);
+      t1Html = renderT1Comparison(t1, me);
+      oddsHtml = renderOddsSection(me);
+    } catch(e) { console.warn('[renderYesterdayMatch App] market err', e); }
+
     return `
       <div class="match-card" data-region="${m.region}">
         <div class="match-header">
@@ -2592,6 +2907,9 @@ renderYesterdayMatch = function(m) {
             ${appTeamBlock(m.awayTeam, 'A')}
           </div>
         </div>
+        ${marketBarHtml}
+        ${t1Html}
+        ${oddsHtml}
         <button class="toggle-btn" onclick="toggleDetails(this)">展开详细数据 ▼</button>
         <div class="match-details">
           ${s ? `
@@ -2676,22 +2994,7 @@ renderPreviewMatch = function(p) {
         ${(() => {
           try {
             const me = p.marketExpectation;
-            if (!me || !me.totalGoals || !me.handicap || !me.totalCorners || !me.cornerHandicap) return '';
-            const leanMap = { over:'偏大', under:'偏小', balanced:'均衡', home:'主强', away:'客强', draw:'均势' };
-            const fmtNum = v => { if(v===0)return '0'; const s=Number(v).toFixed(2).replace(/\.?0+$/,''); return s==='-0'?'0':s; };
-            const tg=me.totalGoals, hc=me.handicap, tc=me.totalCorners, ch=me.cornerHandicap;
-            const hcVal=fmtNum(Math.abs(hc.line));
-            const hcSide=hc.line>0.01?'主让':(hc.line<-0.01?'客让':'平手');
-            const chVal=fmtNum(Math.abs(ch.line));
-            const chSide=ch.line>0.01?'主让':(ch.line<-0.01?'客让':'均势');
-            const hcLabel=Math.abs(hc.line)<0.01?'平手':`${hcSide}${hcVal}`;
-            const chLabel=Math.abs(ch.line)<0.01?'角球均势':`角球${chSide}${chVal}`;
-            return `<div class="market-bar" title="赛前市场预期（基于联赛特性+排名差+主场+裁判模型推算，仅供参考）">
-              <div class="market-pill pill-goals"><div class="pill-icon">⚽</div><div class="pill-label">总进球</div><div class="pill-value">${fmtNum(tg.line)}</div><div class="pill-lean">${leanMap[tg.lean]||''}</div></div>
-              <div class="market-pill pill-handicap"><div class="pill-icon">↔️</div><div class="pill-label">让球盘</div><div class="pill-value">${hcLabel}</div><div class="pill-lean">${leanMap[hc.lean]||''}</div></div>
-              <div class="market-pill pill-corners"><div class="pill-icon">🚩</div><div class="pill-label">角球总数</div><div class="pill-value">${fmtNum(tc.line)}</div><div class="pill-lean">${leanMap[tc.lean]||''}</div></div>
-              <div class="market-pill pill-ch"><div class="pill-icon">↕️</div><div class="pill-label">角球让差</div><div class="pill-value">${chLabel}</div><div class="pill-lean">${leanMap[ch.lean]||''}</div></div>
-            </div>`;
+            return renderMarketBar(me) + renderOddsSection(me);
           } catch(e){ return ''; }
         })()}
         ${hr5.length ? `
