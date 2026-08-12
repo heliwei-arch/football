@@ -5,7 +5,7 @@
  * - HTTP API（/api/dashboard /api/update）= Network-First + 离线fallback（避免黑洞卡死）
  * - 移动端App打包（Capacitor/WebView file:// 协议）= 直接透传不缓存（WebView本身有文件缓存）
  * ========================================================= */
-const CACHE_VER = 'ft-zazao-v2';  // 构建后改此版本号即可强制用户端刷新所有缓存（v2: 修复loadData白屏+统一women入口）
+const CACHE_VER = 'ft-zazao-v3';  // v3: 新增T-1盘口复盘+博彩赔率区，强制刷新所有缓存
 const APP_SHELL_CORE = [
   './',
   './index.html',
@@ -127,21 +127,18 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 策略C：JSON数据/Manifest/图标 → CacheFirst（离线优先，失败再fallback network）
+  // 策略C：JSON数据/Manifest/图标 → StaleWhileRevalidate（先读缓存秒开，后台同步更新，避免旧数据锁死）
   if (['json', 'svg', 'png', 'jpg', 'jpeg', 'webp', 'webmanifest'].includes(ext)) {
     event.respondWith((async () => {
-      const cached = await caches.match(req);
-      if (cached) return cached;
-      try {
-        const resp = await fetch(req);
-        if (resp && resp.ok) {
-          const cache = await caches.open(CACHE_VER);
-          cache.put(req, resp.clone()).catch(()=>{});
-        }
+      const cache = await caches.open(CACHE_VER);
+      const cached = await cache.match(req);
+      // 后台静默更新最新版本
+      const netPromise = fetch(req).then(async resp => {
+        if (resp && resp.ok) cache.put(req, resp.clone()).catch(()=>{});
         return resp;
-      } catch(e) {
-        return new Response('', { status: 408 });
-      }
+      }).catch(() => cached);
+      // 有缓存立即返回，没有则等待网络
+      return cached || netPromise;
     })());
     return;
   }
