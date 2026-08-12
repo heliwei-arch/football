@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-12T20:49:32.857689",
-  "generatedAt": "2026-08-12T20:50:33.660034",
+  "lastUpdate": "2026-08-12T21:02:28.549238",
+  "generatedAt": "2026-08-12T21:03:27.099272",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "asia": [
@@ -159,75 +159,75 @@
       },
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-张雷",
-          "name": "张雷",
-          "country": "中国",
-          "age": 42
+          "id": "dqd-穆罕默德·胡维什",
+          "name": "穆罕默德·胡维什",
+          "country": "沙特阿拉伯",
+          "age": 38
         },
         "history": [
           {
             "date": "2026-08-09",
             "league": "第5轮执法",
             "match": "比赛1",
-            "yellowCards": 10,
-            "redCards": 1,
-            "fouls": 24,
-            "penalties": 1,
-            "cardIndex": 125,
-            "varChecks": 5
-          },
-          {
-            "date": "2026-08-02",
-            "league": "第4轮执法",
-            "match": "比赛2",
             "yellowCards": 9,
             "redCards": 1,
-            "fouls": 27,
+            "fouls": 23,
             "penalties": 1,
             "cardIndex": 115,
             "varChecks": 4
           },
           {
+            "date": "2026-08-02",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 5,
+            "redCards": 2,
+            "fouls": 22,
+            "penalties": 2,
+            "cardIndex": 100,
+            "varChecks": 3
+          },
+          {
             "date": "2026-07-26",
             "league": "第3轮执法",
             "match": "比赛3",
-            "yellowCards": 10,
+            "yellowCards": 9,
             "redCards": 1,
-            "fouls": 20,
+            "fouls": 26,
             "penalties": 1,
-            "cardIndex": 125,
-            "varChecks": 5
+            "cardIndex": 115,
+            "varChecks": 3
           },
           {
             "date": "2026-07-19",
             "league": "第2轮执法",
             "match": "比赛4",
-            "yellowCards": 11,
+            "yellowCards": 7,
             "redCards": 1,
-            "fouls": 23,
-            "penalties": 2,
-            "cardIndex": 135,
-            "varChecks": 4
+            "fouls": 25,
+            "penalties": 1,
+            "cardIndex": 95,
+            "varChecks": 3
           },
           {
             "date": "2026-07-12",
             "league": "第1轮执法",
             "match": "比赛5",
-            "yellowCards": 8,
+            "yellowCards": 9,
             "redCards": 1,
-            "fouls": 16,
+            "fouls": 19,
             "penalties": 1,
-            "cardIndex": 105,
+            "cardIndex": 115,
             "varChecks": 3
           }
         ],
         "statistics": {
-          "avgYellow": "9.6",
-          "avgRed": "1.00",
-          "avgFouls": "22.0",
+          "avgYellow": "7.8",
+          "avgRed": "1.20",
+          "avgFouls": "23.0",
           "avgPenalties": "1.20",
-          "avgCardIndex": "121.0",
-          "avgVar": "4.2",
+          "avgCardIndex": "108.0",
+          "avgVar": "3.2",
           "strictnessScore": 92
         },
         "style": "严格型",
@@ -241,46 +241,46 @@
       },
       "keyEvents": [
         {
-          "minute": 8,
+          "minute": 2,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "上海申花U20",
+          "description": "上海申花U20 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 3,
+          "type": "goal",
+          "team": "home",
+          "teamName": "上海申花U20",
+          "description": "上海申花U20 进球！精彩射门得分"
+        },
+        {
+          "minute": 19,
           "type": "goal",
           "team": "away",
           "teamName": "深圳新鹏城U20",
           "description": "深圳新鹏城U20 进球！扳平/反超比分"
         },
         {
-          "minute": 18,
+          "minute": 26,
           "type": "goal",
           "team": "home",
           "teamName": "上海申花U20",
           "description": "上海申花U20 进球！精彩射门得分"
         },
         {
-          "minute": 35,
+          "minute": 38,
           "type": "goal",
           "team": "home",
           "teamName": "上海申花U20",
           "description": "上海申花U20 进球！精彩射门得分"
         },
         {
-          "minute": 37,
+          "minute": 86,
           "type": "yellow",
           "team": "away",
           "teamName": "深圳新鹏城U20",
           "description": "深圳新鹏城U20 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 43,
-          "type": "goal",
-          "team": "home",
-          "teamName": "上海申花U20",
-          "description": "上海申花U20 进球！精彩射门得分"
-        },
-        {
-          "minute": 75,
-          "type": "yellow",
-          "team": "home",
-          "teamName": "上海申花U20",
-          "description": "上海申花U20 球员犯规吃到黄牌"
         }
       ],
       "analysis": [
@@ -659,32 +659,32 @@
       },
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-阿卜杜拉·阿马尔",
-          "name": "阿卜杜拉·阿马尔",
-          "country": "阿联酋",
-          "age": 39
+          "id": "dqd-中村太",
+          "name": "中村太",
+          "country": "日本",
+          "age": 41
         },
         "history": [
           {
             "date": "2026-08-09",
             "league": "第5轮执法",
             "match": "比赛1",
-            "yellowCards": 6,
+            "yellowCards": 5,
             "redCards": 0,
-            "fouls": 23,
+            "fouls": 35,
             "penalties": 0,
-            "cardIndex": 60,
-            "varChecks": 3
+            "cardIndex": 50,
+            "varChecks": 2
           },
           {
             "date": "2026-08-02",
             "league": "第4轮执法",
             "match": "比赛2",
-            "yellowCards": 6,
-            "redCards": 1,
-            "fouls": 23,
+            "yellowCards": 7,
+            "redCards": 0,
+            "fouls": 22,
             "penalties": 0,
-            "cardIndex": 85,
+            "cardIndex": 70,
             "varChecks": 2
           },
           {
@@ -693,7 +693,7 @@
             "match": "比赛3",
             "yellowCards": 7,
             "redCards": 1,
-            "fouls": 34,
+            "fouls": 29,
             "penalties": 0,
             "cardIndex": 95,
             "varChecks": 4
@@ -702,77 +702,77 @@
             "date": "2026-07-19",
             "league": "第2轮执法",
             "match": "比赛4",
-            "yellowCards": 6,
+            "yellowCards": 9,
             "redCards": 0,
-            "fouls": 29,
-            "penalties": 1,
-            "cardIndex": 60,
-            "varChecks": 2
+            "fouls": 30,
+            "penalties": 0,
+            "cardIndex": 90,
+            "varChecks": 3
           },
           {
             "date": "2026-07-12",
             "league": "第1轮执法",
             "match": "比赛5",
-            "yellowCards": 8,
-            "redCards": 1,
-            "fouls": 32,
+            "yellowCards": 7,
+            "redCards": 0,
+            "fouls": 30,
             "penalties": 1,
-            "cardIndex": 105,
+            "cardIndex": 70,
             "varChecks": 3
           }
         ],
         "statistics": {
-          "avgYellow": "6.6",
-          "avgRed": "0.60",
-          "avgFouls": "28.2",
-          "avgPenalties": "0.40",
-          "avgCardIndex": "81.0",
+          "avgYellow": "7.0",
+          "avgRed": "0.20",
+          "avgFouls": "29.2",
+          "avgPenalties": "0.20",
+          "avgCardIndex": "75.0",
           "avgVar": "2.8",
-          "strictnessScore": 82
+          "strictnessScore": 68
         },
-        "style": "严格型",
-        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
         "keyTraits": [
-          "出牌频率高",
-          "对恶意犯规零容忍",
-          "点球判罚果断",
-          "VAR介入频繁"
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
         ]
       },
       "keyEvents": [
         {
-          "minute": 11,
+          "minute": 19,
           "type": "goal",
           "team": "away",
           "teamName": "雷加塔达兹",
           "description": "雷加塔达兹 进球！扳平/反超比分"
         },
         {
-          "minute": 25,
-          "type": "goal",
-          "team": "away",
-          "teamName": "雷加塔达兹",
-          "description": "雷加塔达兹 进球！扳平/反超比分"
-        },
-        {
-          "minute": 45,
-          "type": "goal",
-          "team": "away",
-          "teamName": "雷加塔达兹",
-          "description": "雷加塔达兹 进球！扳平/反超比分"
-        },
-        {
-          "minute": 68,
+          "minute": 28,
           "type": "yellow",
           "team": "away",
           "teamName": "雷加塔达兹",
           "description": "雷加塔达兹 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 40,
+          "type": "goal",
+          "team": "away",
+          "teamName": "雷加塔达兹",
+          "description": "雷加塔达兹 进球！扳平/反超比分"
+        },
+        {
+          "minute": 62,
+          "type": "goal",
+          "team": "away",
+          "teamName": "雷加塔达兹",
+          "description": "雷加塔达兹 进球！扳平/反超比分"
         }
       ],
       "analysis": [
         "雷加塔达兹 客场奏凯，反击效率极高，xG 1.47 支撑了最终比分",
         "双方控球率相对均衡，场面开放对攻激烈",
-        "裁判执法偏严（严格度 82分），全场共出示 1 黄0红，直接影响了比赛节奏",
+        "裁判执法尺度平衡，比赛中规中矩",
         "本场比赛对抗激烈，双方共计 32 次犯规，拼抢强度拉满"
       ],
       "homeTactics": {
@@ -955,10 +955,10 @@
       ],
       "marketExpectation": {
         "totalGoals": {
-          "line": 2.5,
-          "lean": "over",
-          "label": "2.5球·偏大",
-          "explain": "市场预期总进球约 2.5 球（参考亚挑战联场均 2.55 球）"
+          "line": 2.75,
+          "lean": "balanced",
+          "label": "2.75球·均衡",
+          "explain": "市场预期总进球约 2.75 球（参考亚挑战联场均 2.55 球）"
         },
         "handicap": {
           "line": 0.5,
@@ -967,10 +967,10 @@
           "explain": "实力差预估：主让0.5（主场加成+排名差+3位）"
         },
         "totalCorners": {
-          "line": 12.0,
-          "lean": "under",
-          "label": "12角·偏小",
-          "explain": "市场预期总角球 12.0 个（参考 亚挑战联 场均 9.5 角）"
+          "line": 11.0,
+          "lean": "over",
+          "label": "11角·偏大",
+          "explain": "市场预期总角球 11.0 个（参考 亚挑战联 场均 9.5 角）"
         },
         "cornerHandicap": {
           "line": 1.0,
@@ -987,7 +987,7 @@
           },
           "rankDiff": 3,
           "rankValid": false,
-          "refereeScore": 75,
+          "refereeScore": 55,
           "modelVersion": "ft-odds-model-v1",
           "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
         }
@@ -998,7 +998,7 @@
         "total": 3,
         "homeMargin": -3,
         "ahLineUsed": 0.5,
-        "ouLineUsed": 2.5,
+        "ouLineUsed": 2.75,
         "lineSource": "model",
         "handicap": {
           "result": "away-win",
@@ -1007,10 +1007,10 @@
           "margin": -3.5
         },
         "overunder": {
-          "result": "over",
-          "label_cn": "大球",
+          "result": "over-half",
+          "label_cn": "大赢半",
           "total": 3,
-          "margin": 0.5
+          "margin": 0.25
         }
       },
       "_dataSource": "dongqiudi-real",
@@ -1146,114 +1146,121 @@
       },
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-阿卜杜拉·阿马尔",
-          "name": "阿卜杜拉·阿马尔",
-          "country": "阿联酋",
-          "age": 39
+          "id": "dqd-佐藤隆治",
+          "name": "佐藤隆治",
+          "country": "日本",
+          "age": 43
         },
         "history": [
           {
             "date": "2026-08-09",
             "league": "第5轮执法",
             "match": "比赛1",
-            "yellowCards": 6,
+            "yellowCards": 5,
             "redCards": 0,
-            "fouls": 23,
+            "fouls": 32,
             "penalties": 0,
-            "cardIndex": 60,
-            "varChecks": 3
+            "cardIndex": 50,
+            "varChecks": 1
           },
           {
             "date": "2026-08-02",
             "league": "第4轮执法",
             "match": "比赛2",
-            "yellowCards": 6,
-            "redCards": 1,
-            "fouls": 23,
+            "yellowCards": 4,
+            "redCards": 0,
+            "fouls": 25,
             "penalties": 0,
-            "cardIndex": 85,
-            "varChecks": 3
+            "cardIndex": 40,
+            "varChecks": 1
           },
           {
             "date": "2026-07-26",
             "league": "第3轮执法",
             "match": "比赛3",
-            "yellowCards": 7,
-            "redCards": 1,
-            "fouls": 34,
+            "yellowCards": 5,
+            "redCards": 0,
+            "fouls": 27,
             "penalties": 0,
-            "cardIndex": 95,
-            "varChecks": 3
+            "cardIndex": 50,
+            "varChecks": 2
           },
           {
             "date": "2026-07-19",
             "league": "第2轮执法",
             "match": "比赛4",
             "yellowCards": 6,
-            "redCards": 0,
-            "fouls": 29,
-            "penalties": 1,
-            "cardIndex": 60,
-            "varChecks": 2
+            "redCards": 1,
+            "fouls": 20,
+            "penalties": 0,
+            "cardIndex": 85,
+            "varChecks": 3
           },
           {
             "date": "2026-07-12",
             "league": "第1轮执法",
             "match": "比赛5",
-            "yellowCards": 8,
-            "redCards": 1,
-            "fouls": 32,
-            "penalties": 1,
-            "cardIndex": 105,
+            "yellowCards": 7,
+            "redCards": 0,
+            "fouls": 31,
+            "penalties": 0,
+            "cardIndex": 70,
             "varChecks": 3
           }
         ],
         "statistics": {
-          "avgYellow": "6.6",
-          "avgRed": "0.60",
-          "avgFouls": "28.2",
-          "avgPenalties": "0.40",
-          "avgCardIndex": "81.0",
-          "avgVar": "2.8",
-          "strictnessScore": 82
+          "avgYellow": "5.4",
+          "avgRed": "0.20",
+          "avgFouls": "27.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "59.0",
+          "avgVar": "2.0",
+          "strictnessScore": 60
         },
-        "style": "严格型",
-        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
         "keyTraits": [
-          "出牌频率高",
-          "对恶意犯规零容忍",
-          "点球判罚果断",
-          "VAR介入频繁"
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
         ]
       },
       "keyEvents": [
         {
           "minute": 5,
           "type": "yellow",
-          "team": "away",
-          "teamName": "彩虹",
-          "description": "彩虹 球员犯规吃到黄牌"
+          "team": "home",
+          "teamName": "穆苏俱乐部",
+          "description": "穆苏俱乐部 球员犯规吃到黄牌"
         },
         {
-          "minute": 9,
+          "minute": 7,
           "type": "goal",
           "team": "home",
           "teamName": "穆苏俱乐部",
           "description": "穆苏俱乐部 进球！精彩射门得分"
         },
         {
-          "minute": 19,
+          "minute": 17,
           "type": "goal",
           "team": "away",
           "teamName": "彩虹",
           "description": "彩虹 进球！扳平/反超比分"
         },
         {
-          "minute": 23,
+          "minute": 21,
           "type": "yellow",
+          "team": "away",
+          "teamName": "彩虹",
+          "description": "彩虹 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 25,
+          "type": "goal",
           "team": "home",
           "teamName": "穆苏俱乐部",
-          "description": "穆苏俱乐部 球员犯规吃到黄牌"
+          "description": "穆苏俱乐部 进球！精彩射门得分"
         },
         {
           "minute": 28,
@@ -1263,66 +1270,59 @@
           "description": "穆苏俱乐部 球员犯规吃到黄牌"
         },
         {
-          "minute": 30,
-          "type": "yellow",
-          "team": "home",
-          "teamName": "穆苏俱乐部",
-          "description": "穆苏俱乐部 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 32,
-          "type": "goal",
-          "team": "home",
-          "teamName": "穆苏俱乐部",
-          "description": "穆苏俱乐部 进球！精彩射门得分"
-        },
-        {
-          "minute": 36,
+          "minute": 33,
           "type": "yellow",
           "team": "away",
           "teamName": "彩虹",
           "description": "彩虹 球员犯规吃到黄牌"
         },
         {
-          "minute": 41,
+          "minute": 35,
           "type": "yellow",
           "team": "home",
           "teamName": "穆苏俱乐部",
           "description": "穆苏俱乐部 球员犯规吃到黄牌"
         },
         {
-          "minute": 45,
+          "minute": 44,
           "type": "goal",
           "team": "home",
           "teamName": "穆苏俱乐部",
           "description": "穆苏俱乐部 进球！精彩射门得分"
         },
         {
-          "minute": 56,
+          "minute": 64,
           "type": "goal",
           "team": "home",
           "teamName": "穆苏俱乐部",
           "description": "穆苏俱乐部 进球！精彩射门得分"
         },
         {
-          "minute": 65,
+          "minute": 68,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "彩虹",
+          "description": "彩虹 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 78,
           "type": "yellow",
           "team": "home",
           "teamName": "穆苏俱乐部",
           "description": "穆苏俱乐部 球员犯规吃到黄牌"
         },
         {
-          "minute": 75,
+          "minute": 81,
           "type": "yellow",
-          "team": "home",
-          "teamName": "穆苏俱乐部",
-          "description": "穆苏俱乐部 球员犯规吃到黄牌"
+          "team": "away",
+          "teamName": "彩虹",
+          "description": "彩虹 球员犯规吃到黄牌"
         }
       ],
       "analysis": [
         "穆苏俱乐部 主场取胜，实际进球 4 vs xG 1.69，把握机会能力超强",
         "双方控球率相对均衡，场面开放对攻激烈",
-        "裁判执法偏严（严格度 82分），全场共出示 8 黄0红，直接影响了比赛节奏",
+        "裁判执法尺度平衡，比赛中规中矩",
         "本场比赛对抗激烈，双方共计 32 次犯规，拼抢强度拉满"
       ],
       "homeTactics": {
@@ -1506,8 +1506,8 @@
       "marketExpectation": {
         "totalGoals": {
           "line": 2.75,
-          "lean": "under",
-          "label": "2.75球·偏小",
+          "lean": "balanced",
+          "label": "2.75球·均衡",
           "explain": "市场预期总进球约 2.75 球（参考印加尔联场均 2.55 球）"
         },
         "handicap": {
@@ -1517,10 +1517,10 @@
           "explain": "实力差预估：主让0.25（主场加成+排名差-1位）"
         },
         "totalCorners": {
-          "line": 11.5,
-          "lean": "balanced",
-          "label": "11.5角·均衡",
-          "explain": "市场预期总角球 11.5 个（参考 印加尔联 场均 9.5 角）"
+          "line": 11.0,
+          "lean": "under",
+          "label": "11角·偏小",
+          "explain": "市场预期总角球 11.0 个（参考 印加尔联 场均 9.5 角）"
         },
         "cornerHandicap": {
           "line": 0.5,
@@ -1537,7 +1537,7 @@
           },
           "rankDiff": -1,
           "rankValid": false,
-          "refereeScore": 75,
+          "refereeScore": 45,
           "modelVersion": "ft-odds-model-v1",
           "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
         }
@@ -1696,75 +1696,75 @@
       },
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-拉莫什·穆罕默德",
-          "name": "拉莫什·穆罕默德",
-          "country": "科威特",
-          "age": 41
+          "id": "dqd-穆罕默德·胡维什",
+          "name": "穆罕默德·胡维什",
+          "country": "沙特阿拉伯",
+          "age": 38
         },
         "history": [
           {
             "date": "2026-08-09",
             "league": "第5轮执法",
             "match": "比赛1",
-            "yellowCards": 6,
+            "yellowCards": 9,
             "redCards": 1,
-            "fouls": 31,
+            "fouls": 23,
             "penalties": 1,
-            "cardIndex": 85,
-            "varChecks": 2
+            "cardIndex": 115,
+            "varChecks": 4
           },
           {
             "date": "2026-08-02",
             "league": "第4轮执法",
             "match": "比赛2",
-            "yellowCards": 9,
+            "yellowCards": 5,
             "redCards": 2,
-            "fouls": 30,
-            "penalties": 1,
-            "cardIndex": 140,
-            "varChecks": 4
+            "fouls": 22,
+            "penalties": 2,
+            "cardIndex": 100,
+            "varChecks": 3
           },
           {
             "date": "2026-07-26",
             "league": "第3轮执法",
             "match": "比赛3",
-            "yellowCards": 7,
+            "yellowCards": 9,
             "redCards": 1,
-            "fouls": 18,
+            "fouls": 26,
             "penalties": 1,
-            "cardIndex": 95,
+            "cardIndex": 115,
             "varChecks": 3
           },
           {
             "date": "2026-07-19",
             "league": "第2轮执法",
             "match": "比赛4",
-            "yellowCards": 9,
+            "yellowCards": 7,
             "redCards": 1,
-            "fouls": 22,
-            "penalties": 2,
-            "cardIndex": 115,
+            "fouls": 25,
+            "penalties": 1,
+            "cardIndex": 95,
             "varChecks": 3
           },
           {
             "date": "2026-07-12",
             "league": "第1轮执法",
             "match": "比赛5",
-            "yellowCards": 5,
-            "redCards": 2,
-            "fouls": 25,
-            "penalties": 2,
-            "cardIndex": 100,
+            "yellowCards": 9,
+            "redCards": 1,
+            "fouls": 19,
+            "penalties": 1,
+            "cardIndex": 115,
             "varChecks": 3
           }
         ],
         "statistics": {
-          "avgYellow": "7.2",
-          "avgRed": "1.40",
-          "avgFouls": "25.2",
-          "avgPenalties": "1.40",
-          "avgCardIndex": "107.0",
-          "avgVar": "3.0",
+          "avgYellow": "7.8",
+          "avgRed": "1.20",
+          "avgFouls": "23.0",
+          "avgPenalties": "1.20",
+          "avgCardIndex": "108.0",
+          "avgVar": "3.2",
           "strictnessScore": 92
         },
         "style": "严格型",
@@ -1778,46 +1778,25 @@
       },
       "keyEvents": [
         {
-          "minute": 3,
-          "type": "yellow",
-          "team": "home",
-          "teamName": "帕亚联",
-          "description": "帕亚联 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 7,
+          "minute": 2,
           "type": "yellow",
           "team": "away",
           "teamName": "加尔各答警察",
           "description": "加尔各答警察 球员犯规吃到黄牌"
         },
         {
-          "minute": 9,
+          "minute": 6,
           "type": "yellow",
           "team": "home",
           "teamName": "帕亚联",
           "description": "帕亚联 球员犯规吃到黄牌"
         },
         {
-          "minute": 16,
+          "minute": 9,
           "type": "goal",
           "team": "home",
           "teamName": "帕亚联",
           "description": "帕亚联 进球！精彩射门得分"
-        },
-        {
-          "minute": 18,
-          "type": "yellow",
-          "team": "home",
-          "teamName": "帕亚联",
-          "description": "帕亚联 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 29,
-          "type": "yellow",
-          "team": "home",
-          "teamName": "帕亚联",
-          "description": "帕亚联 球员犯规吃到黄牌"
         },
         {
           "minute": 31,
@@ -1827,32 +1806,53 @@
           "description": "帕亚联 进球！精彩射门得分"
         },
         {
-          "minute": 41,
+          "minute": 32,
           "type": "yellow",
           "team": "away",
           "teamName": "加尔各答警察",
           "description": "加尔各答警察 球员犯规吃到黄牌"
         },
         {
-          "minute": 54,
+          "minute": 40,
           "type": "yellow",
           "team": "home",
           "teamName": "帕亚联",
           "description": "帕亚联 球员犯规吃到黄牌"
         },
         {
-          "minute": 57,
+          "minute": 49,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "帕亚联",
+          "description": "帕亚联 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 60,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "帕亚联",
+          "description": "帕亚联 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 66,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "帕亚联",
+          "description": "帕亚联 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 66,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "帕亚联",
+          "description": "帕亚联 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 80,
           "type": "yellow",
           "team": "away",
           "teamName": "加尔各答警察",
           "description": "加尔各答警察 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 78,
-          "type": "yellow",
-          "team": "home",
-          "teamName": "帕亚联",
-          "description": "帕亚联 球员犯规吃到黄牌"
         }
       ],
       "analysis": [
@@ -2232,21 +2232,21 @@
       },
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-阿利舍尔·奥斯曼诺夫",
-          "name": "阿利舍尔·奥斯曼诺夫",
-          "country": "乌兹别克斯坦",
-          "age": 42
+          "id": "dqd-拉莫什·穆罕默德",
+          "name": "拉莫什·穆罕默德",
+          "country": "科威特",
+          "age": 41
         },
         "history": [
           {
             "date": "2026-08-09",
             "league": "第5轮执法",
             "match": "比赛1",
-            "yellowCards": 8,
+            "yellowCards": 7,
             "redCards": 1,
-            "fouls": 26,
+            "fouls": 22,
             "penalties": 1,
-            "cardIndex": 105,
+            "cardIndex": 95,
             "varChecks": 3
           },
           {
@@ -2255,7 +2255,7 @@
             "match": "比赛2",
             "yellowCards": 8,
             "redCards": 1,
-            "fouls": 24,
+            "fouls": 29,
             "penalties": 1,
             "cardIndex": 105,
             "varChecks": 3
@@ -2264,43 +2264,43 @@
             "date": "2026-07-26",
             "league": "第3轮执法",
             "match": "比赛3",
-            "yellowCards": 7,
+            "yellowCards": 8,
             "redCards": 1,
-            "fouls": 30,
+            "fouls": 33,
             "penalties": 1,
-            "cardIndex": 95,
+            "cardIndex": 105,
             "varChecks": 4
           },
           {
             "date": "2026-07-19",
             "league": "第2轮执法",
             "match": "比赛4",
-            "yellowCards": 8,
-            "redCards": 1,
-            "fouls": 37,
-            "penalties": 2,
-            "cardIndex": 105,
+            "yellowCards": 9,
+            "redCards": 2,
+            "fouls": 35,
+            "penalties": 1,
+            "cardIndex": 140,
             "varChecks": 4
           },
           {
             "date": "2026-07-12",
             "league": "第1轮执法",
             "match": "比赛5",
-            "yellowCards": 8,
-            "redCards": 1,
-            "fouls": 29,
+            "yellowCards": 10,
+            "redCards": 2,
+            "fouls": 24,
             "penalties": 1,
-            "cardIndex": 105,
-            "varChecks": 3
+            "cardIndex": 150,
+            "varChecks": 5
           }
         ],
         "statistics": {
-          "avgYellow": "7.8",
-          "avgRed": "1.00",
-          "avgFouls": "29.2",
-          "avgPenalties": "1.20",
-          "avgCardIndex": "103.0",
-          "avgVar": "3.4",
+          "avgYellow": "8.4",
+          "avgRed": "1.40",
+          "avgFouls": "28.6",
+          "avgPenalties": "1.00",
+          "avgCardIndex": "119.0",
+          "avgVar": "3.8",
           "strictnessScore": 100
         },
         "style": "严格型",
@@ -2314,25 +2314,25 @@
       },
       "keyEvents": [
         {
-          "minute": 14,
-          "type": "yellow",
-          "team": "away",
-          "teamName": "瓦里AC",
-          "description": "瓦里AC 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 33,
+          "minute": 21,
           "type": "yellow",
           "team": "home",
           "teamName": "警察",
           "description": "警察 球员犯规吃到黄牌"
         },
         {
-          "minute": 35,
+          "minute": 45,
           "type": "yellow",
-          "team": "away",
-          "teamName": "瓦里AC",
-          "description": "瓦里AC 球员犯规吃到黄牌"
+          "team": "home",
+          "teamName": "警察",
+          "description": "警察 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 83,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "警察",
+          "description": "警察 球员犯规吃到黄牌"
         }
       ],
       "analysis": [
@@ -2639,10 +2639,10 @@
       "venue": "阿尔卡达格主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-金希坤",
-          "name": "金希坤",
-          "country": "韩国",
-          "age": 42
+          "id": "dqd-傅明",
+          "name": "傅明",
+          "country": "中国",
+          "age": 40
         },
         "history": [
           {
@@ -2654,29 +2654,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           },
           {
             "date": "",
@@ -2699,6 +2677,28 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
           }
         ],
         "statistics": {
@@ -2707,7 +2707,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.2",
+          "avgVar": "1.8",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -2721,7 +2721,6 @@
       },
       "features": [
         "阿尔卡达格联赛排名靠前",
-        "主裁尺度偏严，注意出牌风险",
         "双方实力接近，值得关注"
       ],
       "predictedDifficulty": 4,
@@ -2747,10 +2746,10 @@
       },
       "marketExpectation": {
         "totalGoals": {
-          "line": 2.5,
-          "lean": "over",
-          "label": "2.5球·偏大",
-          "explain": "市场预期总进球约 2.5 球（参考亚冠二级场均 2.55 球）"
+          "line": 2.75,
+          "lean": "balanced",
+          "label": "2.75球·均衡",
+          "explain": "市场预期总进球约 2.75 球（参考亚冠二级场均 2.55 球）"
         },
         "handicap": {
           "line": 0.0,
@@ -2759,10 +2758,10 @@
           "explain": "实力差预估：平手（主场加成+排名差-3位）"
         },
         "totalCorners": {
-          "line": 12.0,
-          "lean": "under",
-          "label": "12角·偏小",
-          "explain": "市场预期总角球 12.0 个（参考 亚冠二级 场均 9.5 角）"
+          "line": 11.0,
+          "lean": "balanced",
+          "label": "11角·均衡",
+          "explain": "市场预期总角球 11.0 个（参考 亚冠二级 场均 9.5 角）"
         },
         "cornerHandicap": {
           "line": 0.0,
@@ -2779,7 +2778,7 @@
           },
           "rankDiff": -3,
           "rankValid": false,
-          "refereeScore": 100,
+          "refereeScore": 47,
           "modelVersion": "ft-odds-model-v1",
           "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
         }
@@ -2841,10 +2840,10 @@
       "venue": "上海申花U20主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-张雷",
-          "name": "张雷",
-          "country": "中国",
-          "age": 42
+          "id": "dqd-穆罕默德·胡维什",
+          "name": "穆罕默德·胡维什",
+          "country": "沙特阿拉伯",
+          "age": 38
         },
         "history": [
           {
@@ -2857,6 +2856,17 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
           },
           {
             "date": "",
@@ -2890,17 +2900,6 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
           }
         ],
         "statistics": {
@@ -2909,7 +2908,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.8",
+          "avgVar": "1.6",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -3043,411 +3042,10 @@
       "venue": "东孟加拉 主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-中村太",
-          "name": "中村太",
-          "country": "日本",
-          "age": 41
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "主裁尺度偏严，注意出牌风险"
-      ],
-      "predictedDifficulty": 3,
-      "intensity": "★★★☆☆",
-      "homeRecentForm": [
-        "平",
-        "胜",
-        "平",
-        "平",
-        "负"
-      ],
-      "awayRecentForm": [
-        "胜",
-        "平",
-        "负",
-        "胜",
-        "胜"
-      ],
-      "h2hLast5": {
-        "homeWins": 1,
-        "draws": 0,
-        "awayWins": 2
-      },
-      "marketExpectation": {
-        "totalGoals": {
-          "line": 2.75,
-          "lean": "under",
-          "label": "2.75球·偏小",
-          "explain": "市场预期总进球约 2.75 球（参考亚冠二级场均 2.55 球）"
-        },
-        "handicap": {
-          "line": 0.25,
-          "lean": "home",
-          "label": "主让0.25",
-          "explain": "实力差预估：主让0.25（主场加成+排名差+1位）"
-        },
-        "totalCorners": {
-          "line": 11.5,
-          "lean": "balanced",
-          "label": "11.5角·均衡",
-          "explain": "市场预期总角球 11.5 个（参考 亚冠二级 场均 9.5 角）"
-        },
-        "cornerHandicap": {
-          "line": 0.5,
-          "lean": "home",
-          "label": "角球主让0.5",
-          "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
-        },
-        "meta": {
-          "source": "dqd-public-derived-model",
-          "leagueProfile": {
-            "goals": 2.55,
-            "corners": 9.5,
-            "atkCoef": 1.0
-          },
-          "rankDiff": 1,
-          "rankValid": false,
-          "refereeScore": 100,
-          "modelVersion": "ft-odds-model-v1",
-          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
-        }
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 49,
-      "heatBreakdown": {
-        "league": 46,
-        "rank": 0,
-        "focal": 0,
-        "h2hRecent": 3
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54515127",
-      "date": "2026-08-12",
-      "time": "10:00",
-      "league": {
-        "id": "dqd-asia-亚挑战联",
-        "name": "亚挑战联",
-        "country": "亚挑战联",
-        "flag": "🏆",
-        "color": "#333333",
-        "region": "asia"
-      },
-      "region": "asia",
-      "gender": "men",
-      "homeTeam": {
-        "name": "马兹亚",
-        "logo": "https://sd.qunliao.info/fastdfs4/M00/FF/F9/ChMf8F46LBKAOCo6AABbxniN130345.png",
-        "rank": null,
-        "teamId": "t8271",
-        "appLogo": {
-          "text": "兹亚",
-          "colors": [
-            "#84cc16",
-            "#4d7c0f"
-          ],
-          "countryFlag": "🌏"
-        },
-        "countryFlag": "🌏"
-      },
-      "awayTeam": {
-        "name": "雷加塔达兹",
-        "logo": "https://sd.qunliao.info/fastdfs5/M00/0D/D9/rB8BO16G32uAOnmwAABsUEAGWuE287.png",
-        "rank": "3",
-        "teamId": "t8425",
-        "appLogo": {
-          "text": "达兹",
-          "colors": [
-            "#06b6d4",
-            "#0e7490"
-          ],
-          "countryFlag": "🌏"
-        },
-        "countryFlag": "🌏"
-      },
-      "venue": "马兹亚主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-阿卜杜拉·阿马尔",
-          "name": "阿卜杜拉·阿马尔",
-          "country": "阿联酋",
-          "age": 39
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.4",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "雷加塔达兹联赛排名靠前",
-        "主裁尺度偏严，注意出牌风险"
-      ],
-      "predictedDifficulty": 2,
-      "intensity": "★★☆☆☆",
-      "homeRecentForm": [
-        "平",
-        "平",
-        "胜",
-        "胜",
-        "负"
-      ],
-      "awayRecentForm": [
-        "胜",
-        "胜",
-        "负",
-        "平",
-        "平"
-      ],
-      "h2hLast5": {
-        "homeWins": 2,
-        "draws": 0,
-        "awayWins": 1
-      },
-      "marketExpectation": {
-        "totalGoals": {
-          "line": 2.5,
-          "lean": "over",
-          "label": "2.5球·偏大",
-          "explain": "市场预期总进球约 2.5 球（参考亚挑战联场均 2.55 球）"
-        },
-        "handicap": {
-          "line": 0.5,
-          "lean": "home",
-          "label": "主让0.5",
-          "explain": "实力差预估：主让0.5（主场加成+排名差+3位）"
-        },
-        "totalCorners": {
-          "line": 12.0,
-          "lean": "under",
-          "label": "12角·偏小",
-          "explain": "市场预期总角球 12.0 个（参考 亚挑战联 场均 9.5 角）"
-        },
-        "cornerHandicap": {
-          "line": 1.0,
-          "lean": "home",
-          "label": "角球主让1",
-          "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
-        },
-        "meta": {
-          "source": "dqd-public-derived-model",
-          "leagueProfile": {
-            "goals": 2.55,
-            "corners": 9.5,
-            "atkCoef": 1.0
-          },
-          "rankDiff": 3,
-          "rankValid": false,
-          "refereeScore": 75,
-          "modelVersion": "ft-odds-model-v1",
-          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
-        }
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 30,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 10,
-        "focal": 0,
-        "h2hRecent": 4
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54453486",
-      "date": "2026-08-12",
-      "time": "13:00",
-      "league": {
-        "id": "dqd-asia-也门甲",
-        "name": "也门甲",
-        "country": "也门甲",
-        "flag": "🏆",
-        "color": "#9C9CDF",
-        "region": "asia"
-      },
-      "region": "asia",
-      "gender": "men",
-      "homeTeam": {
-        "name": "萨那国民",
-        "logo": "https://sd.qunliao.info/fastdfs7/M00/90/A7/rBUC6GaDtNuAOGZCAABxFBUG9O4031.png",
-        "rank": "7",
-        "teamId": "t2996",
-        "appLogo": {
-          "text": "国民",
-          "colors": [
-            "#10b981",
-            "#047857"
-          ],
-          "countryFlag": "🏳️"
-        },
-        "countryFlag": "🏳️"
-      },
-      "awayTeam": {
-        "name": "伊卜联合",
-        "logo": "https://sd.qunliao.info/fastdfs7/M00/C0/0A/rBUBsmcWGUyAP9yHAAFmmzdng34934.png",
-        "rank": "11",
-        "teamId": "t55074",
-        "appLogo": {
-          "text": "联合",
-          "colors": [
-            "#f43f5e",
-            "#be123c"
-          ],
-          "countryFlag": "🏳️"
-        },
-        "countryFlag": "🏳️"
-      },
-      "venue": "萨那国民主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-傅明",
-          "name": "傅明",
-          "country": "中国",
-          "age": 40
+          "id": "dqd-穆罕默德·胡维什",
+          "name": "穆罕默德·胡维什",
+          "country": "沙特阿拉伯",
+          "age": 38
         },
         "history": [
           {
@@ -3527,6 +3125,407 @@
       "features": [
         "主裁尺度偏严，注意出牌风险"
       ],
+      "predictedDifficulty": 3,
+      "intensity": "★★★☆☆",
+      "homeRecentForm": [
+        "平",
+        "胜",
+        "平",
+        "平",
+        "负"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "平",
+        "负",
+        "胜",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 1,
+        "draws": 0,
+        "awayWins": 2
+      },
+      "marketExpectation": {
+        "totalGoals": {
+          "line": 2.75,
+          "lean": "under",
+          "label": "2.75球·偏小",
+          "explain": "市场预期总进球约 2.75 球（参考亚冠二级场均 2.55 球）"
+        },
+        "handicap": {
+          "line": 0.25,
+          "lean": "home",
+          "label": "主让0.25",
+          "explain": "实力差预估：主让0.25（主场加成+排名差+1位）"
+        },
+        "totalCorners": {
+          "line": 11.5,
+          "lean": "balanced",
+          "label": "11.5角·均衡",
+          "explain": "市场预期总角球 11.5 个（参考 亚冠二级 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 0.5,
+          "lean": "home",
+          "label": "角球主让0.5",
+          "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+        },
+        "meta": {
+          "source": "dqd-public-derived-model",
+          "leagueProfile": {
+            "goals": 2.55,
+            "corners": 9.5,
+            "atkCoef": 1.0
+          },
+          "rankDiff": 1,
+          "rankValid": false,
+          "refereeScore": 90,
+          "modelVersion": "ft-odds-model-v1",
+          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+        }
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 49,
+      "heatBreakdown": {
+        "league": 46,
+        "rank": 0,
+        "focal": 0,
+        "h2hRecent": 3
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54515127",
+      "date": "2026-08-12",
+      "time": "10:00",
+      "league": {
+        "id": "dqd-asia-亚挑战联",
+        "name": "亚挑战联",
+        "country": "亚挑战联",
+        "flag": "🏆",
+        "color": "#333333",
+        "region": "asia"
+      },
+      "region": "asia",
+      "gender": "men",
+      "homeTeam": {
+        "name": "马兹亚",
+        "logo": "https://sd.qunliao.info/fastdfs4/M00/FF/F9/ChMf8F46LBKAOCo6AABbxniN130345.png",
+        "rank": null,
+        "teamId": "t8271",
+        "appLogo": {
+          "text": "兹亚",
+          "colors": [
+            "#84cc16",
+            "#4d7c0f"
+          ],
+          "countryFlag": "🌏"
+        },
+        "countryFlag": "🌏"
+      },
+      "awayTeam": {
+        "name": "雷加塔达兹",
+        "logo": "https://sd.qunliao.info/fastdfs5/M00/0D/D9/rB8BO16G32uAOnmwAABsUEAGWuE287.png",
+        "rank": "3",
+        "teamId": "t8425",
+        "appLogo": {
+          "text": "达兹",
+          "colors": [
+            "#06b6d4",
+            "#0e7490"
+          ],
+          "countryFlag": "🌏"
+        },
+        "countryFlag": "🌏"
+      },
+      "venue": "马兹亚主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-中村太",
+          "name": "中村太",
+          "country": "日本",
+          "age": 41
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.2",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "雷加塔达兹联赛排名靠前",
+        "主裁尺度偏严，注意出牌风险"
+      ],
+      "predictedDifficulty": 2,
+      "intensity": "★★☆☆☆",
+      "homeRecentForm": [
+        "平",
+        "平",
+        "胜",
+        "胜",
+        "负"
+      ],
+      "awayRecentForm": [
+        "胜",
+        "胜",
+        "负",
+        "平",
+        "平"
+      ],
+      "h2hLast5": {
+        "homeWins": 2,
+        "draws": 0,
+        "awayWins": 1
+      },
+      "marketExpectation": {
+        "totalGoals": {
+          "line": 2.75,
+          "lean": "balanced",
+          "label": "2.75球·均衡",
+          "explain": "市场预期总进球约 2.75 球（参考亚挑战联场均 2.55 球）"
+        },
+        "handicap": {
+          "line": 0.5,
+          "lean": "home",
+          "label": "主让0.5",
+          "explain": "实力差预估：主让0.5（主场加成+排名差+3位）"
+        },
+        "totalCorners": {
+          "line": 11.0,
+          "lean": "over",
+          "label": "11角·偏大",
+          "explain": "市场预期总角球 11.0 个（参考 亚挑战联 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 1.0,
+          "lean": "home",
+          "label": "角球主让1",
+          "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
+        },
+        "meta": {
+          "source": "dqd-public-derived-model",
+          "leagueProfile": {
+            "goals": 2.55,
+            "corners": 9.5,
+            "atkCoef": 1.0
+          },
+          "rankDiff": 3,
+          "rankValid": false,
+          "refereeScore": 55,
+          "modelVersion": "ft-odds-model-v1",
+          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+        }
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 30,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 10,
+        "focal": 0,
+        "h2hRecent": 4
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54453486",
+      "date": "2026-08-12",
+      "time": "13:00",
+      "league": {
+        "id": "dqd-asia-也门甲",
+        "name": "也门甲",
+        "country": "也门甲",
+        "flag": "🏆",
+        "color": "#9C9CDF",
+        "region": "asia"
+      },
+      "region": "asia",
+      "gender": "men",
+      "homeTeam": {
+        "name": "萨那国民",
+        "logo": "https://sd.qunliao.info/fastdfs7/M00/90/A7/rBUC6GaDtNuAOGZCAABxFBUG9O4031.png",
+        "rank": "7",
+        "teamId": "t2996",
+        "appLogo": {
+          "text": "国民",
+          "colors": [
+            "#10b981",
+            "#047857"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "awayTeam": {
+        "name": "伊卜联合",
+        "logo": "https://sd.qunliao.info/fastdfs7/M00/C0/0A/rBUBsmcWGUyAP9yHAAFmmzdng34934.png",
+        "rank": "11",
+        "teamId": "t55074",
+        "appLogo": {
+          "text": "联合",
+          "colors": [
+            "#f43f5e",
+            "#be123c"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "venue": "萨那国民主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-穆罕默德·胡维什",
+          "name": "穆罕默德·胡维什",
+          "country": "沙特阿拉伯",
+          "age": 38
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.6",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "主裁尺度偏严，注意出牌风险"
+      ],
       "predictedDifficulty": 2,
       "intensity": "★★☆☆☆",
       "homeRecentForm": [
@@ -3551,8 +3550,8 @@
       "marketExpectation": {
         "totalGoals": {
           "line": 2.75,
-          "lean": "balanced",
-          "label": "2.75球·均衡",
+          "lean": "under",
+          "label": "2.75球·偏小",
           "explain": "市场预期总进球约 2.75 球（参考也门甲场均 2.55 球）"
         },
         "handicap": {
@@ -3563,8 +3562,8 @@
         },
         "totalCorners": {
           "line": 11.0,
-          "lean": "under",
-          "label": "11角·偏小",
+          "lean": "over",
+          "label": "11角·偏大",
           "explain": "市场预期总角球 11.0 个（参考 也门甲 场均 9.5 角）"
         },
         "cornerHandicap": {
@@ -3582,7 +3581,7 @@
           },
           "rankDiff": 4,
           "rankValid": true,
-          "refereeScore": 55,
+          "refereeScore": 90,
           "modelVersion": "ft-odds-model-v1",
           "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
         }
@@ -3644,9 +3643,209 @@
       "venue": "奇兹里克FC主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-中村太",
-          "name": "中村太",
+          "id": "dqd-佐藤隆治",
+          "name": "佐藤隆治",
           "country": "日本",
+          "age": 43
+        },
+        "history": [
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          }
+        ],
+        "statistics": {
+          "avgYellow": "3.0",
+          "avgRed": "0.00",
+          "avgFouls": "22.0",
+          "avgPenalties": "0.00",
+          "avgCardIndex": "30.0",
+          "avgVar": "1.0",
+          "strictnessScore": 34
+        },
+        "style": "鼓励对抗型",
+        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+        "keyTraits": [
+          "极少出牌",
+          "鼓励身体对抗",
+          "比赛中断少",
+          "极少判罚点球"
+        ]
+      },
+      "features": [
+        "常规联赛对决"
+      ],
+      "predictedDifficulty": 1,
+      "intensity": "★☆☆☆☆",
+      "homeRecentForm": [
+        "胜",
+        "胜",
+        "胜",
+        "平",
+        "平"
+      ],
+      "awayRecentForm": [
+        "平",
+        "负",
+        "负",
+        "平",
+        "胜"
+      ],
+      "h2hLast5": {
+        "homeWins": 0,
+        "draws": 1,
+        "awayWins": 2
+      },
+      "marketExpectation": {
+        "totalGoals": {
+          "line": 2.75,
+          "lean": "balanced",
+          "label": "2.75球·均衡",
+          "explain": "市场预期总进球约 2.75 球（参考乌兹甲场均 2.55 球）"
+        },
+        "handicap": {
+          "line": 0.25,
+          "lean": "home",
+          "label": "主让0.25",
+          "explain": "实力差预估：主让0.25（主场加成+排名差+0位）"
+        },
+        "totalCorners": {
+          "line": 11.0,
+          "lean": "under",
+          "label": "11角·偏小",
+          "explain": "市场预期总角球 11.0 个（参考 乌兹甲 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 0.5,
+          "lean": "home",
+          "label": "角球主让0.5",
+          "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+        },
+        "meta": {
+          "source": "dqd-public-derived-model",
+          "leagueProfile": {
+            "goals": 2.55,
+            "corners": 9.5,
+            "atkCoef": 1.0
+          },
+          "rankDiff": 0,
+          "rankValid": false,
+          "refereeScore": 45,
+          "modelVersion": "ft-odds-model-v1",
+          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+        }
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 20,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 0,
+        "focal": 0,
+        "h2hRecent": 4
+      },
+      "isHotMatch": false
+    },
+    {
+      "id": "54554934",
+      "date": "2026-08-12",
+      "time": "09:30",
+      "league": {
+        "id": "dqd-asia-印加尔联",
+        "name": "印加尔联",
+        "country": "印加尔联",
+        "flag": "🏆",
+        "color": "#CC6703",
+        "region": "asia"
+      },
+      "region": "asia",
+      "gender": "men",
+      "homeTeam": {
+        "name": "警察",
+        "logo": "https://sd.qunliao.info/fastdfs3//M00//B9//F9//ChOxM1xIEDOAbu7VAAAWn39BUY0523.png",
+        "rank": null,
+        "teamId": "t38377",
+        "appLogo": {
+          "text": "警察",
+          "colors": [
+            "#10b981",
+            "#047857"
+          ],
+          "countryFlag": "🇮🇳"
+        },
+        "countryFlag": "🇮🇳"
+      },
+      "awayTeam": {
+        "name": "瓦里AC",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "rank": null,
+        "teamId": "t132724",
+        "appLogo": {
+          "text": "AC",
+          "colors": [
+            "#0ea5e9",
+            "#6366f1"
+          ],
+          "countryFlag": "🇮🇳"
+        },
+        "countryFlag": "🇮🇳"
+      },
+      "venue": "警察主场",
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-拉莫什·穆罕默德",
+          "name": "拉莫什·穆罕默德",
+          "country": "科威特",
           "age": 41
         },
         "history": [
@@ -3670,7 +3869,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           },
           {
             "date": "",
@@ -3681,7 +3880,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           },
           {
             "date": "",
@@ -3712,7 +3911,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.6",
+          "avgVar": "2.0",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -3730,48 +3929,48 @@
       "predictedDifficulty": 1,
       "intensity": "★☆☆☆☆",
       "homeRecentForm": [
-        "胜",
-        "胜",
+        "平",
         "胜",
         "平",
-        "平"
+        "负",
+        "胜"
       ],
       "awayRecentForm": [
         "平",
-        "负",
-        "负",
+        "胜",
         "平",
+        "胜",
         "胜"
       ],
       "h2hLast5": {
-        "homeWins": 0,
+        "homeWins": 2,
         "draws": 1,
-        "awayWins": 2
+        "awayWins": 0
       },
       "marketExpectation": {
         "totalGoals": {
-          "line": 2.5,
-          "lean": "over",
-          "label": "2.5球·偏大",
-          "explain": "市场预期总进球约 2.5 球（参考乌兹甲场均 2.55 球）"
+          "line": 2.75,
+          "lean": "under",
+          "label": "2.75球·偏小",
+          "explain": "市场预期总进球约 2.75 球（参考印加尔联场均 2.55 球）"
         },
         "handicap": {
-          "line": 0.25,
-          "lean": "home",
-          "label": "主让0.25",
-          "explain": "实力差预估：主让0.25（主场加成+排名差+0位）"
-        },
-        "totalCorners": {
-          "line": 11.5,
-          "lean": "balanced",
-          "label": "11.5角·均衡",
-          "explain": "市场预期总角球 11.5 个（参考 乌兹甲 场均 9.5 角）"
-        },
-        "cornerHandicap": {
           "line": 0.5,
           "lean": "home",
-          "label": "角球主让0.5",
-          "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+          "label": "主让0.5",
+          "explain": "实力差预估：主让0.5（主场加成+排名差+2位）"
+        },
+        "totalCorners": {
+          "line": 12.0,
+          "lean": "under",
+          "label": "12角·偏小",
+          "explain": "市场预期总角球 12.0 个（参考 印加尔联 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 1.0,
+          "lean": "home",
+          "label": "角球主让1",
+          "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
         },
         "meta": {
           "source": "dqd-public-derived-model",
@@ -3780,7 +3979,7 @@
             "corners": 9.5,
             "atkCoef": 1.0
           },
-          "rankDiff": 0,
+          "rankDiff": 2,
           "rankValid": false,
           "refereeScore": 100,
           "modelVersion": "ft-odds-model-v1",
@@ -3788,12 +3987,12 @@
         }
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 20,
+      "heatScore": 19,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
         "focal": 0,
-        "h2hRecent": 4
+        "h2hRecent": 3
       },
       "isHotMatch": false
     },
@@ -3844,10 +4043,10 @@
       "venue": "帕亚联主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-拉莫什·穆罕默德",
-          "name": "拉莫什·穆罕默德",
-          "country": "科威特",
-          "age": 41
+          "id": "dqd-穆罕默德·胡维什",
+          "name": "穆罕默德·胡维什",
+          "country": "沙特阿拉伯",
+          "age": 38
         },
         "history": [
           {
@@ -3881,7 +4080,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -3912,7 +4111,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.4",
+          "avgVar": "1.2",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -4044,10 +4243,10 @@
       "venue": "穆苏俱乐部主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-阿卜杜拉·阿马尔",
-          "name": "阿卜杜拉·阿马尔",
-          "country": "阿联酋",
-          "age": 39
+          "id": "dqd-佐藤隆治",
+          "name": "佐藤隆治",
+          "country": "日本",
+          "age": 43
         },
         "history": [
           {
@@ -4059,6 +4258,28 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
             "varChecks": 1
           },
           {
@@ -4070,17 +4291,6 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
             "varChecks": 1
           },
           {
@@ -4092,18 +4302,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           }
         ],
         "statistics": {
@@ -4112,7 +4311,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.6",
+          "avgVar": "1.4",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -4125,7 +4324,7 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "常规联赛对决"
       ],
       "predictedDifficulty": 1,
       "intensity": "★☆☆☆☆",
@@ -4151,8 +4350,8 @@
       "marketExpectation": {
         "totalGoals": {
           "line": 2.75,
-          "lean": "under",
-          "label": "2.75球·偏小",
+          "lean": "balanced",
+          "label": "2.75球·均衡",
           "explain": "市场预期总进球约 2.75 球（参考印加尔联场均 2.55 球）"
         },
         "handicap": {
@@ -4162,10 +4361,10 @@
           "explain": "实力差预估：主让0.25（主场加成+排名差-1位）"
         },
         "totalCorners": {
-          "line": 11.5,
-          "lean": "balanced",
-          "label": "11.5角·均衡",
-          "explain": "市场预期总角球 11.5 个（参考 印加尔联 场均 9.5 角）"
+          "line": 11.0,
+          "lean": "under",
+          "label": "11角·偏小",
+          "explain": "市场预期总角球 11.0 个（参考 印加尔联 场均 9.5 角）"
         },
         "cornerHandicap": {
           "line": 0.5,
@@ -4182,207 +4381,7 @@
           },
           "rankDiff": -1,
           "rankValid": false,
-          "refereeScore": 75,
-          "modelVersion": "ft-odds-model-v1",
-          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
-        }
-      },
-      "_dataSource": "dongqiudi-real",
-      "heatScore": 19,
-      "heatBreakdown": {
-        "league": 16,
-        "rank": 0,
-        "focal": 0,
-        "h2hRecent": 3
-      },
-      "isHotMatch": false
-    },
-    {
-      "id": "54554934",
-      "date": "2026-08-12",
-      "time": "09:30",
-      "league": {
-        "id": "dqd-asia-印加尔联",
-        "name": "印加尔联",
-        "country": "印加尔联",
-        "flag": "🏆",
-        "color": "#CC6703",
-        "region": "asia"
-      },
-      "region": "asia",
-      "gender": "men",
-      "homeTeam": {
-        "name": "警察",
-        "logo": "https://sd.qunliao.info/fastdfs3//M00//B9//F9//ChOxM1xIEDOAbu7VAAAWn39BUY0523.png",
-        "rank": null,
-        "teamId": "t38377",
-        "appLogo": {
-          "text": "警察",
-          "colors": [
-            "#10b981",
-            "#047857"
-          ],
-          "countryFlag": "🇮🇳"
-        },
-        "countryFlag": "🇮🇳"
-      },
-      "awayTeam": {
-        "name": "瓦里AC",
-        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-        "rank": null,
-        "teamId": "t132724",
-        "appLogo": {
-          "text": "AC",
-          "colors": [
-            "#0ea5e9",
-            "#6366f1"
-          ],
-          "countryFlag": "🇮🇳"
-        },
-        "countryFlag": "🇮🇳"
-      },
-      "venue": "警察主场",
-      "refereeAnalysis": {
-        "referee": {
-          "id": "dqd-阿利舍尔·奥斯曼诺夫",
-          "name": "阿利舍尔·奥斯曼诺夫",
-          "country": "乌兹别克斯坦",
-          "age": 42
-        },
-        "history": [
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 2
-          }
-        ],
-        "statistics": {
-          "avgYellow": "3.0",
-          "avgRed": "0.00",
-          "avgFouls": "22.0",
-          "avgPenalties": "0.00",
-          "avgCardIndex": "30.0",
-          "avgVar": "1.6",
-          "strictnessScore": 34
-        },
-        "style": "鼓励对抗型",
-        "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-        "keyTraits": [
-          "极少出牌",
-          "鼓励身体对抗",
-          "比赛中断少",
-          "极少判罚点球"
-        ]
-      },
-      "features": [
-        "主裁尺度偏严，注意出牌风险"
-      ],
-      "predictedDifficulty": 1,
-      "intensity": "★☆☆☆☆",
-      "homeRecentForm": [
-        "平",
-        "胜",
-        "平",
-        "负",
-        "胜"
-      ],
-      "awayRecentForm": [
-        "平",
-        "胜",
-        "平",
-        "胜",
-        "胜"
-      ],
-      "h2hLast5": {
-        "homeWins": 2,
-        "draws": 1,
-        "awayWins": 0
-      },
-      "marketExpectation": {
-        "totalGoals": {
-          "line": 2.75,
-          "lean": "under",
-          "label": "2.75球·偏小",
-          "explain": "市场预期总进球约 2.75 球（参考印加尔联场均 2.55 球）"
-        },
-        "handicap": {
-          "line": 0.5,
-          "lean": "home",
-          "label": "主让0.5",
-          "explain": "实力差预估：主让0.5（主场加成+排名差+2位）"
-        },
-        "totalCorners": {
-          "line": 12.0,
-          "lean": "under",
-          "label": "12角·偏小",
-          "explain": "市场预期总角球 12.0 个（参考 印加尔联 场均 9.5 角）"
-        },
-        "cornerHandicap": {
-          "line": 1.0,
-          "lean": "home",
-          "label": "角球主让1",
-          "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
-        },
-        "meta": {
-          "source": "dqd-public-derived-model",
-          "leagueProfile": {
-            "goals": 2.55,
-            "corners": 9.5,
-            "atkCoef": 1.0
-          },
-          "rankDiff": 2,
-          "rankValid": false,
-          "refereeScore": 100,
+          "refereeScore": 45,
           "modelVersion": "ft-odds-model-v1",
           "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
         }
@@ -4444,10 +4443,10 @@
       "venue": "努库斯咸海主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-金希坤",
-          "name": "金希坤",
-          "country": "韩国",
-          "age": 42
+          "id": "dqd-傅明",
+          "name": "傅明",
+          "country": "中国",
+          "age": 40
         },
         "history": [
           {
@@ -4459,28 +4458,6 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
-            "varChecks": 1
-          },
-          {
-            "date": "",
-            "league": "",
-            "match": "",
-            "yellowCards": 3,
-            "redCards": 0,
-            "fouls": 22,
-            "penalties": 0,
-            "cardIndex": 30,
             "varChecks": 1
           },
           {
@@ -4504,6 +4481,28 @@
             "penalties": 0,
             "cardIndex": 30,
             "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 1
+          },
+          {
+            "date": "",
+            "league": "",
+            "match": "",
+            "yellowCards": 3,
+            "redCards": 0,
+            "fouls": 22,
+            "penalties": 0,
+            "cardIndex": 30,
+            "varChecks": 2
           }
         ],
         "statistics": {
@@ -4525,7 +4524,7 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "常规联赛对决"
       ],
       "predictedDifficulty": 1,
       "intensity": "★☆☆☆☆",
@@ -4551,8 +4550,8 @@
       "marketExpectation": {
         "totalGoals": {
           "line": 2.75,
-          "lean": "under",
-          "label": "2.75球·偏小",
+          "lean": "over",
+          "label": "2.75球·偏大",
           "explain": "市场预期总进球约 2.75 球（参考乌兹甲场均 2.55 球）"
         },
         "handicap": {
@@ -4562,10 +4561,10 @@
           "explain": "实力差预估：主让0.5（主场加成+排名差+2位）"
         },
         "totalCorners": {
-          "line": 12.0,
-          "lean": "under",
-          "label": "12角·偏小",
-          "explain": "市场预期总角球 12.0 个（参考 乌兹甲 场均 9.5 角）"
+          "line": 11.0,
+          "lean": "balanced",
+          "label": "11角·均衡",
+          "explain": "市场预期总角球 11.0 个（参考 乌兹甲 场均 9.5 角）"
         },
         "cornerHandicap": {
           "line": 1.0,
@@ -4582,7 +4581,7 @@
           },
           "rankDiff": 2,
           "rankValid": false,
-          "refereeScore": 100,
+          "refereeScore": 47,
           "modelVersion": "ft-odds-model-v1",
           "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
         }
@@ -4602,7 +4601,7 @@
     "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
     "yesterdaySummary": "🏆 U20联赛：上海申花U20 3-1 深圳新鹏城U20（上海申花U20获胜）；🇦🇺 澳足总：莫兰德斑马 1-4 普雷斯顿雄狮（普雷斯顿雄狮获胜）；🇦🇺 澳足总：莱卡特老虎 1-1 悉尼联（战平）",
     "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（主裁尺度偏严，注意出牌风险）",
-    "yesterdayCount": 23,
+    "yesterdayCount": 24,
     "todayCount": 38,
     "fullReport": true,
     "_dataSource": "dongqiudi-real",
@@ -4736,75 +4735,75 @@
           },
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-张雷",
-              "name": "张雷",
-              "country": "中国",
-              "age": 42
+              "id": "dqd-穆罕默德·胡维什",
+              "name": "穆罕默德·胡维什",
+              "country": "沙特阿拉伯",
+              "age": 38
             },
             "history": [
               {
                 "date": "2026-08-09",
                 "league": "第5轮执法",
                 "match": "比赛1",
-                "yellowCards": 10,
-                "redCards": 1,
-                "fouls": 24,
-                "penalties": 1,
-                "cardIndex": 125,
-                "varChecks": 5
-              },
-              {
-                "date": "2026-08-02",
-                "league": "第4轮执法",
-                "match": "比赛2",
                 "yellowCards": 9,
                 "redCards": 1,
-                "fouls": 27,
+                "fouls": 23,
                 "penalties": 1,
                 "cardIndex": 115,
                 "varChecks": 4
               },
               {
+                "date": "2026-08-02",
+                "league": "第4轮执法",
+                "match": "比赛2",
+                "yellowCards": 5,
+                "redCards": 2,
+                "fouls": 22,
+                "penalties": 2,
+                "cardIndex": 100,
+                "varChecks": 3
+              },
+              {
                 "date": "2026-07-26",
                 "league": "第3轮执法",
                 "match": "比赛3",
-                "yellowCards": 10,
+                "yellowCards": 9,
                 "redCards": 1,
-                "fouls": 20,
+                "fouls": 26,
                 "penalties": 1,
-                "cardIndex": 125,
-                "varChecks": 5
+                "cardIndex": 115,
+                "varChecks": 3
               },
               {
                 "date": "2026-07-19",
                 "league": "第2轮执法",
                 "match": "比赛4",
-                "yellowCards": 11,
+                "yellowCards": 7,
                 "redCards": 1,
-                "fouls": 23,
-                "penalties": 2,
-                "cardIndex": 135,
-                "varChecks": 4
+                "fouls": 25,
+                "penalties": 1,
+                "cardIndex": 95,
+                "varChecks": 3
               },
               {
                 "date": "2026-07-12",
                 "league": "第1轮执法",
                 "match": "比赛5",
-                "yellowCards": 8,
+                "yellowCards": 9,
                 "redCards": 1,
-                "fouls": 16,
+                "fouls": 19,
                 "penalties": 1,
-                "cardIndex": 105,
+                "cardIndex": 115,
                 "varChecks": 3
               }
             ],
             "statistics": {
-              "avgYellow": "9.6",
-              "avgRed": "1.00",
-              "avgFouls": "22.0",
+              "avgYellow": "7.8",
+              "avgRed": "1.20",
+              "avgFouls": "23.0",
               "avgPenalties": "1.20",
-              "avgCardIndex": "121.0",
-              "avgVar": "4.2",
+              "avgCardIndex": "108.0",
+              "avgVar": "3.2",
               "strictnessScore": 92
             },
             "style": "严格型",
@@ -4818,46 +4817,46 @@
           },
           "keyEvents": [
             {
-              "minute": 8,
+              "minute": 2,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "上海申花U20",
+              "description": "上海申花U20 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 3,
+              "type": "goal",
+              "team": "home",
+              "teamName": "上海申花U20",
+              "description": "上海申花U20 进球！精彩射门得分"
+            },
+            {
+              "minute": 19,
               "type": "goal",
               "team": "away",
               "teamName": "深圳新鹏城U20",
               "description": "深圳新鹏城U20 进球！扳平/反超比分"
             },
             {
-              "minute": 18,
+              "minute": 26,
               "type": "goal",
               "team": "home",
               "teamName": "上海申花U20",
               "description": "上海申花U20 进球！精彩射门得分"
             },
             {
-              "minute": 35,
+              "minute": 38,
               "type": "goal",
               "team": "home",
               "teamName": "上海申花U20",
               "description": "上海申花U20 进球！精彩射门得分"
             },
             {
-              "minute": 37,
+              "minute": 86,
               "type": "yellow",
               "team": "away",
               "teamName": "深圳新鹏城U20",
               "description": "深圳新鹏城U20 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 43,
-              "type": "goal",
-              "team": "home",
-              "teamName": "上海申花U20",
-              "description": "上海申花U20 进球！精彩射门得分"
-            },
-            {
-              "minute": 75,
-              "type": "yellow",
-              "team": "home",
-              "teamName": "上海申花U20",
-              "description": "上海申花U20 球员犯规吃到黄牌"
             }
           ],
           "analysis": [
@@ -5236,32 +5235,32 @@
           },
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿卜杜拉·阿马尔",
-              "name": "阿卜杜拉·阿马尔",
-              "country": "阿联酋",
-              "age": 39
+              "id": "dqd-中村太",
+              "name": "中村太",
+              "country": "日本",
+              "age": 41
             },
             "history": [
               {
                 "date": "2026-08-09",
                 "league": "第5轮执法",
                 "match": "比赛1",
-                "yellowCards": 6,
+                "yellowCards": 5,
                 "redCards": 0,
-                "fouls": 23,
+                "fouls": 35,
                 "penalties": 0,
-                "cardIndex": 60,
-                "varChecks": 3
+                "cardIndex": 50,
+                "varChecks": 2
               },
               {
                 "date": "2026-08-02",
                 "league": "第4轮执法",
                 "match": "比赛2",
-                "yellowCards": 6,
-                "redCards": 1,
-                "fouls": 23,
+                "yellowCards": 7,
+                "redCards": 0,
+                "fouls": 22,
                 "penalties": 0,
-                "cardIndex": 85,
+                "cardIndex": 70,
                 "varChecks": 2
               },
               {
@@ -5270,7 +5269,7 @@
                 "match": "比赛3",
                 "yellowCards": 7,
                 "redCards": 1,
-                "fouls": 34,
+                "fouls": 29,
                 "penalties": 0,
                 "cardIndex": 95,
                 "varChecks": 4
@@ -5279,77 +5278,77 @@
                 "date": "2026-07-19",
                 "league": "第2轮执法",
                 "match": "比赛4",
-                "yellowCards": 6,
+                "yellowCards": 9,
                 "redCards": 0,
-                "fouls": 29,
-                "penalties": 1,
-                "cardIndex": 60,
-                "varChecks": 2
+                "fouls": 30,
+                "penalties": 0,
+                "cardIndex": 90,
+                "varChecks": 3
               },
               {
                 "date": "2026-07-12",
                 "league": "第1轮执法",
                 "match": "比赛5",
-                "yellowCards": 8,
-                "redCards": 1,
-                "fouls": 32,
+                "yellowCards": 7,
+                "redCards": 0,
+                "fouls": 30,
                 "penalties": 1,
-                "cardIndex": 105,
+                "cardIndex": 70,
                 "varChecks": 3
               }
             ],
             "statistics": {
-              "avgYellow": "6.6",
-              "avgRed": "0.60",
-              "avgFouls": "28.2",
-              "avgPenalties": "0.40",
-              "avgCardIndex": "81.0",
+              "avgYellow": "7.0",
+              "avgRed": "0.20",
+              "avgFouls": "29.2",
+              "avgPenalties": "0.20",
+              "avgCardIndex": "75.0",
               "avgVar": "2.8",
-              "strictnessScore": 82
+              "strictnessScore": 68
             },
-            "style": "严格型",
-            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "style": "偏严格型",
+            "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
             "keyTraits": [
-              "出牌频率高",
-              "对恶意犯规零容忍",
-              "点球判罚果断",
-              "VAR介入频繁"
+              "关键战出牌多",
+              "对危险动作敏感",
+              "偶有点球判罚",
+              "中规中矩的执法"
             ]
           },
           "keyEvents": [
             {
-              "minute": 11,
+              "minute": 19,
               "type": "goal",
               "team": "away",
               "teamName": "雷加塔达兹",
               "description": "雷加塔达兹 进球！扳平/反超比分"
             },
             {
-              "minute": 25,
-              "type": "goal",
-              "team": "away",
-              "teamName": "雷加塔达兹",
-              "description": "雷加塔达兹 进球！扳平/反超比分"
-            },
-            {
-              "minute": 45,
-              "type": "goal",
-              "team": "away",
-              "teamName": "雷加塔达兹",
-              "description": "雷加塔达兹 进球！扳平/反超比分"
-            },
-            {
-              "minute": 68,
+              "minute": 28,
               "type": "yellow",
               "team": "away",
               "teamName": "雷加塔达兹",
               "description": "雷加塔达兹 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 40,
+              "type": "goal",
+              "team": "away",
+              "teamName": "雷加塔达兹",
+              "description": "雷加塔达兹 进球！扳平/反超比分"
+            },
+            {
+              "minute": 62,
+              "type": "goal",
+              "team": "away",
+              "teamName": "雷加塔达兹",
+              "description": "雷加塔达兹 进球！扳平/反超比分"
             }
           ],
           "analysis": [
             "雷加塔达兹 客场奏凯，反击效率极高，xG 1.47 支撑了最终比分",
             "双方控球率相对均衡，场面开放对攻激烈",
-            "裁判执法偏严（严格度 82分），全场共出示 1 黄0红，直接影响了比赛节奏",
+            "裁判执法尺度平衡，比赛中规中矩",
             "本场比赛对抗激烈，双方共计 32 次犯规，拼抢强度拉满"
           ],
           "homeTactics": {
@@ -5532,10 +5531,10 @@
           ],
           "marketExpectation": {
             "totalGoals": {
-              "line": 2.5,
-              "lean": "over",
-              "label": "2.5球·偏大",
-              "explain": "市场预期总进球约 2.5 球（参考亚挑战联场均 2.55 球）"
+              "line": 2.75,
+              "lean": "balanced",
+              "label": "2.75球·均衡",
+              "explain": "市场预期总进球约 2.75 球（参考亚挑战联场均 2.55 球）"
             },
             "handicap": {
               "line": 0.5,
@@ -5544,10 +5543,10 @@
               "explain": "实力差预估：主让0.5（主场加成+排名差+3位）"
             },
             "totalCorners": {
-              "line": 12.0,
-              "lean": "under",
-              "label": "12角·偏小",
-              "explain": "市场预期总角球 12.0 个（参考 亚挑战联 场均 9.5 角）"
+              "line": 11.0,
+              "lean": "over",
+              "label": "11角·偏大",
+              "explain": "市场预期总角球 11.0 个（参考 亚挑战联 场均 9.5 角）"
             },
             "cornerHandicap": {
               "line": 1.0,
@@ -5564,7 +5563,7 @@
               },
               "rankDiff": 3,
               "rankValid": false,
-              "refereeScore": 75,
+              "refereeScore": 55,
               "modelVersion": "ft-odds-model-v1",
               "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
             }
@@ -5575,7 +5574,7 @@
             "total": 3,
             "homeMargin": -3,
             "ahLineUsed": 0.5,
-            "ouLineUsed": 2.5,
+            "ouLineUsed": 2.75,
             "lineSource": "model",
             "handicap": {
               "result": "away-win",
@@ -5584,10 +5583,10 @@
               "margin": -3.5
             },
             "overunder": {
-              "result": "over",
-              "label_cn": "大球",
+              "result": "over-half",
+              "label_cn": "大赢半",
               "total": 3,
-              "margin": 0.5
+              "margin": 0.25
             }
           },
           "_dataSource": "dongqiudi-real",
@@ -5723,114 +5722,121 @@
           },
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿卜杜拉·阿马尔",
-              "name": "阿卜杜拉·阿马尔",
-              "country": "阿联酋",
-              "age": 39
+              "id": "dqd-佐藤隆治",
+              "name": "佐藤隆治",
+              "country": "日本",
+              "age": 43
             },
             "history": [
               {
                 "date": "2026-08-09",
                 "league": "第5轮执法",
                 "match": "比赛1",
-                "yellowCards": 6,
+                "yellowCards": 5,
                 "redCards": 0,
-                "fouls": 23,
+                "fouls": 32,
                 "penalties": 0,
-                "cardIndex": 60,
-                "varChecks": 3
+                "cardIndex": 50,
+                "varChecks": 1
               },
               {
                 "date": "2026-08-02",
                 "league": "第4轮执法",
                 "match": "比赛2",
-                "yellowCards": 6,
-                "redCards": 1,
-                "fouls": 23,
+                "yellowCards": 4,
+                "redCards": 0,
+                "fouls": 25,
                 "penalties": 0,
-                "cardIndex": 85,
-                "varChecks": 3
+                "cardIndex": 40,
+                "varChecks": 1
               },
               {
                 "date": "2026-07-26",
                 "league": "第3轮执法",
                 "match": "比赛3",
-                "yellowCards": 7,
-                "redCards": 1,
-                "fouls": 34,
+                "yellowCards": 5,
+                "redCards": 0,
+                "fouls": 27,
                 "penalties": 0,
-                "cardIndex": 95,
-                "varChecks": 3
+                "cardIndex": 50,
+                "varChecks": 2
               },
               {
                 "date": "2026-07-19",
                 "league": "第2轮执法",
                 "match": "比赛4",
                 "yellowCards": 6,
-                "redCards": 0,
-                "fouls": 29,
-                "penalties": 1,
-                "cardIndex": 60,
-                "varChecks": 2
+                "redCards": 1,
+                "fouls": 20,
+                "penalties": 0,
+                "cardIndex": 85,
+                "varChecks": 3
               },
               {
                 "date": "2026-07-12",
                 "league": "第1轮执法",
                 "match": "比赛5",
-                "yellowCards": 8,
-                "redCards": 1,
-                "fouls": 32,
-                "penalties": 1,
-                "cardIndex": 105,
+                "yellowCards": 7,
+                "redCards": 0,
+                "fouls": 31,
+                "penalties": 0,
+                "cardIndex": 70,
                 "varChecks": 3
               }
             ],
             "statistics": {
-              "avgYellow": "6.6",
-              "avgRed": "0.60",
-              "avgFouls": "28.2",
-              "avgPenalties": "0.40",
-              "avgCardIndex": "81.0",
-              "avgVar": "2.8",
-              "strictnessScore": 82
+              "avgYellow": "5.4",
+              "avgRed": "0.20",
+              "avgFouls": "27.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "59.0",
+              "avgVar": "2.0",
+              "strictnessScore": 60
             },
-            "style": "严格型",
-            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "style": "偏严格型",
+            "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
             "keyTraits": [
-              "出牌频率高",
-              "对恶意犯规零容忍",
-              "点球判罚果断",
-              "VAR介入频繁"
+              "关键战出牌多",
+              "对危险动作敏感",
+              "偶有点球判罚",
+              "中规中矩的执法"
             ]
           },
           "keyEvents": [
             {
               "minute": 5,
               "type": "yellow",
-              "team": "away",
-              "teamName": "彩虹",
-              "description": "彩虹 球员犯规吃到黄牌"
+              "team": "home",
+              "teamName": "穆苏俱乐部",
+              "description": "穆苏俱乐部 球员犯规吃到黄牌"
             },
             {
-              "minute": 9,
+              "minute": 7,
               "type": "goal",
               "team": "home",
               "teamName": "穆苏俱乐部",
               "description": "穆苏俱乐部 进球！精彩射门得分"
             },
             {
-              "minute": 19,
+              "minute": 17,
               "type": "goal",
               "team": "away",
               "teamName": "彩虹",
               "description": "彩虹 进球！扳平/反超比分"
             },
             {
-              "minute": 23,
+              "minute": 21,
               "type": "yellow",
+              "team": "away",
+              "teamName": "彩虹",
+              "description": "彩虹 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 25,
+              "type": "goal",
               "team": "home",
               "teamName": "穆苏俱乐部",
-              "description": "穆苏俱乐部 球员犯规吃到黄牌"
+              "description": "穆苏俱乐部 进球！精彩射门得分"
             },
             {
               "minute": 28,
@@ -5840,66 +5846,59 @@
               "description": "穆苏俱乐部 球员犯规吃到黄牌"
             },
             {
-              "minute": 30,
-              "type": "yellow",
-              "team": "home",
-              "teamName": "穆苏俱乐部",
-              "description": "穆苏俱乐部 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 32,
-              "type": "goal",
-              "team": "home",
-              "teamName": "穆苏俱乐部",
-              "description": "穆苏俱乐部 进球！精彩射门得分"
-            },
-            {
-              "minute": 36,
+              "minute": 33,
               "type": "yellow",
               "team": "away",
               "teamName": "彩虹",
               "description": "彩虹 球员犯规吃到黄牌"
             },
             {
-              "minute": 41,
+              "minute": 35,
               "type": "yellow",
               "team": "home",
               "teamName": "穆苏俱乐部",
               "description": "穆苏俱乐部 球员犯规吃到黄牌"
             },
             {
-              "minute": 45,
+              "minute": 44,
               "type": "goal",
               "team": "home",
               "teamName": "穆苏俱乐部",
               "description": "穆苏俱乐部 进球！精彩射门得分"
             },
             {
-              "minute": 56,
+              "minute": 64,
               "type": "goal",
               "team": "home",
               "teamName": "穆苏俱乐部",
               "description": "穆苏俱乐部 进球！精彩射门得分"
             },
             {
-              "minute": 65,
+              "minute": 68,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "彩虹",
+              "description": "彩虹 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 78,
               "type": "yellow",
               "team": "home",
               "teamName": "穆苏俱乐部",
               "description": "穆苏俱乐部 球员犯规吃到黄牌"
             },
             {
-              "minute": 75,
+              "minute": 81,
               "type": "yellow",
-              "team": "home",
-              "teamName": "穆苏俱乐部",
-              "description": "穆苏俱乐部 球员犯规吃到黄牌"
+              "team": "away",
+              "teamName": "彩虹",
+              "description": "彩虹 球员犯规吃到黄牌"
             }
           ],
           "analysis": [
             "穆苏俱乐部 主场取胜，实际进球 4 vs xG 1.69，把握机会能力超强",
             "双方控球率相对均衡，场面开放对攻激烈",
-            "裁判执法偏严（严格度 82分），全场共出示 8 黄0红，直接影响了比赛节奏",
+            "裁判执法尺度平衡，比赛中规中矩",
             "本场比赛对抗激烈，双方共计 32 次犯规，拼抢强度拉满"
           ],
           "homeTactics": {
@@ -6083,8 +6082,8 @@
           "marketExpectation": {
             "totalGoals": {
               "line": 2.75,
-              "lean": "under",
-              "label": "2.75球·偏小",
+              "lean": "balanced",
+              "label": "2.75球·均衡",
               "explain": "市场预期总进球约 2.75 球（参考印加尔联场均 2.55 球）"
             },
             "handicap": {
@@ -6094,10 +6093,10 @@
               "explain": "实力差预估：主让0.25（主场加成+排名差-1位）"
             },
             "totalCorners": {
-              "line": 11.5,
-              "lean": "balanced",
-              "label": "11.5角·均衡",
-              "explain": "市场预期总角球 11.5 个（参考 印加尔联 场均 9.5 角）"
+              "line": 11.0,
+              "lean": "under",
+              "label": "11角·偏小",
+              "explain": "市场预期总角球 11.0 个（参考 印加尔联 场均 9.5 角）"
             },
             "cornerHandicap": {
               "line": 0.5,
@@ -6114,7 +6113,7 @@
               },
               "rankDiff": -1,
               "rankValid": false,
-              "refereeScore": 75,
+              "refereeScore": 45,
               "modelVersion": "ft-odds-model-v1",
               "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
             }
@@ -6273,75 +6272,75 @@
           },
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-拉莫什·穆罕默德",
-              "name": "拉莫什·穆罕默德",
-              "country": "科威特",
-              "age": 41
+              "id": "dqd-穆罕默德·胡维什",
+              "name": "穆罕默德·胡维什",
+              "country": "沙特阿拉伯",
+              "age": 38
             },
             "history": [
               {
                 "date": "2026-08-09",
                 "league": "第5轮执法",
                 "match": "比赛1",
-                "yellowCards": 6,
+                "yellowCards": 9,
                 "redCards": 1,
-                "fouls": 31,
+                "fouls": 23,
                 "penalties": 1,
-                "cardIndex": 85,
-                "varChecks": 2
+                "cardIndex": 115,
+                "varChecks": 4
               },
               {
                 "date": "2026-08-02",
                 "league": "第4轮执法",
                 "match": "比赛2",
-                "yellowCards": 9,
+                "yellowCards": 5,
                 "redCards": 2,
-                "fouls": 30,
-                "penalties": 1,
-                "cardIndex": 140,
-                "varChecks": 4
+                "fouls": 22,
+                "penalties": 2,
+                "cardIndex": 100,
+                "varChecks": 3
               },
               {
                 "date": "2026-07-26",
                 "league": "第3轮执法",
                 "match": "比赛3",
-                "yellowCards": 7,
+                "yellowCards": 9,
                 "redCards": 1,
-                "fouls": 18,
+                "fouls": 26,
                 "penalties": 1,
-                "cardIndex": 95,
+                "cardIndex": 115,
                 "varChecks": 3
               },
               {
                 "date": "2026-07-19",
                 "league": "第2轮执法",
                 "match": "比赛4",
-                "yellowCards": 9,
+                "yellowCards": 7,
                 "redCards": 1,
-                "fouls": 22,
-                "penalties": 2,
-                "cardIndex": 115,
+                "fouls": 25,
+                "penalties": 1,
+                "cardIndex": 95,
                 "varChecks": 3
               },
               {
                 "date": "2026-07-12",
                 "league": "第1轮执法",
                 "match": "比赛5",
-                "yellowCards": 5,
-                "redCards": 2,
-                "fouls": 25,
-                "penalties": 2,
-                "cardIndex": 100,
+                "yellowCards": 9,
+                "redCards": 1,
+                "fouls": 19,
+                "penalties": 1,
+                "cardIndex": 115,
                 "varChecks": 3
               }
             ],
             "statistics": {
-              "avgYellow": "7.2",
-              "avgRed": "1.40",
-              "avgFouls": "25.2",
-              "avgPenalties": "1.40",
-              "avgCardIndex": "107.0",
-              "avgVar": "3.0",
+              "avgYellow": "7.8",
+              "avgRed": "1.20",
+              "avgFouls": "23.0",
+              "avgPenalties": "1.20",
+              "avgCardIndex": "108.0",
+              "avgVar": "3.2",
               "strictnessScore": 92
             },
             "style": "严格型",
@@ -6355,46 +6354,25 @@
           },
           "keyEvents": [
             {
-              "minute": 3,
-              "type": "yellow",
-              "team": "home",
-              "teamName": "帕亚联",
-              "description": "帕亚联 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 7,
+              "minute": 2,
               "type": "yellow",
               "team": "away",
               "teamName": "加尔各答警察",
               "description": "加尔各答警察 球员犯规吃到黄牌"
             },
             {
-              "minute": 9,
+              "minute": 6,
               "type": "yellow",
               "team": "home",
               "teamName": "帕亚联",
               "description": "帕亚联 球员犯规吃到黄牌"
             },
             {
-              "minute": 16,
+              "minute": 9,
               "type": "goal",
               "team": "home",
               "teamName": "帕亚联",
               "description": "帕亚联 进球！精彩射门得分"
-            },
-            {
-              "minute": 18,
-              "type": "yellow",
-              "team": "home",
-              "teamName": "帕亚联",
-              "description": "帕亚联 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 29,
-              "type": "yellow",
-              "team": "home",
-              "teamName": "帕亚联",
-              "description": "帕亚联 球员犯规吃到黄牌"
             },
             {
               "minute": 31,
@@ -6404,32 +6382,53 @@
               "description": "帕亚联 进球！精彩射门得分"
             },
             {
-              "minute": 41,
+              "minute": 32,
               "type": "yellow",
               "team": "away",
               "teamName": "加尔各答警察",
               "description": "加尔各答警察 球员犯规吃到黄牌"
             },
             {
-              "minute": 54,
+              "minute": 40,
               "type": "yellow",
               "team": "home",
               "teamName": "帕亚联",
               "description": "帕亚联 球员犯规吃到黄牌"
             },
             {
-              "minute": 57,
+              "minute": 49,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "帕亚联",
+              "description": "帕亚联 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 60,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "帕亚联",
+              "description": "帕亚联 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 66,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "帕亚联",
+              "description": "帕亚联 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 66,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "帕亚联",
+              "description": "帕亚联 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 80,
               "type": "yellow",
               "team": "away",
               "teamName": "加尔各答警察",
               "description": "加尔各答警察 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 78,
-              "type": "yellow",
-              "team": "home",
-              "teamName": "帕亚联",
-              "description": "帕亚联 球员犯规吃到黄牌"
             }
           ],
           "analysis": [
@@ -6809,21 +6808,21 @@
           },
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿利舍尔·奥斯曼诺夫",
-              "name": "阿利舍尔·奥斯曼诺夫",
-              "country": "乌兹别克斯坦",
-              "age": 42
+              "id": "dqd-拉莫什·穆罕默德",
+              "name": "拉莫什·穆罕默德",
+              "country": "科威特",
+              "age": 41
             },
             "history": [
               {
                 "date": "2026-08-09",
                 "league": "第5轮执法",
                 "match": "比赛1",
-                "yellowCards": 8,
+                "yellowCards": 7,
                 "redCards": 1,
-                "fouls": 26,
+                "fouls": 22,
                 "penalties": 1,
-                "cardIndex": 105,
+                "cardIndex": 95,
                 "varChecks": 3
               },
               {
@@ -6832,7 +6831,7 @@
                 "match": "比赛2",
                 "yellowCards": 8,
                 "redCards": 1,
-                "fouls": 24,
+                "fouls": 29,
                 "penalties": 1,
                 "cardIndex": 105,
                 "varChecks": 3
@@ -6841,43 +6840,43 @@
                 "date": "2026-07-26",
                 "league": "第3轮执法",
                 "match": "比赛3",
-                "yellowCards": 7,
+                "yellowCards": 8,
                 "redCards": 1,
-                "fouls": 30,
+                "fouls": 33,
                 "penalties": 1,
-                "cardIndex": 95,
+                "cardIndex": 105,
                 "varChecks": 4
               },
               {
                 "date": "2026-07-19",
                 "league": "第2轮执法",
                 "match": "比赛4",
-                "yellowCards": 8,
-                "redCards": 1,
-                "fouls": 37,
-                "penalties": 2,
-                "cardIndex": 105,
+                "yellowCards": 9,
+                "redCards": 2,
+                "fouls": 35,
+                "penalties": 1,
+                "cardIndex": 140,
                 "varChecks": 4
               },
               {
                 "date": "2026-07-12",
                 "league": "第1轮执法",
                 "match": "比赛5",
-                "yellowCards": 8,
-                "redCards": 1,
-                "fouls": 29,
+                "yellowCards": 10,
+                "redCards": 2,
+                "fouls": 24,
                 "penalties": 1,
-                "cardIndex": 105,
-                "varChecks": 3
+                "cardIndex": 150,
+                "varChecks": 5
               }
             ],
             "statistics": {
-              "avgYellow": "7.8",
-              "avgRed": "1.00",
-              "avgFouls": "29.2",
-              "avgPenalties": "1.20",
-              "avgCardIndex": "103.0",
-              "avgVar": "3.4",
+              "avgYellow": "8.4",
+              "avgRed": "1.40",
+              "avgFouls": "28.6",
+              "avgPenalties": "1.00",
+              "avgCardIndex": "119.0",
+              "avgVar": "3.8",
               "strictnessScore": 100
             },
             "style": "严格型",
@@ -6891,25 +6890,25 @@
           },
           "keyEvents": [
             {
-              "minute": 14,
-              "type": "yellow",
-              "team": "away",
-              "teamName": "瓦里AC",
-              "description": "瓦里AC 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 33,
+              "minute": 21,
               "type": "yellow",
               "team": "home",
               "teamName": "警察",
               "description": "警察 球员犯规吃到黄牌"
             },
             {
-              "minute": 35,
+              "minute": 45,
               "type": "yellow",
-              "team": "away",
-              "teamName": "瓦里AC",
-              "description": "瓦里AC 球员犯规吃到黄牌"
+              "team": "home",
+              "teamName": "警察",
+              "description": "警察 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 83,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "警察",
+              "description": "警察 球员犯规吃到黄牌"
             }
           ],
           "analysis": [
@@ -7216,10 +7215,10 @@
           "venue": "阿尔卡达格主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-金希坤",
-              "name": "金希坤",
-              "country": "韩国",
-              "age": 42
+              "id": "dqd-傅明",
+              "name": "傅明",
+              "country": "中国",
+              "age": 40
             },
             "history": [
               {
@@ -7231,29 +7230,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -7276,6 +7253,28 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -7284,7 +7283,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.2",
+              "avgVar": "1.8",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -7298,7 +7297,6 @@
           },
           "features": [
             "阿尔卡达格联赛排名靠前",
-            "主裁尺度偏严，注意出牌风险",
             "双方实力接近，值得关注"
           ],
           "predictedDifficulty": 4,
@@ -7324,10 +7322,10 @@
           },
           "marketExpectation": {
             "totalGoals": {
-              "line": 2.5,
-              "lean": "over",
-              "label": "2.5球·偏大",
-              "explain": "市场预期总进球约 2.5 球（参考亚冠二级场均 2.55 球）"
+              "line": 2.75,
+              "lean": "balanced",
+              "label": "2.75球·均衡",
+              "explain": "市场预期总进球约 2.75 球（参考亚冠二级场均 2.55 球）"
             },
             "handicap": {
               "line": 0.0,
@@ -7336,10 +7334,10 @@
               "explain": "实力差预估：平手（主场加成+排名差-3位）"
             },
             "totalCorners": {
-              "line": 12.0,
-              "lean": "under",
-              "label": "12角·偏小",
-              "explain": "市场预期总角球 12.0 个（参考 亚冠二级 场均 9.5 角）"
+              "line": 11.0,
+              "lean": "balanced",
+              "label": "11角·均衡",
+              "explain": "市场预期总角球 11.0 个（参考 亚冠二级 场均 9.5 角）"
             },
             "cornerHandicap": {
               "line": 0.0,
@@ -7356,7 +7354,7 @@
               },
               "rankDiff": -3,
               "rankValid": false,
-              "refereeScore": 100,
+              "refereeScore": 47,
               "modelVersion": "ft-odds-model-v1",
               "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
             }
@@ -7418,10 +7416,10 @@
           "venue": "上海申花U20主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-张雷",
-              "name": "张雷",
-              "country": "中国",
-              "age": 42
+              "id": "dqd-穆罕默德·胡维什",
+              "name": "穆罕默德·胡维什",
+              "country": "沙特阿拉伯",
+              "age": 38
             },
             "history": [
               {
@@ -7434,6 +7432,17 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -7467,17 +7476,6 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
               }
             ],
             "statistics": {
@@ -7486,7 +7484,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.8",
+              "avgVar": "1.6",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -7620,411 +7618,10 @@
           "venue": "东孟加拉 主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-中村太",
-              "name": "中村太",
-              "country": "日本",
-              "age": 41
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "主裁尺度偏严，注意出牌风险"
-          ],
-          "predictedDifficulty": 3,
-          "intensity": "★★★☆☆",
-          "homeRecentForm": [
-            "平",
-            "胜",
-            "平",
-            "平",
-            "负"
-          ],
-          "awayRecentForm": [
-            "胜",
-            "平",
-            "负",
-            "胜",
-            "胜"
-          ],
-          "h2hLast5": {
-            "homeWins": 1,
-            "draws": 0,
-            "awayWins": 2
-          },
-          "marketExpectation": {
-            "totalGoals": {
-              "line": 2.75,
-              "lean": "under",
-              "label": "2.75球·偏小",
-              "explain": "市场预期总进球约 2.75 球（参考亚冠二级场均 2.55 球）"
-            },
-            "handicap": {
-              "line": 0.25,
-              "lean": "home",
-              "label": "主让0.25",
-              "explain": "实力差预估：主让0.25（主场加成+排名差+1位）"
-            },
-            "totalCorners": {
-              "line": 11.5,
-              "lean": "balanced",
-              "label": "11.5角·均衡",
-              "explain": "市场预期总角球 11.5 个（参考 亚冠二级 场均 9.5 角）"
-            },
-            "cornerHandicap": {
-              "line": 0.5,
-              "lean": "home",
-              "label": "角球主让0.5",
-              "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
-            },
-            "meta": {
-              "source": "dqd-public-derived-model",
-              "leagueProfile": {
-                "goals": 2.55,
-                "corners": 9.5,
-                "atkCoef": 1.0
-              },
-              "rankDiff": 1,
-              "rankValid": false,
-              "refereeScore": 100,
-              "modelVersion": "ft-odds-model-v1",
-              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
-            }
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 49,
-          "heatBreakdown": {
-            "league": 46,
-            "rank": 0,
-            "focal": 0,
-            "h2hRecent": 3
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54515127",
-          "date": "2026-08-12",
-          "time": "10:00",
-          "league": {
-            "id": "dqd-asia-亚挑战联",
-            "name": "亚挑战联",
-            "country": "亚挑战联",
-            "flag": "🏆",
-            "color": "#333333",
-            "region": "asia"
-          },
-          "region": "asia",
-          "gender": "men",
-          "homeTeam": {
-            "name": "马兹亚",
-            "logo": "https://sd.qunliao.info/fastdfs4/M00/FF/F9/ChMf8F46LBKAOCo6AABbxniN130345.png",
-            "rank": null,
-            "teamId": "t8271",
-            "appLogo": {
-              "text": "兹亚",
-              "colors": [
-                "#84cc16",
-                "#4d7c0f"
-              ],
-              "countryFlag": "🌏"
-            },
-            "countryFlag": "🌏"
-          },
-          "awayTeam": {
-            "name": "雷加塔达兹",
-            "logo": "https://sd.qunliao.info/fastdfs5/M00/0D/D9/rB8BO16G32uAOnmwAABsUEAGWuE287.png",
-            "rank": "3",
-            "teamId": "t8425",
-            "appLogo": {
-              "text": "达兹",
-              "colors": [
-                "#06b6d4",
-                "#0e7490"
-              ],
-              "countryFlag": "🌏"
-            },
-            "countryFlag": "🌏"
-          },
-          "venue": "马兹亚主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-阿卜杜拉·阿马尔",
-              "name": "阿卜杜拉·阿马尔",
-              "country": "阿联酋",
-              "age": 39
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.4",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "雷加塔达兹联赛排名靠前",
-            "主裁尺度偏严，注意出牌风险"
-          ],
-          "predictedDifficulty": 2,
-          "intensity": "★★☆☆☆",
-          "homeRecentForm": [
-            "平",
-            "平",
-            "胜",
-            "胜",
-            "负"
-          ],
-          "awayRecentForm": [
-            "胜",
-            "胜",
-            "负",
-            "平",
-            "平"
-          ],
-          "h2hLast5": {
-            "homeWins": 2,
-            "draws": 0,
-            "awayWins": 1
-          },
-          "marketExpectation": {
-            "totalGoals": {
-              "line": 2.5,
-              "lean": "over",
-              "label": "2.5球·偏大",
-              "explain": "市场预期总进球约 2.5 球（参考亚挑战联场均 2.55 球）"
-            },
-            "handicap": {
-              "line": 0.5,
-              "lean": "home",
-              "label": "主让0.5",
-              "explain": "实力差预估：主让0.5（主场加成+排名差+3位）"
-            },
-            "totalCorners": {
-              "line": 12.0,
-              "lean": "under",
-              "label": "12角·偏小",
-              "explain": "市场预期总角球 12.0 个（参考 亚挑战联 场均 9.5 角）"
-            },
-            "cornerHandicap": {
-              "line": 1.0,
-              "lean": "home",
-              "label": "角球主让1",
-              "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
-            },
-            "meta": {
-              "source": "dqd-public-derived-model",
-              "leagueProfile": {
-                "goals": 2.55,
-                "corners": 9.5,
-                "atkCoef": 1.0
-              },
-              "rankDiff": 3,
-              "rankValid": false,
-              "refereeScore": 75,
-              "modelVersion": "ft-odds-model-v1",
-              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
-            }
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 30,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 10,
-            "focal": 0,
-            "h2hRecent": 4
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54453486",
-          "date": "2026-08-12",
-          "time": "13:00",
-          "league": {
-            "id": "dqd-asia-也门甲",
-            "name": "也门甲",
-            "country": "也门甲",
-            "flag": "🏆",
-            "color": "#9C9CDF",
-            "region": "asia"
-          },
-          "region": "asia",
-          "gender": "men",
-          "homeTeam": {
-            "name": "萨那国民",
-            "logo": "https://sd.qunliao.info/fastdfs7/M00/90/A7/rBUC6GaDtNuAOGZCAABxFBUG9O4031.png",
-            "rank": "7",
-            "teamId": "t2996",
-            "appLogo": {
-              "text": "国民",
-              "colors": [
-                "#10b981",
-                "#047857"
-              ],
-              "countryFlag": "🏳️"
-            },
-            "countryFlag": "🏳️"
-          },
-          "awayTeam": {
-            "name": "伊卜联合",
-            "logo": "https://sd.qunliao.info/fastdfs7/M00/C0/0A/rBUBsmcWGUyAP9yHAAFmmzdng34934.png",
-            "rank": "11",
-            "teamId": "t55074",
-            "appLogo": {
-              "text": "联合",
-              "colors": [
-                "#f43f5e",
-                "#be123c"
-              ],
-              "countryFlag": "🏳️"
-            },
-            "countryFlag": "🏳️"
-          },
-          "venue": "萨那国民主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-傅明",
-              "name": "傅明",
-              "country": "中国",
-              "age": 40
+              "id": "dqd-穆罕默德·胡维什",
+              "name": "穆罕默德·胡维什",
+              "country": "沙特阿拉伯",
+              "age": 38
             },
             "history": [
               {
@@ -8104,6 +7701,407 @@
           "features": [
             "主裁尺度偏严，注意出牌风险"
           ],
+          "predictedDifficulty": 3,
+          "intensity": "★★★☆☆",
+          "homeRecentForm": [
+            "平",
+            "胜",
+            "平",
+            "平",
+            "负"
+          ],
+          "awayRecentForm": [
+            "胜",
+            "平",
+            "负",
+            "胜",
+            "胜"
+          ],
+          "h2hLast5": {
+            "homeWins": 1,
+            "draws": 0,
+            "awayWins": 2
+          },
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.75,
+              "lean": "under",
+              "label": "2.75球·偏小",
+              "explain": "市场预期总进球约 2.75 球（参考亚冠二级场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.25,
+              "lean": "home",
+              "label": "主让0.25",
+              "explain": "实力差预估：主让0.25（主场加成+排名差+1位）"
+            },
+            "totalCorners": {
+              "line": 11.5,
+              "lean": "balanced",
+              "label": "11.5角·均衡",
+              "explain": "市场预期总角球 11.5 个（参考 亚冠二级 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 0.5,
+              "lean": "home",
+              "label": "角球主让0.5",
+              "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": 1,
+              "rankValid": false,
+              "refereeScore": 90,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 49,
+          "heatBreakdown": {
+            "league": 46,
+            "rank": 0,
+            "focal": 0,
+            "h2hRecent": 3
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54515127",
+          "date": "2026-08-12",
+          "time": "10:00",
+          "league": {
+            "id": "dqd-asia-亚挑战联",
+            "name": "亚挑战联",
+            "country": "亚挑战联",
+            "flag": "🏆",
+            "color": "#333333",
+            "region": "asia"
+          },
+          "region": "asia",
+          "gender": "men",
+          "homeTeam": {
+            "name": "马兹亚",
+            "logo": "https://sd.qunliao.info/fastdfs4/M00/FF/F9/ChMf8F46LBKAOCo6AABbxniN130345.png",
+            "rank": null,
+            "teamId": "t8271",
+            "appLogo": {
+              "text": "兹亚",
+              "colors": [
+                "#84cc16",
+                "#4d7c0f"
+              ],
+              "countryFlag": "🌏"
+            },
+            "countryFlag": "🌏"
+          },
+          "awayTeam": {
+            "name": "雷加塔达兹",
+            "logo": "https://sd.qunliao.info/fastdfs5/M00/0D/D9/rB8BO16G32uAOnmwAABsUEAGWuE287.png",
+            "rank": "3",
+            "teamId": "t8425",
+            "appLogo": {
+              "text": "达兹",
+              "colors": [
+                "#06b6d4",
+                "#0e7490"
+              ],
+              "countryFlag": "🌏"
+            },
+            "countryFlag": "🌏"
+          },
+          "venue": "马兹亚主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-中村太",
+              "name": "中村太",
+              "country": "日本",
+              "age": 41
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.2",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "雷加塔达兹联赛排名靠前",
+            "主裁尺度偏严，注意出牌风险"
+          ],
+          "predictedDifficulty": 2,
+          "intensity": "★★☆☆☆",
+          "homeRecentForm": [
+            "平",
+            "平",
+            "胜",
+            "胜",
+            "负"
+          ],
+          "awayRecentForm": [
+            "胜",
+            "胜",
+            "负",
+            "平",
+            "平"
+          ],
+          "h2hLast5": {
+            "homeWins": 2,
+            "draws": 0,
+            "awayWins": 1
+          },
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.75,
+              "lean": "balanced",
+              "label": "2.75球·均衡",
+              "explain": "市场预期总进球约 2.75 球（参考亚挑战联场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.5,
+              "lean": "home",
+              "label": "主让0.5",
+              "explain": "实力差预估：主让0.5（主场加成+排名差+3位）"
+            },
+            "totalCorners": {
+              "line": 11.0,
+              "lean": "over",
+              "label": "11角·偏大",
+              "explain": "市场预期总角球 11.0 个（参考 亚挑战联 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 1.0,
+              "lean": "home",
+              "label": "角球主让1",
+              "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": 3,
+              "rankValid": false,
+              "refereeScore": 55,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 30,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 10,
+            "focal": 0,
+            "h2hRecent": 4
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54453486",
+          "date": "2026-08-12",
+          "time": "13:00",
+          "league": {
+            "id": "dqd-asia-也门甲",
+            "name": "也门甲",
+            "country": "也门甲",
+            "flag": "🏆",
+            "color": "#9C9CDF",
+            "region": "asia"
+          },
+          "region": "asia",
+          "gender": "men",
+          "homeTeam": {
+            "name": "萨那国民",
+            "logo": "https://sd.qunliao.info/fastdfs7/M00/90/A7/rBUC6GaDtNuAOGZCAABxFBUG9O4031.png",
+            "rank": "7",
+            "teamId": "t2996",
+            "appLogo": {
+              "text": "国民",
+              "colors": [
+                "#10b981",
+                "#047857"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "awayTeam": {
+            "name": "伊卜联合",
+            "logo": "https://sd.qunliao.info/fastdfs7/M00/C0/0A/rBUBsmcWGUyAP9yHAAFmmzdng34934.png",
+            "rank": "11",
+            "teamId": "t55074",
+            "appLogo": {
+              "text": "联合",
+              "colors": [
+                "#f43f5e",
+                "#be123c"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "venue": "萨那国民主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-穆罕默德·胡维什",
+              "name": "穆罕默德·胡维什",
+              "country": "沙特阿拉伯",
+              "age": 38
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.6",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "主裁尺度偏严，注意出牌风险"
+          ],
           "predictedDifficulty": 2,
           "intensity": "★★☆☆☆",
           "homeRecentForm": [
@@ -8128,8 +8126,8 @@
           "marketExpectation": {
             "totalGoals": {
               "line": 2.75,
-              "lean": "balanced",
-              "label": "2.75球·均衡",
+              "lean": "under",
+              "label": "2.75球·偏小",
               "explain": "市场预期总进球约 2.75 球（参考也门甲场均 2.55 球）"
             },
             "handicap": {
@@ -8140,8 +8138,8 @@
             },
             "totalCorners": {
               "line": 11.0,
-              "lean": "under",
-              "label": "11角·偏小",
+              "lean": "over",
+              "label": "11角·偏大",
               "explain": "市场预期总角球 11.0 个（参考 也门甲 场均 9.5 角）"
             },
             "cornerHandicap": {
@@ -8159,7 +8157,7 @@
               },
               "rankDiff": 4,
               "rankValid": true,
-              "refereeScore": 55,
+              "refereeScore": 90,
               "modelVersion": "ft-odds-model-v1",
               "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
             }
@@ -8221,9 +8219,209 @@
           "venue": "奇兹里克FC主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-中村太",
-              "name": "中村太",
+              "id": "dqd-佐藤隆治",
+              "name": "佐藤隆治",
               "country": "日本",
+              "age": 43
+            },
+            "history": [
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              }
+            ],
+            "statistics": {
+              "avgYellow": "3.0",
+              "avgRed": "0.00",
+              "avgFouls": "22.0",
+              "avgPenalties": "0.00",
+              "avgCardIndex": "30.0",
+              "avgVar": "1.0",
+              "strictnessScore": 34
+            },
+            "style": "鼓励对抗型",
+            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
+            "keyTraits": [
+              "极少出牌",
+              "鼓励身体对抗",
+              "比赛中断少",
+              "极少判罚点球"
+            ]
+          },
+          "features": [
+            "常规联赛对决"
+          ],
+          "predictedDifficulty": 1,
+          "intensity": "★☆☆☆☆",
+          "homeRecentForm": [
+            "胜",
+            "胜",
+            "胜",
+            "平",
+            "平"
+          ],
+          "awayRecentForm": [
+            "平",
+            "负",
+            "负",
+            "平",
+            "胜"
+          ],
+          "h2hLast5": {
+            "homeWins": 0,
+            "draws": 1,
+            "awayWins": 2
+          },
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.75,
+              "lean": "balanced",
+              "label": "2.75球·均衡",
+              "explain": "市场预期总进球约 2.75 球（参考乌兹甲场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.25,
+              "lean": "home",
+              "label": "主让0.25",
+              "explain": "实力差预估：主让0.25（主场加成+排名差+0位）"
+            },
+            "totalCorners": {
+              "line": 11.0,
+              "lean": "under",
+              "label": "11角·偏小",
+              "explain": "市场预期总角球 11.0 个（参考 乌兹甲 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 0.5,
+              "lean": "home",
+              "label": "角球主让0.5",
+              "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": 0,
+              "rankValid": false,
+              "refereeScore": 45,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 20,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 0,
+            "focal": 0,
+            "h2hRecent": 4
+          },
+          "isHotMatch": false
+        },
+        {
+          "id": "54554934",
+          "date": "2026-08-12",
+          "time": "09:30",
+          "league": {
+            "id": "dqd-asia-印加尔联",
+            "name": "印加尔联",
+            "country": "印加尔联",
+            "flag": "🏆",
+            "color": "#CC6703",
+            "region": "asia"
+          },
+          "region": "asia",
+          "gender": "men",
+          "homeTeam": {
+            "name": "警察",
+            "logo": "https://sd.qunliao.info/fastdfs3//M00//B9//F9//ChOxM1xIEDOAbu7VAAAWn39BUY0523.png",
+            "rank": null,
+            "teamId": "t38377",
+            "appLogo": {
+              "text": "警察",
+              "colors": [
+                "#10b981",
+                "#047857"
+              ],
+              "countryFlag": "🇮🇳"
+            },
+            "countryFlag": "🇮🇳"
+          },
+          "awayTeam": {
+            "name": "瓦里AC",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "rank": null,
+            "teamId": "t132724",
+            "appLogo": {
+              "text": "AC",
+              "colors": [
+                "#0ea5e9",
+                "#6366f1"
+              ],
+              "countryFlag": "🇮🇳"
+            },
+            "countryFlag": "🇮🇳"
+          },
+          "venue": "警察主场",
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-拉莫什·穆罕默德",
+              "name": "拉莫什·穆罕默德",
+              "country": "科威特",
               "age": 41
             },
             "history": [
@@ -8247,7 +8445,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -8258,7 +8456,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -8289,7 +8487,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.6",
+              "avgVar": "2.0",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -8307,48 +8505,48 @@
           "predictedDifficulty": 1,
           "intensity": "★☆☆☆☆",
           "homeRecentForm": [
-            "胜",
-            "胜",
+            "平",
             "胜",
             "平",
-            "平"
+            "负",
+            "胜"
           ],
           "awayRecentForm": [
             "平",
-            "负",
-            "负",
+            "胜",
             "平",
+            "胜",
             "胜"
           ],
           "h2hLast5": {
-            "homeWins": 0,
+            "homeWins": 2,
             "draws": 1,
-            "awayWins": 2
+            "awayWins": 0
           },
           "marketExpectation": {
             "totalGoals": {
-              "line": 2.5,
-              "lean": "over",
-              "label": "2.5球·偏大",
-              "explain": "市场预期总进球约 2.5 球（参考乌兹甲场均 2.55 球）"
+              "line": 2.75,
+              "lean": "under",
+              "label": "2.75球·偏小",
+              "explain": "市场预期总进球约 2.75 球（参考印加尔联场均 2.55 球）"
             },
             "handicap": {
-              "line": 0.25,
-              "lean": "home",
-              "label": "主让0.25",
-              "explain": "实力差预估：主让0.25（主场加成+排名差+0位）"
-            },
-            "totalCorners": {
-              "line": 11.5,
-              "lean": "balanced",
-              "label": "11.5角·均衡",
-              "explain": "市场预期总角球 11.5 个（参考 乌兹甲 场均 9.5 角）"
-            },
-            "cornerHandicap": {
               "line": 0.5,
               "lean": "home",
-              "label": "角球主让0.5",
-              "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+              "label": "主让0.5",
+              "explain": "实力差预估：主让0.5（主场加成+排名差+2位）"
+            },
+            "totalCorners": {
+              "line": 12.0,
+              "lean": "under",
+              "label": "12角·偏小",
+              "explain": "市场预期总角球 12.0 个（参考 印加尔联 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 1.0,
+              "lean": "home",
+              "label": "角球主让1",
+              "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
             },
             "meta": {
               "source": "dqd-public-derived-model",
@@ -8357,7 +8555,7 @@
                 "corners": 9.5,
                 "atkCoef": 1.0
               },
-              "rankDiff": 0,
+              "rankDiff": 2,
               "rankValid": false,
               "refereeScore": 100,
               "modelVersion": "ft-odds-model-v1",
@@ -8365,12 +8563,12 @@
             }
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 20,
+          "heatScore": 19,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
             "focal": 0,
-            "h2hRecent": 4
+            "h2hRecent": 3
           },
           "isHotMatch": false
         },
@@ -8421,10 +8619,10 @@
           "venue": "帕亚联主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-拉莫什·穆罕默德",
-              "name": "拉莫什·穆罕默德",
-              "country": "科威特",
-              "age": 41
+              "id": "dqd-穆罕默德·胡维什",
+              "name": "穆罕默德·胡维什",
+              "country": "沙特阿拉伯",
+              "age": 38
             },
             "history": [
               {
@@ -8458,7 +8656,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -8489,7 +8687,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.4",
+              "avgVar": "1.2",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -8621,10 +8819,10 @@
           "venue": "穆苏俱乐部主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿卜杜拉·阿马尔",
-              "name": "阿卜杜拉·阿马尔",
-              "country": "阿联酋",
-              "age": 39
+              "id": "dqd-佐藤隆治",
+              "name": "佐藤隆治",
+              "country": "日本",
+              "age": 43
             },
             "history": [
               {
@@ -8636,6 +8834,28 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
                 "varChecks": 1
               },
               {
@@ -8647,17 +8867,6 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
                 "varChecks": 1
               },
               {
@@ -8669,18 +8878,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               }
             ],
             "statistics": {
@@ -8689,7 +8887,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.6",
+              "avgVar": "1.4",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -8702,7 +8900,7 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "常规联赛对决"
           ],
           "predictedDifficulty": 1,
           "intensity": "★☆☆☆☆",
@@ -8728,8 +8926,8 @@
           "marketExpectation": {
             "totalGoals": {
               "line": 2.75,
-              "lean": "under",
-              "label": "2.75球·偏小",
+              "lean": "balanced",
+              "label": "2.75球·均衡",
               "explain": "市场预期总进球约 2.75 球（参考印加尔联场均 2.55 球）"
             },
             "handicap": {
@@ -8739,10 +8937,10 @@
               "explain": "实力差预估：主让0.25（主场加成+排名差-1位）"
             },
             "totalCorners": {
-              "line": 11.5,
-              "lean": "balanced",
-              "label": "11.5角·均衡",
-              "explain": "市场预期总角球 11.5 个（参考 印加尔联 场均 9.5 角）"
+              "line": 11.0,
+              "lean": "under",
+              "label": "11角·偏小",
+              "explain": "市场预期总角球 11.0 个（参考 印加尔联 场均 9.5 角）"
             },
             "cornerHandicap": {
               "line": 0.5,
@@ -8759,207 +8957,7 @@
               },
               "rankDiff": -1,
               "rankValid": false,
-              "refereeScore": 75,
-              "modelVersion": "ft-odds-model-v1",
-              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
-            }
-          },
-          "_dataSource": "dongqiudi-real",
-          "heatScore": 19,
-          "heatBreakdown": {
-            "league": 16,
-            "rank": 0,
-            "focal": 0,
-            "h2hRecent": 3
-          },
-          "isHotMatch": false
-        },
-        {
-          "id": "54554934",
-          "date": "2026-08-12",
-          "time": "09:30",
-          "league": {
-            "id": "dqd-asia-印加尔联",
-            "name": "印加尔联",
-            "country": "印加尔联",
-            "flag": "🏆",
-            "color": "#CC6703",
-            "region": "asia"
-          },
-          "region": "asia",
-          "gender": "men",
-          "homeTeam": {
-            "name": "警察",
-            "logo": "https://sd.qunliao.info/fastdfs3//M00//B9//F9//ChOxM1xIEDOAbu7VAAAWn39BUY0523.png",
-            "rank": null,
-            "teamId": "t38377",
-            "appLogo": {
-              "text": "警察",
-              "colors": [
-                "#10b981",
-                "#047857"
-              ],
-              "countryFlag": "🇮🇳"
-            },
-            "countryFlag": "🇮🇳"
-          },
-          "awayTeam": {
-            "name": "瓦里AC",
-            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
-            "rank": null,
-            "teamId": "t132724",
-            "appLogo": {
-              "text": "AC",
-              "colors": [
-                "#0ea5e9",
-                "#6366f1"
-              ],
-              "countryFlag": "🇮🇳"
-            },
-            "countryFlag": "🇮🇳"
-          },
-          "venue": "警察主场",
-          "refereeAnalysis": {
-            "referee": {
-              "id": "dqd-阿利舍尔·奥斯曼诺夫",
-              "name": "阿利舍尔·奥斯曼诺夫",
-              "country": "乌兹别克斯坦",
-              "age": 42
-            },
-            "history": [
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 2
-              }
-            ],
-            "statistics": {
-              "avgYellow": "3.0",
-              "avgRed": "0.00",
-              "avgFouls": "22.0",
-              "avgPenalties": "0.00",
-              "avgCardIndex": "30.0",
-              "avgVar": "1.6",
-              "strictnessScore": 34
-            },
-            "style": "鼓励对抗型",
-            "styleDesc": "该裁判倾向于让比赛流畅进行，对身体对抗容忍度高。出牌非常克制，比赛节奏快，对抗激烈。",
-            "keyTraits": [
-              "极少出牌",
-              "鼓励身体对抗",
-              "比赛中断少",
-              "极少判罚点球"
-            ]
-          },
-          "features": [
-            "主裁尺度偏严，注意出牌风险"
-          ],
-          "predictedDifficulty": 1,
-          "intensity": "★☆☆☆☆",
-          "homeRecentForm": [
-            "平",
-            "胜",
-            "平",
-            "负",
-            "胜"
-          ],
-          "awayRecentForm": [
-            "平",
-            "胜",
-            "平",
-            "胜",
-            "胜"
-          ],
-          "h2hLast5": {
-            "homeWins": 2,
-            "draws": 1,
-            "awayWins": 0
-          },
-          "marketExpectation": {
-            "totalGoals": {
-              "line": 2.75,
-              "lean": "under",
-              "label": "2.75球·偏小",
-              "explain": "市场预期总进球约 2.75 球（参考印加尔联场均 2.55 球）"
-            },
-            "handicap": {
-              "line": 0.5,
-              "lean": "home",
-              "label": "主让0.5",
-              "explain": "实力差预估：主让0.5（主场加成+排名差+2位）"
-            },
-            "totalCorners": {
-              "line": 12.0,
-              "lean": "under",
-              "label": "12角·偏小",
-              "explain": "市场预期总角球 12.0 个（参考 印加尔联 场均 9.5 角）"
-            },
-            "cornerHandicap": {
-              "line": 1.0,
-              "lean": "home",
-              "label": "角球主让1",
-              "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
-            },
-            "meta": {
-              "source": "dqd-public-derived-model",
-              "leagueProfile": {
-                "goals": 2.55,
-                "corners": 9.5,
-                "atkCoef": 1.0
-              },
-              "rankDiff": 2,
-              "rankValid": false,
-              "refereeScore": 100,
+              "refereeScore": 45,
               "modelVersion": "ft-odds-model-v1",
               "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
             }
@@ -9021,10 +9019,10 @@
           "venue": "努库斯咸海主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-金希坤",
-              "name": "金希坤",
-              "country": "韩国",
-              "age": 42
+              "id": "dqd-傅明",
+              "name": "傅明",
+              "country": "中国",
+              "age": 40
             },
             "history": [
               {
@@ -9036,28 +9034,6 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
-                "varChecks": 1
-              },
-              {
-                "date": "",
-                "league": "",
-                "match": "",
-                "yellowCards": 3,
-                "redCards": 0,
-                "fouls": 22,
-                "penalties": 0,
-                "cardIndex": 30,
                 "varChecks": 1
               },
               {
@@ -9081,6 +9057,28 @@
                 "penalties": 0,
                 "cardIndex": 30,
                 "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 1
+              },
+              {
+                "date": "",
+                "league": "",
+                "match": "",
+                "yellowCards": 3,
+                "redCards": 0,
+                "fouls": 22,
+                "penalties": 0,
+                "cardIndex": 30,
+                "varChecks": 2
               }
             ],
             "statistics": {
@@ -9102,7 +9100,7 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "常规联赛对决"
           ],
           "predictedDifficulty": 1,
           "intensity": "★☆☆☆☆",
@@ -9128,8 +9126,8 @@
           "marketExpectation": {
             "totalGoals": {
               "line": 2.75,
-              "lean": "under",
-              "label": "2.75球·偏小",
+              "lean": "over",
+              "label": "2.75球·偏大",
               "explain": "市场预期总进球约 2.75 球（参考乌兹甲场均 2.55 球）"
             },
             "handicap": {
@@ -9139,10 +9137,10 @@
               "explain": "实力差预估：主让0.5（主场加成+排名差+2位）"
             },
             "totalCorners": {
-              "line": 12.0,
-              "lean": "under",
-              "label": "12角·偏小",
-              "explain": "市场预期总角球 12.0 个（参考 乌兹甲 场均 9.5 角）"
+              "line": 11.0,
+              "lean": "balanced",
+              "label": "11角·均衡",
+              "explain": "市场预期总角球 11.0 个（参考 乌兹甲 场均 9.5 角）"
             },
             "cornerHandicap": {
               "line": 1.0,
@@ -9159,7 +9157,7 @@
               },
               "rankDiff": 2,
               "rankValid": false,
-              "refereeScore": 100,
+              "refereeScore": 47,
               "modelVersion": "ft-odds-model-v1",
               "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
             }

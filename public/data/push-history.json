@@ -1,6 +1,20 @@
 {
   "history": [
     {
+      "timestamp": "2026-08-12T21:02:28.549238",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
+        "yesterdaySummary": "🏆 U20联赛：上海申花U20 3-1 深圳新鹏城U20（上海申花U20获胜）；🇦🇺 澳足总：莫兰德斑马 1-4 普雷斯顿雄狮（普雷斯顿雄狮获胜）；🇦🇺 澳足总：莱卡特老虎 1-1 悉尼联（战平）",
+        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（主裁尺度偏严，注意出牌风险）",
+        "yesterdayCount": 24,
+        "todayCount": 38,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "men"
+      }
+    },
+    {
       "timestamp": "2026-08-12T20:49:32.857689",
       "manual": false,
       "digest": {

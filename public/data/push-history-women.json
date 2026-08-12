@@ -1,6 +1,20 @@
 {
   "history": [
     {
+      "timestamp": "2026-08-12T21:02:28.549238",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "🇦🇺 澳南女超：西部前锋女足 0-4 阿德莱德城女足（阿德莱德城女足获胜）；🇦🇺 澳昆女超：昆士兰狮女足 1-1 黄金海岸联女足（战平）",
+        "todaySummary": "🇦🇺 西部前锋女足 vs 阿德莱德城女足（主裁尺度偏严，注意出牌风险）；🇦🇺 昆士兰狮女足 vs 黄金海岸联女足（常规联赛对决）",
+        "yesterdayCount": 2,
+        "todayCount": 2,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    },
+    {
       "timestamp": "2026-08-12T20:49:32.857689",
       "manual": false,
       "digest": {

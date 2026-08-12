@@ -2220,13 +2220,16 @@ function renderMarketBar(me) {
 function renderOddsSection(me) {
   if (!me) return '';
   const books = me.bookmakers || [];
-  const meta = me.realOddsMeta || {};
-  const isReal = meta.lineSource === 'football-data.co.uk';
+  // 数据源检测：优先 realOddsMeta.lineSource，其次 meta.source
+  const meta1 = me.realOddsMeta || {};
+  const meta2 = me.meta || {};
+  const lineSource = meta1.lineSource || meta2.source || '';
+  const isReal = lineSource === 'football-data.co.uk';
+  const isModel = lineSource.includes('model') || !isReal;
   const sourceTag = isReal
     ? `<span class="source-tag">football-data</span>`
     : `<span class="source-tag model">模型推算</span>`;
-  if (books.length === 0 && !isReal) return '';
-
+  // 始终显示赔率区（模型兜底也显示，让用户知道盘口来源）
   const fmtOdd = v => {
     if (v == null) return '—';
     return Number(v).toFixed(2).replace(/\.?0+$/, '');

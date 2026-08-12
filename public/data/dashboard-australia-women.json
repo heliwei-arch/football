@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-12T20:49:32.857689",
-  "generatedAt": "2026-08-12T20:50:33.683397",
+  "lastUpdate": "2026-08-12T21:02:28.549238",
+  "generatedAt": "2026-08-12T21:03:27.123675",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "australia": [
@@ -153,8 +153,8 @@
             "match": "比赛1",
             "yellowCards": 7,
             "redCards": 1,
-            "fouls": 29,
-            "penalties": 2,
+            "fouls": 25,
+            "penalties": 1,
             "cardIndex": 95,
             "varChecks": 3
           },
@@ -162,22 +162,22 @@
             "date": "2026-08-02",
             "league": "第4轮执法",
             "match": "比赛2",
-            "yellowCards": 8,
-            "redCards": 2,
-            "fouls": 34,
-            "penalties": 2,
-            "cardIndex": 130,
+            "yellowCards": 9,
+            "redCards": 1,
+            "fouls": 21,
+            "penalties": 1,
+            "cardIndex": 115,
             "varChecks": 4
           },
           {
             "date": "2026-07-26",
             "league": "第3轮执法",
             "match": "比赛3",
-            "yellowCards": 10,
+            "yellowCards": 8,
             "redCards": 2,
-            "fouls": 29,
+            "fouls": 31,
             "penalties": 1,
-            "cardIndex": 150,
+            "cardIndex": 130,
             "varChecks": 4
           },
           {
@@ -185,31 +185,31 @@
             "league": "第2轮执法",
             "match": "比赛4",
             "yellowCards": 10,
-            "redCards": 1,
-            "fouls": 23,
+            "redCards": 2,
+            "fouls": 27,
             "penalties": 1,
-            "cardIndex": 125,
-            "varChecks": 4
+            "cardIndex": 150,
+            "varChecks": 5
           },
           {
             "date": "2026-07-12",
             "league": "第1轮执法",
             "match": "比赛5",
-            "yellowCards": 7,
+            "yellowCards": 9,
             "redCards": 1,
             "fouls": 23,
             "penalties": 1,
-            "cardIndex": 95,
+            "cardIndex": 115,
             "varChecks": 3
           }
         ],
         "statistics": {
-          "avgYellow": "8.4",
+          "avgYellow": "8.6",
           "avgRed": "1.40",
-          "avgFouls": "27.6",
-          "avgPenalties": "1.40",
-          "avgCardIndex": "119.0",
-          "avgVar": "3.6",
+          "avgFouls": "25.4",
+          "avgPenalties": "1.00",
+          "avgCardIndex": "121.0",
+          "avgVar": "3.8",
           "strictnessScore": 92
         },
         "style": "严格型",
@@ -223,74 +223,74 @@
       },
       "keyEvents": [
         {
-          "minute": 9,
+          "minute": 17,
           "type": "goal",
           "team": "away",
           "teamName": "阿德莱德城女足",
           "description": "阿德莱德城女足 进球！扳平/反超比分"
         },
         {
-          "minute": 23,
+          "minute": 32,
           "type": "yellow",
           "team": "away",
           "teamName": "阿德莱德城女足",
           "description": "阿德莱德城女足 球员犯规吃到黄牌"
         },
         {
-          "minute": 27,
-          "type": "yellow",
-          "team": "away",
-          "teamName": "阿德莱德城女足",
-          "description": "阿德莱德城女足 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 28,
-          "type": "goal",
-          "team": "away",
-          "teamName": "阿德莱德城女足",
-          "description": "阿德莱德城女足 进球！扳平/反超比分"
-        },
-        {
-          "minute": 47,
-          "type": "goal",
-          "team": "away",
-          "teamName": "阿德莱德城女足",
-          "description": "阿德莱德城女足 进球！扳平/反超比分"
-        },
-        {
-          "minute": 52,
-          "type": "yellow",
-          "team": "away",
-          "teamName": "阿德莱德城女足",
-          "description": "阿德莱德城女足 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 60,
+          "minute": 35,
           "type": "yellow",
           "team": "home",
           "teamName": "西部前锋女足",
           "description": "西部前锋女足 球员犯规吃到黄牌"
         },
         {
-          "minute": 64,
+          "minute": 39,
           "type": "goal",
           "team": "away",
           "teamName": "阿德莱德城女足",
           "description": "阿德莱德城女足 进球！扳平/反超比分"
         },
         {
-          "minute": 69,
+          "minute": 48,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "西部前锋女足",
+          "description": "西部前锋女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 56,
+          "type": "goal",
+          "team": "away",
+          "teamName": "阿德莱德城女足",
+          "description": "阿德莱德城女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 64,
           "type": "yellow",
           "team": "away",
           "teamName": "阿德莱德城女足",
           "description": "阿德莱德城女足 球员犯规吃到黄牌"
         },
         {
-          "minute": 75,
+          "minute": 66,
           "type": "yellow",
           "team": "away",
           "teamName": "阿德莱德城女足",
           "description": "阿德莱德城女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 76,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "阿德莱德城女足",
+          "description": "阿德莱德城女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 78,
+          "type": "goal",
+          "team": "away",
+          "teamName": "阿德莱德城女足",
+          "description": "阿德莱德城女足 进球！扳平/反超比分"
         }
       ],
       "analysis": [
@@ -670,103 +670,96 @@
       },
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-阿列克斯·金",
-          "name": "阿列克斯·金",
+          "id": "dqd-肖恩·埃文斯",
+          "name": "肖恩·埃文斯",
           "country": "澳大利亚",
-          "age": 39
+          "age": 43
         },
         "history": [
           {
             "date": "2026-08-09",
             "league": "第5轮执法",
             "match": "比赛1",
-            "yellowCards": 6,
-            "redCards": 1,
-            "fouls": 19,
-            "penalties": 2,
-            "cardIndex": 85,
+            "yellowCards": 7,
+            "redCards": 0,
+            "fouls": 24,
+            "penalties": 0,
+            "cardIndex": 70,
             "varChecks": 2
           },
           {
             "date": "2026-08-02",
             "league": "第4轮执法",
             "match": "比赛2",
-            "yellowCards": 5,
-            "redCards": 1,
-            "fouls": 29,
-            "penalties": 1,
-            "cardIndex": 75,
-            "varChecks": 3
+            "yellowCards": 4,
+            "redCards": 0,
+            "fouls": 27,
+            "penalties": 0,
+            "cardIndex": 40,
+            "varChecks": 2
           },
           {
             "date": "2026-07-26",
             "league": "第3轮执法",
             "match": "比赛3",
-            "yellowCards": 9,
-            "redCards": 2,
-            "fouls": 21,
-            "penalties": 2,
-            "cardIndex": 140,
-            "varChecks": 5
+            "yellowCards": 3,
+            "redCards": 1,
+            "fouls": 18,
+            "penalties": 1,
+            "cardIndex": 55,
+            "varChecks": 1
           },
           {
             "date": "2026-07-19",
             "league": "第2轮执法",
             "match": "比赛4",
-            "yellowCards": 6,
-            "redCards": 1,
-            "fouls": 17,
-            "penalties": 1,
-            "cardIndex": 85,
-            "varChecks": 2
+            "yellowCards": 7,
+            "redCards": 0,
+            "fouls": 28,
+            "penalties": 0,
+            "cardIndex": 70,
+            "varChecks": 3
           },
           {
             "date": "2026-07-12",
             "league": "第1轮执法",
             "match": "比赛5",
-            "yellowCards": 9,
-            "redCards": 1,
-            "fouls": 21,
-            "penalties": 1,
-            "cardIndex": 115,
-            "varChecks": 4
+            "yellowCards": 5,
+            "redCards": 0,
+            "fouls": 24,
+            "penalties": 0,
+            "cardIndex": 50,
+            "varChecks": 2
           }
         ],
         "statistics": {
-          "avgYellow": "7.0",
-          "avgRed": "1.20",
-          "avgFouls": "21.4",
-          "avgPenalties": "1.40",
-          "avgCardIndex": "100.0",
-          "avgVar": "3.2",
-          "strictnessScore": 86
+          "avgYellow": "5.2",
+          "avgRed": "0.20",
+          "avgFouls": "24.2",
+          "avgPenalties": "0.20",
+          "avgCardIndex": "57.0",
+          "avgVar": "2.0",
+          "strictnessScore": 60
         },
-        "style": "严格型",
-        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "style": "偏严格型",
+        "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
         "keyTraits": [
-          "出牌频率高",
-          "对恶意犯规零容忍",
-          "点球判罚果断",
-          "VAR介入频繁"
+          "关键战出牌多",
+          "对危险动作敏感",
+          "偶有点球判罚",
+          "中规中矩的执法"
         ]
       },
       "keyEvents": [
         {
-          "minute": 10,
+          "minute": 2,
           "type": "goal",
           "team": "away",
           "teamName": "黄金海岸联女足",
           "description": "黄金海岸联女足 进球！扳平/反超比分"
         },
         {
-          "minute": 12,
-          "type": "yellow",
-          "team": "away",
-          "teamName": "黄金海岸联女足",
-          "description": "黄金海岸联女足 球员犯规吃到黄牌"
-        },
-        {
-          "minute": 19,
+          "minute": 10,
           "type": "goal",
           "team": "home",
           "teamName": "昆士兰狮女足",
@@ -775,36 +768,43 @@
         {
           "minute": 31,
           "type": "red",
-          "team": "away",
-          "teamName": "黄金海岸联女足",
-          "description": "黄金海岸联女足 球员两黄变一红被罚下"
-        },
-        {
-          "minute": 46,
-          "type": "red",
           "team": "home",
           "teamName": "昆士兰狮女足",
           "description": "昆士兰狮女足 球员严重犯规直接红牌罚下"
         },
         {
-          "minute": 60,
+          "minute": 63,
+          "type": "red",
+          "team": "away",
+          "teamName": "黄金海岸联女足",
+          "description": "黄金海岸联女足 球员两黄变一红被罚下"
+        },
+        {
+          "minute": 70,
           "type": "yellow",
           "team": "home",
           "teamName": "昆士兰狮女足",
           "description": "昆士兰狮女足 球员犯规吃到黄牌"
         },
         {
-          "minute": 73,
+          "minute": 85,
           "type": "yellow",
           "team": "home",
           "teamName": "昆士兰狮女足",
           "description": "昆士兰狮女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 87,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "黄金海岸联女足",
+          "description": "黄金海岸联女足 球员犯规吃到黄牌"
         }
       ],
       "analysis": [
         "双方握手言和，场面胶着机会寥寥",
         "双方控球率相对均衡，场面开放对攻激烈",
-        "裁判执法偏严（严格度 86分），全场共出示 3 黄2红，直接影响了比赛节奏",
+        "裁判执法尺度平衡，比赛中规中矩",
         "本场比赛对抗激烈，双方共计 45 次犯规，拼抢强度拉满"
       ],
       "homeTactics": {
@@ -988,8 +988,8 @@
       "marketExpectation": {
         "totalGoals": {
           "line": 2.75,
-          "lean": "under",
-          "label": "2.75球·偏小",
+          "lean": "over",
+          "label": "2.75球·偏大",
           "explain": "市场预期总进球约 2.75 球（参考澳昆女超场均 2.55 球）"
         },
         "handicap": {
@@ -999,10 +999,10 @@
           "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
         },
         "totalCorners": {
-          "line": 12.0,
-          "lean": "under",
-          "label": "12角·偏小",
-          "explain": "市场预期总角球 12.0 个（参考 澳昆女超 场均 9.5 角）"
+          "line": 11.0,
+          "lean": "balanced",
+          "label": "11角·均衡",
+          "explain": "市场预期总角球 11.0 个（参考 澳昆女超 场均 9.5 角）"
         },
         "cornerHandicap": {
           "line": 0.5,
@@ -1019,7 +1019,7 @@
           },
           "rankDiff": -2,
           "rankValid": false,
-          "refereeScore": 80,
+          "refereeScore": 45,
           "modelVersion": "ft-odds-model-v1",
           "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
         }
@@ -1120,7 +1120,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -1164,7 +1164,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           }
         ],
         "statistics": {
@@ -1173,7 +1173,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.8",
+          "avgVar": "1.4",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -1305,10 +1305,10 @@
       "venue": "昆士兰狮女足主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-阿列克斯·金",
-          "name": "阿列克斯·金",
+          "id": "dqd-肖恩·埃文斯",
+          "name": "肖恩·埃文斯",
           "country": "澳大利亚",
-          "age": 39
+          "age": 43
         },
         "history": [
           {
@@ -1342,7 +1342,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           },
           {
             "date": "",
@@ -1373,7 +1373,7 @@
           "avgFouls": "22.0",
           "avgPenalties": "0.00",
           "avgCardIndex": "30.0",
-          "avgVar": "1.8",
+          "avgVar": "2.0",
           "strictnessScore": 34
         },
         "style": "鼓励对抗型",
@@ -1386,7 +1386,7 @@
         ]
       },
       "features": [
-        "主裁尺度偏严，注意出牌风险"
+        "常规联赛对决"
       ],
       "predictedDifficulty": 1,
       "intensity": "★☆☆☆☆",
@@ -1412,8 +1412,8 @@
       "marketExpectation": {
         "totalGoals": {
           "line": 2.75,
-          "lean": "under",
-          "label": "2.75球·偏小",
+          "lean": "over",
+          "label": "2.75球·偏大",
           "explain": "市场预期总进球约 2.75 球（参考澳昆女超场均 2.55 球）"
         },
         "handicap": {
@@ -1423,10 +1423,10 @@
           "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
         },
         "totalCorners": {
-          "line": 12.0,
-          "lean": "under",
-          "label": "12角·偏小",
-          "explain": "市场预期总角球 12.0 个（参考 澳昆女超 场均 9.5 角）"
+          "line": 11.0,
+          "lean": "balanced",
+          "label": "11角·均衡",
+          "explain": "市场预期总角球 11.0 个（参考 澳昆女超 场均 9.5 角）"
         },
         "cornerHandicap": {
           "line": 0.5,
@@ -1443,7 +1443,7 @@
           },
           "rankDiff": -2,
           "rankValid": false,
-          "refereeScore": 80,
+          "refereeScore": 45,
           "modelVersion": "ft-odds-model-v1",
           "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
         }
@@ -1462,7 +1462,7 @@
   "pushDigest": {
     "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 女足）",
     "yesterdaySummary": "🇦🇺 澳南女超：西部前锋女足 0-4 阿德莱德城女足（阿德莱德城女足获胜）；🇦🇺 澳昆女超：昆士兰狮女足 1-1 黄金海岸联女足（战平）",
-    "todaySummary": "🇦🇺 西部前锋女足 vs 阿德莱德城女足（主裁尺度偏严，注意出牌风险）；🇦🇺 昆士兰狮女足 vs 黄金海岸联女足（主裁尺度偏严，注意出牌风险）",
+    "todaySummary": "🇦🇺 西部前锋女足 vs 阿德莱德城女足（主裁尺度偏严，注意出牌风险）；🇦🇺 昆士兰狮女足 vs 黄金海岸联女足（常规联赛对决）",
     "yesterdayCount": 2,
     "todayCount": 2,
     "fullReport": true,
@@ -1609,8 +1609,8 @@
                 "match": "比赛1",
                 "yellowCards": 7,
                 "redCards": 1,
-                "fouls": 29,
-                "penalties": 2,
+                "fouls": 25,
+                "penalties": 1,
                 "cardIndex": 95,
                 "varChecks": 3
               },
@@ -1618,22 +1618,22 @@
                 "date": "2026-08-02",
                 "league": "第4轮执法",
                 "match": "比赛2",
-                "yellowCards": 8,
-                "redCards": 2,
-                "fouls": 34,
-                "penalties": 2,
-                "cardIndex": 130,
+                "yellowCards": 9,
+                "redCards": 1,
+                "fouls": 21,
+                "penalties": 1,
+                "cardIndex": 115,
                 "varChecks": 4
               },
               {
                 "date": "2026-07-26",
                 "league": "第3轮执法",
                 "match": "比赛3",
-                "yellowCards": 10,
+                "yellowCards": 8,
                 "redCards": 2,
-                "fouls": 29,
+                "fouls": 31,
                 "penalties": 1,
-                "cardIndex": 150,
+                "cardIndex": 130,
                 "varChecks": 4
               },
               {
@@ -1641,31 +1641,31 @@
                 "league": "第2轮执法",
                 "match": "比赛4",
                 "yellowCards": 10,
-                "redCards": 1,
-                "fouls": 23,
+                "redCards": 2,
+                "fouls": 27,
                 "penalties": 1,
-                "cardIndex": 125,
-                "varChecks": 4
+                "cardIndex": 150,
+                "varChecks": 5
               },
               {
                 "date": "2026-07-12",
                 "league": "第1轮执法",
                 "match": "比赛5",
-                "yellowCards": 7,
+                "yellowCards": 9,
                 "redCards": 1,
                 "fouls": 23,
                 "penalties": 1,
-                "cardIndex": 95,
+                "cardIndex": 115,
                 "varChecks": 3
               }
             ],
             "statistics": {
-              "avgYellow": "8.4",
+              "avgYellow": "8.6",
               "avgRed": "1.40",
-              "avgFouls": "27.6",
-              "avgPenalties": "1.40",
-              "avgCardIndex": "119.0",
-              "avgVar": "3.6",
+              "avgFouls": "25.4",
+              "avgPenalties": "1.00",
+              "avgCardIndex": "121.0",
+              "avgVar": "3.8",
               "strictnessScore": 92
             },
             "style": "严格型",
@@ -1679,74 +1679,74 @@
           },
           "keyEvents": [
             {
-              "minute": 9,
+              "minute": 17,
               "type": "goal",
               "team": "away",
               "teamName": "阿德莱德城女足",
               "description": "阿德莱德城女足 进球！扳平/反超比分"
             },
             {
-              "minute": 23,
+              "minute": 32,
               "type": "yellow",
               "team": "away",
               "teamName": "阿德莱德城女足",
               "description": "阿德莱德城女足 球员犯规吃到黄牌"
             },
             {
-              "minute": 27,
-              "type": "yellow",
-              "team": "away",
-              "teamName": "阿德莱德城女足",
-              "description": "阿德莱德城女足 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 28,
-              "type": "goal",
-              "team": "away",
-              "teamName": "阿德莱德城女足",
-              "description": "阿德莱德城女足 进球！扳平/反超比分"
-            },
-            {
-              "minute": 47,
-              "type": "goal",
-              "team": "away",
-              "teamName": "阿德莱德城女足",
-              "description": "阿德莱德城女足 进球！扳平/反超比分"
-            },
-            {
-              "minute": 52,
-              "type": "yellow",
-              "team": "away",
-              "teamName": "阿德莱德城女足",
-              "description": "阿德莱德城女足 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 60,
+              "minute": 35,
               "type": "yellow",
               "team": "home",
               "teamName": "西部前锋女足",
               "description": "西部前锋女足 球员犯规吃到黄牌"
             },
             {
-              "minute": 64,
+              "minute": 39,
               "type": "goal",
               "team": "away",
               "teamName": "阿德莱德城女足",
               "description": "阿德莱德城女足 进球！扳平/反超比分"
             },
             {
-              "minute": 69,
+              "minute": 48,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "西部前锋女足",
+              "description": "西部前锋女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 56,
+              "type": "goal",
+              "team": "away",
+              "teamName": "阿德莱德城女足",
+              "description": "阿德莱德城女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 64,
               "type": "yellow",
               "team": "away",
               "teamName": "阿德莱德城女足",
               "description": "阿德莱德城女足 球员犯规吃到黄牌"
             },
             {
-              "minute": 75,
+              "minute": 66,
               "type": "yellow",
               "team": "away",
               "teamName": "阿德莱德城女足",
               "description": "阿德莱德城女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 76,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "阿德莱德城女足",
+              "description": "阿德莱德城女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 78,
+              "type": "goal",
+              "team": "away",
+              "teamName": "阿德莱德城女足",
+              "description": "阿德莱德城女足 进球！扳平/反超比分"
             }
           ],
           "analysis": [
@@ -2126,103 +2126,96 @@
           },
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿列克斯·金",
-              "name": "阿列克斯·金",
+              "id": "dqd-肖恩·埃文斯",
+              "name": "肖恩·埃文斯",
               "country": "澳大利亚",
-              "age": 39
+              "age": 43
             },
             "history": [
               {
                 "date": "2026-08-09",
                 "league": "第5轮执法",
                 "match": "比赛1",
-                "yellowCards": 6,
-                "redCards": 1,
-                "fouls": 19,
-                "penalties": 2,
-                "cardIndex": 85,
+                "yellowCards": 7,
+                "redCards": 0,
+                "fouls": 24,
+                "penalties": 0,
+                "cardIndex": 70,
                 "varChecks": 2
               },
               {
                 "date": "2026-08-02",
                 "league": "第4轮执法",
                 "match": "比赛2",
-                "yellowCards": 5,
-                "redCards": 1,
-                "fouls": 29,
-                "penalties": 1,
-                "cardIndex": 75,
-                "varChecks": 3
+                "yellowCards": 4,
+                "redCards": 0,
+                "fouls": 27,
+                "penalties": 0,
+                "cardIndex": 40,
+                "varChecks": 2
               },
               {
                 "date": "2026-07-26",
                 "league": "第3轮执法",
                 "match": "比赛3",
-                "yellowCards": 9,
-                "redCards": 2,
-                "fouls": 21,
-                "penalties": 2,
-                "cardIndex": 140,
-                "varChecks": 5
+                "yellowCards": 3,
+                "redCards": 1,
+                "fouls": 18,
+                "penalties": 1,
+                "cardIndex": 55,
+                "varChecks": 1
               },
               {
                 "date": "2026-07-19",
                 "league": "第2轮执法",
                 "match": "比赛4",
-                "yellowCards": 6,
-                "redCards": 1,
-                "fouls": 17,
-                "penalties": 1,
-                "cardIndex": 85,
-                "varChecks": 2
+                "yellowCards": 7,
+                "redCards": 0,
+                "fouls": 28,
+                "penalties": 0,
+                "cardIndex": 70,
+                "varChecks": 3
               },
               {
                 "date": "2026-07-12",
                 "league": "第1轮执法",
                 "match": "比赛5",
-                "yellowCards": 9,
-                "redCards": 1,
-                "fouls": 21,
-                "penalties": 1,
-                "cardIndex": 115,
-                "varChecks": 4
+                "yellowCards": 5,
+                "redCards": 0,
+                "fouls": 24,
+                "penalties": 0,
+                "cardIndex": 50,
+                "varChecks": 2
               }
             ],
             "statistics": {
-              "avgYellow": "7.0",
-              "avgRed": "1.20",
-              "avgFouls": "21.4",
-              "avgPenalties": "1.40",
-              "avgCardIndex": "100.0",
-              "avgVar": "3.2",
-              "strictnessScore": 86
+              "avgYellow": "5.2",
+              "avgRed": "0.20",
+              "avgFouls": "24.2",
+              "avgPenalties": "0.20",
+              "avgCardIndex": "57.0",
+              "avgVar": "2.0",
+              "strictnessScore": 60
             },
-            "style": "严格型",
-            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "style": "偏严格型",
+            "styleDesc": "该裁判执法相对严格，对明显犯规会及时出牌。在关键场次或强强对话中尺度可能收紧。",
             "keyTraits": [
-              "出牌频率高",
-              "对恶意犯规零容忍",
-              "点球判罚果断",
-              "VAR介入频繁"
+              "关键战出牌多",
+              "对危险动作敏感",
+              "偶有点球判罚",
+              "中规中矩的执法"
             ]
           },
           "keyEvents": [
             {
-              "minute": 10,
+              "minute": 2,
               "type": "goal",
               "team": "away",
               "teamName": "黄金海岸联女足",
               "description": "黄金海岸联女足 进球！扳平/反超比分"
             },
             {
-              "minute": 12,
-              "type": "yellow",
-              "team": "away",
-              "teamName": "黄金海岸联女足",
-              "description": "黄金海岸联女足 球员犯规吃到黄牌"
-            },
-            {
-              "minute": 19,
+              "minute": 10,
               "type": "goal",
               "team": "home",
               "teamName": "昆士兰狮女足",
@@ -2231,36 +2224,43 @@
             {
               "minute": 31,
               "type": "red",
-              "team": "away",
-              "teamName": "黄金海岸联女足",
-              "description": "黄金海岸联女足 球员两黄变一红被罚下"
-            },
-            {
-              "minute": 46,
-              "type": "red",
               "team": "home",
               "teamName": "昆士兰狮女足",
               "description": "昆士兰狮女足 球员严重犯规直接红牌罚下"
             },
             {
-              "minute": 60,
+              "minute": 63,
+              "type": "red",
+              "team": "away",
+              "teamName": "黄金海岸联女足",
+              "description": "黄金海岸联女足 球员两黄变一红被罚下"
+            },
+            {
+              "minute": 70,
               "type": "yellow",
               "team": "home",
               "teamName": "昆士兰狮女足",
               "description": "昆士兰狮女足 球员犯规吃到黄牌"
             },
             {
-              "minute": 73,
+              "minute": 85,
               "type": "yellow",
               "team": "home",
               "teamName": "昆士兰狮女足",
               "description": "昆士兰狮女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 87,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "黄金海岸联女足",
+              "description": "黄金海岸联女足 球员犯规吃到黄牌"
             }
           ],
           "analysis": [
             "双方握手言和，场面胶着机会寥寥",
             "双方控球率相对均衡，场面开放对攻激烈",
-            "裁判执法偏严（严格度 86分），全场共出示 3 黄2红，直接影响了比赛节奏",
+            "裁判执法尺度平衡，比赛中规中矩",
             "本场比赛对抗激烈，双方共计 45 次犯规，拼抢强度拉满"
           ],
           "homeTactics": {
@@ -2444,8 +2444,8 @@
           "marketExpectation": {
             "totalGoals": {
               "line": 2.75,
-              "lean": "under",
-              "label": "2.75球·偏小",
+              "lean": "over",
+              "label": "2.75球·偏大",
               "explain": "市场预期总进球约 2.75 球（参考澳昆女超场均 2.55 球）"
             },
             "handicap": {
@@ -2455,10 +2455,10 @@
               "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
             },
             "totalCorners": {
-              "line": 12.0,
-              "lean": "under",
-              "label": "12角·偏小",
-              "explain": "市场预期总角球 12.0 个（参考 澳昆女超 场均 9.5 角）"
+              "line": 11.0,
+              "lean": "balanced",
+              "label": "11角·均衡",
+              "explain": "市场预期总角球 11.0 个（参考 澳昆女超 场均 9.5 角）"
             },
             "cornerHandicap": {
               "line": 0.5,
@@ -2475,7 +2475,7 @@
               },
               "rankDiff": -2,
               "rankValid": false,
-              "refereeScore": 80,
+              "refereeScore": 45,
               "modelVersion": "ft-odds-model-v1",
               "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
             }
@@ -2576,7 +2576,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -2620,7 +2620,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               }
             ],
             "statistics": {
@@ -2629,7 +2629,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.8",
+              "avgVar": "1.4",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -2761,10 +2761,10 @@
           "venue": "昆士兰狮女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-阿列克斯·金",
-              "name": "阿列克斯·金",
+              "id": "dqd-肖恩·埃文斯",
+              "name": "肖恩·埃文斯",
               "country": "澳大利亚",
-              "age": 39
+              "age": 43
             },
             "history": [
               {
@@ -2798,7 +2798,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -2829,7 +2829,7 @@
               "avgFouls": "22.0",
               "avgPenalties": "0.00",
               "avgCardIndex": "30.0",
-              "avgVar": "1.8",
+              "avgVar": "2.0",
               "strictnessScore": 34
             },
             "style": "鼓励对抗型",
@@ -2842,7 +2842,7 @@
             ]
           },
           "features": [
-            "主裁尺度偏严，注意出牌风险"
+            "常规联赛对决"
           ],
           "predictedDifficulty": 1,
           "intensity": "★☆☆☆☆",
@@ -2868,8 +2868,8 @@
           "marketExpectation": {
             "totalGoals": {
               "line": 2.75,
-              "lean": "under",
-              "label": "2.75球·偏小",
+              "lean": "over",
+              "label": "2.75球·偏大",
               "explain": "市场预期总进球约 2.75 球（参考澳昆女超场均 2.55 球）"
             },
             "handicap": {
@@ -2879,10 +2879,10 @@
               "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
             },
             "totalCorners": {
-              "line": 12.0,
-              "lean": "under",
-              "label": "12角·偏小",
-              "explain": "市场预期总角球 12.0 个（参考 澳昆女超 场均 9.5 角）"
+              "line": 11.0,
+              "lean": "balanced",
+              "label": "11角·均衡",
+              "explain": "市场预期总角球 11.0 个（参考 澳昆女超 场均 9.5 角）"
             },
             "cornerHandicap": {
               "line": 0.5,
@@ -2899,7 +2899,7 @@
               },
               "rankDiff": -2,
               "rankValid": false,
-              "refereeScore": 80,
+              "refereeScore": 45,
               "modelVersion": "ft-odds-model-v1",
               "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
             }
