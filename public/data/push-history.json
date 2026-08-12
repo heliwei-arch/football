@@ -1,6 +1,33 @@
 {
   "history": [
     {
+      "timestamp": "2026-08-12T12:31:36.561502",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
+        "yesterdaySummary": "",
+        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（常规联赛对决）",
+        "yesterdayCount": 0,
+        "todayCount": 38,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "men"
+      }
+    },
+    {
+      "timestamp": "2026-08-12T12:28:27.809417",
+      "manual": true,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据）",
+        "yesterdaySummary": "",
+        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 波佩什蒂莱奥代尼 vs CS布加勒斯特迪纳摩（波佩什蒂莱奥代尼联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 兹林U19 vs 奥洛莫茨U19（主裁尺度偏严，注意出牌风险）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 扎波罗热米塔路U19 vs 波利西亚U19（双方实力接近，值得关注）",
+        "yesterdayCount": 0,
+        "todayCount": 39,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real"
+      }
+    },
+    {
       "timestamp": "2026-08-12T11:56:31.556077",
       "manual": false,
       "digest": {

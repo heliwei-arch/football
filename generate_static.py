@@ -412,6 +412,24 @@ def _intensity_star_weight(intensity_str):
     s = str(intensity_str or "★").count("★")
     return max(1, min(5, s)) * 3  # 1★=3 → 5★=15
 
+def _heat_to_stars(heat_score):
+    """热度分 → 推荐指数星级（1-5星）
+       ≥70 → ★★★★★ 焦点战（橙色三角置顶）
+       55-69 → ★★★★☆ 值得关注
+       40-54 → ★★★☆☆ 常规联赛
+       25-39 → ★★☆☆☆ 普通对决
+       <25 → ★☆☆☆☆ 冷门/U系列等
+    """
+    hs = int(heat_score or 0)
+    if hs >= 70: return 5
+    if hs >= 55: return 4
+    if hs >= 40: return 3
+    if hs >= 25: return 2
+    return 1
+
+def _stars_to_str(stars):
+    return "★" * stars + "☆" * (5 - stars)
+
 def _team_obj(t):
     """兼容：球队可能是对象dict，也可能是旧格式字符串（球队名），统一返回dict"""
     if isinstance(t, dict):
@@ -442,7 +460,7 @@ def compute_heat_score(match, is_yesterday=True):
         elif r_int >= 13:
             rank_score += 2
     s2 = min(20, rank_score)
-    # (3) 德比/焦点（基于名关键词 + 激烈程度≥4星）0-15
+    # (3) 德比/焦点（名关键词 + 双方排名强度）0-15
     derby_kws = ["德比", "Derby", "Classic", "国家德比", "曼彻斯特联", "曼城", "皇马", "巴萨", "El Clásico", "北伦敦", "利物浦", "曼联", "多特", "拜仁", "米兰", "国米", "尤文", "大巴黎", "上海", "北京", "广州", "东京", "首尔"]
     focal = 0
     ht = _team_obj(match.get("homeTeam"))
@@ -450,8 +468,11 @@ def compute_heat_score(match, is_yesterday=True):
     name_all = f"{match.get('league','')} {ht.get('name','')} {at.get('name','')} {match.get('features','')}"
     if any(k.lower() in name_all.lower() for k in derby_kws):
         focal += 8
-    stars5 = _intensity_star_weight(match.get("intensity", "★")) if not is_yesterday else 9
-    focal += max(0, stars5 - 3) * 2  # 4星+4分 5星+8分
+    # 排名焦点加成：两队排名都靠前时加焦点分（替代旧的伪随机星级加成，打破循环依赖）
+    if s2 >= 18:
+        focal += 7  # 两队均Top8 → 强强对话
+    elif s2 >= 14:
+        focal += 4  # 一队Top4 + 另一队Top8+ → 实力接近
     s3 = min(15, focal)
     # (4) 近期状态H2H 0-15（基于两队名hash的确定性5彩格分析）
     seed = f"{ht.get('name','')}|{at.get('name','')}|{match.get('id','')}"
@@ -484,6 +505,23 @@ def apply_heat_and_sort(yesterday_matches, today_previews):
             m2["heatScore"] = info["heatScore"]
             m2["heatBreakdown"] = info["breakdown"]
             m2["isHotMatch"] = info["isHot"]
+            # ✅ 用真实热度分映射推荐指数星级（替代旧的伪随机intensity）
+            real_stars = _heat_to_stars(info["heatScore"])
+            m2["predictedDifficulty"] = real_stars
+            m2["intensity"] = _stars_to_str(real_stars)
+            # ✅ 同步修正 features 标签，与真实星级保持一致
+            feats = list(m2.get("features") or [])
+            # 移除旧伪随机逻辑可能加上的 "双方实力接近" 标签
+            feats = [f for f in feats if "双方实力接近" not in f and "焦点对决" not in f]
+            # 根据真实星级添加对应标签
+            if real_stars >= 5:
+                feats.append("🔥焦点对决，强烈推荐关注")
+            elif real_stars >= 4:
+                feats.append("双方实力接近，值得关注")
+            # 保底标签
+            if not feats:
+                feats.append("常规联赛对决")
+            m2["features"] = feats
             out.append(m2)
         return out
     y_heated = _add(yesterday_matches, True)

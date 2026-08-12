@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2026-08-12T11:56:31.556077",
+  "lastUpdate": "2026-08-12T12:31:36.561502",
   "latest": {
     "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
     "yesterdaySummary": "",
-    "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（主裁尺度偏严，注意出牌风险）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）",
+    "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（常规联赛对决）",
     "yesterdayCount": 0,
     "todayCount": 38,
     "fullReport": true,
@@ -11,6 +11,33 @@
     "_gender": "men"
   },
   "history": [
+    {
+      "timestamp": "2026-08-12T12:31:36.561502",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
+        "yesterdaySummary": "",
+        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（常规联赛对决）",
+        "yesterdayCount": 0,
+        "todayCount": 38,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "men"
+      }
+    },
+    {
+      "timestamp": "2026-08-12T12:28:27.809417",
+      "manual": true,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据）",
+        "yesterdaySummary": "",
+        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 波佩什蒂莱奥代尼 vs CS布加勒斯特迪纳摩（波佩什蒂莱奥代尼联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 兹林U19 vs 奥洛莫茨U19（主裁尺度偏严，注意出牌风险）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 扎波罗热米塔路U19 vs 波利西亚U19（双方实力接近，值得关注）",
+        "yesterdayCount": 0,
+        "todayCount": 39,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real"
+      }
+    },
     {
       "timestamp": "2026-08-12T11:56:31.556077",
       "manual": false,
@@ -50,33 +77,6 @@
         "todayCount": 37,
         "fullReport": true,
         "_dataSource": "dongqiudi-real"
-      }
-    },
-    {
-      "timestamp": "2026-08-11T13:56:35.675309",
-      "manual": true,
-      "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据）",
-        "yesterdaySummary": "🏆 亚挑战联：中央马队 2-2 南市台钢（战平）",
-        "todaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 喀尔巴阡U21 vs LNZ切尔卡瑟U21（喀尔巴阡U21联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 布拉加U23 vs 法鲁人U23（布拉加U23联赛排名靠前）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 法马利康U23 vs 托里什人联合U23（托里什人联合U23联赛排名靠前）",
-        "yesterdayCount": 1,
-        "todayCount": 36,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real"
-      }
-    },
-    {
-      "timestamp": "2026-08-11T13:24:33.145577",
-      "manual": false,
-      "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-11（懂球帝真实数据 · 男足）",
-        "yesterdaySummary": "",
-        "todaySummary": "🏆 江原 vs 大阪钢巴（江原联赛排名靠前）；🏆 阿德莱德联 vs 河内公安（阿德莱德联联赛排名靠前）；🏆 塔什干棉农 vs 伊尔比德侯赛因（塔什干棉农联赛排名靠前）",
-        "yesterdayCount": 0,
-        "todayCount": 34,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real",
-        "_gender": "men"
       }
     }
   ],

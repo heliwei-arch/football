@@ -3070,6 +3070,9 @@ document.addEventListener('DOMContentLoaded', async function initApp() {
 
   // 🔴 8秒死锁兜底自动面板注入：任何原因render失败→页面下方不会空，弹大红诊断面板+一键修复按钮
   setTimeout(function(){ try { _mountDeadlockDebugPanel(); } catch(e){ console.warn('debug panel timer err:',e); } }, 8000);
+  // ✅ DOMContentLoaded 分支也必须显式调用 loadData（与 readyState!=='loading' fallback 分支对齐）
+  // initDatePicker 已于 3031 行启动（archive_index 并发请求），此处直接加载 dashboard 数据即可
+  await loadData(CURRENT_GENDER, CURRENT_ARCHIVE_DATE);
 });
 
 // ================ 【28天回溯】日期选择器核心逻辑 ================

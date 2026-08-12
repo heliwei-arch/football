@@ -5,7 +5,7 @@
  * - HTTP API（/api/dashboard /api/update）= Network-First + 离线fallback（避免黑洞卡死）
  * - 移动端App打包（Capacitor/WebView file:// 协议）= 直接透传不缓存（WebView本身有文件缓存）
  * ========================================================= */
-const CACHE_VER = 'ft-zazao-v1';  // 构建后改此版本号即可强制用户端刷新所有缓存
+const CACHE_VER = 'ft-zazao-v2';  // 构建后改此版本号即可强制用户端刷新所有缓存（v2: 修复loadData白屏+统一women入口）
 const APP_SHELL_CORE = [
   './',
   './index.html',

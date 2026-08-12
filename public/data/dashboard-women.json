@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-12T11:56:31.556077",
-  "generatedAt": "2026-08-12T11:57:18.084049",
+  "lastUpdate": "2026-08-12T12:31:36.561502",
+  "generatedAt": "2026-08-12T12:31:53.508496",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "europe": [
@@ -163,7 +163,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -174,7 +174,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           },
           {
             "date": "",
@@ -220,8 +220,8 @@
       "features": [
         "主裁尺度偏严，注意出牌风险"
       ],
-      "predictedDifficulty": 2,
-      "intensity": "★★",
+      "predictedDifficulty": 1,
+      "intensity": "★☆☆☆☆",
       "homeRecentForm": [
         "胜",
         "胜",
@@ -242,11 +242,11 @@
         "awayWins": 2
       },
       "_dataSource": "dongqiudi-real",
-      "heatScore": 26,
+      "heatScore": 20,
       "heatBreakdown": {
         "league": 16,
         "rank": 0,
-        "focal": 6,
+        "focal": 0,
         "h2hRecent": 4
       },
       "isHotMatch": false
@@ -359,7 +359,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -370,7 +370,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -416,8 +416,8 @@
           "features": [
             "主裁尺度偏严，注意出牌风险"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 1,
+          "intensity": "★☆☆☆☆",
           "homeRecentForm": [
             "胜",
             "胜",
@@ -438,11 +438,11 @@
             "awayWins": 2
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 26,
+          "heatScore": 20,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 6,
+            "focal": 0,
             "h2hRecent": 4
           },
           "isHotMatch": false
@@ -533,7 +533,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -544,7 +544,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -590,8 +590,8 @@
           "features": [
             "主裁尺度偏严，注意出牌风险"
           ],
-          "predictedDifficulty": 2,
-          "intensity": "★★",
+          "predictedDifficulty": 1,
+          "intensity": "★☆☆☆☆",
           "homeRecentForm": [
             "胜",
             "胜",
@@ -612,11 +612,11 @@
             "awayWins": 2
           },
           "_dataSource": "dongqiudi-real",
-          "heatScore": 26,
+          "heatScore": 20,
           "heatBreakdown": {
             "league": 16,
             "rank": 0,
-            "focal": 6,
+            "focal": 0,
             "h2hRecent": 4
           },
           "isHotMatch": false
