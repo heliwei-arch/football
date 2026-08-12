@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-12T12:31:36.561502",
-  "generatedAt": "2026-08-12T12:31:53.508496",
+  "lastUpdate": "2026-08-12T16:15:25.874837",
+  "generatedAt": "2026-08-12T16:15:27.886610",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "europe": [
@@ -137,10 +137,10 @@
       "venue": "昆士兰狮女足主场",
       "refereeAnalysis": {
         "referee": {
-          "id": "dqd-卡尔文·宗",
-          "name": "卡尔文·宗",
+          "id": "dqd-阿列克斯·金",
+          "name": "阿列克斯·金",
           "country": "澳大利亚",
-          "age": 37
+          "age": 39
         },
         "history": [
           {
@@ -174,7 +174,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 2
+            "varChecks": 1
           },
           {
             "date": "",
@@ -185,7 +185,7 @@
             "fouls": 22,
             "penalties": 0,
             "cardIndex": 30,
-            "varChecks": 1
+            "varChecks": 2
           },
           {
             "date": "",
@@ -240,6 +240,45 @@
         "homeWins": 1,
         "draws": 0,
         "awayWins": 2
+      },
+      "marketExpectation": {
+        "totalGoals": {
+          "line": 2.75,
+          "lean": "under",
+          "label": "2.75球·偏小",
+          "explain": "市场预期总进球约 2.75 球（参考澳昆女超场均 2.55 球）"
+        },
+        "handicap": {
+          "line": 0.25,
+          "lean": "home",
+          "label": "主让0.25",
+          "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
+        },
+        "totalCorners": {
+          "line": 12.0,
+          "lean": "under",
+          "label": "12角·偏小",
+          "explain": "市场预期总角球 12.0 个（参考 澳昆女超 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 0.5,
+          "lean": "home",
+          "label": "角球主让0.5",
+          "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+        },
+        "meta": {
+          "source": "dqd-public-derived-model",
+          "leagueProfile": {
+            "goals": 2.55,
+            "corners": 9.5,
+            "atkCoef": 1.0
+          },
+          "rankDiff": -2,
+          "rankValid": false,
+          "refereeScore": 65,
+          "modelVersion": "ft-odds-model-v1",
+          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+        }
       },
       "_dataSource": "dongqiudi-real",
       "heatScore": 20,
@@ -333,10 +372,10 @@
           "venue": "昆士兰狮女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-卡尔文·宗",
-              "name": "卡尔文·宗",
+              "id": "dqd-阿列克斯·金",
+              "name": "阿列克斯·金",
               "country": "澳大利亚",
-              "age": 37
+              "age": 39
             },
             "history": [
               {
@@ -370,7 +409,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -381,7 +420,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -436,6 +475,45 @@
             "homeWins": 1,
             "draws": 0,
             "awayWins": 2
+          },
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.75,
+              "lean": "under",
+              "label": "2.75球·偏小",
+              "explain": "市场预期总进球约 2.75 球（参考澳昆女超场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.25,
+              "lean": "home",
+              "label": "主让0.25",
+              "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
+            },
+            "totalCorners": {
+              "line": 12.0,
+              "lean": "under",
+              "label": "12角·偏小",
+              "explain": "市场预期总角球 12.0 个（参考 澳昆女超 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 0.5,
+              "lean": "home",
+              "label": "角球主让0.5",
+              "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": -2,
+              "rankValid": false,
+              "refereeScore": 65,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
           },
           "_dataSource": "dongqiudi-real",
           "heatScore": 20,
@@ -507,10 +585,10 @@
           "venue": "昆士兰狮女足主场",
           "refereeAnalysis": {
             "referee": {
-              "id": "dqd-卡尔文·宗",
-              "name": "卡尔文·宗",
+              "id": "dqd-阿列克斯·金",
+              "name": "阿列克斯·金",
               "country": "澳大利亚",
-              "age": 37
+              "age": 39
             },
             "history": [
               {
@@ -544,7 +622,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 2
+                "varChecks": 1
               },
               {
                 "date": "",
@@ -555,7 +633,7 @@
                 "fouls": 22,
                 "penalties": 0,
                 "cardIndex": 30,
-                "varChecks": 1
+                "varChecks": 2
               },
               {
                 "date": "",
@@ -610,6 +688,45 @@
             "homeWins": 1,
             "draws": 0,
             "awayWins": 2
+          },
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.75,
+              "lean": "under",
+              "label": "2.75球·偏小",
+              "explain": "市场预期总进球约 2.75 球（参考澳昆女超场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.25,
+              "lean": "home",
+              "label": "主让0.25",
+              "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
+            },
+            "totalCorners": {
+              "line": 12.0,
+              "lean": "under",
+              "label": "12角·偏小",
+              "explain": "市场预期总角球 12.0 个（参考 澳昆女超 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 0.5,
+              "lean": "home",
+              "label": "角球主让0.5",
+              "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": -2,
+              "rankValid": false,
+              "refereeScore": 65,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
           },
           "_dataSource": "dongqiudi-real",
           "heatScore": 20,

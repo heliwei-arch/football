@@ -1,6 +1,48 @@
 {
   "history": [
     {
+      "timestamp": "2026-08-12T16:15:25.874837",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "",
+        "todaySummary": "🇦🇺 昆士兰狮女足 vs 黄金海岸联女足（主裁尺度偏严，注意出牌风险）",
+        "yesterdayCount": 0,
+        "todayCount": 1,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    },
+    {
+      "timestamp": "2026-08-12T16:12:09.034667",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "",
+        "todaySummary": "🇦🇺 昆士兰狮女足 vs 黄金海岸联女足（主裁尺度偏严，注意出牌风险）",
+        "yesterdayCount": 0,
+        "todayCount": 1,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    },
+    {
+      "timestamp": "2026-08-12T16:02:44.879266",
+      "manual": false,
+      "digest": {
+        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 女足）",
+        "yesterdaySummary": "",
+        "todaySummary": "🇦🇺 昆士兰狮女足 vs 黄金海岸联女足（常规联赛对决）",
+        "yesterdayCount": 0,
+        "todayCount": 1,
+        "fullReport": true,
+        "_dataSource": "dongqiudi-real",
+        "_gender": "women"
+      }
+    },
+    {
       "timestamp": "2026-08-12T12:31:36.561502",
       "manual": false,
       "digest": {

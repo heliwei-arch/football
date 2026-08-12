@@ -358,6 +358,7 @@ def adapt_today(dqd_list, region):
             "homeRecentForm": home_form,
             "awayRecentForm": away_form,
             "h2hLast5": {"homeWins": hw, "draws": dr, "awayWins": aw},
+            "marketExpectation": m.get("marketExpectation"),
             "_dataSource": m.get("dataSource", "dongqiudi-real"),
         })
     return out

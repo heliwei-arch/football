@@ -73,3 +73,7 @@ serveo.pid
 *.app/
 *.command
 .DS_Store
+
+# 运行时日志
+*.jsonl
+

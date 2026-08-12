@@ -682,7 +682,39 @@
     margin-left: 8px;
     font-weight: 400;
   }
-  
+
+  /* ===== 赛前市场预期 4维盘口条 ===== */
+  .market-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, rgba(30,41,59,0.6), rgba(15,23,42,0.8));
+    border-bottom: 1px solid var(--border);
+  }
+  .market-pill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 4px;
+    border-radius: 8px;
+    font-size: 11px;
+    line-height: 1.3;
+    position: relative;
+    transition: transform 0.15s;
+  }
+  .market-pill:hover { transform: translateY(-1px); }
+  .market-pill .pill-icon { font-size: 13px; margin-bottom: 2px; }
+  .market-pill .pill-label { font-size: 9px; color: rgba(255,255,255,0.55); letter-spacing: 0.5px; margin-bottom: 1px; }
+  .market-pill .pill-value { font-size: 13px; font-weight: 700; color: #fff; }
+  .market-pill .pill-lean { font-size: 9px; margin-top: 1px; opacity: 0.75; }
+  /* 4种颜色：进球-绿色系 / 让球-蓝色系 / 角球总数-琥珀系 / 角球让差-紫色系 */
+  .pill-goals   { background: linear-gradient(135deg, #059669, #10b981); }
+  .pill-handicap{ background: linear-gradient(135deg, #2563eb, #3b82f6); }
+  .pill-corners { background: linear-gradient(135deg, #d97706, #f59e0b); }
+  .pill-ch      { background: linear-gradient(135deg, #7c3aed, #a78bfa); }
+
   .form-section {
     padding: 12px 20px;
     display: grid;
@@ -2025,7 +2057,7 @@ function renderYesterdayMatch(m) {
       <div class="match-score-row">
         <div class="team home">
           <div class="team-label">主 场</div>
-          <div class="team-name">${m.homeTeam}</div>
+          <div class="team-name">${(m.homeTeam&&m.homeTeam.name)||m.homeTeam||'?'}</div>
         </div>
         <div class="score-display">
           <div class="score">
@@ -2039,7 +2071,7 @@ function renderYesterdayMatch(m) {
         </div>
         <div class="team away">
           <div class="team-label">客 场</div>
-          <div class="team-name">${m.awayTeam}</div>
+          <div class="team-name">${(m.awayTeam&&m.awayTeam.name)||m.awayTeam||'?'}</div>
         </div>
       </div>
       
@@ -2091,6 +2123,57 @@ function renderPreviewMatch(p) {
   };
   
   const h = p.h2hLast5;
+
+  // ===== 赛前市场预期 4维盘口条（安全降级：无数据不渲染） =====
+  let marketBarHtml = '';
+  try {
+    const me = p.marketExpectation;
+    if (me && me.totalGoals && me.handicap && me.totalCorners && me.cornerHandicap) {
+      const leanMap = {
+        over: '偏大', under: '偏小', balanced: '均衡',
+        home: '主强', away: '客强', draw: '均势'
+      };
+      const fmtNum = v => {
+        if (v === 0) return '0';
+        const s = Number(v).toFixed(2).replace(/\.?0+$/, '');
+        return s === '-0' ? '0' : s;
+      };
+      const tg = me.totalGoals, hc = me.handicap, tc = me.totalCorners, ch = me.cornerHandicap;
+      const hcVal = fmtNum(Math.abs(hc.line));
+      const hcSide = hc.line > 0.01 ? '主让' : (hc.line < -0.01 ? '客让' : '平手');
+      const chVal = fmtNum(Math.abs(ch.line));
+      const chSide = ch.line > 0.01 ? '主让' : (ch.line < -0.01 ? '客让' : '均势');
+      const hcLabel = hc.line === 0 ? '平手' : `${hcSide}${hcVal}`;
+      const chLabel = ch.line === 0 ? '角球均势' : `角球${chSide}${chVal}`;
+      marketBarHtml = `
+      <div class="market-bar" title="赛前市场预期（基于联赛特性+排名差+主场+裁判模型推算）">
+        <div class="market-pill pill-goals">
+          <div class="pill-icon">⚽</div>
+          <div class="pill-label">总进球</div>
+          <div class="pill-value">${fmtNum(tg.line)}</div>
+          <div class="pill-lean">${leanMap[tg.lean]||''}</div>
+        </div>
+        <div class="market-pill pill-handicap">
+          <div class="pill-icon">↔️</div>
+          <div class="pill-label">让球盘</div>
+          <div class="pill-value">${hcLabel}</div>
+          <div class="pill-lean">${leanMap[hc.lean]||''}</div>
+        </div>
+        <div class="market-pill pill-corners">
+          <div class="pill-icon">🚩</div>
+          <div class="pill-label">角球总数</div>
+          <div class="pill-value">${fmtNum(tc.line)}</div>
+          <div class="pill-lean">${leanMap[tc.lean]||''}</div>
+        </div>
+        <div class="market-pill pill-ch">
+          <div class="pill-icon">↕️</div>
+          <div class="pill-label">角球让差</div>
+          <div class="pill-value">${chLabel}</div>
+          <div class="pill-lean">${leanMap[ch.lean]||''}</div>
+        </div>
+      </div>`;
+    }
+  } catch(e) { console.warn('[renderPreviewMatch] market bar err', e); marketBarHtml=''; }
   
   return `
     <div class="preview-card" data-region="${p.region}">
@@ -2101,13 +2184,13 @@ function renderPreviewMatch(p) {
       
       <div class="matchup-row">
         <div>
-          <div class="team-label" style="font-size:11px;color:var(--text-muted);letter-spacing:1px;">主队</div>
-          <div class="preview-team-name" style="color:#60a5fa">${p.homeTeam}</div>
+          <div class="team-label" style="font-size:11px;color:var(--text-muted);letter-spacing:1px;">主队${p.homeTeam.rank?` · 第${p.homeTeam.rank}`:''}</div>
+          <div class="preview-team-name" style="color:#60a5fa">${(p.homeTeam&&p.homeTeam.name)||p.homeTeam||'?'}</div>
         </div>
         <div class="vs-text">VS</div>
         <div>
-          <div class="team-label" style="font-size:11px;color:var(--text-muted);letter-spacing:1px;">客队</div>
-          <div class="preview-team-name" style="color:#f472b6">${p.awayTeam}</div>
+          <div class="team-label" style="font-size:11px;color:var(--text-muted);letter-spacing:1px;">客队${p.awayTeam.rank?` · 第${p.awayTeam.rank}`:''}</div>
+          <div class="preview-team-name" style="color:#f472b6">${(p.awayTeam&&p.awayTeam.name)||p.awayTeam||'?'}</div>
         </div>
       </div>
       
@@ -2115,7 +2198,7 @@ function renderPreviewMatch(p) {
         ⏰ ${p.time} 开球
         <span class="venue-info">📍 ${p.venue}</span>
       </div>
-      
+      ${marketBarHtml}
       <div class="form-section">
         <div>
           <div class="form-team-label">近5场</div>
@@ -2590,6 +2673,27 @@ renderPreviewMatch = function(p) {
           ⏰ ${p.time || 'TBD'} 开球
           ${p.venue ? `<span class="venue-info">📍 ${p.venue}</span>` : ''}
         </div>
+        ${(() => {
+          try {
+            const me = p.marketExpectation;
+            if (!me || !me.totalGoals || !me.handicap || !me.totalCorners || !me.cornerHandicap) return '';
+            const leanMap = { over:'偏大', under:'偏小', balanced:'均衡', home:'主强', away:'客强', draw:'均势' };
+            const fmtNum = v => { if(v===0)return '0'; const s=Number(v).toFixed(2).replace(/\.?0+$/,''); return s==='-0'?'0':s; };
+            const tg=me.totalGoals, hc=me.handicap, tc=me.totalCorners, ch=me.cornerHandicap;
+            const hcVal=fmtNum(Math.abs(hc.line));
+            const hcSide=hc.line>0.01?'主让':(hc.line<-0.01?'客让':'平手');
+            const chVal=fmtNum(Math.abs(ch.line));
+            const chSide=ch.line>0.01?'主让':(ch.line<-0.01?'客让':'均势');
+            const hcLabel=Math.abs(hc.line)<0.01?'平手':`${hcSide}${hcVal}`;
+            const chLabel=Math.abs(ch.line)<0.01?'角球均势':`角球${chSide}${chVal}`;
+            return `<div class="market-bar" title="赛前市场预期（基于联赛特性+排名差+主场+裁判模型推算，仅供参考）">
+              <div class="market-pill pill-goals"><div class="pill-icon">⚽</div><div class="pill-label">总进球</div><div class="pill-value">${fmtNum(tg.line)}</div><div class="pill-lean">${leanMap[tg.lean]||''}</div></div>
+              <div class="market-pill pill-handicap"><div class="pill-icon">↔️</div><div class="pill-label">让球盘</div><div class="pill-value">${hcLabel}</div><div class="pill-lean">${leanMap[hc.lean]||''}</div></div>
+              <div class="market-pill pill-corners"><div class="pill-icon">🚩</div><div class="pill-label">角球总数</div><div class="pill-value">${fmtNum(tc.line)}</div><div class="pill-lean">${leanMap[tc.lean]||''}</div></div>
+              <div class="market-pill pill-ch"><div class="pill-icon">↕️</div><div class="pill-label">角球让差</div><div class="pill-value">${chLabel}</div><div class="pill-lean">${leanMap[ch.lean]||''}</div></div>
+            </div>`;
+          } catch(e){ return ''; }
+        })()}
         ${hr5.length ? `
         <div class="form-section">
           <div>
