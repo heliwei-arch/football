@@ -974,12 +974,30 @@
   
   /* 响应式 */
   @media (max-width: 768px) {
-    .container { padding: 16px; }
-    .matches-grid, .previews-grid { grid-template-columns: 1fr; }
+    .container { padding: 12px; }
+    .matches-grid, .previews-grid { grid-template-columns: 1fr; gap: 10px; }
     .match-score-row { grid-template-columns: 1fr; gap: 10px; }
     .score { font-size: 30px; }
     .ref-stat-grid { grid-template-columns: repeat(2, 1fr); }
-    .section-title { font-size: 18px; }
+    .section-title { font-size: 18px; margin: 16px 0 10px; }
+    
+    /* 移动端优化：隐藏顶部长技术说明，节省垂直空间 */
+    .datasource-banner { padding: 6px 12px; font-size: 12px; }
+    .datasource-banner .datasource-banner-desc { display: none; }
+    .datasource-banner .refresh-time { display: block; margin: 4px auto 0; font-size: 11px; }
+    .datasource-banner .gender-pill-tabs { margin-left: auto; }
+    
+    /* Header区域移动端紧凑化 */
+    .header { padding: 10px 0; }
+    .header-inner { gap: 8px; flex-wrap: wrap; }
+    .logo { gap: 8px; }
+    .logo-icon { width: 36px !important; height: 36px !important; font-size: 18px !important; }
+    .logo > div > div:first-child { font-size: 20px !important; }
+    .logo > div > div:last-child { font-size: 10px !important; }
+    .update-info { gap: 6px; flex-wrap: wrap; }
+    .last-update { font-size: 11px; }
+    .date-input { font-size: 12px; padding: 4px 6px; }
+    .refresh-btn { font-size: 11px; padding: 6px 10px; }
   }
 
   /* 男足/女足 性别切换 Tab */
@@ -1841,12 +1859,15 @@
 </div>
 <div class="datasource-banner">
   <span class="icon">✅</span>
-  <strong id="datasourceTitle">FT早知道 · 男足版（懂球帝真实数据）：</strong>
-  当前所有对阵、联赛、比分、裁判分配均来自
-  <code>懂球帝</code>
-  公开免Key接口
-  <code>magicball/v1/list/match_list</code>
-  ，裁判严格按区域分配（杜绝跨区执法幻觉）；Opta统计以真实比分为锚点推算。
+  <strong id="datasourceTitle">FT早知道 · 男足版</strong>
+  <span class="datasource-banner-desc">
+    （懂球帝真实数据）：
+    当前所有对阵、联赛、比分、裁判分配均来自
+    <code>懂球帝</code>
+    公开免Key接口
+    <code>magicball/v1/list/match_list</code>
+    ，裁判严格按区域分配（杜绝跨区执法幻觉）；Opta统计以真实比分为锚点推算。
+  </span>
   <!-- 男女胶囊Tab（App内切换，不再跳转独立页） -->
   <span class="gender-pill-tabs" role="tablist" aria-label="男女足切换">
     <button type="button" class="gpill active" data-gender="men" data-theme="men-dark" title="男足 · 深蓝深色主题">
@@ -3042,7 +3063,7 @@ function setGender(gender, updateHash = true) {
   });
   // 页面标题 / banner文字
   const ttl = document.getElementById('datasourceTitle');
-  if (ttl) ttl.textContent = `FT早知道 · ${gender === 'men' ? '男足版（深蓝深色主题）' : '女足版（奶白粉浅色主题）'}（懂球帝真实数据）：`;
+  if (ttl) ttl.textContent = `FT早知道 · ${gender === 'men' ? '男足版' : '女足版'}`;
   document.title = gender === 'men'
     ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
     : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
@@ -3411,7 +3432,7 @@ document.addEventListener('DOMContentLoaded', async function initApp() {
     btn.classList.toggle('active', btn.dataset.gender === CURRENT_GENDER);
   });
   const ttl = document.getElementById('datasourceTitle');
-  if (ttl) ttl.textContent = `FT早知道 · ${CURRENT_GENDER === 'men' ? '男足版（深蓝深色主题）' : '女足版（奶白粉浅色主题）'}（懂球帝真实数据）：`;
+  if (ttl) ttl.textContent = `FT早知道 · ${CURRENT_GENDER === 'men' ? '男足版' : '女足版'}`;
   document.title = CURRENT_GENDER === 'men'
     ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
     : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
@@ -3855,7 +3876,7 @@ if (document.readyState === 'loading') {
       CURRENT_GENDER = h.gender === 'women' ? 'women' : 'men';
       document.querySelectorAll('.gpill').forEach(btn => btn.classList.toggle('active', btn.dataset.gender === CURRENT_GENDER));
       const ttl = document.getElementById('datasourceTitle');
-      if (ttl) ttl.textContent = `FT早知道 · ${CURRENT_GENDER === 'men' ? '男足版（深蓝深色主题）' : '女足版（奶白粉浅色主题）'}（懂球帝真实数据）：`;
+      if (ttl) ttl.textContent = `FT早知道 · ${CURRENT_GENDER === 'men' ? '男足版' : '女足版'}`;
       document.title = CURRENT_GENDER === 'men'
         ? '📰 FT早知道 · 男足日报（每日9点·懂球帝真实数据）'
         : '📰 FT早知道 · 女足日报（奶白粉浅色·每日9点·懂球帝）';
