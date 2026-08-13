@@ -5,7 +5,7 @@
  * - HTTP API（/api/dashboard /api/update）= Network-First + 离线fallback（避免黑洞卡死）
  * - 移动端App打包（Capacitor/WebView file:// 协议）= 直接透传不缓存（WebView本身有文件缓存）
  * ========================================================= */
-const CACHE_VER = 'ft-zazao-v3';  // v3: 新增T-1盘口复盘+博彩赔率区，强制刷新所有缓存
+const CACHE_VER = 'ft-zazao-v4';  // v4: 2026-08-13 数据更新，强制清缓存
 const APP_SHELL_CORE = [
   './',
   './index.html',
