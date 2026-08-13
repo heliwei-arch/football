@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-12T21:02:28.549238",
-  "generatedAt": "2026-08-12T21:03:27.098107",
+  "lastUpdate": "2026-08-13T10:16:43.161608",
+  "generatedAt": "2026-08-13T10:17:36.478114",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "europe": [
@@ -42,14 +42,2166 @@
       }
     ]
   },
-  "yesterdayMatches": [],
+  "yesterdayMatches": [
+    {
+      "id": "54362609",
+      "date": "2026-08-12",
+      "time": "19:15",
+      "league": {
+        "id": "dqd-europe-冰女超",
+        "name": "冰女超",
+        "country": "冰女超",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#0088FF",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "women",
+      "homeTeam": {
+        "name": "弗拉姆女足",
+        "logo": "https://sd.qunliao.info/fastdfs4/M00/CA/F2/ChMf8F0n9u6AZLo9AAA4T6gOqBE414.png",
+        "score": 4,
+        "teamId": "t9346",
+        "rank": 7,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#ef4444",
+            "#991b1b"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "awayTeam": {
+        "name": "哈夫纳夫约杜尔女足",
+        "logo": "https://sd.qunliao.info/fastdfs5/M00/16/F4/rB8BO16zaOCAGGfwAABB6Rmf_1E806.png",
+        "score": 6,
+        "teamId": "t4084",
+        "rank": 1,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#84cc16",
+            "#4d7c0f"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "venue": "弗拉姆女足主场",
+      "stats": {
+        "score": {
+          "home": 4,
+          "away": 6
+        },
+        "possession": {
+          "home": 47.0,
+          "away": 53.0
+        },
+        "shots": {
+          "home": 15,
+          "away": 18
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 7
+        },
+        "xG": {
+          "home": "1.49",
+          "away": "1.72"
+        },
+        "passes": {
+          "home": 535,
+          "away": 565
+        },
+        "passAccuracy": {
+          "home": "74%",
+          "away": "82%"
+        },
+        "tackles": {
+          "home": 20,
+          "away": 23
+        },
+        "interceptions": {
+          "home": 12,
+          "away": 15
+        },
+        "fouls": {
+          "home": 24,
+          "away": 19
+        },
+        "corners": {
+          "home": 7,
+          "away": 4
+        },
+        "yellowCards": {
+          "home": 2,
+          "away": 4
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 3,
+          "away": 4
+        },
+        "saves": {
+          "home": 2,
+          "away": 2
+        },
+        "_anchors": {
+          "score_home": 4,
+          "score_away": 6,
+          "yc_home": 2,
+          "yc_away": 4,
+          "rc_home": 0,
+          "rc_away": 0,
+          "corner_home_from_dqd": "7",
+          "corner_away_from_dqd": "4"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-费利克斯·布里赫",
+          "name": "费利克斯·布里赫",
+          "country": "德国",
+          "age": 48
+        },
+        "history": [
+          {
+            "date": "2026-08-10",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 10,
+            "redCards": 2,
+            "fouls": 27,
+            "penalties": 1,
+            "cardIndex": 150,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-08-03",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 9,
+            "redCards": 1,
+            "fouls": 29,
+            "penalties": 2,
+            "cardIndex": 115,
+            "varChecks": 3
+          },
+          {
+            "date": "2026-07-27",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 11,
+            "redCards": 1,
+            "fouls": 24,
+            "penalties": 2,
+            "cardIndex": 135,
+            "varChecks": 5
+          },
+          {
+            "date": "2026-07-20",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 9,
+            "redCards": 1,
+            "fouls": 18,
+            "penalties": 1,
+            "cardIndex": 115,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-13",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 11,
+            "redCards": 1,
+            "fouls": 17,
+            "penalties": 1,
+            "cardIndex": 135,
+            "varChecks": 4
+          }
+        ],
+        "statistics": {
+          "avgYellow": "10.0",
+          "avgRed": "1.20",
+          "avgFouls": "23.0",
+          "avgPenalties": "1.40",
+          "avgCardIndex": "130.0",
+          "avgVar": "4.0",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 4,
+          "type": "goal",
+          "team": "home",
+          "teamName": "弗拉姆女足",
+          "description": "弗拉姆女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 13,
+          "type": "goal",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 19,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 27,
+          "type": "goal",
+          "team": "home",
+          "teamName": "弗拉姆女足",
+          "description": "弗拉姆女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 35,
+          "type": "goal",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 41,
+          "type": "goal",
+          "team": "home",
+          "teamName": "弗拉姆女足",
+          "description": "弗拉姆女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 45,
+          "type": "goal",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 46,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 50,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "弗拉姆女足",
+          "description": "弗拉姆女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 59,
+          "type": "goal",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 62,
+          "type": "goal",
+          "team": "home",
+          "teamName": "弗拉姆女足",
+          "description": "弗拉姆女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 68,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "弗拉姆女足",
+          "description": "弗拉姆女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 74,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "弗拉姆女足",
+          "description": "弗拉姆女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 79,
+          "type": "goal",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 86,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 89,
+          "type": "goal",
+          "team": "away",
+          "teamName": "哈夫纳夫约杜尔女足",
+          "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+        }
+      ],
+      "analysis": [
+        "哈夫纳夫约杜尔女足 客场奏凯，反击效率极高，xG 1.72 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 92分），全场共出示 6 黄0红，直接影响了比赛节奏",
+        "本场比赛对抗激烈，双方共计 43 次犯规，拼抢强度拉满"
+      ],
+      "homeTactics": {
+        "formation": "4-4-2",
+        "formationName": "4-4-2 大巴防守",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "RM",
+            "x": 3,
+            "y": 1,
+            "label": "RM"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 3,
+            "label": "RCM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "LM",
+            "x": 3,
+            "y": 5,
+            "label": "LM"
+          },
+          {
+            "pos": "ST1",
+            "x": 5,
+            "y": 2,
+            "label": "ST1"
+          },
+          {
+            "pos": "ST2",
+            "x": 5,
+            "y": 4,
+            "label": "ST2"
+          }
+        ],
+        "tags": [
+          "控球主导",
+          "伪九号回撤",
+          "边中结合",
+          "远射战术"
+        ],
+        "possessionPercent": 32,
+        "ppda": 13.1,
+        "leftAttackPercent": 48,
+        "rightAttackPercent": 52,
+        "setPieceGoalRatio": 26,
+        "counterAttackTrigger": "频繁（主打反击）",
+        "focusSide": "中路均衡",
+        "pressStrength": "中等",
+        "strategyText": "本场采用4-4-2阵型应对强敌，以 边中结合 为主 + 远射战术，控球率 32%；频繁（主打反击）（反击场均威胁≥2.1次），定位球得分占比 26%。"
+      },
+      "awayTactics": {
+        "formation": "4-3-3",
+        "formationName": "4-3-3 控球进攻",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 2,
+            "label": "RCM"
+          },
+          {
+            "pos": "CDM",
+            "x": 3,
+            "y": 3,
+            "label": "CDM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "RW",
+            "x": 4,
+            "y": 1,
+            "label": "RW"
+          },
+          {
+            "pos": "ST",
+            "x": 5,
+            "y": 3,
+            "label": "ST"
+          },
+          {
+            "pos": "LW",
+            "x": 4,
+            "y": 5,
+            "label": "LW"
+          }
+        ],
+        "tags": [
+          "中场绞杀",
+          "两翼齐飞",
+          "前场逼抢",
+          "短传配合"
+        ],
+        "possessionPercent": 68,
+        "ppda": 11.7,
+        "leftAttackPercent": 66,
+        "rightAttackPercent": 34,
+        "setPieceGoalRatio": 22,
+        "counterAttackTrigger": "偶尔（控球为主）",
+        "focusSide": "左路",
+        "pressStrength": "中等",
+        "strategyText": "本场采用4-3-3阵型，以 中场绞杀 为核心，控球率 68%，压迫强度中等（PPDA 11.7）；进攻重心左路占比 66%，通过 中场短传渗透+直塞身后 创造机会。"
+      },
+      "intensity": "★★★☆☆",
+      "features": [
+        "常规联赛对决"
+      ],
+      "marketExpectation": {
+        "totalGoals": {
+          "line": 2.75,
+          "lean": "balanced",
+          "label": "2.75球·均衡",
+          "explain": "市场预期总进球约 2.75 球（参考冰女超场均 2.55 球）"
+        },
+        "handicap": {
+          "line": 0.0,
+          "lean": "draw",
+          "label": "平手",
+          "explain": "实力差预估：平手（主场加成+排名差-6位）"
+        },
+        "totalCorners": {
+          "line": 11.5,
+          "lean": "balanced",
+          "label": "11.5角·均衡",
+          "explain": "市场预期总角球 11.5 个（参考 冰女超 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 0.0,
+          "lean": "draw",
+          "label": "角球平手",
+          "explain": "角球让差：角球平手（与让球盘同向但幅度更宽）"
+        },
+        "meta": {
+          "source": "dqd-public-derived-model",
+          "leagueProfile": {
+            "goals": 2.55,
+            "corners": 9.5,
+            "atkCoef": 1.0
+          },
+          "rankDiff": -6,
+          "rankValid": true,
+          "refereeScore": 90,
+          "modelVersion": "ft-odds-model-v1",
+          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+        }
+      },
+      "t1Comparison": {
+        "fthg": 4,
+        "ftag": 6,
+        "total": 10,
+        "homeMargin": -2,
+        "ahLineUsed": 0.0,
+        "ouLineUsed": 2.75,
+        "lineSource": "model",
+        "handicap": {
+          "result": "away-win",
+          "label_cn": "客赢盘",
+          "homeMargin": -2,
+          "margin": -2.0
+        },
+        "overunder": {
+          "result": "over",
+          "label_cn": "大球",
+          "total": 10,
+          "margin": 7.25
+        }
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 45,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 17,
+        "focal": 4,
+        "h2hRecent": 8
+      },
+      "isHotMatch": false,
+      "predictedDifficulty": 3
+    },
+    {
+      "id": "54362610",
+      "date": "2026-08-12",
+      "time": "19:15",
+      "league": {
+        "id": "dqd-europe-冰女超",
+        "name": "冰女超",
+        "country": "冰女超",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#0088FF",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "women",
+      "homeTeam": {
+        "name": "特罗图尔女足",
+        "logo": "https://sd.qunliao.info/fastdfs4/M00/CA/27/ChNLklzuJhKAA60lAAAqWzKycik524.png",
+        "score": 3,
+        "teamId": "t5159",
+        "rank": 6,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#84cc16",
+            "#4d7c0f"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "awayTeam": {
+        "name": "雷克雅未克矛隼女足",
+        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/80/ChOxM1xC2ViAe59zAAAbRBXbv64916.png",
+        "score": 2,
+        "teamId": "t4090",
+        "rank": 9,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#d946ef",
+            "#a21caf"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "venue": "特罗图尔女足主场",
+      "stats": {
+        "score": {
+          "home": 3,
+          "away": 2
+        },
+        "possession": {
+          "home": 52.7,
+          "away": 47.3
+        },
+        "shots": {
+          "home": 14,
+          "away": 15
+        },
+        "shotsOnTarget": {
+          "home": 6,
+          "away": 6
+        },
+        "xG": {
+          "home": "1.54",
+          "away": "1.66"
+        },
+        "passes": {
+          "home": 563,
+          "away": 536
+        },
+        "passAccuracy": {
+          "home": "81%",
+          "away": "78%"
+        },
+        "tackles": {
+          "home": 20,
+          "away": 20
+        },
+        "interceptions": {
+          "home": 12,
+          "away": 12
+        },
+        "fouls": {
+          "home": 13,
+          "away": 26
+        },
+        "corners": {
+          "home": 6,
+          "away": 5
+        },
+        "yellowCards": {
+          "home": 1,
+          "away": 3
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 1,
+          "away": 3
+        },
+        "saves": {
+          "home": 5,
+          "away": 4
+        },
+        "_anchors": {
+          "score_home": 3,
+          "score_away": 2,
+          "yc_home": 1,
+          "yc_away": 3,
+          "rc_home": 0,
+          "rc_away": 0,
+          "corner_home_from_dqd": "6",
+          "corner_away_from_dqd": "5"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-达尼埃莱·奥萨托",
+          "name": "达尼埃莱·奥萨托",
+          "country": "意大利",
+          "age": 48
+        },
+        "history": [
+          {
+            "date": "2026-08-10",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 17,
+            "penalties": 1,
+            "cardIndex": 95,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-08-03",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 24,
+            "penalties": 1,
+            "cardIndex": 95,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-27",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 6,
+            "redCards": 1,
+            "fouls": 24,
+            "penalties": 1,
+            "cardIndex": 85,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-20",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 8,
+            "redCards": 2,
+            "fouls": 21,
+            "penalties": 2,
+            "cardIndex": 130,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-13",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 19,
+            "penalties": 1,
+            "cardIndex": 95,
+            "varChecks": 4
+          }
+        ],
+        "statistics": {
+          "avgYellow": "7.0",
+          "avgRed": "1.20",
+          "avgFouls": "21.0",
+          "avgPenalties": "1.20",
+          "avgCardIndex": "100.0",
+          "avgVar": "3.6",
+          "strictnessScore": 86
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 1,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "雷克雅未克矛隼女足",
+          "description": "雷克雅未克矛隼女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 2,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "雷克雅未克矛隼女足",
+          "description": "雷克雅未克矛隼女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 14,
+          "type": "goal",
+          "team": "away",
+          "teamName": "雷克雅未克矛隼女足",
+          "description": "雷克雅未克矛隼女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 19,
+          "type": "goal",
+          "team": "home",
+          "teamName": "特罗图尔女足",
+          "description": "特罗图尔女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 22,
+          "type": "goal",
+          "team": "away",
+          "teamName": "雷克雅未克矛隼女足",
+          "description": "雷克雅未克矛隼女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 43,
+          "type": "goal",
+          "team": "home",
+          "teamName": "特罗图尔女足",
+          "description": "特罗图尔女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 53,
+          "type": "goal",
+          "team": "home",
+          "teamName": "特罗图尔女足",
+          "description": "特罗图尔女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 84,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "雷克雅未克矛隼女足",
+          "description": "雷克雅未克矛隼女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 84,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "雷克雅未克矛隼女足",
+          "description": "雷克雅未克矛隼女足 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "特罗图尔女足 主场取胜，实际进球 3 vs xG 1.54，把握机会能力超强",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 86分），全场共出示 4 黄0红，直接影响了比赛节奏",
+        "本场比赛对抗激烈，双方共计 39 次犯规，拼抢强度拉满"
+      ],
+      "homeTactics": {
+        "formation": "4-2-3-1",
+        "formationName": "4-2-3-1 控球进攻",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "CDM1",
+            "x": 3,
+            "y": 2,
+            "label": "CDM1"
+          },
+          {
+            "pos": "CDM2",
+            "x": 3,
+            "y": 4,
+            "label": "CDM2"
+          },
+          {
+            "pos": "RAM",
+            "x": 4,
+            "y": 1,
+            "label": "RAM"
+          },
+          {
+            "pos": "CAM",
+            "x": 4,
+            "y": 3,
+            "label": "CAM"
+          },
+          {
+            "pos": "LAM",
+            "x": 4,
+            "y": 5,
+            "label": "LAM"
+          },
+          {
+            "pos": "ST",
+            "x": 5,
+            "y": 3,
+            "label": "ST"
+          }
+        ],
+        "tags": [
+          "控球主导",
+          "伪九号回撤",
+          "边中结合",
+          "远射战术"
+        ],
+        "possessionPercent": 69,
+        "ppda": 7.9,
+        "leftAttackPercent": 42,
+        "rightAttackPercent": 58,
+        "setPieceGoalRatio": 29,
+        "counterAttackTrigger": "偶尔（控球为主）",
+        "focusSide": "右路",
+        "pressStrength": "极强（高位逼抢）",
+        "strategyText": "本场采用4-2-3-1阵型，以 控球主导 为核心，控球率 69%，压迫强度极强（高位逼抢）（PPDA 7.9）；进攻重心右路占比 58%，通过 中场短传渗透+直塞身后 创造机会。"
+      },
+      "awayTactics": {
+        "formation": "4-4-2",
+        "formationName": "4-4-2 攻守平衡",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "RM",
+            "x": 3,
+            "y": 1,
+            "label": "RM"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 3,
+            "label": "RCM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "LM",
+            "x": 3,
+            "y": 5,
+            "label": "LM"
+          },
+          {
+            "pos": "ST1",
+            "x": 5,
+            "y": 2,
+            "label": "ST1"
+          },
+          {
+            "pos": "ST2",
+            "x": 5,
+            "y": 4,
+            "label": "ST2"
+          }
+        ],
+        "tags": [
+          "中场绞杀",
+          "两翼齐飞",
+          "前场逼抢",
+          "短传配合"
+        ],
+        "possessionPercent": 39,
+        "ppda": 11.8,
+        "leftAttackPercent": 66,
+        "rightAttackPercent": 34,
+        "setPieceGoalRatio": 28,
+        "counterAttackTrigger": "平衡",
+        "focusSide": "左路",
+        "pressStrength": "中等",
+        "strategyText": "本场采用4-4-2阵型应对强敌，以 前场逼抢 为主 + 短传配合，控球率 39%；平衡（反击场均威胁≥2.1次），定位球得分占比 28%。"
+      },
+      "intensity": "★★☆☆☆",
+      "features": [
+        "常规联赛对决"
+      ],
+      "marketExpectation": {
+        "totalGoals": {
+          "line": 2.5,
+          "lean": "over",
+          "label": "2.5球·偏大",
+          "explain": "市场预期总进球约 2.5 球（参考冰女超场均 2.55 球）"
+        },
+        "handicap": {
+          "line": 0.5,
+          "lean": "home",
+          "label": "主让0.5",
+          "explain": "实力差预估：主让0.5（主场加成+排名差+3位）"
+        },
+        "totalCorners": {
+          "line": 12.0,
+          "lean": "under",
+          "label": "12角·偏小",
+          "explain": "市场预期总角球 12.0 个（参考 冰女超 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 1.0,
+          "lean": "home",
+          "label": "角球主让1",
+          "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
+        },
+        "meta": {
+          "source": "dqd-public-derived-model",
+          "leagueProfile": {
+            "goals": 2.55,
+            "corners": 9.5,
+            "atkCoef": 1.0
+          },
+          "rankDiff": 3,
+          "rankValid": true,
+          "refereeScore": 80,
+          "modelVersion": "ft-odds-model-v1",
+          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+        }
+      },
+      "t1Comparison": {
+        "fthg": 3,
+        "ftag": 2,
+        "total": 5,
+        "homeMargin": 1,
+        "ahLineUsed": 0.5,
+        "ouLineUsed": 2.5,
+        "lineSource": "model",
+        "handicap": {
+          "result": "home-win",
+          "label_cn": "主赢盘",
+          "homeMargin": 1,
+          "margin": 0.5
+        },
+        "overunder": {
+          "result": "over",
+          "label_cn": "大球",
+          "total": 5,
+          "margin": 2.5
+        }
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 36,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 11,
+        "focal": 0,
+        "h2hRecent": 9
+      },
+      "isHotMatch": false,
+      "predictedDifficulty": 2
+    },
+    {
+      "id": "54362608",
+      "date": "2026-08-12",
+      "time": "19:15",
+      "league": {
+        "id": "dqd-europe-冰女超",
+        "name": "冰女超",
+        "country": "冰女超",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#0088FF",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "women",
+      "homeTeam": {
+        "name": "科帕沃于尔光明女足",
+        "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/78/ChOxM1xC2J2AVIaBAABGiDEo8AA930.png",
+        "score": 1,
+        "teamId": "t4083",
+        "rank": 2,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#14b8a6",
+            "#0f766e"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "awayTeam": {
+        "name": "尼哈德维克格连戴域克女足",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "score": 0,
+        "teamId": "t149873",
+        "rank": null,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#f59e0b",
+            "#c2410c"
+          ],
+          "countryFlag": "🏳️"
+        },
+        "countryFlag": "🏳️"
+      },
+      "venue": "科帕沃于尔光明女足主场",
+      "stats": {
+        "score": {
+          "home": 1,
+          "away": 0
+        },
+        "possession": {
+          "home": 51.5,
+          "away": 48.5
+        },
+        "shots": {
+          "home": 16,
+          "away": 16
+        },
+        "shotsOnTarget": {
+          "home": 5,
+          "away": 6
+        },
+        "xG": {
+          "home": "1.62",
+          "away": "1.67"
+        },
+        "passes": {
+          "home": 557,
+          "away": 542
+        },
+        "passAccuracy": {
+          "home": "82%",
+          "away": "75%"
+        },
+        "tackles": {
+          "home": 21,
+          "away": 21
+        },
+        "interceptions": {
+          "home": 13,
+          "away": 14
+        },
+        "fouls": {
+          "home": 16,
+          "away": 24
+        },
+        "corners": {
+          "home": 6,
+          "away": 1
+        },
+        "yellowCards": {
+          "home": 5,
+          "away": 2
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 3,
+          "away": 4
+        },
+        "saves": {
+          "home": 6,
+          "away": 5
+        },
+        "_anchors": {
+          "score_home": 1,
+          "score_away": 0,
+          "yc_home": 5,
+          "yc_away": 2,
+          "rc_home": 0,
+          "rc_away": 0,
+          "corner_home_from_dqd": "6",
+          "corner_away_from_dqd": "1"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-达尼埃莱·奥萨托",
+          "name": "达尼埃莱·奥萨托",
+          "country": "意大利",
+          "age": 48
+        },
+        "history": [
+          {
+            "date": "2026-08-10",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 17,
+            "penalties": 1,
+            "cardIndex": 95,
+            "varChecks": 3
+          },
+          {
+            "date": "2026-08-03",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 24,
+            "penalties": 1,
+            "cardIndex": 95,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-27",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 6,
+            "redCards": 1,
+            "fouls": 24,
+            "penalties": 1,
+            "cardIndex": 85,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-20",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 8,
+            "redCards": 2,
+            "fouls": 21,
+            "penalties": 2,
+            "cardIndex": 130,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-07-13",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 7,
+            "redCards": 1,
+            "fouls": 19,
+            "penalties": 1,
+            "cardIndex": 95,
+            "varChecks": 3
+          }
+        ],
+        "statistics": {
+          "avgYellow": "7.0",
+          "avgRed": "1.20",
+          "avgFouls": "21.0",
+          "avgPenalties": "1.20",
+          "avgCardIndex": "100.0",
+          "avgVar": "3.2",
+          "strictnessScore": 86
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 13,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "尼哈德维克格连戴域克女足",
+          "description": "尼哈德维克格连戴域克女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 19,
+          "type": "goal",
+          "team": "home",
+          "teamName": "科帕沃于尔光明女足",
+          "description": "科帕沃于尔光明女足 进球！精彩射门得分"
+        },
+        {
+          "minute": 61,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "尼哈德维克格连戴域克女足",
+          "description": "尼哈德维克格连戴域克女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 63,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "科帕沃于尔光明女足",
+          "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 67,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "科帕沃于尔光明女足",
+          "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 71,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "科帕沃于尔光明女足",
+          "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 79,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "科帕沃于尔光明女足",
+          "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 87,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "科帕沃于尔光明女足",
+          "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "科帕沃于尔光明女足 主场取胜，实际进球 1 vs xG 1.62，进攻效率符合预期",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 86分），全场共出示 7 黄0红，直接影响了比赛节奏",
+        "本场比赛对抗激烈，双方共计 40 次犯规，拼抢强度拉满"
+      ],
+      "homeTactics": {
+        "formation": "4-2-3-1",
+        "formationName": "4-2-3-1 控球进攻",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "CDM1",
+            "x": 3,
+            "y": 2,
+            "label": "CDM1"
+          },
+          {
+            "pos": "CDM2",
+            "x": 3,
+            "y": 4,
+            "label": "CDM2"
+          },
+          {
+            "pos": "RAM",
+            "x": 4,
+            "y": 1,
+            "label": "RAM"
+          },
+          {
+            "pos": "CAM",
+            "x": 4,
+            "y": 3,
+            "label": "CAM"
+          },
+          {
+            "pos": "LAM",
+            "x": 4,
+            "y": 5,
+            "label": "LAM"
+          },
+          {
+            "pos": "ST",
+            "x": 5,
+            "y": 3,
+            "label": "ST"
+          }
+        ],
+        "tags": [
+          "控球主导",
+          "伪九号回撤",
+          "边中结合",
+          "远射战术"
+        ],
+        "possessionPercent": 69,
+        "ppda": 8.1,
+        "leftAttackPercent": 69,
+        "rightAttackPercent": 31,
+        "setPieceGoalRatio": 22,
+        "counterAttackTrigger": "偶尔（控球为主）",
+        "focusSide": "左路",
+        "pressStrength": "极强（高位逼抢）",
+        "strategyText": "本场采用4-2-3-1阵型，以 控球主导 为核心，控球率 69%，压迫强度极强（高位逼抢）（PPDA 8.1）；进攻重心左路占比 69%，通过 中场短传渗透+直塞身后 创造机会。"
+      },
+      "awayTactics": {
+        "formation": "5-3-2",
+        "formationName": "5-3-2 攻守平衡",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 1,
+            "label": "RCB"
+          },
+          {
+            "pos": "RCCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCCB"
+          },
+          {
+            "pos": "CCB",
+            "x": 2,
+            "y": 3,
+            "label": "CCB"
+          },
+          {
+            "pos": "LCCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 5,
+            "label": "LCB"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 2,
+            "label": "RCM"
+          },
+          {
+            "pos": "CM",
+            "x": 3,
+            "y": 3,
+            "label": "CM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "ST1",
+            "x": 5,
+            "y": 2,
+            "label": "ST1"
+          },
+          {
+            "pos": "ST2",
+            "x": 5,
+            "y": 4,
+            "label": "ST2"
+          }
+        ],
+        "tags": [
+          "攻守平衡",
+          "中场控制",
+          "边路突破",
+          "中路渗透"
+        ],
+        "possessionPercent": 44,
+        "ppda": 16.1,
+        "leftAttackPercent": 46,
+        "rightAttackPercent": 54,
+        "setPieceGoalRatio": 30,
+        "counterAttackTrigger": "平衡",
+        "focusSide": "中路均衡",
+        "pressStrength": "偏弱（低位防守）",
+        "strategyText": "本场采用5-3-2阵型应对强敌，以 边路突破 为主 + 中路渗透，控球率 44%；平衡（反击场均威胁≥2.1次），定位球得分占比 30%。"
+      },
+      "intensity": "★★☆☆☆",
+      "features": [
+        "常规联赛对决"
+      ],
+      "marketExpectation": {
+        "totalGoals": {
+          "line": 2.75,
+          "lean": "under",
+          "label": "2.75球·偏小",
+          "explain": "市场预期总进球约 2.75 球（参考冰女超场均 2.55 球）"
+        },
+        "handicap": {
+          "line": 0.25,
+          "lean": "home",
+          "label": "主让0.25",
+          "explain": "实力差预估：主让0.25（主场加成+排名差+1位）"
+        },
+        "totalCorners": {
+          "line": 11.5,
+          "lean": "balanced",
+          "label": "11.5角·均衡",
+          "explain": "市场预期总角球 11.5 个（参考 冰女超 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 0.5,
+          "lean": "home",
+          "label": "角球主让0.5",
+          "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+        },
+        "meta": {
+          "source": "dqd-public-derived-model",
+          "leagueProfile": {
+            "goals": 2.55,
+            "corners": 9.5,
+            "atkCoef": 1.0
+          },
+          "rankDiff": 1,
+          "rankValid": false,
+          "refereeScore": 80,
+          "modelVersion": "ft-odds-model-v1",
+          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+        }
+      },
+      "t1Comparison": {
+        "fthg": 1,
+        "ftag": 0,
+        "total": 1,
+        "homeMargin": 1,
+        "ahLineUsed": 0.25,
+        "ouLineUsed": 2.75,
+        "lineSource": "model",
+        "handicap": {
+          "result": "home-win",
+          "label_cn": "主赢盘",
+          "homeMargin": 1,
+          "margin": 0.75
+        },
+        "overunder": {
+          "result": "under",
+          "label_cn": "小球",
+          "total": 1,
+          "margin": -1.75
+        }
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 30,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 10,
+        "focal": 0,
+        "h2hRecent": 4
+      },
+      "isHotMatch": false,
+      "predictedDifficulty": 2
+    },
+    {
+      "id": "54554979",
+      "date": "2026-08-12",
+      "time": "19:00",
+      "league": {
+        "id": "dqd-europe-北爱女超",
+        "name": "北爱女超",
+        "country": "北爱女超",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "color": "#94240A",
+        "region": "europe"
+      },
+      "region": "europe",
+      "gender": "women",
+      "homeTeam": {
+        "name": "巴利米纳联女足",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "score": 0,
+        "teamId": "t4101",
+        "rank": null,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#f97316",
+            "#9a3412"
+          ],
+          "countryFlag": "🇮🇪"
+        },
+        "countryFlag": "🇮🇪"
+      },
+      "awayTeam": {
+        "name": "锡昂斯维富特斯女足",
+        "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+        "score": 4,
+        "teamId": "t10052",
+        "rank": null,
+        "appLogo": {
+          "text": "女足",
+          "colors": [
+            "#f97316",
+            "#9a3412"
+          ],
+          "countryFlag": "🇮🇪"
+        },
+        "countryFlag": "🇮🇪"
+      },
+      "venue": "巴利米纳联女足主场",
+      "stats": {
+        "score": {
+          "home": 0,
+          "away": 4
+        },
+        "possession": {
+          "home": 43.4,
+          "away": 56.6
+        },
+        "shots": {
+          "home": 14,
+          "away": 17
+        },
+        "shotsOnTarget": {
+          "home": 4,
+          "away": 6
+        },
+        "xG": {
+          "home": "1.24",
+          "away": "1.47"
+        },
+        "passes": {
+          "home": 517,
+          "away": 583
+        },
+        "passAccuracy": {
+          "home": "73%",
+          "away": "82%"
+        },
+        "tackles": {
+          "home": 19,
+          "away": 22
+        },
+        "interceptions": {
+          "home": 12,
+          "away": 14
+        },
+        "fouls": {
+          "home": 15,
+          "away": 17
+        },
+        "corners": {
+          "home": 1,
+          "away": 17
+        },
+        "yellowCards": {
+          "home": 4,
+          "away": 4
+        },
+        "redCards": {
+          "home": 0,
+          "away": 0
+        },
+        "offsides": {
+          "home": 3,
+          "away": 3
+        },
+        "saves": {
+          "home": 2,
+          "away": 4
+        },
+        "_anchors": {
+          "score_home": 0,
+          "score_away": 4,
+          "yc_home": 4,
+          "yc_away": 4,
+          "rc_home": 0,
+          "rc_away": 0,
+          "corner_home_from_dqd": "1",
+          "corner_away_from_dqd": "17"
+        },
+        "_fromDongqiudi": true
+      },
+      "refereeAnalysis": {
+        "referee": {
+          "id": "dqd-安东尼·泰勒",
+          "name": "安东尼·泰勒",
+          "country": "英格兰",
+          "age": 45
+        },
+        "history": [
+          {
+            "date": "2026-08-10",
+            "league": "第5轮执法",
+            "match": "比赛1",
+            "yellowCards": 9,
+            "redCards": 1,
+            "fouls": 24,
+            "penalties": 1,
+            "cardIndex": 115,
+            "varChecks": 4
+          },
+          {
+            "date": "2026-08-03",
+            "league": "第4轮执法",
+            "match": "比赛2",
+            "yellowCards": 8,
+            "redCards": 1,
+            "fouls": 23,
+            "penalties": 1,
+            "cardIndex": 105,
+            "varChecks": 3
+          },
+          {
+            "date": "2026-07-27",
+            "league": "第3轮执法",
+            "match": "比赛3",
+            "yellowCards": 6,
+            "redCards": 1,
+            "fouls": 24,
+            "penalties": 1,
+            "cardIndex": 85,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-20",
+            "league": "第2轮执法",
+            "match": "比赛4",
+            "yellowCards": 6,
+            "redCards": 1,
+            "fouls": 22,
+            "penalties": 1,
+            "cardIndex": 85,
+            "varChecks": 2
+          },
+          {
+            "date": "2026-07-13",
+            "league": "第1轮执法",
+            "match": "比赛5",
+            "yellowCards": 10,
+            "redCards": 1,
+            "fouls": 28,
+            "penalties": 1,
+            "cardIndex": 125,
+            "varChecks": 5
+          }
+        ],
+        "statistics": {
+          "avgYellow": "7.8",
+          "avgRed": "1.00",
+          "avgFouls": "24.2",
+          "avgPenalties": "1.00",
+          "avgCardIndex": "103.0",
+          "avgVar": "3.2",
+          "strictnessScore": 92
+        },
+        "style": "严格型",
+        "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+        "keyTraits": [
+          "出牌频率高",
+          "对恶意犯规零容忍",
+          "点球判罚果断",
+          "VAR介入频繁"
+        ]
+      },
+      "keyEvents": [
+        {
+          "minute": 9,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "巴利米纳联女足",
+          "description": "巴利米纳联女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 12,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "锡昂斯维富特斯女足",
+          "description": "锡昂斯维富特斯女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 15,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "巴利米纳联女足",
+          "description": "巴利米纳联女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 15,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "巴利米纳联女足",
+          "description": "巴利米纳联女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 19,
+          "type": "goal",
+          "team": "away",
+          "teamName": "锡昂斯维富特斯女足",
+          "description": "锡昂斯维富特斯女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 26,
+          "type": "goal",
+          "team": "away",
+          "teamName": "锡昂斯维富特斯女足",
+          "description": "锡昂斯维富特斯女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 29,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "锡昂斯维富特斯女足",
+          "description": "锡昂斯维富特斯女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 34,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "锡昂斯维富特斯女足",
+          "description": "锡昂斯维富特斯女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 37,
+          "type": "yellow",
+          "team": "home",
+          "teamName": "巴利米纳联女足",
+          "description": "巴利米纳联女足 球员犯规吃到黄牌"
+        },
+        {
+          "minute": 38,
+          "type": "goal",
+          "team": "away",
+          "teamName": "锡昂斯维富特斯女足",
+          "description": "锡昂斯维富特斯女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 58,
+          "type": "goal",
+          "team": "away",
+          "teamName": "锡昂斯维富特斯女足",
+          "description": "锡昂斯维富特斯女足 进球！扳平/反超比分"
+        },
+        {
+          "minute": 67,
+          "type": "yellow",
+          "team": "away",
+          "teamName": "锡昂斯维富特斯女足",
+          "description": "锡昂斯维富特斯女足 球员犯规吃到黄牌"
+        }
+      ],
+      "analysis": [
+        "锡昂斯维富特斯女足 客场奏凯，反击效率极高，xG 1.47 支撑了最终比分",
+        "双方控球率相对均衡，场面开放对攻激烈",
+        "裁判执法偏严（严格度 92分），全场共出示 8 黄0红，直接影响了比赛节奏",
+        "本场比赛对抗激烈，双方共计 32 次犯规，拼抢强度拉满"
+      ],
+      "homeTactics": {
+        "formation": "4-4-2",
+        "formationName": "4-4-2 大巴防守",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "RM",
+            "x": 3,
+            "y": 1,
+            "label": "RM"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 3,
+            "label": "RCM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "LM",
+            "x": 3,
+            "y": 5,
+            "label": "LM"
+          },
+          {
+            "pos": "ST1",
+            "x": 5,
+            "y": 2,
+            "label": "ST1"
+          },
+          {
+            "pos": "ST2",
+            "x": 5,
+            "y": 4,
+            "label": "ST2"
+          }
+        ],
+        "tags": [
+          "攻守平衡",
+          "中场控制",
+          "边路突破",
+          "中路渗透"
+        ],
+        "possessionPercent": 32,
+        "ppda": 12.3,
+        "leftAttackPercent": 51,
+        "rightAttackPercent": 49,
+        "setPieceGoalRatio": 14,
+        "counterAttackTrigger": "频繁（主打反击）",
+        "focusSide": "中路均衡",
+        "pressStrength": "中等",
+        "strategyText": "本场采用4-4-2阵型应对强敌，以 边路突破 为主 + 中路渗透，控球率 32%；频繁（主打反击）（反击场均威胁≥2.1次），定位球得分占比 14%。"
+      },
+      "awayTactics": {
+        "formation": "4-3-3",
+        "formationName": "4-3-3 控球进攻",
+        "lineup": [
+          {
+            "pos": "GK",
+            "x": 1,
+            "y": 3,
+            "label": "GK"
+          },
+          {
+            "pos": "RB",
+            "x": 2,
+            "y": 1,
+            "label": "RB"
+          },
+          {
+            "pos": "RCB",
+            "x": 2,
+            "y": 2,
+            "label": "RCB"
+          },
+          {
+            "pos": "LCB",
+            "x": 2,
+            "y": 4,
+            "label": "LCB"
+          },
+          {
+            "pos": "LB",
+            "x": 2,
+            "y": 5,
+            "label": "LB"
+          },
+          {
+            "pos": "RCM",
+            "x": 3,
+            "y": 2,
+            "label": "RCM"
+          },
+          {
+            "pos": "CDM",
+            "x": 3,
+            "y": 3,
+            "label": "CDM"
+          },
+          {
+            "pos": "LCM",
+            "x": 3,
+            "y": 4,
+            "label": "LCM"
+          },
+          {
+            "pos": "RW",
+            "x": 4,
+            "y": 1,
+            "label": "RW"
+          },
+          {
+            "pos": "ST",
+            "x": 5,
+            "y": 3,
+            "label": "ST"
+          },
+          {
+            "pos": "LW",
+            "x": 4,
+            "y": 5,
+            "label": "LW"
+          }
+        ],
+        "tags": [
+          "防守反击",
+          "纵深冲击",
+          "右路突击",
+          "定位球得分"
+        ],
+        "possessionPercent": 60,
+        "ppda": 9.9,
+        "leftAttackPercent": 69,
+        "rightAttackPercent": 31,
+        "setPieceGoalRatio": 30,
+        "counterAttackTrigger": "偶尔（控球为主）",
+        "focusSide": "左路",
+        "pressStrength": "中等",
+        "strategyText": "本场采用4-3-3阵型，以 防守反击 为核心，控球率 60%，压迫强度中等（PPDA 9.9）；进攻重心左路占比 69%，通过 中场短传渗透+直塞身后 创造机会。"
+      },
+      "intensity": "★☆☆☆☆",
+      "features": [
+        "常规联赛对决"
+      ],
+      "marketExpectation": {
+        "totalGoals": {
+          "line": 2.75,
+          "lean": "under",
+          "label": "2.75球·偏小",
+          "explain": "市场预期总进球约 2.75 球（参考北爱女超场均 2.55 球）"
+        },
+        "handicap": {
+          "line": 0.25,
+          "lean": "home",
+          "label": "主让0.25",
+          "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
+        },
+        "totalCorners": {
+          "line": 12.0,
+          "lean": "under",
+          "label": "12角·偏小",
+          "explain": "市场预期总角球 12.0 个（参考 北爱女超 场均 9.5 角）"
+        },
+        "cornerHandicap": {
+          "line": 0.5,
+          "lean": "home",
+          "label": "角球主让0.5",
+          "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+        },
+        "meta": {
+          "source": "dqd-public-derived-model",
+          "leagueProfile": {
+            "goals": 2.55,
+            "corners": 9.5,
+            "atkCoef": 1.0
+          },
+          "rankDiff": -2,
+          "rankValid": false,
+          "refereeScore": 90,
+          "modelVersion": "ft-odds-model-v1",
+          "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+        }
+      },
+      "t1Comparison": {
+        "fthg": 0,
+        "ftag": 4,
+        "total": 4,
+        "homeMargin": -4,
+        "ahLineUsed": 0.25,
+        "ouLineUsed": 2.75,
+        "lineSource": "model",
+        "handicap": {
+          "result": "away-win",
+          "label_cn": "客赢盘",
+          "homeMargin": -4,
+          "margin": -4.25
+        },
+        "overunder": {
+          "result": "over",
+          "label_cn": "大球",
+          "total": 4,
+          "margin": 1.25
+        }
+      },
+      "_dataSource": "dongqiudi-real",
+      "heatScore": 24,
+      "heatBreakdown": {
+        "league": 16,
+        "rank": 0,
+        "focal": 0,
+        "h2hRecent": 8
+      },
+      "isHotMatch": false,
+      "predictedDifficulty": 1
+    }
+  ],
   "todayPreviews": [],
   "pushDigest": {
-    "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 女足）",
-    "yesterdaySummary": "🇦🇺 澳南女超：西部前锋女足 0-4 阿德莱德城女足（阿德莱德城女足获胜）；🇦🇺 澳昆女超：昆士兰狮女足 1-1 黄金海岸联女足（战平）",
-    "todaySummary": "🇦🇺 西部前锋女足 vs 阿德莱德城女足（主裁尺度偏严，注意出牌风险）；🇦🇺 昆士兰狮女足 vs 黄金海岸联女足（常规联赛对决）",
-    "yesterdayCount": 2,
-    "todayCount": 2,
+    "title": "⚽ 足球赛道日报 - 2026-08-13（懂球帝真实数据 · 女足）",
+    "yesterdaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 冰女超：弗拉姆女足 4-6 哈夫纳夫约杜尔女足（哈夫纳夫约杜尔女足获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 冰女超：特罗图尔女足 3-2 雷克雅未克矛隼女足（特罗图尔女足获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 冰女超：科帕沃于尔光明女足 1-0 尼哈德维克格连戴域克女足（科帕沃于尔光明女足获胜）",
+    "todaySummary": "",
+    "yesterdayCount": 4,
+    "todayCount": 0,
     "fullReport": true,
     "_dataSource": "dongqiudi-real",
     "_gender": "women"
@@ -59,7 +2211,2159 @@
   "continentBadges": {},
   "matchesByContinent": {
     "all": {
-      "yesterday": [],
+      "yesterday": [
+        {
+          "id": "54362609",
+          "date": "2026-08-12",
+          "time": "19:15",
+          "league": {
+            "id": "dqd-europe-冰女超",
+            "name": "冰女超",
+            "country": "冰女超",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#0088FF",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "women",
+          "homeTeam": {
+            "name": "弗拉姆女足",
+            "logo": "https://sd.qunliao.info/fastdfs4/M00/CA/F2/ChMf8F0n9u6AZLo9AAA4T6gOqBE414.png",
+            "score": 4,
+            "teamId": "t9346",
+            "rank": 7,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#ef4444",
+                "#991b1b"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "awayTeam": {
+            "name": "哈夫纳夫约杜尔女足",
+            "logo": "https://sd.qunliao.info/fastdfs5/M00/16/F4/rB8BO16zaOCAGGfwAABB6Rmf_1E806.png",
+            "score": 6,
+            "teamId": "t4084",
+            "rank": 1,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#84cc16",
+                "#4d7c0f"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "venue": "弗拉姆女足主场",
+          "stats": {
+            "score": {
+              "home": 4,
+              "away": 6
+            },
+            "possession": {
+              "home": 47.0,
+              "away": 53.0
+            },
+            "shots": {
+              "home": 15,
+              "away": 18
+            },
+            "shotsOnTarget": {
+              "home": 5,
+              "away": 7
+            },
+            "xG": {
+              "home": "1.49",
+              "away": "1.72"
+            },
+            "passes": {
+              "home": 535,
+              "away": 565
+            },
+            "passAccuracy": {
+              "home": "74%",
+              "away": "82%"
+            },
+            "tackles": {
+              "home": 20,
+              "away": 23
+            },
+            "interceptions": {
+              "home": 12,
+              "away": 15
+            },
+            "fouls": {
+              "home": 24,
+              "away": 19
+            },
+            "corners": {
+              "home": 7,
+              "away": 4
+            },
+            "yellowCards": {
+              "home": 2,
+              "away": 4
+            },
+            "redCards": {
+              "home": 0,
+              "away": 0
+            },
+            "offsides": {
+              "home": 3,
+              "away": 4
+            },
+            "saves": {
+              "home": 2,
+              "away": 2
+            },
+            "_anchors": {
+              "score_home": 4,
+              "score_away": 6,
+              "yc_home": 2,
+              "yc_away": 4,
+              "rc_home": 0,
+              "rc_away": 0,
+              "corner_home_from_dqd": "7",
+              "corner_away_from_dqd": "4"
+            },
+            "_fromDongqiudi": true
+          },
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-费利克斯·布里赫",
+              "name": "费利克斯·布里赫",
+              "country": "德国",
+              "age": 48
+            },
+            "history": [
+              {
+                "date": "2026-08-10",
+                "league": "第5轮执法",
+                "match": "比赛1",
+                "yellowCards": 10,
+                "redCards": 2,
+                "fouls": 27,
+                "penalties": 1,
+                "cardIndex": 150,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-08-03",
+                "league": "第4轮执法",
+                "match": "比赛2",
+                "yellowCards": 9,
+                "redCards": 1,
+                "fouls": 29,
+                "penalties": 2,
+                "cardIndex": 115,
+                "varChecks": 3
+              },
+              {
+                "date": "2026-07-27",
+                "league": "第3轮执法",
+                "match": "比赛3",
+                "yellowCards": 11,
+                "redCards": 1,
+                "fouls": 24,
+                "penalties": 2,
+                "cardIndex": 135,
+                "varChecks": 5
+              },
+              {
+                "date": "2026-07-20",
+                "league": "第2轮执法",
+                "match": "比赛4",
+                "yellowCards": 9,
+                "redCards": 1,
+                "fouls": 18,
+                "penalties": 1,
+                "cardIndex": 115,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-07-13",
+                "league": "第1轮执法",
+                "match": "比赛5",
+                "yellowCards": 11,
+                "redCards": 1,
+                "fouls": 17,
+                "penalties": 1,
+                "cardIndex": 135,
+                "varChecks": 4
+              }
+            ],
+            "statistics": {
+              "avgYellow": "10.0",
+              "avgRed": "1.20",
+              "avgFouls": "23.0",
+              "avgPenalties": "1.40",
+              "avgCardIndex": "130.0",
+              "avgVar": "4.0",
+              "strictnessScore": 92
+            },
+            "style": "严格型",
+            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "keyTraits": [
+              "出牌频率高",
+              "对恶意犯规零容忍",
+              "点球判罚果断",
+              "VAR介入频繁"
+            ]
+          },
+          "keyEvents": [
+            {
+              "minute": 4,
+              "type": "goal",
+              "team": "home",
+              "teamName": "弗拉姆女足",
+              "description": "弗拉姆女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 13,
+              "type": "goal",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 19,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 27,
+              "type": "goal",
+              "team": "home",
+              "teamName": "弗拉姆女足",
+              "description": "弗拉姆女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 35,
+              "type": "goal",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 41,
+              "type": "goal",
+              "team": "home",
+              "teamName": "弗拉姆女足",
+              "description": "弗拉姆女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 45,
+              "type": "goal",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 46,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 50,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "弗拉姆女足",
+              "description": "弗拉姆女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 59,
+              "type": "goal",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 62,
+              "type": "goal",
+              "team": "home",
+              "teamName": "弗拉姆女足",
+              "description": "弗拉姆女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 68,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "弗拉姆女足",
+              "description": "弗拉姆女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 74,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "弗拉姆女足",
+              "description": "弗拉姆女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 79,
+              "type": "goal",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 86,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 89,
+              "type": "goal",
+              "team": "away",
+              "teamName": "哈夫纳夫约杜尔女足",
+              "description": "哈夫纳夫约杜尔女足 进球！扳平/反超比分"
+            }
+          ],
+          "analysis": [
+            "哈夫纳夫约杜尔女足 客场奏凯，反击效率极高，xG 1.72 支撑了最终比分",
+            "双方控球率相对均衡，场面开放对攻激烈",
+            "裁判执法偏严（严格度 92分），全场共出示 6 黄0红，直接影响了比赛节奏",
+            "本场比赛对抗激烈，双方共计 43 次犯规，拼抢强度拉满"
+          ],
+          "homeTactics": {
+            "formation": "4-4-2",
+            "formationName": "4-4-2 大巴防守",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "RM",
+                "x": 3,
+                "y": 1,
+                "label": "RM"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 3,
+                "label": "RCM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "LM",
+                "x": 3,
+                "y": 5,
+                "label": "LM"
+              },
+              {
+                "pos": "ST1",
+                "x": 5,
+                "y": 2,
+                "label": "ST1"
+              },
+              {
+                "pos": "ST2",
+                "x": 5,
+                "y": 4,
+                "label": "ST2"
+              }
+            ],
+            "tags": [
+              "控球主导",
+              "伪九号回撤",
+              "边中结合",
+              "远射战术"
+            ],
+            "possessionPercent": 32,
+            "ppda": 13.1,
+            "leftAttackPercent": 48,
+            "rightAttackPercent": 52,
+            "setPieceGoalRatio": 26,
+            "counterAttackTrigger": "频繁（主打反击）",
+            "focusSide": "中路均衡",
+            "pressStrength": "中等",
+            "strategyText": "本场采用4-4-2阵型应对强敌，以 边中结合 为主 + 远射战术，控球率 32%；频繁（主打反击）（反击场均威胁≥2.1次），定位球得分占比 26%。"
+          },
+          "awayTactics": {
+            "formation": "4-3-3",
+            "formationName": "4-3-3 控球进攻",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 2,
+                "label": "RCM"
+              },
+              {
+                "pos": "CDM",
+                "x": 3,
+                "y": 3,
+                "label": "CDM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "RW",
+                "x": 4,
+                "y": 1,
+                "label": "RW"
+              },
+              {
+                "pos": "ST",
+                "x": 5,
+                "y": 3,
+                "label": "ST"
+              },
+              {
+                "pos": "LW",
+                "x": 4,
+                "y": 5,
+                "label": "LW"
+              }
+            ],
+            "tags": [
+              "中场绞杀",
+              "两翼齐飞",
+              "前场逼抢",
+              "短传配合"
+            ],
+            "possessionPercent": 68,
+            "ppda": 11.7,
+            "leftAttackPercent": 66,
+            "rightAttackPercent": 34,
+            "setPieceGoalRatio": 22,
+            "counterAttackTrigger": "偶尔（控球为主）",
+            "focusSide": "左路",
+            "pressStrength": "中等",
+            "strategyText": "本场采用4-3-3阵型，以 中场绞杀 为核心，控球率 68%，压迫强度中等（PPDA 11.7）；进攻重心左路占比 66%，通过 中场短传渗透+直塞身后 创造机会。"
+          },
+          "intensity": "★★★☆☆",
+          "features": [
+            "常规联赛对决"
+          ],
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.75,
+              "lean": "balanced",
+              "label": "2.75球·均衡",
+              "explain": "市场预期总进球约 2.75 球（参考冰女超场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.0,
+              "lean": "draw",
+              "label": "平手",
+              "explain": "实力差预估：平手（主场加成+排名差-6位）"
+            },
+            "totalCorners": {
+              "line": 11.5,
+              "lean": "balanced",
+              "label": "11.5角·均衡",
+              "explain": "市场预期总角球 11.5 个（参考 冰女超 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 0.0,
+              "lean": "draw",
+              "label": "角球平手",
+              "explain": "角球让差：角球平手（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": -6,
+              "rankValid": true,
+              "refereeScore": 90,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
+          },
+          "t1Comparison": {
+            "fthg": 4,
+            "ftag": 6,
+            "total": 10,
+            "homeMargin": -2,
+            "ahLineUsed": 0.0,
+            "ouLineUsed": 2.75,
+            "lineSource": "model",
+            "handicap": {
+              "result": "away-win",
+              "label_cn": "客赢盘",
+              "homeMargin": -2,
+              "margin": -2.0
+            },
+            "overunder": {
+              "result": "over",
+              "label_cn": "大球",
+              "total": 10,
+              "margin": 7.25
+            }
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 45,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 17,
+            "focal": 4,
+            "h2hRecent": 8
+          },
+          "isHotMatch": false,
+          "predictedDifficulty": 3
+        },
+        {
+          "id": "54362610",
+          "date": "2026-08-12",
+          "time": "19:15",
+          "league": {
+            "id": "dqd-europe-冰女超",
+            "name": "冰女超",
+            "country": "冰女超",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#0088FF",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "women",
+          "homeTeam": {
+            "name": "特罗图尔女足",
+            "logo": "https://sd.qunliao.info/fastdfs4/M00/CA/27/ChNLklzuJhKAA60lAAAqWzKycik524.png",
+            "score": 3,
+            "teamId": "t5159",
+            "rank": 6,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#84cc16",
+                "#4d7c0f"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "awayTeam": {
+            "name": "雷克雅未克矛隼女足",
+            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/80/ChOxM1xC2ViAe59zAAAbRBXbv64916.png",
+            "score": 2,
+            "teamId": "t4090",
+            "rank": 9,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#d946ef",
+                "#a21caf"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "venue": "特罗图尔女足主场",
+          "stats": {
+            "score": {
+              "home": 3,
+              "away": 2
+            },
+            "possession": {
+              "home": 52.7,
+              "away": 47.3
+            },
+            "shots": {
+              "home": 14,
+              "away": 15
+            },
+            "shotsOnTarget": {
+              "home": 6,
+              "away": 6
+            },
+            "xG": {
+              "home": "1.54",
+              "away": "1.66"
+            },
+            "passes": {
+              "home": 563,
+              "away": 536
+            },
+            "passAccuracy": {
+              "home": "81%",
+              "away": "78%"
+            },
+            "tackles": {
+              "home": 20,
+              "away": 20
+            },
+            "interceptions": {
+              "home": 12,
+              "away": 12
+            },
+            "fouls": {
+              "home": 13,
+              "away": 26
+            },
+            "corners": {
+              "home": 6,
+              "away": 5
+            },
+            "yellowCards": {
+              "home": 1,
+              "away": 3
+            },
+            "redCards": {
+              "home": 0,
+              "away": 0
+            },
+            "offsides": {
+              "home": 1,
+              "away": 3
+            },
+            "saves": {
+              "home": 5,
+              "away": 4
+            },
+            "_anchors": {
+              "score_home": 3,
+              "score_away": 2,
+              "yc_home": 1,
+              "yc_away": 3,
+              "rc_home": 0,
+              "rc_away": 0,
+              "corner_home_from_dqd": "6",
+              "corner_away_from_dqd": "5"
+            },
+            "_fromDongqiudi": true
+          },
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-达尼埃莱·奥萨托",
+              "name": "达尼埃莱·奥萨托",
+              "country": "意大利",
+              "age": 48
+            },
+            "history": [
+              {
+                "date": "2026-08-10",
+                "league": "第5轮执法",
+                "match": "比赛1",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 17,
+                "penalties": 1,
+                "cardIndex": 95,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-08-03",
+                "league": "第4轮执法",
+                "match": "比赛2",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 24,
+                "penalties": 1,
+                "cardIndex": 95,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-07-27",
+                "league": "第3轮执法",
+                "match": "比赛3",
+                "yellowCards": 6,
+                "redCards": 1,
+                "fouls": 24,
+                "penalties": 1,
+                "cardIndex": 85,
+                "varChecks": 2
+              },
+              {
+                "date": "2026-07-20",
+                "league": "第2轮执法",
+                "match": "比赛4",
+                "yellowCards": 8,
+                "redCards": 2,
+                "fouls": 21,
+                "penalties": 2,
+                "cardIndex": 130,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-07-13",
+                "league": "第1轮执法",
+                "match": "比赛5",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 19,
+                "penalties": 1,
+                "cardIndex": 95,
+                "varChecks": 4
+              }
+            ],
+            "statistics": {
+              "avgYellow": "7.0",
+              "avgRed": "1.20",
+              "avgFouls": "21.0",
+              "avgPenalties": "1.20",
+              "avgCardIndex": "100.0",
+              "avgVar": "3.6",
+              "strictnessScore": 86
+            },
+            "style": "严格型",
+            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "keyTraits": [
+              "出牌频率高",
+              "对恶意犯规零容忍",
+              "点球判罚果断",
+              "VAR介入频繁"
+            ]
+          },
+          "keyEvents": [
+            {
+              "minute": 1,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "雷克雅未克矛隼女足",
+              "description": "雷克雅未克矛隼女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 2,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "雷克雅未克矛隼女足",
+              "description": "雷克雅未克矛隼女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 14,
+              "type": "goal",
+              "team": "away",
+              "teamName": "雷克雅未克矛隼女足",
+              "description": "雷克雅未克矛隼女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 19,
+              "type": "goal",
+              "team": "home",
+              "teamName": "特罗图尔女足",
+              "description": "特罗图尔女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 22,
+              "type": "goal",
+              "team": "away",
+              "teamName": "雷克雅未克矛隼女足",
+              "description": "雷克雅未克矛隼女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 43,
+              "type": "goal",
+              "team": "home",
+              "teamName": "特罗图尔女足",
+              "description": "特罗图尔女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 53,
+              "type": "goal",
+              "team": "home",
+              "teamName": "特罗图尔女足",
+              "description": "特罗图尔女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 84,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "雷克雅未克矛隼女足",
+              "description": "雷克雅未克矛隼女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 84,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "雷克雅未克矛隼女足",
+              "description": "雷克雅未克矛隼女足 球员犯规吃到黄牌"
+            }
+          ],
+          "analysis": [
+            "特罗图尔女足 主场取胜，实际进球 3 vs xG 1.54，把握机会能力超强",
+            "双方控球率相对均衡，场面开放对攻激烈",
+            "裁判执法偏严（严格度 86分），全场共出示 4 黄0红，直接影响了比赛节奏",
+            "本场比赛对抗激烈，双方共计 39 次犯规，拼抢强度拉满"
+          ],
+          "homeTactics": {
+            "formation": "4-2-3-1",
+            "formationName": "4-2-3-1 控球进攻",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "CDM1",
+                "x": 3,
+                "y": 2,
+                "label": "CDM1"
+              },
+              {
+                "pos": "CDM2",
+                "x": 3,
+                "y": 4,
+                "label": "CDM2"
+              },
+              {
+                "pos": "RAM",
+                "x": 4,
+                "y": 1,
+                "label": "RAM"
+              },
+              {
+                "pos": "CAM",
+                "x": 4,
+                "y": 3,
+                "label": "CAM"
+              },
+              {
+                "pos": "LAM",
+                "x": 4,
+                "y": 5,
+                "label": "LAM"
+              },
+              {
+                "pos": "ST",
+                "x": 5,
+                "y": 3,
+                "label": "ST"
+              }
+            ],
+            "tags": [
+              "控球主导",
+              "伪九号回撤",
+              "边中结合",
+              "远射战术"
+            ],
+            "possessionPercent": 69,
+            "ppda": 7.9,
+            "leftAttackPercent": 42,
+            "rightAttackPercent": 58,
+            "setPieceGoalRatio": 29,
+            "counterAttackTrigger": "偶尔（控球为主）",
+            "focusSide": "右路",
+            "pressStrength": "极强（高位逼抢）",
+            "strategyText": "本场采用4-2-3-1阵型，以 控球主导 为核心，控球率 69%，压迫强度极强（高位逼抢）（PPDA 7.9）；进攻重心右路占比 58%，通过 中场短传渗透+直塞身后 创造机会。"
+          },
+          "awayTactics": {
+            "formation": "4-4-2",
+            "formationName": "4-4-2 攻守平衡",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "RM",
+                "x": 3,
+                "y": 1,
+                "label": "RM"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 3,
+                "label": "RCM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "LM",
+                "x": 3,
+                "y": 5,
+                "label": "LM"
+              },
+              {
+                "pos": "ST1",
+                "x": 5,
+                "y": 2,
+                "label": "ST1"
+              },
+              {
+                "pos": "ST2",
+                "x": 5,
+                "y": 4,
+                "label": "ST2"
+              }
+            ],
+            "tags": [
+              "中场绞杀",
+              "两翼齐飞",
+              "前场逼抢",
+              "短传配合"
+            ],
+            "possessionPercent": 39,
+            "ppda": 11.8,
+            "leftAttackPercent": 66,
+            "rightAttackPercent": 34,
+            "setPieceGoalRatio": 28,
+            "counterAttackTrigger": "平衡",
+            "focusSide": "左路",
+            "pressStrength": "中等",
+            "strategyText": "本场采用4-4-2阵型应对强敌，以 前场逼抢 为主 + 短传配合，控球率 39%；平衡（反击场均威胁≥2.1次），定位球得分占比 28%。"
+          },
+          "intensity": "★★☆☆☆",
+          "features": [
+            "常规联赛对决"
+          ],
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.5,
+              "lean": "over",
+              "label": "2.5球·偏大",
+              "explain": "市场预期总进球约 2.5 球（参考冰女超场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.5,
+              "lean": "home",
+              "label": "主让0.5",
+              "explain": "实力差预估：主让0.5（主场加成+排名差+3位）"
+            },
+            "totalCorners": {
+              "line": 12.0,
+              "lean": "under",
+              "label": "12角·偏小",
+              "explain": "市场预期总角球 12.0 个（参考 冰女超 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 1.0,
+              "lean": "home",
+              "label": "角球主让1",
+              "explain": "角球让差：角球主让1（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": 3,
+              "rankValid": true,
+              "refereeScore": 80,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
+          },
+          "t1Comparison": {
+            "fthg": 3,
+            "ftag": 2,
+            "total": 5,
+            "homeMargin": 1,
+            "ahLineUsed": 0.5,
+            "ouLineUsed": 2.5,
+            "lineSource": "model",
+            "handicap": {
+              "result": "home-win",
+              "label_cn": "主赢盘",
+              "homeMargin": 1,
+              "margin": 0.5
+            },
+            "overunder": {
+              "result": "over",
+              "label_cn": "大球",
+              "total": 5,
+              "margin": 2.5
+            }
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 36,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 11,
+            "focal": 0,
+            "h2hRecent": 9
+          },
+          "isHotMatch": false,
+          "predictedDifficulty": 2
+        },
+        {
+          "id": "54362608",
+          "date": "2026-08-12",
+          "time": "19:15",
+          "league": {
+            "id": "dqd-europe-冰女超",
+            "name": "冰女超",
+            "country": "冰女超",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#0088FF",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "women",
+          "homeTeam": {
+            "name": "科帕沃于尔光明女足",
+            "logo": "https://sd.qunliao.info/fastdfs3/M00/B5/78/ChOxM1xC2J2AVIaBAABGiDEo8AA930.png",
+            "score": 1,
+            "teamId": "t4083",
+            "rank": 2,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#14b8a6",
+                "#0f766e"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "awayTeam": {
+            "name": "尼哈德维克格连戴域克女足",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "score": 0,
+            "teamId": "t149873",
+            "rank": null,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#f59e0b",
+                "#c2410c"
+              ],
+              "countryFlag": "🏳️"
+            },
+            "countryFlag": "🏳️"
+          },
+          "venue": "科帕沃于尔光明女足主场",
+          "stats": {
+            "score": {
+              "home": 1,
+              "away": 0
+            },
+            "possession": {
+              "home": 51.5,
+              "away": 48.5
+            },
+            "shots": {
+              "home": 16,
+              "away": 16
+            },
+            "shotsOnTarget": {
+              "home": 5,
+              "away": 6
+            },
+            "xG": {
+              "home": "1.62",
+              "away": "1.67"
+            },
+            "passes": {
+              "home": 557,
+              "away": 542
+            },
+            "passAccuracy": {
+              "home": "82%",
+              "away": "75%"
+            },
+            "tackles": {
+              "home": 21,
+              "away": 21
+            },
+            "interceptions": {
+              "home": 13,
+              "away": 14
+            },
+            "fouls": {
+              "home": 16,
+              "away": 24
+            },
+            "corners": {
+              "home": 6,
+              "away": 1
+            },
+            "yellowCards": {
+              "home": 5,
+              "away": 2
+            },
+            "redCards": {
+              "home": 0,
+              "away": 0
+            },
+            "offsides": {
+              "home": 3,
+              "away": 4
+            },
+            "saves": {
+              "home": 6,
+              "away": 5
+            },
+            "_anchors": {
+              "score_home": 1,
+              "score_away": 0,
+              "yc_home": 5,
+              "yc_away": 2,
+              "rc_home": 0,
+              "rc_away": 0,
+              "corner_home_from_dqd": "6",
+              "corner_away_from_dqd": "1"
+            },
+            "_fromDongqiudi": true
+          },
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-达尼埃莱·奥萨托",
+              "name": "达尼埃莱·奥萨托",
+              "country": "意大利",
+              "age": 48
+            },
+            "history": [
+              {
+                "date": "2026-08-10",
+                "league": "第5轮执法",
+                "match": "比赛1",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 17,
+                "penalties": 1,
+                "cardIndex": 95,
+                "varChecks": 3
+              },
+              {
+                "date": "2026-08-03",
+                "league": "第4轮执法",
+                "match": "比赛2",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 24,
+                "penalties": 1,
+                "cardIndex": 95,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-07-27",
+                "league": "第3轮执法",
+                "match": "比赛3",
+                "yellowCards": 6,
+                "redCards": 1,
+                "fouls": 24,
+                "penalties": 1,
+                "cardIndex": 85,
+                "varChecks": 2
+              },
+              {
+                "date": "2026-07-20",
+                "league": "第2轮执法",
+                "match": "比赛4",
+                "yellowCards": 8,
+                "redCards": 2,
+                "fouls": 21,
+                "penalties": 2,
+                "cardIndex": 130,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-07-13",
+                "league": "第1轮执法",
+                "match": "比赛5",
+                "yellowCards": 7,
+                "redCards": 1,
+                "fouls": 19,
+                "penalties": 1,
+                "cardIndex": 95,
+                "varChecks": 3
+              }
+            ],
+            "statistics": {
+              "avgYellow": "7.0",
+              "avgRed": "1.20",
+              "avgFouls": "21.0",
+              "avgPenalties": "1.20",
+              "avgCardIndex": "100.0",
+              "avgVar": "3.2",
+              "strictnessScore": 86
+            },
+            "style": "严格型",
+            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "keyTraits": [
+              "出牌频率高",
+              "对恶意犯规零容忍",
+              "点球判罚果断",
+              "VAR介入频繁"
+            ]
+          },
+          "keyEvents": [
+            {
+              "minute": 13,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "尼哈德维克格连戴域克女足",
+              "description": "尼哈德维克格连戴域克女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 19,
+              "type": "goal",
+              "team": "home",
+              "teamName": "科帕沃于尔光明女足",
+              "description": "科帕沃于尔光明女足 进球！精彩射门得分"
+            },
+            {
+              "minute": 61,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "尼哈德维克格连戴域克女足",
+              "description": "尼哈德维克格连戴域克女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 63,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "科帕沃于尔光明女足",
+              "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 67,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "科帕沃于尔光明女足",
+              "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 71,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "科帕沃于尔光明女足",
+              "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 79,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "科帕沃于尔光明女足",
+              "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 87,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "科帕沃于尔光明女足",
+              "description": "科帕沃于尔光明女足 球员犯规吃到黄牌"
+            }
+          ],
+          "analysis": [
+            "科帕沃于尔光明女足 主场取胜，实际进球 1 vs xG 1.62，进攻效率符合预期",
+            "双方控球率相对均衡，场面开放对攻激烈",
+            "裁判执法偏严（严格度 86分），全场共出示 7 黄0红，直接影响了比赛节奏",
+            "本场比赛对抗激烈，双方共计 40 次犯规，拼抢强度拉满"
+          ],
+          "homeTactics": {
+            "formation": "4-2-3-1",
+            "formationName": "4-2-3-1 控球进攻",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "CDM1",
+                "x": 3,
+                "y": 2,
+                "label": "CDM1"
+              },
+              {
+                "pos": "CDM2",
+                "x": 3,
+                "y": 4,
+                "label": "CDM2"
+              },
+              {
+                "pos": "RAM",
+                "x": 4,
+                "y": 1,
+                "label": "RAM"
+              },
+              {
+                "pos": "CAM",
+                "x": 4,
+                "y": 3,
+                "label": "CAM"
+              },
+              {
+                "pos": "LAM",
+                "x": 4,
+                "y": 5,
+                "label": "LAM"
+              },
+              {
+                "pos": "ST",
+                "x": 5,
+                "y": 3,
+                "label": "ST"
+              }
+            ],
+            "tags": [
+              "控球主导",
+              "伪九号回撤",
+              "边中结合",
+              "远射战术"
+            ],
+            "possessionPercent": 69,
+            "ppda": 8.1,
+            "leftAttackPercent": 69,
+            "rightAttackPercent": 31,
+            "setPieceGoalRatio": 22,
+            "counterAttackTrigger": "偶尔（控球为主）",
+            "focusSide": "左路",
+            "pressStrength": "极强（高位逼抢）",
+            "strategyText": "本场采用4-2-3-1阵型，以 控球主导 为核心，控球率 69%，压迫强度极强（高位逼抢）（PPDA 8.1）；进攻重心左路占比 69%，通过 中场短传渗透+直塞身后 创造机会。"
+          },
+          "awayTactics": {
+            "formation": "5-3-2",
+            "formationName": "5-3-2 攻守平衡",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 1,
+                "label": "RCB"
+              },
+              {
+                "pos": "RCCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCCB"
+              },
+              {
+                "pos": "CCB",
+                "x": 2,
+                "y": 3,
+                "label": "CCB"
+              },
+              {
+                "pos": "LCCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 5,
+                "label": "LCB"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 2,
+                "label": "RCM"
+              },
+              {
+                "pos": "CM",
+                "x": 3,
+                "y": 3,
+                "label": "CM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "ST1",
+                "x": 5,
+                "y": 2,
+                "label": "ST1"
+              },
+              {
+                "pos": "ST2",
+                "x": 5,
+                "y": 4,
+                "label": "ST2"
+              }
+            ],
+            "tags": [
+              "攻守平衡",
+              "中场控制",
+              "边路突破",
+              "中路渗透"
+            ],
+            "possessionPercent": 44,
+            "ppda": 16.1,
+            "leftAttackPercent": 46,
+            "rightAttackPercent": 54,
+            "setPieceGoalRatio": 30,
+            "counterAttackTrigger": "平衡",
+            "focusSide": "中路均衡",
+            "pressStrength": "偏弱（低位防守）",
+            "strategyText": "本场采用5-3-2阵型应对强敌，以 边路突破 为主 + 中路渗透，控球率 44%；平衡（反击场均威胁≥2.1次），定位球得分占比 30%。"
+          },
+          "intensity": "★★☆☆☆",
+          "features": [
+            "常规联赛对决"
+          ],
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.75,
+              "lean": "under",
+              "label": "2.75球·偏小",
+              "explain": "市场预期总进球约 2.75 球（参考冰女超场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.25,
+              "lean": "home",
+              "label": "主让0.25",
+              "explain": "实力差预估：主让0.25（主场加成+排名差+1位）"
+            },
+            "totalCorners": {
+              "line": 11.5,
+              "lean": "balanced",
+              "label": "11.5角·均衡",
+              "explain": "市场预期总角球 11.5 个（参考 冰女超 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 0.5,
+              "lean": "home",
+              "label": "角球主让0.5",
+              "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": 1,
+              "rankValid": false,
+              "refereeScore": 80,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
+          },
+          "t1Comparison": {
+            "fthg": 1,
+            "ftag": 0,
+            "total": 1,
+            "homeMargin": 1,
+            "ahLineUsed": 0.25,
+            "ouLineUsed": 2.75,
+            "lineSource": "model",
+            "handicap": {
+              "result": "home-win",
+              "label_cn": "主赢盘",
+              "homeMargin": 1,
+              "margin": 0.75
+            },
+            "overunder": {
+              "result": "under",
+              "label_cn": "小球",
+              "total": 1,
+              "margin": -1.75
+            }
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 30,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 10,
+            "focal": 0,
+            "h2hRecent": 4
+          },
+          "isHotMatch": false,
+          "predictedDifficulty": 2
+        },
+        {
+          "id": "54554979",
+          "date": "2026-08-12",
+          "time": "19:00",
+          "league": {
+            "id": "dqd-europe-北爱女超",
+            "name": "北爱女超",
+            "country": "北爱女超",
+            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+            "color": "#94240A",
+            "region": "europe"
+          },
+          "region": "europe",
+          "gender": "women",
+          "homeTeam": {
+            "name": "巴利米纳联女足",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "score": 0,
+            "teamId": "t4101",
+            "rank": null,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#f97316",
+                "#9a3412"
+              ],
+              "countryFlag": "🇮🇪"
+            },
+            "countryFlag": "🇮🇪"
+          },
+          "awayTeam": {
+            "name": "锡昂斯维富特斯女足",
+            "logo": "https://sd.qunliao.info/fastdfs6/M00/58/C3/rBUESWSBnJyAasUrAAAl7k3F_g8900.png",
+            "score": 4,
+            "teamId": "t10052",
+            "rank": null,
+            "appLogo": {
+              "text": "女足",
+              "colors": [
+                "#f97316",
+                "#9a3412"
+              ],
+              "countryFlag": "🇮🇪"
+            },
+            "countryFlag": "🇮🇪"
+          },
+          "venue": "巴利米纳联女足主场",
+          "stats": {
+            "score": {
+              "home": 0,
+              "away": 4
+            },
+            "possession": {
+              "home": 43.4,
+              "away": 56.6
+            },
+            "shots": {
+              "home": 14,
+              "away": 17
+            },
+            "shotsOnTarget": {
+              "home": 4,
+              "away": 6
+            },
+            "xG": {
+              "home": "1.24",
+              "away": "1.47"
+            },
+            "passes": {
+              "home": 517,
+              "away": 583
+            },
+            "passAccuracy": {
+              "home": "73%",
+              "away": "82%"
+            },
+            "tackles": {
+              "home": 19,
+              "away": 22
+            },
+            "interceptions": {
+              "home": 12,
+              "away": 14
+            },
+            "fouls": {
+              "home": 15,
+              "away": 17
+            },
+            "corners": {
+              "home": 1,
+              "away": 17
+            },
+            "yellowCards": {
+              "home": 4,
+              "away": 4
+            },
+            "redCards": {
+              "home": 0,
+              "away": 0
+            },
+            "offsides": {
+              "home": 3,
+              "away": 3
+            },
+            "saves": {
+              "home": 2,
+              "away": 4
+            },
+            "_anchors": {
+              "score_home": 0,
+              "score_away": 4,
+              "yc_home": 4,
+              "yc_away": 4,
+              "rc_home": 0,
+              "rc_away": 0,
+              "corner_home_from_dqd": "1",
+              "corner_away_from_dqd": "17"
+            },
+            "_fromDongqiudi": true
+          },
+          "refereeAnalysis": {
+            "referee": {
+              "id": "dqd-安东尼·泰勒",
+              "name": "安东尼·泰勒",
+              "country": "英格兰",
+              "age": 45
+            },
+            "history": [
+              {
+                "date": "2026-08-10",
+                "league": "第5轮执法",
+                "match": "比赛1",
+                "yellowCards": 9,
+                "redCards": 1,
+                "fouls": 24,
+                "penalties": 1,
+                "cardIndex": 115,
+                "varChecks": 4
+              },
+              {
+                "date": "2026-08-03",
+                "league": "第4轮执法",
+                "match": "比赛2",
+                "yellowCards": 8,
+                "redCards": 1,
+                "fouls": 23,
+                "penalties": 1,
+                "cardIndex": 105,
+                "varChecks": 3
+              },
+              {
+                "date": "2026-07-27",
+                "league": "第3轮执法",
+                "match": "比赛3",
+                "yellowCards": 6,
+                "redCards": 1,
+                "fouls": 24,
+                "penalties": 1,
+                "cardIndex": 85,
+                "varChecks": 2
+              },
+              {
+                "date": "2026-07-20",
+                "league": "第2轮执法",
+                "match": "比赛4",
+                "yellowCards": 6,
+                "redCards": 1,
+                "fouls": 22,
+                "penalties": 1,
+                "cardIndex": 85,
+                "varChecks": 2
+              },
+              {
+                "date": "2026-07-13",
+                "league": "第1轮执法",
+                "match": "比赛5",
+                "yellowCards": 10,
+                "redCards": 1,
+                "fouls": 28,
+                "penalties": 1,
+                "cardIndex": 125,
+                "varChecks": 5
+              }
+            ],
+            "statistics": {
+              "avgYellow": "7.8",
+              "avgRed": "1.00",
+              "avgFouls": "24.2",
+              "avgPenalties": "1.00",
+              "avgCardIndex": "103.0",
+              "avgVar": "3.2",
+              "strictnessScore": 92
+            },
+            "style": "严格型",
+            "styleDesc": "该裁判倾向于严格执法，对犯规零容忍。比赛中频繁出示黄牌，红牌概率较高。球队需注意动作规范，避免过激对抗。",
+            "keyTraits": [
+              "出牌频率高",
+              "对恶意犯规零容忍",
+              "点球判罚果断",
+              "VAR介入频繁"
+            ]
+          },
+          "keyEvents": [
+            {
+              "minute": 9,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "巴利米纳联女足",
+              "description": "巴利米纳联女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 12,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "锡昂斯维富特斯女足",
+              "description": "锡昂斯维富特斯女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 15,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "巴利米纳联女足",
+              "description": "巴利米纳联女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 15,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "巴利米纳联女足",
+              "description": "巴利米纳联女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 19,
+              "type": "goal",
+              "team": "away",
+              "teamName": "锡昂斯维富特斯女足",
+              "description": "锡昂斯维富特斯女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 26,
+              "type": "goal",
+              "team": "away",
+              "teamName": "锡昂斯维富特斯女足",
+              "description": "锡昂斯维富特斯女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 29,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "锡昂斯维富特斯女足",
+              "description": "锡昂斯维富特斯女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 34,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "锡昂斯维富特斯女足",
+              "description": "锡昂斯维富特斯女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 37,
+              "type": "yellow",
+              "team": "home",
+              "teamName": "巴利米纳联女足",
+              "description": "巴利米纳联女足 球员犯规吃到黄牌"
+            },
+            {
+              "minute": 38,
+              "type": "goal",
+              "team": "away",
+              "teamName": "锡昂斯维富特斯女足",
+              "description": "锡昂斯维富特斯女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 58,
+              "type": "goal",
+              "team": "away",
+              "teamName": "锡昂斯维富特斯女足",
+              "description": "锡昂斯维富特斯女足 进球！扳平/反超比分"
+            },
+            {
+              "minute": 67,
+              "type": "yellow",
+              "team": "away",
+              "teamName": "锡昂斯维富特斯女足",
+              "description": "锡昂斯维富特斯女足 球员犯规吃到黄牌"
+            }
+          ],
+          "analysis": [
+            "锡昂斯维富特斯女足 客场奏凯，反击效率极高，xG 1.47 支撑了最终比分",
+            "双方控球率相对均衡，场面开放对攻激烈",
+            "裁判执法偏严（严格度 92分），全场共出示 8 黄0红，直接影响了比赛节奏",
+            "本场比赛对抗激烈，双方共计 32 次犯规，拼抢强度拉满"
+          ],
+          "homeTactics": {
+            "formation": "4-4-2",
+            "formationName": "4-4-2 大巴防守",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "RM",
+                "x": 3,
+                "y": 1,
+                "label": "RM"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 3,
+                "label": "RCM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "LM",
+                "x": 3,
+                "y": 5,
+                "label": "LM"
+              },
+              {
+                "pos": "ST1",
+                "x": 5,
+                "y": 2,
+                "label": "ST1"
+              },
+              {
+                "pos": "ST2",
+                "x": 5,
+                "y": 4,
+                "label": "ST2"
+              }
+            ],
+            "tags": [
+              "攻守平衡",
+              "中场控制",
+              "边路突破",
+              "中路渗透"
+            ],
+            "possessionPercent": 32,
+            "ppda": 12.3,
+            "leftAttackPercent": 51,
+            "rightAttackPercent": 49,
+            "setPieceGoalRatio": 14,
+            "counterAttackTrigger": "频繁（主打反击）",
+            "focusSide": "中路均衡",
+            "pressStrength": "中等",
+            "strategyText": "本场采用4-4-2阵型应对强敌，以 边路突破 为主 + 中路渗透，控球率 32%；频繁（主打反击）（反击场均威胁≥2.1次），定位球得分占比 14%。"
+          },
+          "awayTactics": {
+            "formation": "4-3-3",
+            "formationName": "4-3-3 控球进攻",
+            "lineup": [
+              {
+                "pos": "GK",
+                "x": 1,
+                "y": 3,
+                "label": "GK"
+              },
+              {
+                "pos": "RB",
+                "x": 2,
+                "y": 1,
+                "label": "RB"
+              },
+              {
+                "pos": "RCB",
+                "x": 2,
+                "y": 2,
+                "label": "RCB"
+              },
+              {
+                "pos": "LCB",
+                "x": 2,
+                "y": 4,
+                "label": "LCB"
+              },
+              {
+                "pos": "LB",
+                "x": 2,
+                "y": 5,
+                "label": "LB"
+              },
+              {
+                "pos": "RCM",
+                "x": 3,
+                "y": 2,
+                "label": "RCM"
+              },
+              {
+                "pos": "CDM",
+                "x": 3,
+                "y": 3,
+                "label": "CDM"
+              },
+              {
+                "pos": "LCM",
+                "x": 3,
+                "y": 4,
+                "label": "LCM"
+              },
+              {
+                "pos": "RW",
+                "x": 4,
+                "y": 1,
+                "label": "RW"
+              },
+              {
+                "pos": "ST",
+                "x": 5,
+                "y": 3,
+                "label": "ST"
+              },
+              {
+                "pos": "LW",
+                "x": 4,
+                "y": 5,
+                "label": "LW"
+              }
+            ],
+            "tags": [
+              "防守反击",
+              "纵深冲击",
+              "右路突击",
+              "定位球得分"
+            ],
+            "possessionPercent": 60,
+            "ppda": 9.9,
+            "leftAttackPercent": 69,
+            "rightAttackPercent": 31,
+            "setPieceGoalRatio": 30,
+            "counterAttackTrigger": "偶尔（控球为主）",
+            "focusSide": "左路",
+            "pressStrength": "中等",
+            "strategyText": "本场采用4-3-3阵型，以 防守反击 为核心，控球率 60%，压迫强度中等（PPDA 9.9）；进攻重心左路占比 69%，通过 中场短传渗透+直塞身后 创造机会。"
+          },
+          "intensity": "★☆☆☆☆",
+          "features": [
+            "常规联赛对决"
+          ],
+          "marketExpectation": {
+            "totalGoals": {
+              "line": 2.75,
+              "lean": "under",
+              "label": "2.75球·偏小",
+              "explain": "市场预期总进球约 2.75 球（参考北爱女超场均 2.55 球）"
+            },
+            "handicap": {
+              "line": 0.25,
+              "lean": "home",
+              "label": "主让0.25",
+              "explain": "实力差预估：主让0.25（主场加成+排名差-2位）"
+            },
+            "totalCorners": {
+              "line": 12.0,
+              "lean": "under",
+              "label": "12角·偏小",
+              "explain": "市场预期总角球 12.0 个（参考 北爱女超 场均 9.5 角）"
+            },
+            "cornerHandicap": {
+              "line": 0.5,
+              "lean": "home",
+              "label": "角球主让0.5",
+              "explain": "角球让差：角球主让0.5（与让球盘同向但幅度更宽）"
+            },
+            "meta": {
+              "source": "dqd-public-derived-model",
+              "leagueProfile": {
+                "goals": 2.55,
+                "corners": 9.5,
+                "atkCoef": 1.0
+              },
+              "rankDiff": -2,
+              "rankValid": false,
+              "refereeScore": 90,
+              "modelVersion": "ft-odds-model-v1",
+              "note": "盘口数据由联赛特性+排名差+主场+裁判风格模型推算，非HKJC/博彩公司官方赔率，仅供参考"
+            }
+          },
+          "t1Comparison": {
+            "fthg": 0,
+            "ftag": 4,
+            "total": 4,
+            "homeMargin": -4,
+            "ahLineUsed": 0.25,
+            "ouLineUsed": 2.75,
+            "lineSource": "model",
+            "handicap": {
+              "result": "away-win",
+              "label_cn": "客赢盘",
+              "homeMargin": -4,
+              "margin": -4.25
+            },
+            "overunder": {
+              "result": "over",
+              "label_cn": "大球",
+              "total": 4,
+              "margin": 1.25
+            }
+          },
+          "_dataSource": "dongqiudi-real",
+          "heatScore": 24,
+          "heatBreakdown": {
+            "league": 16,
+            "rank": 0,
+            "focal": 0,
+            "h2hRecent": 8
+          },
+          "isHotMatch": false,
+          "predictedDifficulty": 1
+        }
+      ],
       "today": []
     }
   }

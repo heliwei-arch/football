@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-08-12T21:02:28.549238",
-  "generatedAt": "2026-08-12T21:03:27.108713",
+  "lastUpdate": "2026-08-13T10:16:43.161608",
+  "generatedAt": "2026-08-13T10:17:36.491819",
   "dataSource": "dongqiudi-real",
   "leagues": {
     "asia": [
@@ -39,11 +39,11 @@
   "yesterdayMatches": [],
   "todayPreviews": [],
   "pushDigest": {
-    "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 女足）",
-    "yesterdaySummary": "🇦🇺 澳南女超：西部前锋女足 0-4 阿德莱德城女足（阿德莱德城女足获胜）；🇦🇺 澳昆女超：昆士兰狮女足 1-1 黄金海岸联女足（战平）",
-    "todaySummary": "🇦🇺 西部前锋女足 vs 阿德莱德城女足（主裁尺度偏严，注意出牌风险）；🇦🇺 昆士兰狮女足 vs 黄金海岸联女足（常规联赛对决）",
-    "yesterdayCount": 2,
-    "todayCount": 2,
+    "title": "⚽ 足球赛道日报 - 2026-08-13（懂球帝真实数据 · 女足）",
+    "yesterdaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 冰女超：弗拉姆女足 4-6 哈夫纳夫约杜尔女足（哈夫纳夫约杜尔女足获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 冰女超：特罗图尔女足 3-2 雷克雅未克矛隼女足（特罗图尔女足获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 冰女超：科帕沃于尔光明女足 1-0 尼哈德维克格连戴域克女足（科帕沃于尔光明女足获胜）",
+    "todaySummary": "",
+    "yesterdayCount": 4,
+    "todayCount": 0,
     "fullReport": true,
     "_dataSource": "dongqiudi-real",
     "_gender": "women"

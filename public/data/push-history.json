@@ -1,87 +1,29 @@
 {
   "history": [
     {
-      "timestamp": "2026-08-12T21:02:28.549238",
+      "timestamp": "2026-08-13T10:16:43.161608",
       "manual": false,
       "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
-        "yesterdaySummary": "🏆 U20联赛：上海申花U20 3-1 深圳新鹏城U20（上海申花U20获胜）；🇦🇺 澳足总：莫兰德斑马 1-4 普雷斯顿雄狮（普雷斯顿雄狮获胜）；🇦🇺 澳足总：莱卡特老虎 1-1 悉尼联（战平）",
-        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（主裁尺度偏严，注意出牌风险）",
-        "yesterdayCount": 24,
-        "todayCount": 38,
+        "title": "⚽ 足球赛道日报 - 2026-08-13（懂球帝真实数据 · 男足）",
+        "yesterdaySummary": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 欧洲超级杯：巴黎圣日耳曼 2-1 阿斯顿维拉（巴黎圣日耳曼获胜）；🏆 亚冠二级：阿尔卡达格 3-0 果阿（阿尔卡达格获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 足总杯：林非德 3-5 科林斯FC（科林斯FC获胜）",
+        "todaySummary": "🏆 阿拉木图凯拉特B队 vs 奥杜斯基克（阿拉木图凯拉特B队联赛排名靠前）；🏆 安集延 vs 费尔干纳石油工人（费尔干纳石油工人联赛排名靠前）；🏆 布哈拉 vs 阿尔马雷克（布哈拉联赛排名靠前）",
+        "yesterdayCount": 12,
+        "todayCount": 30,
         "fullReport": true,
         "_dataSource": "dongqiudi-real",
         "_gender": "men"
       }
     },
     {
-      "timestamp": "2026-08-12T20:49:32.857689",
+      "timestamp": "2026-08-13T09:12:11.934718",
       "manual": false,
       "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
-        "yesterdaySummary": "🏆 U20联赛：上海申花U20 3-1 深圳新鹏城U20（上海申花U20获胜）；🇦🇺 澳足总：莫兰德斑马 1-4 普雷斯顿雄狮（普雷斯顿雄狮获胜）；🇦🇺 澳足总：莱卡特老虎 1-1 悉尼联（战平）",
-        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（主裁尺度偏严，注意出牌风险）",
-        "yesterdayCount": 23,
-        "todayCount": 38,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real",
-        "_gender": "men"
-      }
-    },
-    {
-      "timestamp": "2026-08-12T16:15:25.874837",
-      "manual": false,
-      "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
-        "yesterdaySummary": "🏆 大冠杯：雷瓦 4-2 图帕帕（雷瓦获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 俄杯：莫斯科切尔塔诺沃 3-0 赤塔（莫斯科切尔塔诺沃获胜）",
-        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（常规联赛对决）",
-        "yesterdayCount": 2,
-        "todayCount": 38,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real",
-        "_gender": "men"
-      }
-    },
-    {
-      "timestamp": "2026-08-12T16:12:09.034667",
-      "manual": false,
-      "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
-        "yesterdaySummary": "🏆 大冠杯：雷瓦 4-2 图帕帕（雷瓦获胜）；🏴󠁧󠁢󠁥󠁮󠁧󠁿 俄杯：莫斯科切尔塔诺沃 3-0 赤塔（莫斯科切尔塔诺沃获胜）",
-        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（主裁尺度偏严，注意出牌风险）",
-        "yesterdayCount": 2,
-        "todayCount": 38,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real",
-        "_gender": "men"
-      }
-    },
-    {
-      "timestamp": "2026-08-12T16:02:44.879266",
-      "manual": false,
-      "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
-        "yesterdaySummary": "🏆 大冠杯：雷瓦 4-2 图帕帕（雷瓦获胜）",
-        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（主裁尺度偏严，注意出牌风险）",
-        "yesterdayCount": 1,
-        "todayCount": 38,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real",
-        "_gender": "men"
-      }
-    },
-    {
-      "timestamp": "2026-08-12T12:31:36.561502",
-      "manual": false,
-      "digest": {
-        "title": "⚽ 足球赛道日报 - 2026-08-12（懂球帝真实数据 · 男足）",
-        "yesterdaySummary": "",
-        "todaySummary": "🏆 阿尔卡达格 vs 果阿（阿尔卡达格联赛排名靠前）；🏆 上海申花U20 vs 深圳新鹏城U20（上海申花U20联赛排名靠前）；🏆 东孟加拉  vs 科威特阿拉伯人（常规联赛对决）",
-        "yesterdayCount": 0,
-        "todayCount": 38,
-        "fullReport": true,
-        "_dataSource": "dongqiudi-real",
-        "_gender": "men"
+        "title": "⚽ 足球赛道日报 - 2026-08-13",
+        "yesterdaySummary": "🇦🇺 澳超联赛：西悉尼流浪者 3-2 墨尔本胜利（西悉尼流浪者获胜）；🇨🇳 中超联赛：山东泰山 4-0 上海海港（山东泰山获胜）；🇨🇳 中超联赛：上海海港 0-0 成都蓉城（战平）",
+        "todaySummary": "🇸🇦 利雅得胜利 vs 吉达联合（主帅对决，战术博弈引人关注）；🇫🇷 尼斯 vs 雷恩（近期状态火热，连胜势头能否延续）；🇫🇷 巴黎圣日耳曼 vs 尼斯（欧战资格关键六分战）",
+        "yesterdayCount": 10,
+        "todayCount": 14,
+        "fullReport": true
       }
     },
     {
